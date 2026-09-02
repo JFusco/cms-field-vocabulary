@@ -25,9 +25,9 @@ Adapter prose had begun to carry platform field vocabularies and rendering impli
 
 Current path evidence includes `package.json`, `definitions/rendering-operations.json`, `sources/official-sources.json`, and `.github/workflows/release.yml`.
 
-## Release condition
+## Release verification
 
-This entry and its archived plan remain `partial` until final verification succeeds from `/Users/joe.fusco/Projects/cms-field-vocabulary` and durable evidence confirms npm `cms-field-vocabulary@1.0.0`, GitHub tag `v1.0.0`, and the corresponding GitHub Release. At that point, promote the plan archive and ledger row to `implemented`, replace provisional path evidence with the commit and release evidence, and update this section in the same delivery.
+The first public release is complete. Commit `d16ab568514c80e9904c5923303f399912b42805` triggered successful GitHub Actions run `33627334843`; npm confirms `cms-field-vocabulary@1.0.0` is `latest`, and GitHub Release [`v1.0.0`](https://github.com/JFusco/cms-field-vocabulary/releases/tag/v1.0.0) is published. The archived plan and ledger row are therefore `implemented`.
 
 ## Durable decisions
 

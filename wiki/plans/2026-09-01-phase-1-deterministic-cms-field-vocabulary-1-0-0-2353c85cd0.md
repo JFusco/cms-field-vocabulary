@@ -1,7 +1,7 @@
 ---
-status: "partial"
+status: "implemented"
 executed: true
-evidence: ["package.json", "definitions/rendering-operations.json", "sources/official-sources.json", ".github/workflows/release.yml"]
+evidence: ["commit:d16ab568514c80e9904c5923303f399912b42805", "workflow:33627334843", "npm:cms-field-vocabulary@1.0.0", "github-release:v1.0.0"]
 source_tool: "codex"
 source: "/private/tmp/cms-field-vocabulary-phase1-final-plan.md"
 topics: ["catalog-authority", "structured-rendering-operations", "deterministic-consumer-projection", "official-source-freshness", "release-operations"]
