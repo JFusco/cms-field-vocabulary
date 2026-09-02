@@ -130,7 +130,7 @@
     "lint-staged": "16.2.7",
     "semantic-release": "25.0.2",
     "tsup": "8.5.1",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "lint-staged": {
     "*.{js,cjs,mjs,ts}": "eslint --fix --max-warnings=0 --no-warn-ignored",
