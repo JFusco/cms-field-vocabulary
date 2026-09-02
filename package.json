@@ -127,7 +127,7 @@
     "eslint": "10.0.2",
     "globals": "16.5.0",
     "husky": "9.1.7",
-    "lint-staged": "16.2.7",
+    "lint-staged": "17.4.1",
     "semantic-release": "25.0.2",
     "tsup": "8.5.1",
     "typescript": "5.9.3"
