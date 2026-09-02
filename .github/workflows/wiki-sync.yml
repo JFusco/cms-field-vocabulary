@@ -52,7 +52,7 @@ jobs:
             > "$RUNNER_TEMP/wiki-merge.json"
           echo "base_branch=$base_ref" >> "$GITHUB_OUTPUT"
       - name: Checkout merged base
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ steps.context.outputs.base_branch }}
           fetch-depth: 0
