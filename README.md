@@ -1,5 +1,7 @@
 # cms-field-vocabulary
 
+[![npm version](https://img.shields.io/npm/v/cms-field-vocabulary.svg)](https://www.npmjs.com/package/cms-field-vocabulary)
+
 `cms-field-vocabulary` is an official-source-backed catalog of native CMS field types and a deterministic contract generator for coding agents. It keeps vendor nomenclature, value shapes, rendering implications, and consumer-specific policy in one structured package without copying the same vocabulary prose into every adapter repository.
 
 Stable publication begins at `1.0.0` and is owned by `semantic-release`. Source checkouts can retain the development placeholder until the release job assigns a version.
