@@ -128,7 +128,7 @@ jobs:
 
       - name: Open or update source-specific attention issues
         if: always() && steps.scans.outputs.outcome == 'attention'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           INDEX_STATUS: ${{ steps.scans.outputs.index_status }}
           FULL_STATUS: ${{ steps.scans.outputs.full_status }}
