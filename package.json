@@ -1,6 +1,6 @@
 {
   "name": "cms-field-vocabulary",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Official-source-backed CMS field vocabularies and deterministic coding-agent contracts",
   "type": "module",
   "private": false,
