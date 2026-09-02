@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "id": "sitecore-ai.authoring.current",
+  "platform": "sitecore-ai",
+  "product": "SitecoreAI",
+  "version": {
+    "mode": "rolling",
+    "label": "SitecoreAI observed 2026-09-01"
+  },
+  "surface": "authoring",
+  "transport": "Data template field type names and authoring editors",
+  "extensibility": "open",
+  "notes": [
+    "SitecoreAI supports custom field types and editors; this is a documented built-in authoring baseline, not an instance inventory.",
+    "Native field labels preserve the exact spelling and case observed in the authoring documentation.",
+    "Content SDK value shapes and rendering operations live in the separate sitecore-ai.content-sdk2 profile."
+  ],
+  "sourceIds": [
+    "sitecore-ai.field-types",
+    "sitecore-ai.simple-field-types",
+    "sitecore-ai.link-field-types",
+    "sitecore-ai.list-field-types",
+    "sitecore-ai.developer-field-types",
+    "sitecore-ai.system-field-types",
+    "sitecore-ai.changelog-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "sitecore-ai.field-types",
+    "locator": "Data template field types and linked category pages"
+  },
+  "fields": [
+    {
+      "nativeToken": "Checkbox",
+      "valueShape": null,
+      "typicalUse": "True/false authored choices.",
+      "editorBehavior": "Checkbox control.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "File",
+      "valueShape": null,
+      "typicalUse": "Files selected from the media library.",
+      "editorBehavior": "File selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Date",
+      "valueShape": null,
+      "typicalUse": "Date values.",
+      "editorBehavior": "Date input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Datetime",
+      "valueShape": null,
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Image",
+      "valueShape": null,
+      "typicalUse": "Images selected from the media library.",
+      "editorBehavior": "Image selector with image metadata.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Integer",
+      "valueShape": null,
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Number",
+      "valueShape": null,
+      "typicalUse": "Numeric values.",
+      "editorBehavior": "Number input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Single-Line Text",
+      "canonicalSuffix": "SingleLineText",
+      "valueShape": null,
+      "typicalUse": "Single-line plain text.",
+      "editorBehavior": "Single-line text input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Multi-Line Text",
+      "canonicalSuffix": "MultiLineText",
+      "valueShape": null,
+      "typicalUse": "Multi-line plain text.",
+      "editorBehavior": "Multi-line text input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Rich Text",
+      "canonicalSuffix": "RichText",
+      "valueShape": null,
+      "typicalUse": "Authored formatted HTML content.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "General link with search",
+      "canonicalSuffix": "GeneralLinkWithSearch",
+      "valueShape": null,
+      "typicalUse": "Links selected through a search-enabled editor.",
+      "editorBehavior": "General link selector with search.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "General link",
+      "canonicalSuffix": "GeneralLink",
+      "valueShape": null,
+      "typicalUse": "Internal, external, email, anchor, or media links.",
+      "editorBehavior": "General link editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Droplink",
+      "valueShape": null,
+      "typicalUse": "Select one Sitecore item.",
+      "editorBehavior": "Single-item drop-link selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Droptree",
+      "valueShape": null,
+      "typicalUse": "Select one Sitecore item from a tree.",
+      "editorBehavior": "Tree-based single-item selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      }
+    },
+    "Version link",
+    "Droplist",
+    "Multilist",
+    "Treelist",
+    "TreelistEx",
+    "Checklist",
+    "Multiroot Treelist",
+    "Taglist",
+    "Icon",
+    "IFrame",
+    "Tristate",
+    "Query Datasource",
+    "Attachment",
+    "File Drop Area",
+    "Internal Link",
+    "Layout",
+    "Rules",
+    "Security",
+    "Template Field Source",
+    "Thumbnail"
+  ]
+}

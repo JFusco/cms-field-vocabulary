@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "cos",
+  "outputMode": "official-data",
+  "includeProvenanceInAgentContext": false,
+  "adapters": {
+    "contentful": "contentful.cma.saas",
+    "contentstack": "contentstack.cma.saas",
+    "optimizely": "optimizely-saas.cms-api-v1",
+    "optimizelypaas": "optimizely-paas.cms13-admin",
+    "sitecore": "sitecore-ai.authoring.current",
+    "sitecoreonprem": "sitecore-on-prem.xp104-authoring",
+    "wordpress": "wordpress.core71-meta"
+  }
+}

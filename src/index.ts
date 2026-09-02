@@ -1,0 +1,47 @@
+export { catalog, findFieldFact, getFieldFact, getProfile, listFieldFacts, resolveFieldContracts } from './catalog.js';
+export {
+  OFFICIAL_CLAIM_REFS,
+  PROHIBITION_CODES,
+  RENDERING_AUTHORITIES,
+  RENDERING_FORMAT_STRATEGIES,
+  RENDERING_OPERATION_DEFINITIONS,
+  RENDERING_OPERATION_KINDS,
+  RENDERING_SELECTION_DISCRIMINATORS,
+} from './definitions.js';
+export { checkProjection, resolveProjectionFields, syncProjection, validateProjection } from './projection.js';
+export type {
+  AgentGuidanceProfile,
+  Catalog,
+  CmsProfile,
+  CompactOfficialFieldData,
+  ConsumerConfig,
+  DeepReadonly,
+  FieldApplicability,
+  FieldFormat,
+  FieldTypeFact,
+  FreshnessObservation,
+  OfficialClaim,
+  OfficialDataProjection,
+  OfficialEvidence,
+  OfficialSource,
+  OfficialSourceRole,
+  OfficialSourceVersionMode,
+  ProjectionManifest,
+  RenderingOperation,
+  RenderingSelectionInput,
+  RenderingSelectionPredicate,
+  ResolveFieldContractsInput,
+  ResolvedFieldContract,
+  SelectedContract,
+  ValueShape,
+} from './types.js';
+export type {
+  OfficialClaimRef,
+  ProhibitionCode,
+  RenderingAuthority,
+  RenderingFormatStrategy,
+  RenderingOperationDefinitions,
+  RenderingOperationKind,
+  RenderingSelectionDiscriminator,
+  RenderingSelectionValue,
+} from './definitions.js';

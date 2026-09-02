@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/official-data-projection.schema.json",
+  "title": "Compact official CMS field data projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["adapter", "schemaVersion", "profileId", "platform", "product", "version", "surface", "transport", "extensibility", "fields"],
+  "properties": {
+    "adapter": { "type": "string", "minLength": 1 },
+    "schemaVersion": { "const": 1 },
+    "profileId": { "type": "string", "minLength": 1 },
+    "platform": { "enum": ["contentful", "contentstack", "optimizely-saas", "optimizely-paas", "sitecore-ai", "sitecore-on-prem", "wordpress"] },
+    "product": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "label"],
+      "properties": {
+        "mode": { "enum": ["pinned", "rolling"] },
+        "label": { "type": "string", "minLength": 1 },
+        "sdk": { "type": "string", "minLength": 1 }
+      }
+    },
+    "surface": { "enum": ["authoring", "management", "storage", "delivery", "sdk"] },
+    "transport": { "type": "string", "minLength": 1 },
+    "extensibility": { "enum": ["closed-at-profile", "discoverable", "open"] },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["canonicalId", "nativeToken", "valueShape", "formats"],
+        "properties": {
+          "canonicalId": { "type": "string", "minLength": 1 },
+          "nativeToken": { "type": "string", "minLength": 1 },
+          "displayName": { "type": "string", "minLength": 1 },
+          "valueShape": {
+            "oneOf": [
+              { "type": "null" },
+              { "$ref": "#/$defs/valueShape" }
+            ]
+          },
+          "formats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["nativeToken"],
+              "properties": {
+                "nativeToken": { "type": "string", "minLength": 1 },
+                "requires": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "valueShape": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "nullable"],
+      "properties": {
+        "kind": { "enum": ["string", "boolean", "integer", "number", "datetime", "object", "array", "reference", "rich-text", "binary", "unknown"] },
+        "nullable": { "type": "boolean" },
+        "valuePath": { "type": "string" },
+        "itemKind": { "type": "string" },
+        "members": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

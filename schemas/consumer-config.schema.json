@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/consumer-config.schema.json",
+  "title": "CMS field vocabulary consumer configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "packageName", "profile", "adapter", "target"],
+  "properties": {
+    "$schema": { "type": "string", "minLength": 1 },
+    "packageName": { "const": "cms-field-vocabulary" },
+    "profile": { "enum": ["ai-orchestration", "cos", "generic"] },
+    "adapter": { "type": "string", "minLength": 1 },
+    "target": { "type": "string", "minLength": 1 }
+  }
+}

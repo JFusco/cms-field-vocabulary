@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/official-source.schema.json",
+  "title": "Official CMS source",
+  "$ref": "source-manifest.schema.json#/$defs/source"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/projection-manifest.schema.json",
+  "title": "CMS field vocabulary projection manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedBy", "packageVersion", "profile", "adapter", "projectionMode", "vocabularyProfile", "catalogDigest", "configDigest", "files"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedBy": { "const": "cms-field-vocabulary" },
+    "packageVersion": { "type": "string", "minLength": 1 },
+    "profile": { "type": "string", "minLength": 1 },
+    "adapter": { "type": "string", "minLength": 1 },
+    "projectionMode": { "enum": ["selected-contract", "official-data"] },
+    "vocabularyProfile": { "type": "string", "minLength": 1 },
+    "catalogDigest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "configDigest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "bytes"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "bytes": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

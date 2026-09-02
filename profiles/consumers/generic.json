@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "generic",
+  "agentProfile": "generic",
+  "outputMode": "selected-contract",
+  "includeProvenanceInAgentContext": false,
+  "adapters": {
+    "contentful": "contentful.cma.saas",
+    "contentstack": "contentstack.cma.saas",
+    "optimizely-saas": "optimizely-saas.sdk-2",
+    "optimizely-paas": "optimizely-paas.cms13-model",
+    "sitecore-ai": "sitecore-ai.content-sdk2",
+    "sitecore-on-prem": "sitecore-on-prem.headless22",
+    "wordpress": "wordpress.core71-meta"
+  }
+}

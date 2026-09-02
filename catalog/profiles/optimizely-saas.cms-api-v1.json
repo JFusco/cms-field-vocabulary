@@ -1,0 +1,1196 @@
+{
+  "extensibility": "closed-at-profile",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.array",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "List editor respecting item and count constraints."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "array"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Array."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Lists whose item type is declared by items."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "property-defined",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "array",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.array.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean control."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "boolean"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false choices."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.boolean.render",
+          "nullHandling": "preserve",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.component",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Component selection requiring contentType."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "component"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Embedded component value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Embedded component properties."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "component",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.component.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.content",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Content selector constrained by permitted types."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "content"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Content relationship."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Content relationships."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "content",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.content.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.contentReference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference selector constrained by permitted types."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "contentReference"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "References to content or media."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "contentReference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.contentreference.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.dateTime",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time input with optional bounds."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "dateTime"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "ISO date-time string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date and time values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "datetime",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "dateTime",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.datetime.render",
+          "nullHandling": "preserve",
+          "operation": "format",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.float",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Number input with optional bounds."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "float"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Floating-point number."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Decimal numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "float",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.float.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer input with optional bounds."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "integer"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "integer",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.integer.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.json",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "json"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Arbitrary structured JSON."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "json",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.json.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.link",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Link editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "link"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Link value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Links with authored metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "link",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.link.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.richText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich-text editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "richText"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Structured rich-text value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Structured rich text."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "rich-text",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "richText",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.richtext.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "coerce-rich-text-to-plain-string"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.string",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Text editor refined by format and constraints."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "string"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "String."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Text values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "string",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.string.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-saas.cms-api-v1.url",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "URL selector/input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "url"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "URL value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "URL values, optionally refined for images or documents."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "url",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-saas.cms-api-v1.url.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "optimizely-saas.cms-api-v1",
+  "notes": [
+    "SDK-only property types and SDK-resolved delivery shapes are not added to the API profile."
+  ],
+  "platform": "optimizely-saas",
+  "product": "Optimizely CMS SaaS",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "optimizely-saas.content-types",
+    "optimizely-saas.release-notes-index"
+  ],
+  "surface": "management",
+  "transport": "CMS API content-type property schema",
+  "version": {
+    "label": "CMS SaaS API v1",
+    "mode": "pinned"
+  }
+}

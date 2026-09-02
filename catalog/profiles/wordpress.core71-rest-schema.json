@@ -1,0 +1,646 @@
+{
+  "extensibility": "closed-at-profile",
+  "fields": [
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.array",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON array."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "array"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON arrays with an item schema."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "schema-defined",
+            "kind": "array",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "array",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.array.render",
+          "nullHandling": "not-applicable",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON boolean."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "boolean"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON true/false values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.boolean.render",
+          "nullHandling": "not-applicable",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON integer."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "integer"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON whole numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "integer",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.integer.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.null",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON null."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "null"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "An explicitly null JSON value."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "unknown",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "null",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.null.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "assume-undocumented-shape"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON number."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "number"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "number",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.number.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.object",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON object."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "object"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON objects with a property schema."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "object",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.object.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core REST API",
+        "profileId": "wordpress.core71-rest-schema",
+        "surface": "delivery",
+        "transport": "WordPress REST JSON Schema type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-rest-schema.string",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON string."
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema Basics > Primitive Types",
+              "sourceId": "wordpress.rest-schema"
+            },
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "string"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "String response/request values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "rest_validate_value_from_schema() > $allowed_types",
+              "sourceId": "wordpress.rest-schema-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "string",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-rest-schema.string.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "wordpress.core71-rest-schema",
+  "platform": "wordpress",
+  "product": "WordPress Core REST API",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.core-release-index",
+    "wordpress.rest-schema",
+    "wordpress.rest-schema-core-7.1.0",
+    "wordpress.version-71",
+    "wordpress.version-check-api"
+  ],
+  "surface": "delivery",
+  "transport": "WordPress REST JSON Schema type",
+  "version": {
+    "label": "7.1",
+    "mode": "pinned"
+  }
+}

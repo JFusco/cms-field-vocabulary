@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/agent-profile.schema.json",
+  "title": "Coding-agent guidance profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "framework", "rendererBindings", "rules"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]+$" },
+    "framework": { "type": "string", "minLength": 1 },
+    "rendererBindings": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fieldId", "operations"],
+        "properties": {
+          "fieldId": { "type": "string", "minLength": 1 },
+          "operations": {
+            "type": "array",
+            "items": { "$ref": "profile.schema.json#/$defs/renderingOperation" }
+          }
+        }
+      }
+    }
+  }
+}

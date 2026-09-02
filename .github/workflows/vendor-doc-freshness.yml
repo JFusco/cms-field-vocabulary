@@ -1,0 +1,194 @@
+name: Vendor documentation freshness
+
+on:
+  schedule:
+    - cron: "17 13 * * *"
+    - cron: "47 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Scan depth
+        required: true
+        default: full
+        type: choice
+        options:
+          - index
+          - full
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: vendor-documentation-freshness
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  scan:
+    name: scan official vendor documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout read-only source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.14.0"
+
+      - name: Enable pnpm via Corepack
+        run: corepack enable && corepack prepare pnpm@11.1.1 --activate
+
+      - name: Get pnpm store path
+        id: pnpm-cache
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Scan official sources without mutating reviewed records
+        id: scans
+        shell: bash
+        run: |
+          artifact_dir="$RUNNER_TEMP/vendor-doc-freshness"
+          mkdir -p "$artifact_dir"
+
+          set +e
+          node scripts/source-scan.mjs --mode index --output "$artifact_dir/index.json" >"$artifact_dir/index.log" 2>&1
+          index_status=$?
+          full_status=0
+          run_full=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "full" ]; then
+            run_full=true
+          fi
+          if [ "${{ github.event.schedule }}" = "47 13 * * 1" ]; then
+            run_full=true
+          fi
+          if [ "$run_full" = true ]; then
+            node scripts/source-scan.mjs --mode full --output "$artifact_dir/full.json" >"$artifact_dir/full.log" 2>&1
+            full_status=$?
+          else
+            printf '%s\n' 'Full scan not selected for this run.' >"$artifact_dir/full.log"
+          fi
+          set -e
+
+          git status --porcelain=v1 --untracked-files=all >"$artifact_dir/worktree-status.txt"
+          worktree_mutated=false
+          if [ -s "$artifact_dir/worktree-status.txt" ]; then
+            worktree_mutated=true
+          fi
+
+          outcome=current
+          if [ "$index_status" -ne 0 ] || [ "$full_status" -ne 0 ] || [ "$worktree_mutated" = true ]; then
+            outcome=attention
+          fi
+
+          {
+            echo "# Vendor documentation freshness"
+            echo
+            echo "- Index scan exit status: $index_status"
+            echo "- Full scan exit status: $full_status"
+            echo "- Full scan selected: $run_full"
+            echo "- Scanner changed the checkout: $worktree_mutated"
+            echo "- Outcome: $outcome"
+            echo "- Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } | tee "$artifact_dir/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+          {
+            echo "index_status=$index_status"
+            echo "full_status=$full_status"
+            echo "run_full=$run_full"
+            echo "worktree_mutated=$worktree_mutated"
+            echo "outcome=$outcome"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Upload scan evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vendor-doc-freshness-${{ github.run_id }}
+          path: ${{ runner.temp }}/vendor-doc-freshness
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Open or update source-specific attention issues
+        if: always() && steps.scans.outputs.outcome == 'attention'
+        uses: actions/github-script@v7
+        env:
+          INDEX_STATUS: ${{ steps.scans.outputs.index_status }}
+          FULL_STATUS: ${{ steps.scans.outputs.full_status }}
+          WORKTREE_MUTATED: ${{ steps.scans.outputs.worktree_mutated }}
+          ARTIFACT_DIR: ${{ runner.temp }}/vendor-doc-freshness
+        with:
+          script: |
+            const fs = require("node:fs");
+            const path = require("node:path");
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const observations = [];
+            for (const filename of ["index.json", "full.json"]) {
+              const file = path.join(process.env.ARTIFACT_DIR, filename);
+              if (!fs.existsSync(file)) continue;
+              const report = JSON.parse(fs.readFileSync(file, "utf8"));
+              observations.push(...report.observations);
+            }
+            const attention = new Map();
+            for (const observation of observations) {
+              if (["unchanged", "cosmetic"].includes(observation.classification)) continue;
+              attention.set(observation.sourceId, observation);
+            }
+            if (process.env.WORKTREE_MUTATED === "true") {
+              attention.set("scanner-integrity", { sourceId: "scanner-integrity", classification: "checkout-mutated" });
+            }
+            if ((process.env.INDEX_STATUS !== "0" || process.env.FULL_STATUS !== "0") && attention.size === 0) {
+              attention.set("scanner-failure", { sourceId: "scanner-failure", classification: "scanner-failed-before-report" });
+            }
+            const { data: openIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            for (const observation of attention.values()) {
+              const title = `Vendor documentation drift: ${observation.sourceId}`;
+              const body = [
+                `The read-only official-source scan classified \`${observation.sourceId}\` as \`${observation.classification}\`.`,
+                "",
+                `- Index scan exit status: \`${process.env.INDEX_STATUS}\``,
+                `- Full scan exit status: \`${process.env.FULL_STATUS}\``,
+                `- Scanner changed the checkout: \`${process.env.WORKTREE_MUTATED}\``,
+                `- Evidence and logs: ${runUrl}`,
+                "",
+                "Review the uploaded evidence. Automation never edits approved vocabulary, adds or removes field types, or publishes a release.",
+              ].join("\n");
+              const existing = openIssues.find((issue) => !issue.pull_request && issue.title === title);
+              if (existing) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: existing.number,
+                  body,
+                });
+              } else {
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title,
+                  body,
+                });
+              }
+            }

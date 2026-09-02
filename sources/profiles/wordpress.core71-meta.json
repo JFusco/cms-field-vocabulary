@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "wordpress.core71-meta",
+  "platform": "wordpress",
+  "product": "WordPress Core",
+  "version": {
+    "mode": "pinned",
+    "label": "7.1"
+  },
+  "surface": "storage",
+  "transport": "register_meta args.type",
+  "extensibility": "open",
+  "notes": [
+    "The type enum is closed for register_meta, while sites and plugins can register arbitrary meta keys and editors."
+  ],
+  "sourceIds": [
+    "wordpress.register-meta",
+    "wordpress.register-meta-core-7.1.0",
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.version-71",
+    "wordpress.core-release-index",
+    "wordpress.version-check-api"
+  ],
+  "defaultEvidence": {
+    "sourceId": "wordpress.register-meta-core-7.1.0",
+    "locator": "register_meta() docblock > args > type > Valid values"
+  },
+  "fields": [
+    {
+      "nativeToken": "string",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Text metadata.",
+      "editorBehavior": null,
+      "storageShape": "String meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false metadata.",
+      "editorBehavior": null,
+      "storageShape": "Boolean meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Whole-number metadata.",
+      "editorBehavior": null,
+      "storageShape": "Integer meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "number",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Numeric metadata.",
+      "editorBehavior": null,
+      "storageShape": "Number meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "schema-defined"
+      },
+      "typicalUse": "Lists of metadata values with an item schema.",
+      "editorBehavior": null,
+      "storageShape": "Array meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "object",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Structured metadata with a property schema.",
+      "editorBehavior": null,
+      "storageShape": "Object meta value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.register-meta-core-7.1.0",
+            "locator": "register_meta() docblock > args > type > Valid values"
+          }
+        ]
+      }
+    }
+  ]
+}

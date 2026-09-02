@@ -1,0 +1,736 @@
+{
+  "schemaVersion": 1,
+  "id": "sitecore-on-prem.headless22",
+  "platform": "sitecore-on-prem",
+  "product": "Sitecore Experience Platform",
+  "version": {
+    "mode": "pinned",
+    "label": "XP 10.4 with Headless Services 22",
+    "sdk": "Headless Services 22"
+  },
+  "surface": "sdk",
+  "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+  "extensibility": "open",
+  "notes": [
+    "This profile contains only field identities with reviewed JSS 22 layout-data or component semantics.",
+    "XP 10.4 authoring field identities and editor semantics remain in sitecore-on-prem.xp104-authoring."
+  ],
+  "sourceIds": [
+    "sitecore-xp104.field-types",
+    "sitecore-xp104.simple-field-types",
+    "sitecore-xp104.link-field-types",
+    "sitecore-xp.headless22-components",
+    "sitecore-xp.headless22-layout-data",
+    "sitecore-xp.downloads-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "sitecore-xp.headless22-components",
+    "locator": "Field type to JSS Next.js component table"
+  },
+  "fields": [
+    {
+      "nativeToken": "Checkbox",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "True/false authored choices.",
+      "editorBehavior": "Checkbox control.",
+      "storageShape": null,
+      "deliveryShape": "JSS layout data provides value and editable forms.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.checkbox.branch",
+          "operation": "branch",
+          "authority": "contract-derived",
+          "valuePath": "$.value",
+          "nullHandling": "branch",
+          "prohibitionCodes": [
+            "coerce-checkbox-with-generic-truthiness"
+          ],
+          "claimRefs": [
+            "claims.nativeType",
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Date",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Date values.",
+      "editorBehavior": "Date input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.date.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Date",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Date"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Datetime",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.datetime.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Date",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-editable-field-shape"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "File",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Files selected from the media library.",
+      "editorBehavior": "File selector.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.file.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.File",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-file-field"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "File"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Image",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Images selected from the media library.",
+      "editorBehavior": "Image selector.",
+      "storageShape": null,
+      "deliveryShape": "value contains image-specific attributes; editable contains editing markup.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values > Image"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values > Image"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.image.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Image",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "construct-media-url-manually",
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Integer",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.integer.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Numeric types > Text"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Number",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Numeric values.",
+      "editorBehavior": "Number input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.number.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Numeric types > Text"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Single-Line Text",
+      "canonicalSuffix": "SingleLineText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Single-line plain text.",
+      "editorBehavior": "Single-line text input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.single-line-text.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "replace-sdk-field-with-raw-value",
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Single-Line Text > Text"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Multi-Line Text",
+      "canonicalSuffix": "MultiLineText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Multi-line plain text.",
+      "editorBehavior": "Multi-line text input.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.multi-line-text.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "replace-sdk-field-with-raw-value",
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Multi-Line Text > Text"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Rich Text",
+      "canonicalSuffix": "RichText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Formatted HTML content.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": null,
+      "deliveryShape": "JSS field object with raw and editable representations.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.rich-text.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.RichText",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "replace-sdk-field-with-raw-html",
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "Rich Text > RichText"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "General Link",
+      "canonicalSuffix": "GeneralLink",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "editable"
+        ]
+      },
+      "typicalUse": "Internal, external, email, anchor, or media links.",
+      "editorBehavior": "General Link editor.",
+      "storageShape": null,
+      "deliveryShape": "JSS link field with raw and editable representations.",
+      "renderingOperations": [
+        {
+          "id": "sitecore-xp.general-link.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.jss-nextjs.Link",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-link-field",
+            "discard-editable-field-shape"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-xp.headless22-components",
+              "locator": "General Link > Link"
+            }
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-xp104.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-xp.headless22-layout-data",
+            "locator": "Raw values and editable values"
+          }
+        ]
+      }
+    }
+  ]
+}

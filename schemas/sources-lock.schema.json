@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/sources-lock.schema.json",
+  "title": "Reviewed official-source observations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "reviewedAt", "sources"],
+  "properties": {
+    "schemaVersion": { "enum": [1, 2] },
+    "reviewedAt": { "type": "string", "format": "date-time" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourceId",
+          "vendor",
+          "title",
+          "sourceRole",
+          "completeness",
+          "sourceVersion",
+          "applicability",
+          "locator",
+          "extraction",
+          "url",
+          "observedAt",
+          "reviewedAt",
+          "reviewer",
+          "reviewStatus",
+          "rawSha256",
+          "normalizedSha256",
+          "fragmentSha256",
+          "identities",
+          "replacementHistory"
+        ],
+        "properties": {
+          "sourceId": { "type": "string", "minLength": 1 },
+          "vendor": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "sourceRole": {
+            "enum": [
+              "enumeration",
+              "editor",
+              "management-schema",
+              "storage",
+              "delivery",
+              "extension-boundary",
+              "compatibility",
+              "release-index",
+              "sdk-source"
+            ]
+          },
+          "completeness": { "enum": ["exhaustive", "supplemental"] },
+          "sourceVersion": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mode"],
+            "properties": {
+              "mode": {
+                "enum": ["pinned-version", "pinned-git-tag", "pinned-git-commit", "rolling-saas", "rolling-documentation", "release-index"]
+              },
+              "value": { "type": "string", "minLength": 1 }
+            }
+          },
+          "applicability": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["profileId", "product", "version", "surface", "transport"],
+              "properties": {
+                "profileId": { "type": "string", "minLength": 1 },
+                "product": { "type": "string", "minLength": 1 },
+                "version": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["mode", "label"],
+                  "properties": {
+                    "mode": { "enum": ["pinned", "rolling"] },
+                    "label": { "type": "string", "minLength": 1 },
+                    "sdk": { "type": "string", "minLength": 1 }
+                  }
+                },
+                "surface": { "enum": ["authoring", "management", "storage", "delivery", "sdk"] },
+                "transport": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "locator": { "type": "string", "minLength": 1 },
+          "extraction": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind"],
+            "properties": {
+              "kind": { "enum": ["document", "heading", "list", "table", "json-pointer", "symbol", "repository-path"] },
+              "identityPattern": { "type": "string", "minLength": 1 },
+              "identityFlags": { "type": "string", "pattern": "^[gimsuvy]*$" },
+              "identityCapture": { "type": "integer", "minimum": 0 },
+              "tokens": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "tokenDiscovery": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["maximumTokens", "regions"],
+                "properties": {
+                  "maximumTokens": { "type": "integer", "minimum": 1, "maximum": 512 },
+                  "regions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["id", "itemPattern", "itemCapture"],
+                      "dependentRequired": {
+                        "startPattern": ["endPattern"],
+                        "endPattern": ["startPattern"]
+                      },
+                      "properties": {
+                        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+                        "startPattern": { "type": "string", "minLength": 1 },
+                        "endPattern": { "type": "string", "minLength": 1 },
+                        "boundaryFlags": { "type": "string", "pattern": "^[imsuv]*$" },
+                        "itemPattern": { "type": "string", "minLength": 1 },
+                        "itemFlags": { "type": "string", "pattern": "^[imsuv]*$" },
+                        "itemCapture": { "type": "integer", "minimum": 1 }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "url": { "type": "string", "format": "uri" },
+          "observedAt": { "type": "string", "format": "date-time" },
+          "reviewedAt": { "type": "string", "format": "date-time" },
+          "reviewer": { "type": "string", "minLength": 1 },
+          "reviewStatus": { "enum": ["reviewed", "reviewed-manual"] },
+          "rawSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "normalizedSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "fragmentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "tokenSetSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "tokens": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "requiredTokenSetSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "requiredTokens": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "observedTokenSetSha256": {
+            "type": ["string", "null"],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "observedTokens": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "array", "uniqueItems": true, "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+            ]
+          },
+          "identities": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "resolvedRevision": { "type": "string", "minLength": 1 },
+          "note": { "type": "string" },
+          "replacementHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["recordedAt", "reason"],
+              "properties": {
+                "recordedAt": { "type": "string", "format": "date-time" },
+                "reason": { "type": "string", "minLength": 1 },
+                "replacedUrl": { "type": "string", "format": "uri" },
+                "replacementUrl": { "type": "string", "format": "uri" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "schemaVersion": { "const": 1 } } },
+      "then": {
+        "properties": {
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "tokenSetSha256": true,
+                "tokens": true
+              },
+              "required": ["tokenSetSha256", "tokens"]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "schemaVersion": { "const": 2 } } },
+      "then": {
+        "properties": {
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "requiredTokenSetSha256": true,
+                "requiredTokens": true,
+                "observedTokenSetSha256": true,
+                "observedTokens": true
+              },
+              "required": ["requiredTokenSetSha256", "requiredTokens", "observedTokenSetSha256", "observedTokens"]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

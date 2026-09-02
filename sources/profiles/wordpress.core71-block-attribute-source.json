@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "wordpress.core71-block-attribute-source",
+  "platform": "wordpress",
+  "product": "WordPress Block Editor",
+  "version": {
+    "mode": "pinned",
+    "label": "WordPress Core 7.1"
+  },
+  "surface": "storage",
+  "transport": "block.json attributes[source]",
+  "extensibility": "closed-at-profile",
+  "notes": [
+    "source describes extraction/storage behavior and is not interchangeable with the attribute type union; omitting source stores data in the block comment delimiter and is not a literal source token; meta is deprecated."
+  ],
+  "sourceIds": [
+    "wordpress.block-attributes",
+    "wordpress.block-attributes-gutenberg-943e0d8",
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.version-71",
+    "wordpress.core-release-index",
+    "wordpress.version-check-api"
+  ],
+  "defaultEvidence": {
+    "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+    "locator": "Value source"
+  },
+  "fields": [
+    {
+      "nativeToken": "attribute",
+      "valueShape": {
+        "kind": "unknown",
+        "nullable": true
+      },
+      "typicalUse": "Read a value from an HTML attribute selected by source and selector.",
+      "editorBehavior": null,
+      "storageShape": "Extracted from a markup attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "text",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Read text content from selected markup.",
+      "editorBehavior": null,
+      "storageShape": "Extracted text content.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "html",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Read inner HTML from selected markup.",
+      "editorBehavior": null,
+      "storageShape": "Extracted HTML string.",
+      "deliveryShape": null,
+      "renderingOperations": [
+        {
+          "id": "wordpress.block-source-html.pass-through",
+          "operation": "pass-through",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "treat-html-source-as-richtext-type"
+          ],
+          "claimRefs": [
+            "claims.storageShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "query",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "selector-match"
+      },
+      "typicalUse": "Read repeated values from markup matched by a selector.",
+      "editorBehavior": null,
+      "storageShape": "Array extracted from repeated markup.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "meta",
+      "valueShape": {
+        "kind": "unknown",
+        "nullable": true
+      },
+      "typicalUse": "Deprecated block-attribute mapping to post meta.",
+      "editorBehavior": null,
+      "storageShape": "Post meta mapping.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Value source"
+          }
+        ]
+      }
+    }
+  ]
+}

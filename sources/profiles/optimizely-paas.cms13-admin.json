@@ -1,0 +1,806 @@
+{
+  "schemaVersion": 1,
+  "id": "optimizely-paas.cms13-admin",
+  "platform": "optimizely-paas",
+  "product": "Optimizely CMS 13",
+  "version": {
+    "mode": "pinned",
+    "label": "CMS 13"
+  },
+  "surface": "authoring",
+  "transport": "CMS 13 admin content-modeling property labels",
+  "extensibility": "open",
+  "notes": [
+    "These exact admin labels are not interchangeable with CLR types or serialized delivery tokens."
+  ],
+  "sourceIds": [
+    "optimizely-paas.cms13-building-blocks",
+    "optimizely-paas.cms13-choice-property",
+    "optimizely-paas.cms13-content-property",
+    "optimizely-paas.cms13-link-property",
+    "optimizely-paas.cms13-text-property",
+    "optimizely-paas.release-notes-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "optimizely-paas.cms13-building-blocks",
+    "locator": "Property types and linked property-type pages"
+  },
+  "fields": [
+    {
+      "nativeToken": "Block",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Reusable block content.",
+      "editorBehavior": "Block editor/selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Drop-down list",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-choice-property",
+          "locator": "Choice Type > Drop-down list"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "One value selected from predefined choices.",
+      "editorBehavior": "Single-select drop-down.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Drop-down list"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Drop-down list"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Drop-down list"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Select List (multiple selection)",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-choice-property",
+          "locator": "Choice Type > Select List (multiple selection)"
+        }
+      ],
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "choice"
+      },
+      "typicalUse": "Multiple values selected from predefined choices.",
+      "editorBehavior": "Multiple-selection list.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Select List (multiple selection)"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Select List (multiple selection)"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Select List (multiple selection)"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Selected/Not selected",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-choice-property",
+          "locator": "Choice Type > Selected/Not selected"
+        }
+      ],
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false choices.",
+      "editorBehavior": "Selected/not-selected control.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Selected/Not selected"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Selected/Not selected"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-choice-property",
+            "locator": "Choice Type > Selected/Not selected"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Content Area",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-content-property",
+          "locator": "Content Type > Content Area"
+        }
+      ],
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "content"
+      },
+      "typicalUse": "Ordered collections of content.",
+      "editorBehavior": "Content area editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Content Area Item",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-content-property",
+          "locator": "Content Type > Content Area Item"
+        }
+      ],
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "An item placed in a content area.",
+      "editorBehavior": "Content area item configuration.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area Item"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area Item"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Area Item"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Content Reference",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-content-property",
+          "locator": "Content Type > Content Reference"
+        }
+      ],
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "References to content.",
+      "editorBehavior": "Content selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Reference"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Reference"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Content Reference"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "DateTime",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": true
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Link Collection",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-link-property",
+          "locator": "Link Type > Link Collection"
+        }
+      ],
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "link"
+      },
+      "typicalUse": "Collections of links.",
+      "editorBehavior": "Link collection editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > Link Collection"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > Link Collection"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > Link Collection"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "LinkItem",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-link-property",
+          "locator": "Link Type > LinkItem"
+        }
+      ],
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "A single authored link.",
+      "editorBehavior": "Link editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > LinkItem"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > LinkItem"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > LinkItem"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "URL to Document",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-link-property",
+          "locator": "Link Type > URL to Document"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Links to documents.",
+      "editorBehavior": "Document URL selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to Document"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to Document"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to Document"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "URL to image",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-link-property",
+          "locator": "Link Type > URL to image"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Links to images.",
+      "editorBehavior": "Image URL selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to image"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to image"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to image"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "URL to page/external address",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-link-property",
+          "locator": "Link Type > URL to page/external address"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Links to CMS pages or external addresses.",
+      "editorBehavior": "Page/external URL selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to page/external address"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to page/external address"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-link-property",
+            "locator": "Link Type > URL to page/external address"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Floating point number",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Decimal numbers.",
+      "editorBehavior": "Floating-point number editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "String (<= 255)",
+      "canonicalSuffix": "StringLte255",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-text-property",
+          "locator": "Text Type > String (<= 255)"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Short text up to 255 characters.",
+      "editorBehavior": "Short string editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > String (<= 255)"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > String (<= 255)"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > String (<= 255)"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Long string (>255)",
+      "canonicalSuffix": "LongStringGt255",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-text-property",
+          "locator": "Text Type > Long string (>255)"
+        }
+      ],
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Long plain text.",
+      "editorBehavior": "Long string editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > Long string (>255)"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > Long string (>255)"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > Long string (>255)"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "XHTML string (>255)",
+      "canonicalSuffix": "XhtmlStringGt255",
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms13-text-property",
+          "locator": "Text Type > XHTML string (>255)"
+        }
+      ],
+      "valueShape": {
+        "kind": "rich-text",
+        "nullable": true
+      },
+      "typicalUse": "Long formatted text.",
+      "editorBehavior": "XHTML rich-text editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > XHTML string (>255)"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > XHTML string (>255)"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-text-property",
+            "locator": "Text Type > XHTML string (>255)"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Blob",
+      "valueShape": {
+        "kind": "binary",
+        "nullable": true
+      },
+      "typicalUse": "Binary large objects.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Guid",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "GUID values.",
+      "editorBehavior": "GUID editor/validation.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "JsonString",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "JSON-serialized structured data.",
+      "editorBehavior": "JSON-oriented editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "OptiAlloy",
+      "valueShape": {
+        "kind": "unknown",
+        "nullable": true
+      },
+      "typicalUse": null,
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms13-building-blocks",
+            "locator": "Property types and linked property-type pages"
+          }
+        ]
+      }
+    }
+  ]
+}

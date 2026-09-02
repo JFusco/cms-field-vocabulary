@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "wikiRoot": "wiki",
+  "counts": {
+    "nodes": 10,
+    "edges": 28,
+    "byType": {
+      "index": 3,
+      "journal": 1,
+      "plan": 1,
+      "topic": 5
+    }
+  },
+  "nodes": [
+    {
+      "id": "wiki/INDEX.md",
+      "label": "Context wiki",
+      "type": "index",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 1361,
+      "degree": 2,
+      "x": 1,
+      "y": 0,
+      "size": 12
+    },
+    {
+      "id": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "label": "Phase 1 deterministic CMS field vocabulary",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 3744,
+      "degree": 11,
+      "x": 0.309017,
+      "y": 0.951057,
+      "size": 8
+    },
+    {
+      "id": "wiki/MECHANICS.md",
+      "label": "Wiki mechanics",
+      "type": "index",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 2907,
+      "degree": 2,
+      "x": 0.809017,
+      "y": 0.587785,
+      "size": 12
+    },
+    {
+      "id": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "label": "Phase 1 — Deterministic `cms-field-vocabulary@1.0.0`",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 13304,
+      "degree": 7,
+      "x": -0.309017,
+      "y": 0.951057,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/INDEX.md",
+      "label": "Plan ledger",
+      "type": "index",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 805,
+      "degree": 3,
+      "x": -0.809017,
+      "y": 0.587785,
+      "size": 12
+    },
+    {
+      "id": "wiki/topics/catalog-authority.md",
+      "label": "Catalog authority",
+      "type": "topic",
+      "aliases": [
+        "canonical catalog",
+        "field vocabulary",
+        "official CMS fields",
+        "source profiles"
+      ],
+      "githubRefs": [],
+      "bytes": 1961,
+      "degree": 7,
+      "x": -1,
+      "y": 0,
+      "size": 8
+    },
+    {
+      "id": "wiki/topics/deterministic-consumer-projection.md",
+      "label": "Deterministic consumer projection",
+      "type": "topic",
+      "aliases": [
+        "selected contract",
+        "compact agent context",
+        "consumer projector",
+        "projection manifest"
+      ],
+      "githubRefs": [],
+      "bytes": 1740,
+      "degree": 6,
+      "x": -0.809017,
+      "y": -0.587785,
+      "size": 8
+    },
+    {
+      "id": "wiki/topics/official-source-freshness.md",
+      "label": "Official-source freshness",
+      "type": "topic",
+      "aliases": [
+        "vendor documentation drift",
+        "source lock",
+        "provenance",
+        "freshness automation"
+      ],
+      "githubRefs": [],
+      "bytes": 2348,
+      "degree": 7,
+      "x": -0.309017,
+      "y": -0.951057,
+      "size": 8
+    },
+    {
+      "id": "wiki/topics/release-operations.md",
+      "label": "Release operations",
+      "type": "topic",
+      "aliases": [
+        "npm release",
+        "semantic release",
+        "trusted publishing",
+        "repository workflows"
+      ],
+      "githubRefs": [],
+      "bytes": 1664,
+      "degree": 5,
+      "x": 0.309017,
+      "y": -0.951057,
+      "size": 8
+    },
+    {
+      "id": "wiki/topics/structured-rendering-operations.md",
+      "label": "Structured rendering operations",
+      "type": "topic",
+      "aliases": [
+        "rendering implications",
+        "agent rendering contract",
+        "rendering operation vocabulary"
+      ],
+      "githubRefs": [],
+      "bytes": 1748,
+      "degree": 6,
+      "x": 0.809017,
+      "y": -0.587785,
+      "size": 8
+    }
+  ],
+  "edges": [
+    {
+      "id": "07f6be30d53485fd",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "1c5102cd94cd84d6",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "258b1a79d46e3847",
+      "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "target": "wiki/topics/structured-rendering-operations.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "2af3c486872829d5",
+      "source": "wiki/topics/official-source-freshness.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "355b085344694472",
+      "source": "wiki/INDEX.md",
+      "target": "wiki/MECHANICS.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "4f450dad1fd7427c",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "536ec2a889ee013c",
+      "source": "wiki/topics/release-operations.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "5953a42675dd7f59",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "6054eb89bc06ebe2",
+      "source": "wiki/INDEX.md",
+      "target": "wiki/plans/INDEX.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "8140d3c7d7b5f8fa",
+      "source": "wiki/topics/catalog-authority.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "8dcb3523692e5a49",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "8ed5b1d7b8a28e6b",
+      "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "907b6955e658dd81",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "91b59b3df9890867",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/structured-rendering-operations.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "a793f8afeb279990",
+      "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "bdaa6eb245ce8985",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "bf20e01cf771fe7b",
+      "source": "wiki/topics/deterministic-consumer-projection.md",
+      "target": "wiki/topics/structured-rendering-operations.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "c13e1d53c3928f89",
+      "source": "wiki/topics/structured-rendering-operations.md",
+      "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "c8d3e8a3a6c25ad1",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "c8eb72f5aa8fce32",
+      "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "d314690a466b28c4",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "type": "plan",
+      "relation": "plan"
+    },
+    {
+      "id": "daf4f16d9984ea69",
+      "source": "wiki/topics/official-source-freshness.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "e083e70293f26618",
+      "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
+      "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "e56d58329e2a8982",
+      "source": "wiki/MECHANICS.md",
+      "target": "wiki/plans/INDEX.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "f1657cf4ec172995",
+      "source": "wiki/topics/deterministic-consumer-projection.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "f316de56a9b90789",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/structured-rendering-operations.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "fc2cca700c666a63",
+      "source": "wiki/topics/catalog-authority.md",
+      "target": "wiki/topics/structured-rendering-operations.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "ff9e432c1d86ac7e",
+      "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "link",
+      "relation": "link"
+    }
+  ]
+}

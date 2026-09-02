@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "id": "contentstack.cma.saas",
+  "platform": "contentstack",
+  "product": "Contentstack",
+  "version": {
+    "mode": "rolling",
+    "label": "SaaS observed 2026-09-01"
+  },
+  "surface": "management",
+  "transport": "Content type schema field.data_type",
+  "extensibility": "discoverable",
+  "notes": [
+    "Authoring field kinds such as Select and rich-text editors are discriminated by field metadata and are not additional data_type tokens.",
+    "GraphQL delivery mappings remain separate from the management vocabulary."
+  ],
+  "sourceIds": [
+    "contentstack.content-type-json-schema",
+    "contentstack.cma.content-types",
+    "contentstack.product-changelog-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "contentstack.content-type-json-schema",
+    "locator": "JSON Schema of Fields"
+  },
+  "fields": [
+    {
+      "nativeToken": "text",
+      "valueShape": {
+        "kind": "string",
+        "nullable": false
+      },
+      "typicalUse": "Title, URL, single-line, multi-line, HTML rich text, Markdown, or select values as refined by field metadata.",
+      "editorBehavior": "Editor behavior is refined by keys including multiline, allow_rich_text, markdown, enum, and display_type.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "formats": [
+        {
+          "nativeToken": "multiline",
+          "requires": [
+            "field_metadata.multiline:true"
+          ],
+          "evidence": [
+            {
+              "sourceId": "contentstack.content-type-json-schema",
+              "locator": "Multi line textbox"
+            }
+          ]
+        },
+        {
+          "nativeToken": "allow_rich_text",
+          "requires": [
+            "field_metadata.allow_rich_text:true"
+          ],
+          "evidence": [
+            {
+              "sourceId": "contentstack.content-type-json-schema",
+              "locator": "HTML-based Rich text editor"
+            }
+          ]
+        },
+        {
+          "nativeToken": "markdown",
+          "requires": [
+            "field_metadata.markdown:true"
+          ],
+          "evidence": [
+            {
+              "sourceId": "contentstack.content-type-json-schema",
+              "locator": "Markdown"
+            }
+          ]
+        },
+        {
+          "nativeToken": "enum",
+          "requires": [
+            "enum",
+            "display_type"
+          ],
+          "evidence": [
+            {
+              "sourceId": "contentstack.content-type-json-schema",
+              "locator": "Select"
+            }
+          ]
+        }
+      ],
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "json",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "JSON Rich Text Editor content or extension-defined structured JSON.",
+      "editorBehavior": "JSON Rich Text Editor when field_metadata.allow_json_rte is true; extensions may also use JSON.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "formats": [
+        {
+          "nativeToken": "allow_json_rte",
+          "requires": [
+            "field_metadata.allow_json_rte:true"
+          ],
+          "evidence": [
+            {
+              "sourceId": "contentstack.content-type-json-schema",
+              "locator": "JSON Rich Text Editor"
+            }
+          ]
+        }
+      ],
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "blocks",
+      "valueShape": {
+        "kind": "array",
+        "nullable": false,
+        "itemKind": "modular-block"
+      },
+      "typicalUse": "Modular Blocks.",
+      "editorBehavior": "Authors compose an ordered collection of permitted block schemas.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "number",
+      "valueShape": {
+        "kind": "number",
+        "nullable": false
+      },
+      "typicalUse": "Numeric values and numeric select options.",
+      "editorBehavior": "Number input or select when enum/display_type is configured.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": false
+      },
+      "typicalUse": "True/false choices.",
+      "editorBehavior": "Boolean control.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "isodate",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": false
+      },
+      "typicalUse": "Date values.",
+      "editorBehavior": "Date input.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "file",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": false
+      },
+      "typicalUse": "Assets such as images and documents.",
+      "editorBehavior": "File selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [
+        {
+          "id": "contentstack.file.asset",
+          "operation": "asset",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-asset-reference"
+          ],
+          "claimRefs": [
+            "claims.valueShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "link",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "members": [
+          "title",
+          "href"
+        ]
+      },
+      "typicalUse": "Authored links with title and URL.",
+      "editorBehavior": "Link editor.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [
+        {
+          "id": "contentstack.link.anchor",
+          "operation": "anchor",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "attributes": {
+            "href": "$.href"
+          },
+          "nullHandling": "undefined-attribute",
+          "prohibitionCodes": [
+            "flatten-link-object"
+          ],
+          "claimRefs": [
+            "claims.valueShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "reference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": false
+      },
+      "typicalUse": "Reference to entries from configured content types.",
+      "editorBehavior": "Reference selector constrained by reference_to.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "group",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "A reusable group of nested fields within a content type.",
+      "editorBehavior": "Grouped nested inputs; may allow multiple values.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "global_field",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "Reuse a Global Field definition in a content type.",
+      "editorBehavior": "Inputs defined by the referenced Global Field.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "taxonomy",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": false
+      },
+      "typicalUse": "Terms selected from a configured taxonomy.",
+      "editorBehavior": "Taxonomy term selector.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "evidence": [
+        {
+          "sourceId": "contentstack.cma.content-types",
+          "locator": "Create content type with taxonomy"
+        }
+      ],
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "contentstack.content-type-json-schema",
+            "locator": "JSON Schema of Fields"
+          }
+        ]
+      }
+    }
+  ]
+}

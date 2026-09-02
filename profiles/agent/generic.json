@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "generic",
+  "framework": "framework-neutral",
+  "rendererBindings": {
+    "optimizely.cms-sdk.RichText": "@optimizely/cms-sdk/react/richText#RichText",
+    "optimizely.cms-sdk.OptimizelyComponent": "@optimizely/cms-sdk/react/server#OptimizelyComponent",
+    "sitecore.content-sdk.Date": "@sitecore-content-sdk/nextjs#Date",
+    "sitecore.content-sdk.File": "@sitecore-content-sdk/nextjs#File",
+    "sitecore.content-sdk.Image": "@sitecore-content-sdk/nextjs#Image",
+    "sitecore.content-sdk.Link": "@sitecore-content-sdk/nextjs#Link",
+    "sitecore.content-sdk.RichText": "@sitecore-content-sdk/nextjs#RichText",
+    "sitecore.content-sdk.Text": "@sitecore-content-sdk/nextjs#Text",
+    "sitecore.jss-nextjs.Date": "@sitecore-jss/sitecore-jss-nextjs#Date",
+    "sitecore.jss-nextjs.File": "@sitecore-jss/sitecore-jss-nextjs#File",
+    "sitecore.jss-nextjs.Image": "@sitecore-jss/sitecore-jss-nextjs#Image",
+    "sitecore.jss-nextjs.Link": "@sitecore-jss/sitecore-jss-nextjs#Link",
+    "sitecore.jss-nextjs.RichText": "@sitecore-jss/sitecore-jss-nextjs#RichText",
+    "sitecore.jss-nextjs.Text": "@sitecore-jss/sitecore-jss-nextjs#Text"
+  },
+  "rules": []
+}

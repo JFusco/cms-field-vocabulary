@@ -1,0 +1,2025 @@
+{
+  "extensibility": "open",
+  "fields": [
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Attachment",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Attachment"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Attachment",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Checkbox",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checkbox control."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checkbox"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false authored choices."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Checkbox",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Checklist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            },
+            {
+              "locator": "List field type table",
+              "sourceId": "sitecore-ai.list-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checklist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Checklist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Date",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Date",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Datetime",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Datetime"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date and time values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Datetime",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Droplink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-item drop-link selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            },
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-ai.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droplink"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Select one Sitecore item."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droplink",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Droplist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            },
+            {
+              "locator": "List field type table",
+              "sourceId": "sitecore-ai.list-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droplist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droplist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Droptree",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Tree-based single-item selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-ai.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droptree"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Select one Sitecore item from a tree."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droptree",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.File",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Files selected from the media library."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "File",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.FileDropArea",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File Drop Area"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "File Drop Area",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.GeneralLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-ai.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Internal, external, email, anchor, or media links."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "General link",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.GeneralLinkWithSearch",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link selector with search."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-ai.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link with search"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Links selected through a search-enabled editor."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "General link with search",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Icon",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-ai.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Icon"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Icon",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.IFrame",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-ai.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "IFrame"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "IFrame",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Image",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Image selector with image metadata."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Image"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Images selected from the media library."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Image",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole numbers."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Integer",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.InternalLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Internal Link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Internal Link",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Layout",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Layout"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Layout",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.MultiLineText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-line text input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-Line Text"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-line plain text."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multi-Line Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Multilist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            },
+            {
+              "locator": "List field type table",
+              "sourceId": "sitecore-ai.list-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multilist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multilist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.MultirootTreelist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multiroot Treelist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multiroot Treelist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Number input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Number"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Numeric values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Number",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.QueryDatasource",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Query Datasource"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Query Datasource",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.RichText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich-text editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich Text"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Authored formatted HTML content."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Rich Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Rules",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rules"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Rules",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Security",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Security"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Security",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.SingleLineText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-line text input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-Line Text"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-ai.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-line plain text."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Single-Line Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Taglist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Taglist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Taglist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.TemplateFieldSource",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Template Field Source"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Template Field Source",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Thumbnail",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-ai.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Thumbnail"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Thumbnail",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Treelist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            },
+            {
+              "locator": "List field type table",
+              "sourceId": "sitecore-ai.list-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Treelist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Treelist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.TreelistEx",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple, Link, and List field type sections",
+              "sourceId": "sitecore-ai.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "TreelistEx"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "TreelistEx",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.Tristate",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-ai.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Tristate"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Tristate",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "SitecoreAI",
+        "profileId": "sitecore-ai.authoring.current",
+        "surface": "authoring",
+        "transport": "Data template field type names and authoring editors",
+        "version": {
+          "label": "SitecoreAI observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "sitecore-ai.authoring.current.VersionLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-ai.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Version link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Version link",
+      "origin": "native",
+      "renderingOperations": []
+    }
+  ],
+  "id": "sitecore-ai.authoring.current",
+  "notes": [
+    "SitecoreAI supports custom field types and editors; this is a documented built-in authoring baseline, not an instance inventory.",
+    "Native field labels preserve the exact spelling and case observed in the authoring documentation.",
+    "Content SDK value shapes and rendering operations live in the separate sitecore-ai.content-sdk2 profile."
+  ],
+  "platform": "sitecore-ai",
+  "product": "SitecoreAI",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "sitecore-ai.changelog-index",
+    "sitecore-ai.developer-field-types",
+    "sitecore-ai.field-types",
+    "sitecore-ai.link-field-types",
+    "sitecore-ai.list-field-types",
+    "sitecore-ai.simple-field-types",
+    "sitecore-ai.system-field-types"
+  ],
+  "surface": "authoring",
+  "transport": "Data template field type names and authoring editors",
+  "version": {
+    "label": "SitecoreAI observed 2026-09-01",
+    "mode": "rolling"
+  }
+}

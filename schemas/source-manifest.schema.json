@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/source-manifest.schema.json",
+  "title": "Official source manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "sources"],
+  "properties": {
+    "schemaVersion": { "enum": [1, 2] },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "vendor",
+        "title",
+        "url",
+        "allowedHosts",
+        "profiles",
+        "role",
+        "completeness",
+        "version",
+        "locator",
+        "extract",
+        "reviewOwner"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]+$" },
+        "vendor": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "allowedHosts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "profiles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "role": {
+          "enum": [
+            "enumeration",
+            "editor",
+            "management-schema",
+            "storage",
+            "delivery",
+            "extension-boundary",
+            "compatibility",
+            "release-index",
+            "sdk-source"
+          ]
+        },
+        "completeness": { "enum": ["exhaustive", "supplemental"] },
+        "version": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode"],
+          "properties": {
+            "mode": {
+              "enum": ["pinned-version", "pinned-git-tag", "pinned-git-commit", "rolling-saas", "rolling-documentation", "release-index"]
+            },
+            "value": { "type": "string", "minLength": 1 }
+          }
+        },
+        "locator": { "type": "string", "minLength": 1 },
+        "extract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": { "enum": ["document", "heading", "list", "table", "json-pointer", "symbol", "repository-path"] },
+            "identityPattern": { "type": "string", "minLength": 1 },
+            "identityFlags": { "type": "string", "pattern": "^[gimsuvy]*$" },
+            "identityCapture": { "type": "integer", "minimum": 0 },
+            "tokens": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "tokenDiscovery": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["maximumTokens", "regions"],
+              "properties": {
+                "maximumTokens": { "type": "integer", "minimum": 1, "maximum": 512 },
+                "regions": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["id", "itemPattern", "itemCapture"],
+                    "dependentRequired": {
+                      "startPattern": ["endPattern"],
+                      "endPattern": ["startPattern"]
+                    },
+                    "properties": {
+                      "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+                      "startPattern": { "type": "string", "minLength": 1 },
+                      "endPattern": { "type": "string", "minLength": 1 },
+                      "boundaryFlags": { "type": "string", "pattern": "^[imsuv]*$" },
+                      "itemPattern": { "type": "string", "minLength": 1 },
+                      "itemFlags": { "type": "string", "pattern": "^[imsuv]*$" },
+                      "itemCapture": { "type": "integer", "minimum": 1 }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "reviewOwner": { "type": "string", "minLength": 1 },
+        "replacementHistory": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["recordedAt", "reason"],
+            "properties": {
+              "recordedAt": { "type": "string", "format": "date-time" },
+              "reason": { "type": "string", "minLength": 1 },
+              "replacedUrl": { "type": "string", "format": "uri" },
+              "replacementUrl": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

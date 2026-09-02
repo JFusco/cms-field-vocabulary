@@ -1,0 +1,4733 @@
+{
+  "reviewedAt": "2026-09-02T11:13:33.840Z",
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "applicability": [
+        {
+          "product": "Contentful",
+          "profileId": "contentful.cma.saas",
+          "surface": "management",
+          "transport": "Content Management API content-type field.type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "\\*\\*`items : [^`]+`\\*\\*",
+              "id": "field-types",
+              "itemCapture": 1,
+              "itemPattern": "- `([^`]+)`(?: \\([^)]*\\))?",
+              "startPattern": "\\*\\*`type : string`\\*\\*[^:]*:"
+            }
+          ]
+        },
+        "tokens": [
+          "Symbol",
+          "Text",
+          "Integer",
+          "Number",
+          "Date",
+          "Boolean",
+          "Object",
+          "Location",
+          "RichText",
+          "Array",
+          "Link",
+          "ResourceLink"
+        ]
+      },
+      "fragmentSha256": "c56d8d01fdae5e7dfbfe9b5bf3b2650b6d13ccd8a991eb5a0d313d4bd6279103",
+      "identities": [],
+      "locator": "Content type > createField(id[, opts]) > type",
+      "normalizedSha256": "349430670603bab41a20ea92baab18ac1a8f728c690cf8dbd7c8cf8805c700e0",
+      "observedAt": "2026-09-02T10:54:24.317Z",
+      "observedTokens": [
+        "Array",
+        "Boolean",
+        "Date",
+        "Integer",
+        "Link",
+        "Location",
+        "Number",
+        "Object",
+        "ResourceLink",
+        "RichText",
+        "Symbol",
+        "Text"
+      ],
+      "observedTokenSetSha256": "fe00b7785ff088ffc1027733c6c6c9d28b24d0f391f02d774193938cb20530da",
+      "rawSha256": "33bc9b4dadf871077077fec725da633467c0bf98438490fa65db2231c033b605",
+      "replacementHistory": [
+        {
+          "reason": "Replaced the GitHub presentation page with the immutable raw representation of the same official commit so token discovery is bounded to repository content rather than GitHub UI markup.",
+          "recordedAt": "2026-09-02T10:52:25Z",
+          "replacedUrl": "https://github.com/contentful/contentful-migration/blob/d17c844443af05b466748345501044265b8407cf/README.md",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-migration/d17c844443af05b466748345501044265b8407cf/README.md"
+        }
+      ],
+      "requiredTokens": [
+        "Array",
+        "Boolean",
+        "Date",
+        "Integer",
+        "Link",
+        "Location",
+        "Number",
+        "Object",
+        "ResourceLink",
+        "RichText",
+        "Symbol",
+        "Text"
+      ],
+      "requiredTokenSetSha256": "fe00b7785ff088ffc1027733c6c6c9d28b24d0f391f02d774193938cb20530da",
+      "resolvedRevision": "d17c844443af05b466748345501044265b8407cf",
+      "reviewedAt": "2026-09-02T10:54:24.317Z",
+      "reviewer": "contentful",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentful.cma.field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "d17c844443af05b466748345501044265b8407cf"
+      },
+      "title": "Contentful migration field types",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-migration/d17c844443af05b466748345501044265b8407cf/README.md",
+      "vendor": "Contentful"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentful",
+          "profileId": "contentful.cma.saas",
+          "surface": "management",
+          "transport": "Content Management API content-type field.type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Symbol",
+          "Text",
+          "Integer",
+          "Number",
+          "Boolean",
+          "Date",
+          "Location",
+          "Object",
+          "RichText",
+          "Link",
+          "Array"
+        ]
+      },
+      "fragmentSha256": "c073337e8fb0219e18f96c68f49546bad6a122f54ff1c95e7b679286147786f3",
+      "identities": [],
+      "locator": "Field Types table and field examples",
+      "normalizedSha256": "e55a5fb9c67d56279079293ead5f41da02bb66414f1229e6254df81c02e3f8e3",
+      "observedAt": "2026-09-02T03:21:08.665Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "09a84ad5aea14051712604077a05402fe84c67c6addcfa155d9a626aac09d9b1",
+      "replacementHistory": [
+        {
+          "reason": "Replaced a rate-limited rolling page with an immutable official Contentful repository document covering the same field-type claims.",
+          "recordedAt": "2026-09-02T03:21:08.665Z",
+          "replacedUrl": "https://www.contentful.com/developers/docs/concepts/data-model/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md"
+        },
+        {
+          "reason": "The required Content Management API content-types page returned HTTP 429 to automated review, so its field-type claims are retained from an immutable official Contentful repository document.",
+          "recordedAt": "2026-09-02T10:21:08.000Z",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-management-api/content-types/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md"
+        }
+      ],
+      "requiredTokens": [
+        "Array",
+        "Boolean",
+        "Date",
+        "Integer",
+        "Link",
+        "Location",
+        "Number",
+        "Object",
+        "RichText",
+        "Symbol",
+        "Text"
+      ],
+      "requiredTokenSetSha256": "820753b1ab9978fbfbb9e6ad783e165294be60ea3279ca4909e4a90330428eba",
+      "resolvedRevision": "51f6a0cc2800497589b82e3ef48b8139b92e4f13",
+      "reviewedAt": "2026-09-02T03:21:08.665Z",
+      "reviewer": "contentful",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentful.field-types-guide",
+      "sourceRole": "management-schema",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "51f6a0cc2800497589b82e3ef48b8139b92e4f13"
+      },
+      "title": "Contentful content management field types",
+      "url": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md",
+      "vendor": "Contentful"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentful",
+          "profileId": "contentful.cma.saas",
+          "surface": "management",
+          "transport": "Content Management API content-type field.type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "symbol",
+        "tokens": [
+          "Control",
+          "EditorInterfaceProps",
+          "fieldId",
+          "widgetNamespace",
+          "widgetId",
+          "controls"
+        ]
+      },
+      "fragmentSha256": "f75e68b0eca1bce8dc3c22b3d6b0466299b5d2e70cc2b136a80fdef62b735a2e",
+      "identities": [],
+      "locator": "Control and EditorInterfaceProps interfaces",
+      "normalizedSha256": "5362b0552d57e8ede3ce815eec97bd3efccacdc227cc0782d63e15794e97ba21",
+      "observedAt": "2026-09-02T10:22:22.007Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "af1eeecd8eba6527e1afc778014f59790dc2fd1eff8107c1d01911614793349a",
+      "replacementHistory": [
+        {
+          "reason": "The rolling Content Management API editor-interface reference returned HTTP 429 to automated review, so the field-to-widget contract is pinned to the official Contentful management SDK source.",
+          "recordedAt": "2026-09-02T10:21:08.000Z",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-management-api/#/reference/editor-interface",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/entities/editor-interface.ts"
+        }
+      ],
+      "requiredTokens": [
+        "Control",
+        "EditorInterfaceProps",
+        "controls",
+        "fieldId",
+        "widgetId",
+        "widgetNamespace"
+      ],
+      "requiredTokenSetSha256": "5703b2f8c8a63c0ee9a7a48dd1f229edac2ae6befa2a1ab105024508886213d9",
+      "resolvedRevision": "cc096a337f0e1db6114e8da645d69bb6eb90f11c",
+      "reviewedAt": "2026-09-02T10:22:22.007Z",
+      "reviewer": "contentful",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentful-management.editor-interface",
+      "sourceRole": "editor",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "cc096a337f0e1db6114e8da645d69bb6eb90f11c"
+      },
+      "title": "Contentful management EditorInterface source",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/entities/editor-interface.ts",
+      "vendor": "Contentful"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentful",
+          "profileId": "contentful.cma.saas",
+          "surface": "management",
+          "transport": "Content Management API content-type field.type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "symbol",
+        "tokens": [
+          "ResourceLink",
+          "urn"
+        ]
+      },
+      "fragmentSha256": "f07395afdeeb878332da9425cdf72caa3e9cb4a1327c650bb1b6e8e247114324",
+      "identities": [],
+      "locator": "ResourceLink interface",
+      "normalizedSha256": "4714bec39ef8e2e4aeeea2a4df4a0136b608c9d741203322afec5b9c354c2a40",
+      "observedAt": "2026-09-02T03:21:08.685Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "0f91c9e1a215a9c42d2dfe13c6249873c553facffff227f7d60251b1c5029e20",
+      "replacementHistory": [
+        {
+          "reason": "Replaced a rate-limited rolling page with an immutable official Contentful SDK source for the ResourceLink value shape.",
+          "recordedAt": "2026-09-02T03:21:08.685Z",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-delivery-api/resource-links/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/common-types.ts"
+        }
+      ],
+      "requiredTokens": [
+        "ResourceLink",
+        "urn"
+      ],
+      "requiredTokenSetSha256": "3a3448874a2f1ee01f1d65dd3c03d2b6d577b037bee57967316aed23feb21d90",
+      "resolvedRevision": "cc096a337f0e1db6114e8da645d69bb6eb90f11c",
+      "reviewedAt": "2026-09-02T03:21:08.685Z",
+      "reviewer": "contentful",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentful-management.resource-link-type",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "cc096a337f0e1db6114e8da645d69bb6eb90f11c"
+      },
+      "title": "Contentful management ResourceLink interface",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/common-types.ts",
+      "vendor": "Contentful"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentstack",
+          "profileId": "contentstack.cma.saas",
+          "surface": "management",
+          "transport": "Content type schema field.data_type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "<div id=\"field-parameters-explained\"",
+              "id": "field-data-types",
+              "itemCapture": 1,
+              "itemPattern": "\"data_type\": \"([a-z_]+)\"",
+              "startPattern": "<h2[^>]*>JSON Schema of Fields</h2>"
+            }
+          ]
+        },
+        "tokens": [
+          "text",
+          "json",
+          "blocks",
+          "number",
+          "boolean",
+          "isodate",
+          "file",
+          "link",
+          "reference",
+          "group",
+          "global_field"
+        ]
+      },
+      "fragmentSha256": "43cb5ebb286115db3abc0e62e112a1059eb887e7479ce5e3ecb9b74dd7310231",
+      "identities": [],
+      "locator": "JSON Schema of Fields",
+      "normalizedSha256": "8f7aee741431345991f7a4f8875beb12318c271e18111c5fc37e779f8572c278",
+      "observedAt": "2026-09-02T11:11:33.486Z",
+      "observedTokens": [
+        "blocks",
+        "boolean",
+        "file",
+        "global_field",
+        "group",
+        "isodate",
+        "json",
+        "link",
+        "number",
+        "reference",
+        "text"
+      ],
+      "observedTokenSetSha256": "f20af487daf787c99126d81b1594a44b80ab8ffb95446cfca0b432e715167604",
+      "rawSha256": "042e943c3c6c4e75629f107f3ed8019e349a9141294971d4b399d41cef244755",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "blocks",
+        "boolean",
+        "file",
+        "global_field",
+        "group",
+        "isodate",
+        "json",
+        "link",
+        "number",
+        "reference",
+        "text"
+      ],
+      "requiredTokenSetSha256": "f20af487daf787c99126d81b1594a44b80ab8ffb95446cfca0b432e715167604",
+      "reviewedAt": "2026-09-02T11:11:33.486Z",
+      "reviewer": "contentstack",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentstack.content-type-json-schema",
+      "sourceRole": "management-schema",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "JSON Schema for Creating a Content Type",
+      "url": "https://www.contentstack.com/docs/headless-cms/json-schema-for-creating-a-content-type",
+      "vendor": "Contentstack"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentstack",
+          "profileId": "contentstack.cma.saas",
+          "surface": "management",
+          "transport": "Content type schema field.data_type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "taxonomy"
+        ]
+      },
+      "fragmentSha256": "e2fa20a2e97953141533a2455f3c9ece5980c56307ab34ff023784ed102689b8",
+      "identities": [],
+      "locator": "Create content type with taxonomy",
+      "normalizedSha256": "a03bee2e41d0037f467c427770d900cc2a50729b71801ddd0b1e84f6d67ddb94",
+      "observedAt": "2026-09-02T11:11:33.506Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "c7c2f181a84004f351fef168941eb68c03a2784238489d13cd723ed0c07a4205",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "taxonomy"
+      ],
+      "requiredTokenSetSha256": "0f9fbcb8cfb00bedf9aead11512af238699e3a2c272495627b6f53b582ce4a15",
+      "reviewedAt": "2026-09-02T11:11:33.506Z",
+      "reviewer": "contentstack",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentstack.cma.content-types",
+      "sourceRole": "management-schema",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "Content Management API - Content Types",
+      "url": "https://www.contentstack.com/docs/developers/apis/content-management-api/content-types",
+      "vendor": "Contentstack"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS SaaS",
+          "profileId": "optimizely-saas.cms-api-v1",
+          "surface": "management",
+          "transport": "CMS API content-type property schema",
+          "version": {
+            "label": "CMS SaaS API v1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-2",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 2.2.0",
+            "mode": "pinned",
+            "sdk": "2.2.0"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "id=\"validation-fields\"",
+              "id": "data-types",
+              "itemCapture": 1,
+              "itemPattern": "<li><code[^>]*>([^<]+)</code>",
+              "startPattern": "id=\"data-types\""
+            }
+          ]
+        },
+        "tokens": [
+          "string",
+          "richText",
+          "boolean",
+          "integer",
+          "float",
+          "dateTime",
+          "url",
+          "link",
+          "json",
+          "content",
+          "contentReference",
+          "array",
+          "component"
+        ]
+      },
+      "fragmentSha256": "b08bda7796a40b7e508e7c58709021cd23b4cc10d7fe6141b61066213fa56971",
+      "identities": [],
+      "locator": "Property types",
+      "normalizedSha256": "b1943e711d01ee85481ccda0d96e890f0f0e0a0ba43765f41aafa1bfd4f1bebd",
+      "observedAt": "2026-09-02T10:54:24.337Z",
+      "observedTokens": [
+        "array",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "observedTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
+      "rawSha256": "019e8a5d89a9da5771956f514fd20ee450148e1c257e80bd4640a531206dfdaf",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "requiredTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
+      "resolvedRevision": "CMS SaaS API v1",
+      "reviewedAt": "2026-09-02T10:54:24.337Z",
+      "reviewer": "optimizely-saas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-saas.content-types",
+      "sourceRole": "management-schema",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS SaaS API v1"
+      },
+      "title": "Content types in Optimizely CMS SaaS",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/content-types-saas",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-2",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 2.2.0",
+            "mode": "pinned",
+            "sdk": "2.2.0"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "#### URL Property",
+              "id": "property-types",
+              "itemCapture": 1,
+              "itemPattern": "- \\*\\*`'([^']+)'`\\*\\*",
+              "startPattern": "### Property Types"
+            }
+          ]
+        },
+        "tokens": [
+          "string",
+          "richText",
+          "boolean",
+          "integer",
+          "float",
+          "dateTime",
+          "url",
+          "link",
+          "binary",
+          "json",
+          "content",
+          "contentReference",
+          "array",
+          "component"
+        ]
+      },
+      "fragmentSha256": "3c50a48c4b857ed1f62b290a71d0e586e8921290b72510fdf48f8951e86c6869",
+      "identities": [],
+      "locator": "Modelling > Property Configuration > Property Types",
+      "normalizedSha256": "ecfdd5200d918c54d32287d06edb8ba0f96d3550637fd2e9daa14fefb46a0d26",
+      "observedAt": "2026-09-02T10:54:24.470Z",
+      "observedTokens": [
+        "array",
+        "binary",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "observedTokenSetSha256": "1317df55596b400d12f5f5ccc519c9abfc96faf0e002c0717875a098770ac3c1",
+      "rawSha256": "c5e89e48da7f2897f8403391faf61c0fc34dc9eb51a480f0bb8ba4268dd529ab",
+      "replacementHistory": [
+        {
+          "reason": "Replaced the GitHub presentation page with the immutable raw representation of the same official commit so token discovery is bounded to repository content rather than GitHub UI markup.",
+          "recordedAt": "2026-09-02T10:52:25Z",
+          "replacedUrl": "https://github.com/episerver/content-js-sdk/blob/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md",
+          "replacementUrl": "https://raw.githubusercontent.com/episerver/content-js-sdk/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md"
+        }
+      ],
+      "requiredTokens": [
+        "array",
+        "binary",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "requiredTokenSetSha256": "1317df55596b400d12f5f5ccc519c9abfc96faf0e002c0717875a098770ac3c1",
+      "resolvedRevision": "@optimizely/cms-sdk 2.2.0; 021ac0931b72b1fa810fdc6eb9f149c4fc87e600",
+      "reviewedAt": "2026-09-02T10:54:24.470Z",
+      "reviewer": "optimizely-saas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-saas.sdk-modelling",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "@optimizely/cms-sdk 2.2.0; 021ac0931b72b1fa810fdc6eb9f149c4fc87e600"
+      },
+      "title": "Content JavaScript SDK modelling",
+      "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 12",
+          "profileId": "optimizely-paas.cms12-property-data-type",
+          "surface": "storage",
+          "transport": "EPiServer.Core.PropertyDataType enum",
+          "version": {
+            "label": "EPiServer.dll 12.0.3",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "table",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "<h3 id=\"extensionmethods\"",
+              "id": "enum-fields",
+              "itemCapture": 1,
+              "itemPattern": "<h4 id=\"[^\"]+\"[^>]*>([A-Za-z][A-Za-z0-9]*)</h4>[\\s\\S]*?<code[^>]*>public const PropertyDataType \\1</code>",
+              "startPattern": "<h3 id=\"fields\""
+            }
+          ]
+        },
+        "tokens": [
+          "Block",
+          "Boolean",
+          "Category",
+          "ContentReference",
+          "Date",
+          "FloatNumber",
+          "Json",
+          "LinkCollection",
+          "LongString",
+          "Number",
+          "PageReference",
+          "PageType",
+          "String"
+        ]
+      },
+      "fragmentSha256": "8d886001294e0c5f97210bb17565137a4059d80d665b129eb0bbcc7b226f889c",
+      "identities": [],
+      "locator": "Class PropertyDataType > Fields",
+      "normalizedSha256": "7674ce03900eb38c281a4e28d25d319ee675871697905c3e223ec8cf53356e63",
+      "observedAt": "2026-09-02T10:54:24.504Z",
+      "observedTokens": [
+        "Block",
+        "Boolean",
+        "Category",
+        "ContentReference",
+        "Date",
+        "FloatNumber",
+        "Json",
+        "LinkCollection",
+        "LongString",
+        "Number",
+        "PageReference",
+        "PageType",
+        "String"
+      ],
+      "observedTokenSetSha256": "cb14b8adfccfc8e9e0c74edfabdf55ad72c4c299cc618e3adafc611ad120b45d",
+      "rawSha256": "0236109223a453ebe87f0f21854a9fc33afc96d32580a14c817c9bb05bd60c80",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Block",
+        "Boolean",
+        "Category",
+        "ContentReference",
+        "Date",
+        "FloatNumber",
+        "Json",
+        "LinkCollection",
+        "LongString",
+        "Number",
+        "PageReference",
+        "PageType",
+        "String"
+      ],
+      "requiredTokenSetSha256": "cb14b8adfccfc8e9e0c74edfabdf55ad72c4c299cc618e3adafc611ad120b45d",
+      "resolvedRevision": "EPiServer.dll 12.0.3",
+      "reviewedAt": "2026-09-02T10:54:24.504Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms12-property-data-type",
+      "sourceRole": "storage",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "EPiServer.dll 12.0.3"
+      },
+      "title": "EPiServer.Core.PropertyDataType enum",
+      "url": "https://world.optimizely.com/CsClassLibraries/cms/EPiServer.Core.PropertyDataType?version=12",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 12",
+          "profileId": "optimizely-paas.cms12-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 12 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "String",
+          "XHtmlString",
+          "Int",
+          "DateTime",
+          "Double",
+          "Boolean",
+          "PageType",
+          "Blob",
+          "PageReference",
+          "ContentReference",
+          "Url",
+          "ContentArea",
+          "LinkItemCollection",
+          "LinkItem",
+          "ContentReferenceList"
+        ]
+      },
+      "fragmentSha256": "3240acc4bffd41fbf4caf24be02d181230c70294feecd15d2e235ed0adeaaa32",
+      "identities": [],
+      "locator": "Common property types; Work with other content",
+      "normalizedSha256": "4b5faa3907586131a8c924455279e8078496b451535545fd893947b74173ae25",
+      "observedAt": "2026-09-02T11:11:33.506Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "69df20767964539d1287b12ee48071e3e7ea830ab7ab7cf528e8dc84f3e4abb9",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Blob",
+        "Boolean",
+        "ContentArea",
+        "ContentReference",
+        "ContentReferenceList",
+        "DateTime",
+        "Double",
+        "Int",
+        "LinkItem",
+        "LinkItemCollection",
+        "PageReference",
+        "PageType",
+        "String",
+        "Url",
+        "XHtmlString"
+      ],
+      "requiredTokenSetSha256": "e249136530f7169d458157b525d0bd692e1fa38867a310d3c8a18691e08bd18e",
+      "resolvedRevision": "CMS 12",
+      "reviewedAt": "2026-09-02T11:11:33.506Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms12-builtins",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 12"
+      },
+      "title": "CMS 12 built-in property types",
+      "url": "https://docs.developers.optimizely.com/content-management-system/docs/built-in-property-types",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 12",
+          "profileId": "optimizely-paas.cms12-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 12 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "String",
+          "XhtmlString",
+          "Int32",
+          "DateTime",
+          "Double",
+          "Boolean"
+        ]
+      },
+      "fragmentSha256": "e2beec71b99ee83b84504711ae319df55764bb5a03c6de805c72cc3236eb939b",
+      "identities": [],
+      "locator": "Default backing types",
+      "normalizedSha256": "86b3101b07171a7fae492f535ab97331473b8c91c75f22b53b7590b9c8b29903",
+      "observedAt": "2026-09-02T11:11:33.712Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "b86f716be3d3f3292860e579e27b152eff93903ce7351f1c9072c9748f32a0f9",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Boolean",
+        "DateTime",
+        "Double",
+        "Int32",
+        "String",
+        "XhtmlString"
+      ],
+      "requiredTokenSetSha256": "35ffbec761515d8a03de8d4a9591e05fcfd744bbbaabe78e0edd01b3d02ce2b9",
+      "resolvedRevision": "CMS 12",
+      "reviewedAt": "2026-09-02T11:11:33.712Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms12-property-attributes",
+      "sourceRole": "compatibility",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 12"
+      },
+      "title": "CMS 12 property attributes",
+      "url": "https://docs.developers.optimizely.com/content-management-system/docs/property-attributes",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 13 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "String",
+          "XHtmlString",
+          "Int",
+          "DateTime",
+          "Double",
+          "Boolean",
+          "PageType",
+          "Blob",
+          "ContentArea",
+          "ContentReference",
+          "ContentReference<T>",
+          "PageReference",
+          "Url",
+          "LinkItemCollection",
+          "LinkItem",
+          "ContentReferenceList",
+          "String/Int",
+          "SelectOne",
+          "SelectMany",
+          "AutoSuggestion",
+          "UIHint.MediaFile",
+          "UIHint.Image",
+          "UIHint.Video",
+          "AllowedTypes",
+          "Range",
+          "StringLength",
+          "RegularExpression",
+          "EmailAttribute"
+        ]
+      },
+      "fragmentSha256": "a1658c046d18fd6bbab53fc3cfb050da7d3316fdefeffeca0bbe2ca8b85b7a0d",
+      "identities": [],
+      "locator": "Common property types; Work with other content; ContentReference<T> property type",
+      "normalizedSha256": "06b4307f4c826a94270f1ed9ba676fd334eb8e6d2f68894619fb15dcf0abfcf0",
+      "observedAt": "2026-09-02T11:11:33.777Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "0a38ab2f1b602ab2ceff11f5b73e3e028347075c7e006fdafca30f3736d163e5",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "AllowedTypes",
+        "AutoSuggestion",
+        "Blob",
+        "Boolean",
+        "ContentArea",
+        "ContentReference",
+        "ContentReference<T>",
+        "ContentReferenceList",
+        "DateTime",
+        "Double",
+        "EmailAttribute",
+        "Int",
+        "LinkItem",
+        "LinkItemCollection",
+        "PageReference",
+        "PageType",
+        "Range",
+        "RegularExpression",
+        "SelectMany",
+        "SelectOne",
+        "String",
+        "String/Int",
+        "StringLength",
+        "UIHint.Image",
+        "UIHint.MediaFile",
+        "UIHint.Video",
+        "Url",
+        "XHtmlString"
+      ],
+      "requiredTokenSetSha256": "19d408122d9721f7e68f58979b4b4a63221cc86130debc826708ac468b243ef7",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:33.777Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-builtins",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 property types",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/built-in-property-types",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 13 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "AllowedTypes",
+          "Range",
+          "StringLength",
+          "ContentArea",
+          "Boolean",
+          "DateTime",
+          "Double",
+          "LinkItemCollection",
+          "Int32",
+          "PageType",
+          "String",
+          "Url",
+          "XhtmlString",
+          "Blob",
+          "IList<ContentReference>"
+        ]
+      },
+      "fragmentSha256": "d40c39e4565882540fac4e9c254314bdc75440164d35aad463b4afc0c005a20d",
+      "identities": [],
+      "locator": "Available attributes; Default backing types",
+      "normalizedSha256": "8929c99f095333e2e73d7407d1d11da56f5bd42639bccb38324520d9b3921841",
+      "observedAt": "2026-09-02T11:11:33.840Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "3727773cbde0dc00c6632117f46cb1800c335c21b43fdea80f03bf5b5e20a3d4",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "AllowedTypes",
+        "Blob",
+        "Boolean",
+        "ContentArea",
+        "DateTime",
+        "Double",
+        "IList<ContentReference>",
+        "Int32",
+        "LinkItemCollection",
+        "PageType",
+        "Range",
+        "String",
+        "StringLength",
+        "Url",
+        "XhtmlString"
+      ],
+      "requiredTokenSetSha256": "fc033a0bc4b68de7aef8bdf9781a619ffd244e77bfedb952cac2ff1d94004092",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:33.840Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-property-attributes",
+      "sourceRole": "compatibility",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 property attributes",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/property-attributes",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 13 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "XhtmlString",
+          "PropertyXhtmlString",
+          "null"
+        ]
+      },
+      "fragmentSha256": "a39cab7be8ad397dc430a714f61dc09e067fee035247bafe2a5523e7070016e5",
+      "identities": [],
+      "locator": "Access properties on strongly typed content; Access properties on non-strongly typed content; Check null values in properties",
+      "normalizedSha256": "b463f8f56d54caf4f361ba22cbe130bd9f1815857428504f0135d1f02eccdecd",
+      "observedAt": "2026-09-02T11:11:33.896Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "e4f222f0eb26b62c52cb934a201147e21cecb2116f8236cd408d30355c127cf8",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "PropertyXhtmlString",
+        "XhtmlString",
+        "null"
+      ],
+      "requiredTokenSetSha256": "fa2704ec29f7b794291f5e850625b146e369b7b26622926c88f53e9a1c1a6f48",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:33.896Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-develop-properties",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 develop properties",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/develop-properties",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "Block",
+          "Content Area",
+          "DateTime",
+          "URL to page/external address",
+          "Integer",
+          "Floating point number",
+          "Blob",
+          "Guid",
+          "JsonString",
+          "OptiAlloy"
+        ]
+      },
+      "fragmentSha256": "f18298243bd1e3dc0d64e7b3d0b6bab824c8c8adfbe2a8100317a81aed38f4cb",
+      "identities": [],
+      "locator": "Property types and linked property-type pages",
+      "normalizedSha256": "180a8c113fce47c88a69d83f06b333dc734f57ffdd27e82fa7a632c97abc0d1c",
+      "observedAt": "2026-09-02T11:11:33.962Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "957b47e0363b0be860c800d071283d74de9ff15a140c24da2671448bd2a7ccb7",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Blob",
+        "Block",
+        "Content Area",
+        "DateTime",
+        "Floating point number",
+        "Guid",
+        "Integer",
+        "JsonString",
+        "OptiAlloy",
+        "URL to page/external address"
+      ],
+      "requiredTokenSetSha256": "fb5c1cf941baa7991afb6f6d3363e165ce4ead43fde41006ff18bef3379a4109",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:33.962Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-building-blocks",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 building blocks of content modeling",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/building-blocks-of-content-modeling",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "list",
+        "tokens": [
+          "Drop-down list",
+          "Select List (multiple selection)",
+          "Selected/Not selected"
+        ]
+      },
+      "fragmentSha256": "10fd0910a0b3fa3f7e7bcd2804f61073efba00f747409403f620fbfb0458e0e2",
+      "identities": [],
+      "locator": "Configure Choice property > Choice Type",
+      "normalizedSha256": "5143dd476afb41b801746eaf0843c664136aac313fc3701dffb71ffaff4a0009",
+      "observedAt": "2026-09-02T11:11:34.019Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "6afade7f4a868f66aace09826004e190fadb35b10ab6bd0cf19260f3efb4ab07",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Drop-down list",
+        "Select List (multiple selection)",
+        "Selected/Not selected"
+      ],
+      "requiredTokenSetSha256": "f175ad96bbc418f511edde2190e79c02c54316477267ba4fbff8fb45c3eeec83",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:34.019Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-choice-property",
+      "sourceRole": "editor",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 Choice property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/choice-property",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "list",
+        "tokens": [
+          "Content Area",
+          "Content Area Item",
+          "Content Reference"
+        ]
+      },
+      "fragmentSha256": "6ad40f9502a68a69b4fe5dd13a7261d371335e10681f245b68c3df31c296c3bc",
+      "identities": [],
+      "locator": "Configure Content property > Content Type",
+      "normalizedSha256": "7c5ffc9df7b22c971fd62cdfb367afb07a60fc453f60d0502c1d3b142fee9c3a",
+      "observedAt": "2026-09-02T11:11:34.072Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "e89bc3678a64f4d593c105209108e1a52cbc8b089e02c5e5134c11bc1d3f840a",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Content Area",
+        "Content Area Item",
+        "Content Reference"
+      ],
+      "requiredTokenSetSha256": "a306c909862c1bc4ebcd515d8f7ef99cbdf1783da0835a145c27dd5751a1a845",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:34.072Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-content-property",
+      "sourceRole": "editor",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 Content property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/content-property",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "list",
+        "tokens": [
+          "Link Collection",
+          "LinkItem",
+          "URL to Document",
+          "URL to image",
+          "URL to page/external address"
+        ]
+      },
+      "fragmentSha256": "2aa87a2804ee510e395dacc76d85c3c79c2ebd417b7d33694af6be4b7a7dbeaf",
+      "identities": [],
+      "locator": "Configure Link property > Link Type",
+      "normalizedSha256": "3d5e9a86d3dfa7f2d3ae50ab3a554c5bbd10246d750879600b668f76aa570aab",
+      "observedAt": "2026-09-02T11:11:34.137Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "7ac40424739e77a42b2d7222c2b55effcfac077a5513c974a9e4a88a0401301c",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Link Collection",
+        "LinkItem",
+        "URL to Document",
+        "URL to image",
+        "URL to page/external address"
+      ],
+      "requiredTokenSetSha256": "adc068791e648e08ac01a8b9fcf1ab6e71766078d3a6d7ad65322f4bd4a8f085",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:34.137Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-link-property",
+      "sourceRole": "editor",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 Link property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/link-property",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "list",
+        "tokens": [
+          "String (<= 255)",
+          "Long string (>255)",
+          "XHTML string (>255)"
+        ]
+      },
+      "fragmentSha256": "88e18225fd3c8fa32bf2fa2cd53ce3abdda842bc9ec4ba89c110d60c6b782b24",
+      "identities": [],
+      "locator": "Configure Text property > Text Type",
+      "normalizedSha256": "4d3bba4b3fb3af8e93699435d785684d4992077566631fbea1ac5e0f94366841",
+      "observedAt": "2026-09-02T11:11:34.197Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "291db3fcc85265c41922a201b4af0a0fd6f73523f766e7e58072f4440851a9f1",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Long string (>255)",
+        "String (<= 255)",
+        "XHTML string (>255)"
+      ],
+      "requiredTokenSetSha256": "c637f7a1bb45d354d292d01aa06a661ae53efd0fc10cf9fef7abd9f625f6f15f",
+      "resolvedRevision": "CMS 13",
+      "reviewedAt": "2026-09-02T11:11:34.197Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.cms13-text-property",
+      "sourceRole": "editor",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "CMS 13"
+      },
+      "title": "CMS 13 Text property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/text-property",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading"
+      },
+      "fragmentSha256": "85920732b34cc8761dfefb619d45747c57cb8add92232212c3a99a4edf1a107f",
+      "identities": [],
+      "locator": "Data template field types and linked category pages",
+      "normalizedSha256": "85920732b34cc8761dfefb619d45747c57cb8add92232212c3a99a4edf1a107f",
+      "observedAt": "2026-09-02T11:11:34.253Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "f9f04224e29ef589fda2bed2857f7445a834ca07192cf1420bda33efd4068c76",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:34.253Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI data template field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "Checkbox",
+          "File",
+          "Date",
+          "Datetime",
+          "Image",
+          "Integer",
+          "Number",
+          "Single-Line Text",
+          "Multi-Line Text",
+          "Rich Text",
+          "Droplink",
+          "Droplist",
+          "Multilist",
+          "Treelist",
+          "TreelistEx",
+          "Checklist",
+          "Multiroot Treelist",
+          "Taglist"
+        ]
+      },
+      "fragmentSha256": "56caef3a062fddb20e5a21377f99f4f792087f34dfa08cf2e0147f9f41467546",
+      "identities": [],
+      "locator": "Simple, Link, and List field type sections",
+      "normalizedSha256": "496e4351a477128521870f152bc190cd78a3cdb6c865529a3630aa1828fd44fd",
+      "observedAt": "2026-09-02T11:11:34.929Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "e08b5ca493034e1f727f8eff5a97fb584db56207325d2502834a1e3a013cb120",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Checkbox",
+        "Checklist",
+        "Date",
+        "Datetime",
+        "Droplink",
+        "Droplist",
+        "File",
+        "Image",
+        "Integer",
+        "Multi-Line Text",
+        "Multilist",
+        "Multiroot Treelist",
+        "Number",
+        "Rich Text",
+        "Single-Line Text",
+        "Taglist",
+        "Treelist",
+        "TreelistEx"
+      ],
+      "requiredTokenSetSha256": "3d2b9ebccff6f53acc1170d72efe83022bcfba4ebf6c70fd458a1631b5af6dbb",
+      "reviewedAt": "2026-09-02T11:11:34.929Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.simple-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI simple field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-simple-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "General link with search",
+          "Droplink",
+          "Droptree",
+          "General link",
+          "Version link"
+        ]
+      },
+      "fragmentSha256": "01763539cfa62bb9458052772f0a059235e25fde15eb24676b64eca78f716fcd",
+      "identities": [],
+      "locator": "Link field type table",
+      "normalizedSha256": "4d365c91be187e4b6fedb83163234934d67230b8ce8093dfd0477a438d7c2a0a",
+      "observedAt": "2026-09-02T11:11:35.133Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "0ebd73d52a43a3b5a55bce826efa0b000ba5208615381e8e2ebbb5ac670cd746",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Droplink",
+        "Droptree",
+        "General link",
+        "General link with search",
+        "Version link"
+      ],
+      "requiredTokenSetSha256": "d99f866153facc829f4536102ff28b535b4397b0c4f2d0926b5b6b7c90ea5546",
+      "reviewedAt": "2026-09-02T11:11:35.133Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.link-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI Link field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-link-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Droplist",
+          "Multilist",
+          "Treelist",
+          "Checklist"
+        ]
+      },
+      "fragmentSha256": "be9de750ccabe2999e5936bdc766c6f2c196240de963c4b50a48964168b4c9f1",
+      "identities": [],
+      "locator": "List field type table",
+      "normalizedSha256": "bfba8fddde5d04b9537077d3cc15b776c7a04f2ef500cc4630f568c31364ead7",
+      "observedAt": "2026-09-02T11:11:35.309Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "a66011819a117ce32c99dc5bf5df84989d8529542dab5f6fb7b4080ec4ae5ccb",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Checklist",
+        "Droplist",
+        "Multilist",
+        "Treelist"
+      ],
+      "requiredTokenSetSha256": "30441ea0732871cee3c39b82fb13c08f14f031c541ca78f95f27f8b68ee43bd5",
+      "reviewedAt": "2026-09-02T11:11:35.309Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.list-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI List field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-list-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Icon",
+          "IFrame",
+          "Tristate"
+        ]
+      },
+      "fragmentSha256": "3123a88a9d23b137cc8b04118ae0006a57b9117b643514d9e61e88d20d021496",
+      "identities": [],
+      "locator": "Developer field type table",
+      "normalizedSha256": "ea26507e3bbac7de4e757fe2d70f297c79fc4a67614fb51d747d2a8375456b9c",
+      "observedAt": "2026-09-02T11:11:35.714Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "2070907edcb7180243f9fab80f69aeba39f6f6a8fa6659ea76efcb4efe97946b",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "IFrame",
+        "Icon",
+        "Tristate"
+      ],
+      "requiredTokenSetSha256": "6bed813bef2355be7811f992c6dfce113254c43d603df3f48c6a76e45ba8b2cf",
+      "reviewedAt": "2026-09-02T11:11:35.714Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.developer-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI Developer field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-developer-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Query Datasource",
+          "Attachment",
+          "File Drop Area",
+          "Internal Link",
+          "Layout",
+          "Rules",
+          "Security",
+          "Template Field Source",
+          "Thumbnail"
+        ]
+      },
+      "fragmentSha256": "d1e196344487bd92683b3cc994a61d4139c6c057fdd194fe85bd668e32969dcf",
+      "identities": [],
+      "locator": "System field type table",
+      "normalizedSha256": "8fa24cb1fcf95977b744bfbe6551f743c2fd796caf0e98031814282e7ce8c5b6",
+      "observedAt": "2026-09-02T11:11:36.049Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "319a4b540c4751aca347053b4f05bac910b6a5d985d4ff6d946141527f9c1024",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Attachment",
+        "File Drop Area",
+        "Internal Link",
+        "Layout",
+        "Query Datasource",
+        "Rules",
+        "Security",
+        "Template Field Source",
+        "Thumbnail"
+      ],
+      "requiredTokenSetSha256": "aa7be821d1dd6e953ac87983296d367e44e9e846aabc6ced19f188cb32a12372",
+      "reviewedAt": "2026-09-02T11:11:36.049Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.system-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI System field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-system-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "value",
+          "html",
+          "href",
+          "src",
+          "General Link",
+          "General Link with search",
+          "Grouped Droplink",
+          "Grouped Droplist",
+          "Name Value List",
+          "Multilist with Search"
+        ]
+      },
+      "fragmentSha256": "21607a5b3a2360282478023f082a201fce2acea02eba69547add58605d59fa2b",
+      "identities": [],
+      "locator": "Field type reference",
+      "normalizedSha256": "f578d1f09b949985fcf3d5f9da5833466a99b663640a22f888be1ab017474258",
+      "observedAt": "2026-09-02T11:13:32.170Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "b7432da247b2a4b28e992150bbedd27296bc176fb673c932ad040238488ef506",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "General Link",
+        "General Link with search",
+        "Grouped Droplink",
+        "Grouped Droplist",
+        "Multilist with Search",
+        "Name Value List",
+        "href",
+        "html",
+        "src",
+        "value"
+      ],
+      "requiredTokenSetSha256": "0860a79a617fd58e45a19380edb16b4a83657700d163863963f817e6ec836bf4",
+      "reviewedAt": "2026-09-02T11:13:32.170Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.rendering-field-types",
+      "sourceRole": "delivery",
+      "sourceVersion": {
+        "mode": "rolling-saas"
+      },
+      "title": "SitecoreAI field types in rendering data",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/introduction-to-framework-agnostic-sitecore-development/content-rendering/field-types-in-rendering-data.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "value",
+          "metadata",
+          "Image",
+          "Link"
+        ]
+      },
+      "fragmentSha256": "d874c1fb7a8114ab904e6a7b1b223053e065447abc6f76472e7cf60a18869266",
+      "identities": [],
+      "locator": "Field values and field metadata",
+      "normalizedSha256": "39bfc972d07c4b019e827ccd06612f0ac38e79767b76436ef038c42e6a06cb3f",
+      "observedAt": "2026-09-02T11:11:36.267Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "5c83e61cd244e478599de998133983f12128b543ba8401c914ca53439eea1456",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Image",
+        "Link",
+        "metadata",
+        "value"
+      ],
+      "requiredTokenSetSha256": "12beca4e68a137c833be59849ae43ded51b01c6750357f4a736cb4dafdc6e565",
+      "resolvedRevision": "Content SDK 2.x",
+      "reviewedAt": "2026-09-02T11:11:36.267Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.content-sdk-layout-data",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "Content SDK 2.x"
+      },
+      "title": "SitecoreAI layout data for fields",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "@sitecore-content-sdk/nextjs",
+          "RichText",
+          "Link"
+        ]
+      },
+      "fragmentSha256": "b597915d5b26018bf790d52bdf8a75830f03717a5fceadf811bf51b69cfb739a",
+      "identities": [],
+      "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0.",
+      "normalizedSha256": "f3bec6f82305f00d7d463e5a96f782b0370e6452ffcb0163eb698a52ba25aa00",
+      "observedAt": "2026-09-02T11:11:36.641Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "7e708948a7f267919175ae4f5a96bdaafefcbabdbe685b7af920a0112893008a",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "@sitecore-content-sdk/nextjs",
+        "Link",
+        "RichText"
+      ],
+      "requiredTokenSetSha256": "7364486d1930f90426d9158d23454564a72c1282b36050b64c6137675a8176b5",
+      "resolvedRevision": "Content SDK 2.1",
+      "reviewedAt": "2026-09-02T11:11:36.641Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.content-sdk-components",
+      "sourceRole": "compatibility",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "Content SDK 2.1"
+      },
+      "title": "Upgrade JSS 22.0 Next.js apps to Content SDK 2.1",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading"
+      },
+      "fragmentSha256": "ee334993af1a886b4329e6f0176eab03a8a4a536f37a18b4fdb645926dd7e33c",
+      "identities": [],
+      "locator": "Data template field types and linked category pages",
+      "normalizedSha256": "ee334993af1a886b4329e6f0176eab03a8a4a536f37a18b4fdb645926dd7e33c",
+      "observedAt": "2026-09-02T11:11:36.799Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "183e02451f57b5b6098116152af641250a98f695caa7cc191bd48fdc216b9db8",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "resolvedRevision": "XP 10.4",
+      "reviewedAt": "2026-09-02T11:11:36.799Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp104.field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "XP 10.4"
+      },
+      "title": "Sitecore XP 10.4 data template field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-data-template-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "Checkbox",
+          "Date",
+          "Datetime",
+          "File",
+          "Image",
+          "Integer",
+          "Number",
+          "Password",
+          "Single-Line Text",
+          "Multi-Line Text",
+          "Rich Text",
+          "Multilist with Search",
+          "Treelist with Search",
+          "Checklist",
+          "Droplist",
+          "Grouped Droplink",
+          "Grouped Droplist",
+          "Multilist",
+          "Name Value List",
+          "Treelist",
+          "TreelistEx"
+        ]
+      },
+      "fragmentSha256": "08505d9c8db42dac197054a56da5425ac89e7dc320787a758b130e5f4fc80607",
+      "identities": [],
+      "locator": "Simple and List field type sections",
+      "normalizedSha256": "481737eed7ae57e1df7067aa43027b4db59027eaf88e23067faee7b9042daeb3",
+      "observedAt": "2026-09-02T11:11:37.282Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "401054c85081755a8518ddd891668a67bda183ffb9f767dd403f3fff38aa9a5c",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Checkbox",
+        "Checklist",
+        "Date",
+        "Datetime",
+        "Droplist",
+        "File",
+        "Grouped Droplink",
+        "Grouped Droplist",
+        "Image",
+        "Integer",
+        "Multi-Line Text",
+        "Multilist",
+        "Multilist with Search",
+        "Name Value List",
+        "Number",
+        "Password",
+        "Rich Text",
+        "Single-Line Text",
+        "Treelist",
+        "Treelist with Search",
+        "TreelistEx"
+      ],
+      "requiredTokenSetSha256": "8dfbb9631ffc0e50ec4aa6a133b84a12d235f00eb37c0ca5a04d56890aced584",
+      "resolvedRevision": "XP 10.4",
+      "reviewedAt": "2026-09-02T11:11:37.282Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp104.simple-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "XP 10.4"
+      },
+      "title": "Sitecore XP 10.4 simple and list field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-simple-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "General link with search",
+          "Droplink",
+          "Droptree",
+          "General link",
+          "Version link"
+        ]
+      },
+      "fragmentSha256": "01763539cfa62bb9458052772f0a059235e25fde15eb24676b64eca78f716fcd",
+      "identities": [],
+      "locator": "Link field type table",
+      "normalizedSha256": "fa0fe7a9e870c0b9c0f3d99017ef509c31caad458230c3782cba53865fb201ea",
+      "observedAt": "2026-09-02T11:11:37.503Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "1c13d458a13d11c905e4229077797875d28476ea7c8eaf9393592ca29e676215",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Droplink",
+        "Droptree",
+        "General link",
+        "General link with search",
+        "Version link"
+      ],
+      "requiredTokenSetSha256": "d99f866153facc829f4536102ff28b535b4397b0c4f2d0926b5b6b7c90ea5546",
+      "resolvedRevision": "XP 10.4",
+      "reviewedAt": "2026-09-02T11:11:37.503Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp104.link-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "XP 10.4"
+      },
+      "title": "Sitecore XP 10.4 Link field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-link-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Icon",
+          "IFrame",
+          "Tristate"
+        ]
+      },
+      "fragmentSha256": "143fad0ac42c8ca1c647638f43951a6184d57f0fd9a3cd5e17377e486ba47e42",
+      "identities": [],
+      "locator": "Developer field type table",
+      "normalizedSha256": "dbef181e7058f1e8ca54509666b81f3b83e6c4e0d015b3d9581eda0da525d5bc",
+      "observedAt": "2026-09-02T11:11:38.073Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "faa285d00b21ef332d5ed1761531b685624020883623b88161542e582e791452",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "IFrame",
+        "Icon",
+        "Tristate"
+      ],
+      "requiredTokenSetSha256": "6bed813bef2355be7811f992c6dfce113254c43d603df3f48c6a76e45ba8b2cf",
+      "resolvedRevision": "XP 10.4",
+      "reviewedAt": "2026-09-02T11:11:38.073Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp104.developer-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "XP 10.4"
+      },
+      "title": "Sitecore XP 10.4 Developer field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-developer-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Query Datasource",
+          "Attachment",
+          "Custom",
+          "File Drop Area",
+          "Internal Link",
+          "Layout",
+          "Rules",
+          "Security",
+          "Template Field Source",
+          "Thumbnail"
+        ]
+      },
+      "fragmentSha256": "90355ba529012ecd3f75c7b4425088289e6a689ddf9e66a8cb7363b2fdd316c2",
+      "identities": [],
+      "locator": "System field type table",
+      "normalizedSha256": "21130aba8b28063dc8b9273a46d15a31e9226e13046351ae1e510fd3fcd91ecb",
+      "observedAt": "2026-09-02T11:11:38.770Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "238fb19d77c7acbe4e762178123337970d399d1ad0eab3f63cfdf05373c2eadf",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Attachment",
+        "Custom",
+        "File Drop Area",
+        "Internal Link",
+        "Layout",
+        "Query Datasource",
+        "Rules",
+        "Security",
+        "Template Field Source",
+        "Thumbnail"
+      ],
+      "requiredTokenSetSha256": "4e993fbf0c2a17775d886924b366abf6f441fe91b95a1cf735cfca5a6621f2dc",
+      "resolvedRevision": "XP 10.4",
+      "reviewedAt": "2026-09-02T11:11:38.770Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp104.system-field-types",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "XP 10.4"
+      },
+      "title": "Sitecore XP 10.4 System field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-system-field-types.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "table",
+        "tokens": [
+          "Date",
+          "File",
+          "Image",
+          "General Link",
+          "Single-Line Text",
+          "Multi-Line Text",
+          "Rich Text",
+          "Text",
+          "RichText",
+          "Link"
+        ]
+      },
+      "fragmentSha256": "99d75c81bef75d677ebeb1014a1f0a66f90dbddecde8e6e7c618d5f7289781ab",
+      "identities": [],
+      "locator": "Field type to JSS Next.js component table",
+      "normalizedSha256": "d2dc09eded22903e36cace151ec9c6a4980775dd37f309788128b8c5f067b418",
+      "observedAt": "2026-09-02T11:11:38.893Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "05ed8d9baf408c94808ddffb06eef30b54741fdd39511c2abc91b9f282cc46bf",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Date",
+        "File",
+        "General Link",
+        "Image",
+        "Link",
+        "Multi-Line Text",
+        "Rich Text",
+        "RichText",
+        "Single-Line Text",
+        "Text"
+      ],
+      "requiredTokenSetSha256": "91e811d74f43f764594120fd7212640dbb59499a3e63e094554da77c83452077",
+      "resolvedRevision": "Headless Services 22",
+      "reviewedAt": "2026-09-02T11:11:38.893Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp.headless22-components",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "Headless Services 22"
+      },
+      "title": "JSS components for rendering Sitecore fields in Next.js applications",
+      "url": "https://doc.sitecore.com/xp/en/developers/hd/22/sitecore-headless-development/jss-components-for-rendering-sitecore-fields-in-next-js-applications.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "value",
+          "editable",
+          "Image",
+          "Rich Text",
+          "Link"
+        ]
+      },
+      "fragmentSha256": "4464b96a2295e31aa51d5070ef4e5d09e7b5921e58afdb444f30433eb8d301e3",
+      "identities": [],
+      "locator": "Raw values and editable values",
+      "normalizedSha256": "4f50501e1df85b35324b257d28acc1f66902ff03420e178042bf3fce56af07c0",
+      "observedAt": "2026-09-02T11:11:40.659Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "33cb83420cc4caaa6f8d2a2fca5f28b2cd8edea003f6bf34dd14d496bb5e9cd0",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "Image",
+        "Link",
+        "Rich Text",
+        "editable",
+        "value"
+      ],
+      "requiredTokenSetSha256": "a8a828718fe4b1e50445bc037cdadc971225e114ec0c98ccce0de0fa31576aac",
+      "resolvedRevision": "JSS 22.x",
+      "reviewedAt": "2026-09-02T11:11:40.659Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp.headless22-layout-data",
+      "sourceRole": "delivery",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "JSS 22.x"
+      },
+      "title": "Field values in JSS layout data",
+      "url": "https://doc.sitecore.com/sai/en/developers/jss/22/jss-sai/field-values-in-jss-layout-data.html",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "string",
+          "boolean",
+          "integer",
+          "number",
+          "array",
+          "object"
+        ]
+      },
+      "fragmentSha256": "a555f08bb177806282cb0762bf8c6e75c8e69532e89b949624bc40df9260453c",
+      "identities": [],
+      "locator": "Parameters > args > type > valid values",
+      "normalizedSha256": "cfce2eb826ee0911957ae7c27da806d24a9737813554e91abe2afb86b867b941",
+      "observedAt": "2026-09-02T11:11:40.895Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "0d94fdeee6d9f740c63e8de11cf5b1663bb1ccc4faf4abc1505a66f86641433f",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "number",
+        "object",
+        "string"
+      ],
+      "requiredTokenSetSha256": "fbaddf677fdd84912b31624643411fd7517ace0b2ec62d3a4226ad343d7c67e2",
+      "reviewedAt": "2026-09-02T11:11:40.895Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.register-meta",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "rolling-documentation"
+      },
+      "title": "register_meta()",
+      "url": "https://developer.wordpress.org/reference/functions/register_meta/",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "symbol",
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "endPattern": "\\.\\s+\\*\\s+@type\\s+[^$]+\\$label",
+              "id": "registered-meta-types",
+              "itemCapture": 1,
+              "itemPattern": "['\"]([^'\"]+)['\"]",
+              "startPattern": "\\$type\\s+The type of data associated with this meta key\\.\\s+\\*\\s+Valid values are\\s+"
+            }
+          ]
+        },
+        "tokens": [
+          "string",
+          "boolean",
+          "integer",
+          "number",
+          "array",
+          "object"
+        ]
+      },
+      "fragmentSha256": "3e01a76d7a5fe1fe39341b6cd20483225da5e21f8b93c8b7b1bdf00028eaff58",
+      "identities": [],
+      "locator": "register_meta() docblock > args > type > Valid values",
+      "normalizedSha256": "ef3fc77c1fea40f21b74e2e5c371a66a1f327c7dde2393eb28ee290db0ecb348",
+      "observedAt": "2026-09-02T10:54:24.568Z",
+      "observedTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "number",
+        "object",
+        "string"
+      ],
+      "observedTokenSetSha256": "fbaddf677fdd84912b31624643411fd7517ace0b2ec62d3a4226ad343d7c67e2",
+      "rawSha256": "b1b49d1d3ddbf10d0f17286f53c30ce9582c636a4679f9a0ef92ee5ebb020a3e",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "number",
+        "object",
+        "string"
+      ],
+      "requiredTokenSetSha256": "fbaddf677fdd84912b31624643411fd7517ace0b2ec62d3a4226ad343d7c67e2",
+      "resolvedRevision": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05",
+      "reviewedAt": "2026-09-02T10:54:24.568Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.register-meta-core-7.1.0",
+      "sourceRole": "enumeration",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05"
+      },
+      "title": "register_meta() Core 7.1.0 docblock",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/src/wp-includes/meta.php",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "string",
+          "null",
+          "number",
+          "integer",
+          "boolean",
+          "array",
+          "object"
+        ]
+      },
+      "fragmentSha256": "a44e329cfd4c5e6ad5c60955ee448896a609a96ff3f955d201b04d1dc62ee894",
+      "identities": [],
+      "locator": "JSON Schema Basics > Primitive Types",
+      "normalizedSha256": "9c4b43ac60bf20748f026699fe71ca75d5e94f813f78728566ea3ebc2d0ddca0",
+      "observedAt": "2026-09-02T10:54:24.634Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "2b5666896e600c239ffc6efbe12f0a8e4233fef711716dc4a7d45064b0612a31",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "null",
+        "number",
+        "object",
+        "string"
+      ],
+      "requiredTokenSetSha256": "8ae4d01847be56fe826798d7f14957371a1a07bc4f03cf73669165e326ff255c",
+      "reviewedAt": "2026-09-02T10:54:24.634Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.rest-schema",
+      "sourceRole": "delivery",
+      "sourceVersion": {
+        "mode": "rolling-documentation"
+      },
+      "title": "REST API schema",
+      "url": "https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "symbol",
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "endPattern": "\\);",
+              "id": "rest-schema-types",
+              "itemCapture": 1,
+              "itemPattern": "['\"]([^'\"]+)['\"]",
+              "startPattern": "\\$allowed_types\\s*=\\s*[^\\(]+\\("
+            }
+          ]
+        },
+        "tokens": [
+          "array",
+          "object",
+          "string",
+          "number",
+          "integer",
+          "boolean",
+          "null"
+        ]
+      },
+      "fragmentSha256": "110496056d3ea97903a39f18df901f8498041c081fd7f43af01cb88060461ffb",
+      "identities": [],
+      "locator": "rest_validate_value_from_schema() > $allowed_types",
+      "normalizedSha256": "302d3c34487ca1032afa18b2d503f1ea2f2364435b0d58e44c5a3a1bb97afac2",
+      "observedAt": "2026-09-02T10:54:24.996Z",
+      "observedTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "null",
+        "number",
+        "object",
+        "string"
+      ],
+      "observedTokenSetSha256": "8ae4d01847be56fe826798d7f14957371a1a07bc4f03cf73669165e326ff255c",
+      "rawSha256": "9c4af1341e37de253323cf7c28da1424f41decc2154904e2b71a4e71c9cdd70c",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "boolean",
+        "integer",
+        "null",
+        "number",
+        "object",
+        "string"
+      ],
+      "requiredTokenSetSha256": "8ae4d01847be56fe826798d7f14957371a1a07bc4f03cf73669165e326ff255c",
+      "resolvedRevision": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05",
+      "reviewedAt": "2026-09-02T10:54:24.996Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.rest-schema-core-7.1.0",
+      "sourceRole": "delivery",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05"
+      },
+      "title": "REST schema validation in Core 7.1.0",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/src/wp-includes/rest-api.php",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "heading",
+        "tokens": [
+          "null",
+          "boolean",
+          "object",
+          "array",
+          "string",
+          "integer",
+          "number",
+          "attribute",
+          "text",
+          "html",
+          "query",
+          "meta"
+        ]
+      },
+      "fragmentSha256": "9891ef811fff60d1b7405f1e9bf51d7dbcd54f45bba9c62ff88107e87bca0f34",
+      "identities": [],
+      "locator": "Attributes > Type validation",
+      "normalizedSha256": "ed1cd30b5c09d4e5c37efc82ea17e66dc913006350ebceed67e69d41099605dd",
+      "observedAt": "2026-09-02T10:54:25.038Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "e368b4bb1e5ab94c586ae563057bdf60c30fb373591568d757ab06b90b290729",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "attribute",
+        "boolean",
+        "html",
+        "integer",
+        "meta",
+        "null",
+        "number",
+        "object",
+        "query",
+        "string",
+        "text"
+      ],
+      "requiredTokenSetSha256": "2810a6b3b107ff0ee8ce6c796637d2aa7b017f095353710b4c2657de6deb9d7f",
+      "reviewedAt": "2026-09-02T10:54:25.038Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.block-attributes",
+      "sourceRole": "storage",
+      "sourceVersion": {
+        "mode": "rolling-documentation"
+      },
+      "title": "Block attributes",
+      "url": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "endPattern": "Note that the validity",
+              "id": "attribute-types",
+              "itemCapture": 1,
+              "itemPattern": "- `([^`]+)`",
+              "startPattern": "The `type` field MUST be one of the following:"
+            },
+            {
+              "endPattern": "The `source` field is usually combined",
+              "id": "value-sources",
+              "itemCapture": 1,
+              "itemPattern": "- `([a-z]+)` -",
+              "startPattern": "The available `source` values are:"
+            }
+          ]
+        },
+        "tokens": [
+          "null",
+          "boolean",
+          "object",
+          "array",
+          "string",
+          "integer",
+          "number",
+          "attribute",
+          "text",
+          "html",
+          "query",
+          "meta"
+        ]
+      },
+      "fragmentSha256": "83a47a2147566058286c6eeac2133e492853e6c92457de1889242c606f5724c5",
+      "identities": [],
+      "locator": "Type validation",
+      "normalizedSha256": "c42798e963e775a270e4298654c10324e4e29b84e909d21f81d92285192cf9fa",
+      "observedAt": "2026-09-02T10:54:25.074Z",
+      "observedTokens": [
+        "array",
+        "attribute",
+        "boolean",
+        "html",
+        "integer",
+        "meta",
+        "null",
+        "number",
+        "object",
+        "query",
+        "string",
+        "text"
+      ],
+      "observedTokenSetSha256": "2810a6b3b107ff0ee8ce6c796637d2aa7b017f095353710b4c2657de6deb9d7f",
+      "rawSha256": "4b46765db6fab311c2661255c1ba09b1f7828d37d4d5c3bf171a32a62be23773",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "attribute",
+        "boolean",
+        "html",
+        "integer",
+        "meta",
+        "null",
+        "number",
+        "object",
+        "query",
+        "string",
+        "text"
+      ],
+      "requiredTokenSetSha256": "2810a6b3b107ff0ee8ce6c796637d2aa7b017f095353710b4c2657de6deb9d7f",
+      "resolvedRevision": "943e0d825bb66ba582e9a10d32743cbb136de460",
+      "reviewedAt": "2026-09-02T10:54:25.074Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+      "sourceRole": "storage",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "943e0d825bb66ba582e9a10d32743cbb136de460"
+      },
+      "title": "Block attributes handbook bundled with Core 7.1.0",
+      "url": "https://raw.githubusercontent.com/WordPress/gutenberg/943e0d825bb66ba582e9a10d32743cbb136de460/docs/reference-guides/block-api/block-attributes.md",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "json-pointer",
+        "tokens": [
+          "7.1.0",
+          "943e0d825bb66ba582e9a10d32743cbb136de460"
+        ]
+      },
+      "fragmentSha256": "2aa4bc79c5d117eb70ab4e00882ea4715d3e30b72a77922d2c122529de9e48cf",
+      "identities": [],
+      "locator": "version and gutenberg.sha",
+      "normalizedSha256": "a5d72574184695ec519672c3fedbabec607a50a3887ca63a1c2f913e7b004f92",
+      "observedAt": "2026-09-02T10:54:25.187Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "979cea89e2f6a64ec0182df6f38657cdb4e283e0b98e07661461d00ad7043721",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "7.1.0",
+        "943e0d825bb66ba582e9a10d32743cbb136de460"
+      ],
+      "requiredTokenSetSha256": "9ed8bfaa5862d851a76deb97c8e26894671730c4ccbbcef4debfb39b5664af34",
+      "resolvedRevision": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05",
+      "reviewedAt": "2026-09-02T10:54:25.187Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.core-7.1.0-gutenberg-manifest",
+      "sourceRole": "compatibility",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05"
+      },
+      "title": "WordPress Core 7.1.0 Gutenberg revision manifest",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/package.json",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentful",
+          "profileId": "contentful.cma.saas",
+          "surface": "management",
+          "transport": "Content Management API content-type field.type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "href=[\"'](/contentful/contentful-migration/releases/tag/v[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?)",
+        "kind": "list"
+      },
+      "fragmentSha256": "95183b695a77f1d6b4d19958cfe1b45f6e9fe6f0da5f7c3ee3b487785a955dd5",
+      "identities": [
+        "/contentful/contentful-migration/releases/tag/v4.31.5",
+        "/contentful/contentful-migration/releases/tag/v4.31.6",
+        "/contentful/contentful-migration/releases/tag/v4.31.6-dx-506-github-packages.1",
+        "/contentful/contentful-migration/releases/tag/v4.31.6-dx-506-github-packages.2",
+        "/contentful/contentful-migration/releases/tag/v4.31.7",
+        "/contentful/contentful-migration/releases/tag/v4.31.8",
+        "/contentful/contentful-migration/releases/tag/v4.31.9",
+        "/contentful/contentful-migration/releases/tag/v4.32.0",
+        "/contentful/contentful-migration/releases/tag/v5.0.0",
+        "/contentful/contentful-migration/releases/tag/v5.1.0"
+      ],
+      "locator": "Versioned release tag links",
+      "normalizedSha256": "8bede0779d4da286942f46994f47de83454bc42d0159dd1471eccc001ceac57a",
+      "observedAt": "2026-09-02T11:11:41.461Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "4094f5f5659292e932a22f5fca117abea97036b1fc14ecd7ab71b3a59433ddad",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:41.461Z",
+      "reviewer": "contentful",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentful.migration-releases-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "contentful-migration releases",
+      "url": "https://github.com/contentful/contentful-migration/releases",
+      "vendor": "Contentful"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Contentstack",
+          "profileId": "contentstack.cma.saas",
+          "surface": "management",
+          "transport": "Content type schema field.data_type",
+          "version": {
+            "label": "SaaS observed 2026-09-01",
+            "mode": "rolling"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "<link>([^<]+)</link>",
+        "kind": "document"
+      },
+      "fragmentSha256": "60aafff4399049176e097d83a4a8b81e7da61b77e06dfa7a36b9b70f3c2d27eb",
+      "identities": [
+        "https://www.contentstack.com/docs/changelog/",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#access-tokens-deprecation-for-new-stacks-and-improvements-in-upload-asset-api-request",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#account-lockout-policy",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#add-custom-languages-to-your-stack",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#add-keyvalue-choices-in-select-field",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#android-persistence-sdk-version-003",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-august-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-constructor-connector-updates",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-coveo-connector",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-december-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-february-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-october-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automate-september-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-august-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-february-2023-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-june-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-march-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-november-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#automation-hub-october-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1140-release-date-feb-12-2024",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1150-release-date-mar-04-2024",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1170-release-date-apr-01-2024",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1181-release-date-may-20-2024",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1220",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1230",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1251",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1310",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1322",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-140-release-date-mar-27-2023",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1402",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1404",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1412",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1420",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1440",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1481",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1530",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1540",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1581",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1601",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1610",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1611",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1620",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-1660",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-177-release-date-jun-21-2023",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta10",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta16",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta18",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta19",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta20",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta22",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta30",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-200beta9",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#cli-version-210",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#collaborative-live-preview-for-drafts",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-launch-january-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-launch-march-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-launch-may-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-launch-november-2024-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-launch-november-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstack-marketplace-sdk-version-125",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#contentstacks-ai-assistant-the-aipowered-tool-that-streamlines-your-content-creation-is-now-generally-available",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#control-environment-cloning-during-branch-creation",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#create-or-update-roles-with-languagespecific-permissions",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#create-variant-groups-directly-in-the-cms",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#datasync-asset-store-filesystem-version-238",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#date-range-filter-for-webhook-execution-details-and-linking-content-management-api-requests-with-audit-log",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#date-range-filtering-for-webhook-execution-details",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#december-16-2020",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#december-4-2020",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#deploy-content-to-multiple-servers-feature-discontinued",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#deprecation-of-tls-10-and-11",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#dotnet-management-sdk-version-111",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ecommerce-app-boilerplate",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#entry-comments-feature-release",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#export-the-organization-users-list-in-a-csv-file",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#find-and-replace-text-across-entries-in-bulk",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#hamilton-multict",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#idaho-release-dashboard-20",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#inprogress-entries",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-additional-metadata-support-for-entries-and-assets",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-asset-sidebar-extensions",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-bulk-operations-marketplace-app",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-content-type-sidebar-ui-location",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-contentstack-marketplace-and-contentstack-developer-hub",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-encryption-for-saml-attributes",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-global-fields",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-interstack-reference-marketplace-app",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-mission-control-and-product-analytics",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-release-preview-marketplace-app",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#introducing-the-jsonpowered-rich-text-editor-json-rte-field",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#jackson-release-asset-folderlevel-permissions-improved-error-messages",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#january-7-2022",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-delivery-sdk-version-1131",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-delivery-sdk-version-210",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-delivery-sdk-version-232",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-delivery-sdk-version-281",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-delivery-sdk-version-282",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-1101",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-1130",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-1131",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-1140",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-1141",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-management-sdk-version-161",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-news-web-app-example",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-utils-sdk-version-1215",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-utils-sdk-version-123",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-utils-sdk-version-151",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-utils-sdk-version-161",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#java-utils-sdk-version-162",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-core-sdk-version-136",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-delivery-sdk-version-3240",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-1191",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-1210",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-1271",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-1310",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-1311",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-management-sdk-version-142",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#javascript-utils-sdk-version-191",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#json-rte-plugins-and-password-reset-link-expiration",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#july-31-2021",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#june-24-2020",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#kansas-release-introducing-management-tokens",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#madison-release-nested-modular-blocks-reference-and-file-field-type-for-custom-field-extensions",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#manage-your-media-library-programmatically-with-the-assets-api",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#marketplace-apps-ai-assistant-october-release-highlights",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#marketplace-sdk-version-153",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#mcp-version-054",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#mcp-version-055",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#migrate-from-aem-to-contentstack",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#name-versions-of-entry-variants",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-cli-plugin-apps-cli",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-ace-editor",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-brightcove",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-calendar",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-digizuite",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-egnyte",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-healthcheck",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-jw-player",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-marketo-forms",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-optimizely",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-vimeo",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#new-marketplace-app-wordbee",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#notify-users-about-disabled-webhooks",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#organization-bulk-task-queue-and-graphql-beta-hotfix-012",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#paris-release-complex-global-fields",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#partial-textbased-search-for-assets-and-asset-folders",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#php-delivery-sdk-version-242",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#php-delivery-sdk-version-260",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#port-louis-release",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#prefix-dollar-sign-in-webhook-json-payload-keys-with-wildcard",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#prefix-dollar-sign-in-webhook-json-payload-with-wildcard",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-delivery-sdk-version-261",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-delivery-sdk-version-271",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-delivery-sdk-version-280",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-management-sdk-version-1102",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-management-sdk-version-1111",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#python-utils-sdk-version-161",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#queens-release-the-trash",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#release-of-august-31-2020-concise-webhook-payloads-and-option-to-require-unique-urls-in-a-stack",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#release-of-january-11-2021-force-user-to-type-the-name-of-the-delivery-token-before-deleting",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#release-of-june-02-2020-enable-or-disable-webhooks",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#release-of-november-4-limited-webhook-retry-attempts",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#restrict-content-types-and-global-fields-with-upper-case-unique-ids",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ruby-delivery-sdk-version-0100",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ruby-delivery-sdk-version-0101",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ruby-delivery-sdk-version-081",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ruby-utils-sdk-version-122",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#sign-webhook-payloads-with-your-own-hmac-secret-key",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#stockholm-release-retrieve-fallback-language-content-for-published-entries",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#swift-delivery-sdk-version-250",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#swift-delivery-sdk-version-251",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#typescript-delivery-sdk-version-550",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#typescript-delivery-sdk-version-551",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#typescript-delivery-sdk-version-552",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#update-release-items-to-their-latest-versions",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-ai-assistant-v109",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-akeneo",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-audience-v110",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-bigcommerce-v200",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-brandfolder-v107",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-brightcove-v120",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-bulk-operations-v120",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-bynder-v102",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-bynder-v110",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-commercetools-v113",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-optimizely-v110",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-salesforce-commerce-v110",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-vimeo-v110",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-wordbee-v201",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-marketplace-app-youtube",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#updated-ui-for-adding-keyvalue-choices-in-select-field",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#use-slash-command-for-formatting-shortcuts-in-json-rich-text-editor",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#verma",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#version-103-release-date-aug-11-2022",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#webhook-circuit-breaker",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#webhook-rate-limit",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#webhooks-update",
+        "https://www.contentstack.com/docs/changelog/?cs_source=rss#ximenez"
+      ],
+      "locator": "RSS item links",
+      "normalizedSha256": "8984d0c15c90f8bb705cc05f6e2eb2b0a835e12fd484d4a260ea420225d091c5",
+      "observedAt": "2026-09-02T11:11:41.838Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "e6297f8da7fe80c47d9a39a67ca860e99902d4b2f99eb800ebd718d316681ee6",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:41.838Z",
+      "reviewer": "contentstack",
+      "reviewStatus": "reviewed",
+      "sourceId": "contentstack.product-changelog-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "Contentstack product changelog RSS",
+      "url": "https://www.contentstack.com/api/docs/changelog/rss.xml",
+      "vendor": "Contentstack"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS SaaS",
+          "profileId": "optimizely-saas.cms-api-v1",
+          "surface": "management",
+          "transport": "CMS API content-type property schema",
+          "version": {
+            "label": "CMS SaaS API v1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-2",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 2.2.0",
+            "mode": "pinned",
+            "sdk": "2.2.0"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)",
+        "kind": "list"
+      },
+      "fragmentSha256": "cce25504f7e472891e4da6ac34e1adb10ea5c4f754b77d517b83bf64591c3fac",
+      "identities": [
+        "/hc/en-us/articles/27677034133645-2026-CMS-SaaS-release-notes",
+        "/hc/en-us/articles/33756574360717-2024-CMS-SaaS-release-notes",
+        "/hc/en-us/articles/35110807640589-CMS-SaaS-documentation",
+        "/hc/en-us/articles/42727423752205-2025-CMS-SaaS-release-notes",
+        "https://support.optimizely.com/hc/en-us/articles/28863794000909-Security-announcements"
+      ],
+      "locator": "CMS SaaS release-note article links",
+      "normalizedSha256": "72d9fbf2ac415350e88b521a25b9494c5789793e4c5866023d119fca7e3c214d",
+      "observedAt": "2026-09-02T03:28:24.055Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "a6f795c5e6fe3c1529f4152b8a4d42bbb027e383aa01fbd7cd7bd63a3ebfc94c",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T03:28:24.055Z",
+      "reviewer": "optimizely-saas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-saas.release-notes-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "Release notes - CMS SaaS",
+      "url": "https://support.optimizely.com/hc/en-us/sections/27677047812109-Release-notes",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-2",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 2.2.0",
+            "mode": "pinned",
+            "sdk": "2.2.0"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "href=[\"'](/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%40[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?)",
+        "kind": "list"
+      },
+      "fragmentSha256": "8b6031527b87a2cabe47143e7d9d6c5edd64c5ede52d71259fa0f0e8fc105fb8",
+      "identities": [
+        "/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%402.0.0",
+        "/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%402.1.0",
+        "/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%402.1.0-beta.0",
+        "/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%402.2.0",
+        "/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%402.3.0-beta.0"
+      ],
+      "locator": "@optimizely/cms-sdk release tag links",
+      "normalizedSha256": "60a56d25ff9b8c31600dd3c930c41e83e73036a3adc856026995a8c1ae09a0d7",
+      "observedAt": "2026-09-02T11:11:42.041Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "84b43f8a487ce21ef0a4016c4388fc5ff4cb4c548dc6314450b9bc6edc056471",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:42.041Z",
+      "reviewer": "optimizely-saas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-saas.sdk-releases-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "content-js-sdk releases",
+      "url": "https://github.com/episerver/content-js-sdk/releases",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Optimizely CMS 12",
+          "profileId": "optimizely-paas.cms12-property-data-type",
+          "surface": "storage",
+          "transport": "EPiServer.Core.PropertyDataType enum",
+          "version": {
+            "label": "EPiServer.dll 12.0.3",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Optimizely CMS 12",
+          "profileId": "optimizely-paas.cms12-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 12 model/editor surface",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-admin",
+          "surface": "authoring",
+          "transport": "CMS 13 admin content-modeling property labels",
+          "version": {
+            "label": "CMS 13",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Optimizely CMS 13",
+          "profileId": "optimizely-paas.cms13-model",
+          "surface": "sdk",
+          "transport": ".NET content model property types",
+          "version": {
+            "label": "CMS 13 model/editor surface",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)",
+        "kind": "list"
+      },
+      "fragmentSha256": "a3092a6086bea476feb7b102c766a383b9198eb93038b696531bc525ac856f42",
+      "identities": [
+        "/hc/en-us/articles/30886353301645-2025-2026-Optimizely-CMS-11-release-notes",
+        "/hc/en-us/articles/33309043090189-2026-Optimizely-CMS-12-release-notes",
+        "/hc/en-us/articles/37757063222029-2024-Optimizely-CMS-12-release-notes",
+        "/hc/en-us/articles/37757597966221-2024-Optimizely-CMS-11-release-notes",
+        "/hc/en-us/articles/42412167768333-2025-Optimizely-CMS-12-release-notes",
+        "/hc/en-us/articles/44734633809037-2026-Optimizely-CMS-13-general-availability-GA-release-notes",
+        "/hc/en-us/articles/44937048830221-2026-Optimizely-CMS-13-release-notes",
+        "https://support.optimizely.com/hc/en-us/articles/28863794000909-Security-announcements"
+      ],
+      "locator": "CMS PaaS release-note article links",
+      "normalizedSha256": "39984d6fbb3826bc0731d731a0a9f6082c151c1069f0947961bb47e5aea8297d",
+      "observedAt": "2026-09-02T03:28:24.202Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "3129a75b530d1d9f2f323bb8c6e6dca81a4b724e2a59761c8d0faf27404811f3",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T03:28:24.202Z",
+      "reviewer": "optimizely-paas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-paas.release-notes-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "Release notes - CMS PaaS",
+      "url": "https://support.optimizely.com/hc/en-us/sections/23974970699533-Release-notes",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.authoring.current",
+          "surface": "authoring",
+          "transport": "Data template field type names and authoring editors",
+          "version": {
+            "label": "SitecoreAI observed 2026-09-01",
+            "mode": "rolling"
+          }
+        },
+        {
+          "product": "SitecoreAI",
+          "profileId": "sitecore-ai.content-sdk2",
+          "surface": "sdk",
+          "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+          "version": {
+            "label": "SitecoreAI delivery observed 2026-09-01",
+            "mode": "rolling",
+            "sdk": "Content SDK 2.x"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "<link>([^<]+)</link>",
+        "kind": "document"
+      },
+      "fragmentSha256": "23cbbd0624b7035501175c495c49e13a308cdda4f413ac604df318ac3987aba6",
+      "identities": [
+        "https://developers.sitecore.com/changelog",
+        "https://developers.sitecore.com/changelog/sitecoreai/01092026/act-on-your-brand's-ai-visibility-changes-with-sitecoreai-signals",
+        "https://developers.sitecore.com/changelog/sitecoreai/01092026/sitecoreai-base-image-release-1.8.135",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/compare-versions-in-page-builder",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/keep-workflow-states-when-translating-content",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/page-builder-improvements-and-resolved-issues",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/preview-scheduled-page-versions-with-calendar-preview",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/sitecoreai-base-image-release-1.8.105",
+        "https://developers.sitecore.com/changelog/sitecoreai/18082026/unpublish-only-the-languages-you-need-in-page-builder",
+        "https://developers.sitecore.com/changelog/sitecoreai/19082026/content-sdk-2.3-released-with-new-search-capabilities",
+        "https://developers.sitecore.com/changelog/sitecoreai/31082026/create-brand-context-for-ai-agents-using-your-brand-website-or-sitecoreai-site"
+      ],
+      "locator": "RSS item links",
+      "normalizedSha256": "be5188a88641c60054b1d02a95d72f75c258995b1fabbca64cf85e97df5c4a40",
+      "observedAt": "2026-09-02T11:11:42.937Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "519eb2ed587171bcd3ae1f4bd5f3c70366fa2439ec825de5cae34800c45e0a50",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:42.937Z",
+      "reviewer": "sitecore-ai",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-ai.changelog-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "SitecoreAI changelog RSS",
+      "url": "https://developers.sitecore.com/changelog/sitecoreai/rss.xml",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.xp104-authoring",
+          "surface": "authoring",
+          "transport": "XP 10.4 data template field type names and authoring editors",
+          "version": {
+            "label": "XP 10.4",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "Sitecore Experience Platform",
+          "profileId": "sitecore-on-prem.headless22",
+          "surface": "sdk",
+          "transport": "JSS 22 layout data and @sitecore-jss/sitecore-jss-nextjs field props",
+          "version": {
+            "label": "XP 10.4 with Headless Services 22",
+            "mode": "pinned",
+            "sdk": "Headless Services 22"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "href=[\"']([^\"']*/Downloads/Sitecore_Experience_Platform/[^\"'?#]+)",
+        "kind": "list"
+      },
+      "fragmentSha256": "d917ab5faccbe42eff4fd7cb7ceceef15170c8ec99db76bf7cc7ea683496999b",
+      "identities": [
+        "/downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100",
+        "/downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100_Update1",
+        "/downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100_Update2",
+        "/downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100_Update3",
+        "/downloads/Sitecore_Experience_Platform/101/Sitecore_Experience_Platform_101",
+        "/downloads/Sitecore_Experience_Platform/101/Sitecore_Experience_Platform_101_Update1",
+        "/downloads/Sitecore_Experience_Platform/101/Sitecore_Experience_Platform_101_Update2",
+        "/downloads/Sitecore_Experience_Platform/101/Sitecore_Experience_Platform_101_Update3",
+        "/downloads/Sitecore_Experience_Platform/102/Sitecore_Experience_Platform_102",
+        "/downloads/Sitecore_Experience_Platform/102/Sitecore_Experience_Platform_102_Update1",
+        "/downloads/Sitecore_Experience_Platform/102/Sitecore_Experience_Platform_102_Update2",
+        "/downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103",
+        "/downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103_Update1",
+        "/downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103_Update2",
+        "/downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103_Update3",
+        "/downloads/Sitecore_Experience_Platform/104/Sitecore_Experience_Platform_104",
+        "/downloads/Sitecore_Experience_Platform/104/Sitecore_Experience_Platform_104_Update1",
+        "/downloads/Sitecore_Experience_Platform/105/Sitecore_Experience_Platform_105",
+        "/downloads/Sitecore_Experience_Platform/7_0/Sitecore_Experience_Platform_7_and_below",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update1",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update3",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update4",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update5",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update6",
+        "/downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update7",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_80_Update3",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_80_Update4",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_80_Update5",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_80_Update6",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_80_Update7",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_8_0",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_8_update1",
+        "/downloads/Sitecore_Experience_Platform/8_0/Sitecore_Experience_Platform_8_update2",
+        "/downloads/Sitecore_Experience_Platform/90/Sitecore_Experience_Platform_90_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/90/Sitecore_Experience_Platform_90_Update1",
+        "/downloads/Sitecore_Experience_Platform/90/Sitecore_Experience_Platform_90_Update2",
+        "/downloads/Sitecore_Experience_Platform/91/Sitecore_Experience_Platform_91_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/91/Sitecore_Experience_Platform_91_Update1",
+        "/downloads/Sitecore_Experience_Platform/92/Sitecore_Experience_Platform_92_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/93/Sitecore_Experience_Platform_93_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/Sitecore_81/Sitecore_Experience_Platform_81_Initial_Release",
+        "/downloads/Sitecore_Experience_Platform/Sitecore_81/Sitecore_Experience_Platform_81_Update1",
+        "/downloads/Sitecore_Experience_Platform/Sitecore_81/Sitecore_Experience_Platform_81_Update2",
+        "/downloads/Sitecore_Experience_Platform/Sitecore_81/Sitecore_Experience_Platform_81_Update3",
+        "https://github.com/sitecore/developer-portal/edit/main/data/markdown/pages/downloads/Sitecore_Experience_Platform/index.md",
+        "https://github.com/sitecore/developer-portal/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20developer.sitecore.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20Page%3A%20%5BSitecore Experience Platform%5D(https://developers.sitecore.com/downloads/Sitecore_Experience_Platform)%0A*%20Source%3A%20%5Bmarkdown/pages/downloads/Sitecore_Experience_Platform/index.md%5D(https://github.com/sitecore/developer-portal/edit/main/data/markdown/pages/downloads/Sitecore_Experience_Platform/index.md)"
+      ],
+      "locator": "Sitecore Experience Platform download links",
+      "normalizedSha256": "866d62b31cde7f94eced9d79ae16b6ba4e499febbaa6d394bc75ad8742e005f3",
+      "observedAt": "2026-09-02T11:11:43.057Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "aa92ea2dca0118541b35f279ef1fd49dd9b44e516232efcbcaf2315ea743e12b",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:43.057Z",
+      "reviewer": "sitecore-on-prem",
+      "reviewStatus": "reviewed",
+      "sourceId": "sitecore-xp.downloads-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "Sitecore Experience Platform downloads",
+      "url": "https://developers.sitecore.com/Downloads/Sitecore_Experience_Platform",
+      "vendor": "Sitecore"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "wordpress-([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\.zip",
+        "kind": "table"
+      },
+      "fragmentSha256": "c123f427f3ff8c1fc6b900088b02d88dd55987e6b779c96c8e5000e333e981a4",
+      "identities": [
+        "1.0.2",
+        "1.2.1",
+        "1.2.2",
+        "1.5.1",
+        "1.5.2",
+        "2.0",
+        "2.0.1",
+        "2.0.10",
+        "2.0.11",
+        "2.0.4",
+        "2.0.5",
+        "2.0.6",
+        "2.0.7",
+        "2.0.8",
+        "2.0.9",
+        "2.1",
+        "2.1.1",
+        "2.1.2",
+        "2.1.3",
+        "2.2",
+        "2.2.1",
+        "2.2.2",
+        "2.2.3",
+        "2.3",
+        "2.3.1",
+        "2.3.2",
+        "2.3.3",
+        "2.5",
+        "2.5.1",
+        "2.6",
+        "2.6.1",
+        "2.6.2",
+        "2.6.3",
+        "2.6.5",
+        "2.7",
+        "2.7.1",
+        "2.8",
+        "2.8.1",
+        "2.8.2",
+        "2.8.3",
+        "2.8.4",
+        "2.8.5",
+        "2.8.6",
+        "2.9",
+        "2.9.1",
+        "2.9.2",
+        "3.0",
+        "3.0.1",
+        "3.0.2",
+        "3.0.3",
+        "3.0.4",
+        "3.0.5",
+        "3.0.6",
+        "3.1",
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.1.4",
+        "3.2",
+        "3.2.1",
+        "3.3",
+        "3.3.1",
+        "3.3.2",
+        "3.3.3",
+        "3.4",
+        "3.4.1",
+        "3.4.2",
+        "3.5",
+        "3.5.1",
+        "3.5.2",
+        "3.6",
+        "3.6.1",
+        "3.7",
+        "3.7.1",
+        "3.7.10",
+        "3.7.11",
+        "3.7.12",
+        "3.7.13",
+        "3.7.14",
+        "3.7.15",
+        "3.7.16",
+        "3.7.17",
+        "3.7.18",
+        "3.7.19",
+        "3.7.2",
+        "3.7.20",
+        "3.7.21",
+        "3.7.22",
+        "3.7.23",
+        "3.7.24",
+        "3.7.25",
+        "3.7.26",
+        "3.7.27",
+        "3.7.28",
+        "3.7.29",
+        "3.7.3",
+        "3.7.30",
+        "3.7.31",
+        "3.7.32",
+        "3.7.33",
+        "3.7.34",
+        "3.7.35",
+        "3.7.36",
+        "3.7.37",
+        "3.7.38",
+        "3.7.39",
+        "3.7.4",
+        "3.7.40",
+        "3.7.41",
+        "3.7.5",
+        "3.7.6",
+        "3.7.7",
+        "3.7.8",
+        "3.7.9",
+        "3.8",
+        "3.8.1",
+        "3.8.10",
+        "3.8.11",
+        "3.8.12",
+        "3.8.13",
+        "3.8.14",
+        "3.8.15",
+        "3.8.16",
+        "3.8.17",
+        "3.8.18",
+        "3.8.19",
+        "3.8.2",
+        "3.8.20",
+        "3.8.21",
+        "3.8.22",
+        "3.8.23",
+        "3.8.24",
+        "3.8.25",
+        "3.8.26",
+        "3.8.27",
+        "3.8.28",
+        "3.8.29",
+        "3.8.3",
+        "3.8.30",
+        "3.8.31",
+        "3.8.32",
+        "3.8.33",
+        "3.8.34",
+        "3.8.35",
+        "3.8.36",
+        "3.8.37",
+        "3.8.38",
+        "3.8.39",
+        "3.8.4",
+        "3.8.40",
+        "3.8.41",
+        "3.8.5",
+        "3.8.6",
+        "3.8.7",
+        "3.8.8",
+        "3.8.9",
+        "3.9",
+        "3.9.1",
+        "3.9.10",
+        "3.9.11",
+        "3.9.12",
+        "3.9.13",
+        "3.9.14",
+        "3.9.15",
+        "3.9.16",
+        "3.9.17",
+        "3.9.18",
+        "3.9.19",
+        "3.9.2",
+        "3.9.20",
+        "3.9.21",
+        "3.9.22",
+        "3.9.23",
+        "3.9.24",
+        "3.9.25",
+        "3.9.26",
+        "3.9.27",
+        "3.9.28",
+        "3.9.29",
+        "3.9.3",
+        "3.9.30",
+        "3.9.31",
+        "3.9.32",
+        "3.9.33",
+        "3.9.34",
+        "3.9.35",
+        "3.9.36",
+        "3.9.37",
+        "3.9.39",
+        "3.9.4",
+        "3.9.40",
+        "3.9.5",
+        "3.9.6",
+        "3.9.7",
+        "3.9.8",
+        "3.9.9",
+        "4.0",
+        "4.0.1",
+        "4.0.10",
+        "4.0.11",
+        "4.0.12",
+        "4.0.13",
+        "4.0.14",
+        "4.0.15",
+        "4.0.16",
+        "4.0.17",
+        "4.0.18",
+        "4.0.19",
+        "4.0.2",
+        "4.0.20",
+        "4.0.21",
+        "4.0.22",
+        "4.0.23",
+        "4.0.24",
+        "4.0.25",
+        "4.0.26",
+        "4.0.27",
+        "4.0.28",
+        "4.0.29",
+        "4.0.3",
+        "4.0.30",
+        "4.0.31",
+        "4.0.32",
+        "4.0.33",
+        "4.0.34",
+        "4.0.35",
+        "4.0.36",
+        "4.0.37",
+        "4.0.38",
+        "4.0.4",
+        "4.0.5",
+        "4.0.6",
+        "4.0.7",
+        "4.0.8",
+        "4.0.9",
+        "4.1",
+        "4.1.1",
+        "4.1.10",
+        "4.1.11",
+        "4.1.12",
+        "4.1.13",
+        "4.1.14",
+        "4.1.15",
+        "4.1.16",
+        "4.1.17",
+        "4.1.18",
+        "4.1.19",
+        "4.1.2",
+        "4.1.20",
+        "4.1.21",
+        "4.1.22",
+        "4.1.23",
+        "4.1.24",
+        "4.1.25",
+        "4.1.26",
+        "4.1.27",
+        "4.1.28",
+        "4.1.29",
+        "4.1.3",
+        "4.1.30",
+        "4.1.31",
+        "4.1.32",
+        "4.1.33",
+        "4.1.34",
+        "4.1.35",
+        "4.1.36",
+        "4.1.37",
+        "4.1.38",
+        "4.1.39",
+        "4.1.4",
+        "4.1.40",
+        "4.1.41",
+        "4.1.42",
+        "4.1.5",
+        "4.1.6",
+        "4.1.7",
+        "4.1.8",
+        "4.1.9",
+        "4.2",
+        "4.2.1",
+        "4.2.10",
+        "4.2.11",
+        "4.2.12",
+        "4.2.13",
+        "4.2.14",
+        "4.2.15",
+        "4.2.16",
+        "4.2.17",
+        "4.2.18",
+        "4.2.19",
+        "4.2.2",
+        "4.2.20",
+        "4.2.21",
+        "4.2.22",
+        "4.2.23",
+        "4.2.24",
+        "4.2.25",
+        "4.2.26",
+        "4.2.27",
+        "4.2.28",
+        "4.2.29",
+        "4.2.3",
+        "4.2.30",
+        "4.2.31",
+        "4.2.32",
+        "4.2.33",
+        "4.2.34",
+        "4.2.35",
+        "4.2.36",
+        "4.2.37",
+        "4.2.38",
+        "4.2.39",
+        "4.2.4",
+        "4.2.5",
+        "4.2.6",
+        "4.2.7",
+        "4.2.8",
+        "4.2.9",
+        "4.3",
+        "4.3.1",
+        "4.3.10",
+        "4.3.11",
+        "4.3.12",
+        "4.3.13",
+        "4.3.14",
+        "4.3.15",
+        "4.3.16",
+        "4.3.17",
+        "4.3.18",
+        "4.3.19",
+        "4.3.2",
+        "4.3.20",
+        "4.3.21",
+        "4.3.22",
+        "4.3.23",
+        "4.3.24",
+        "4.3.25",
+        "4.3.26",
+        "4.3.27",
+        "4.3.28",
+        "4.3.29",
+        "4.3.3",
+        "4.3.30",
+        "4.3.31",
+        "4.3.32",
+        "4.3.33",
+        "4.3.34",
+        "4.3.35",
+        "4.3.4",
+        "4.3.5",
+        "4.3.6",
+        "4.3.7",
+        "4.3.8",
+        "4.3.9",
+        "4.4",
+        "4.4.1",
+        "4.4.10",
+        "4.4.11",
+        "4.4.12",
+        "4.4.13",
+        "4.4.14",
+        "4.4.15",
+        "4.4.16",
+        "4.4.17",
+        "4.4.18",
+        "4.4.19",
+        "4.4.2",
+        "4.4.20",
+        "4.4.21",
+        "4.4.22",
+        "4.4.23",
+        "4.4.24",
+        "4.4.25",
+        "4.4.26",
+        "4.4.27",
+        "4.4.28",
+        "4.4.29",
+        "4.4.3",
+        "4.4.30",
+        "4.4.31",
+        "4.4.32",
+        "4.4.33",
+        "4.4.34",
+        "4.4.4",
+        "4.4.5",
+        "4.4.6",
+        "4.4.7",
+        "4.4.8",
+        "4.4.9",
+        "4.5",
+        "4.5.1",
+        "4.5.10",
+        "4.5.11",
+        "4.5.12",
+        "4.5.13",
+        "4.5.14",
+        "4.5.15",
+        "4.5.16",
+        "4.5.17",
+        "4.5.18",
+        "4.5.19",
+        "4.5.2",
+        "4.5.20",
+        "4.5.21",
+        "4.5.22",
+        "4.5.23",
+        "4.5.24",
+        "4.5.25",
+        "4.5.26",
+        "4.5.27",
+        "4.5.28",
+        "4.5.29",
+        "4.5.3",
+        "4.5.30",
+        "4.5.31",
+        "4.5.32",
+        "4.5.33",
+        "4.5.4",
+        "4.5.5",
+        "4.5.6",
+        "4.5.7",
+        "4.5.8",
+        "4.5.9",
+        "4.6",
+        "4.6.1",
+        "4.6.10",
+        "4.6.11",
+        "4.6.12",
+        "4.6.13",
+        "4.6.14",
+        "4.6.15",
+        "4.6.16",
+        "4.6.17",
+        "4.6.18",
+        "4.6.19",
+        "4.6.2",
+        "4.6.20",
+        "4.6.21",
+        "4.6.22",
+        "4.6.23",
+        "4.6.24",
+        "4.6.25",
+        "4.6.26",
+        "4.6.27",
+        "4.6.28",
+        "4.6.29",
+        "4.6.3",
+        "4.6.30",
+        "4.6.4",
+        "4.6.5",
+        "4.6.6",
+        "4.6.7",
+        "4.6.8",
+        "4.6.9",
+        "4.7",
+        "4.7.1",
+        "4.7.10",
+        "4.7.11",
+        "4.7.12",
+        "4.7.13",
+        "4.7.14",
+        "4.7.15",
+        "4.7.16",
+        "4.7.17",
+        "4.7.18",
+        "4.7.19",
+        "4.7.2",
+        "4.7.20",
+        "4.7.21",
+        "4.7.22",
+        "4.7.23",
+        "4.7.24",
+        "4.7.25",
+        "4.7.26",
+        "4.7.27",
+        "4.7.28",
+        "4.7.29",
+        "4.7.3",
+        "4.7.30",
+        "4.7.31",
+        "4.7.32",
+        "4.7.33",
+        "4.7.34",
+        "4.7.35",
+        "4.7.4",
+        "4.7.5",
+        "4.7.6",
+        "4.7.7",
+        "4.7.8",
+        "4.7.9",
+        "4.8",
+        "4.8.1",
+        "4.8.10",
+        "4.8.11",
+        "4.8.12",
+        "4.8.13",
+        "4.8.14",
+        "4.8.15",
+        "4.8.16",
+        "4.8.17",
+        "4.8.18",
+        "4.8.19",
+        "4.8.2",
+        "4.8.20",
+        "4.8.21",
+        "4.8.22",
+        "4.8.23",
+        "4.8.24",
+        "4.8.25",
+        "4.8.26",
+        "4.8.27",
+        "4.8.28",
+        "4.8.29",
+        "4.8.3",
+        "4.8.30",
+        "4.8.4",
+        "4.8.5",
+        "4.8.6",
+        "4.8.7",
+        "4.8.8",
+        "4.8.9",
+        "4.9",
+        "4.9.1",
+        "4.9.10",
+        "4.9.11",
+        "4.9.12",
+        "4.9.13",
+        "4.9.14",
+        "4.9.15",
+        "4.9.16",
+        "4.9.17",
+        "4.9.18",
+        "4.9.19",
+        "4.9.2",
+        "4.9.20",
+        "4.9.21",
+        "4.9.22",
+        "4.9.23",
+        "4.9.24",
+        "4.9.25",
+        "4.9.26",
+        "4.9.27",
+        "4.9.28",
+        "4.9.29",
+        "4.9.3",
+        "4.9.30",
+        "4.9.31",
+        "4.9.4",
+        "4.9.5",
+        "4.9.6",
+        "4.9.7",
+        "4.9.8",
+        "4.9.9",
+        "5.0",
+        "5.0.1",
+        "5.0.10",
+        "5.0.11",
+        "5.0.12",
+        "5.0.13",
+        "5.0.14",
+        "5.0.15",
+        "5.0.16",
+        "5.0.17",
+        "5.0.18",
+        "5.0.19",
+        "5.0.2",
+        "5.0.20",
+        "5.0.21",
+        "5.0.22",
+        "5.0.23",
+        "5.0.24",
+        "5.0.25",
+        "5.0.26",
+        "5.0.27",
+        "5.0.3",
+        "5.0.4",
+        "5.0.6",
+        "5.0.7",
+        "5.0.8",
+        "5.0.9",
+        "5.1",
+        "5.1.1",
+        "5.1.10",
+        "5.1.11",
+        "5.1.12",
+        "5.1.13",
+        "5.1.14",
+        "5.1.15",
+        "5.1.16",
+        "5.1.17",
+        "5.1.18",
+        "5.1.19",
+        "5.1.2",
+        "5.1.20",
+        "5.1.21",
+        "5.1.22",
+        "5.1.23",
+        "5.1.24",
+        "5.1.3",
+        "5.1.4",
+        "5.1.5",
+        "5.1.6",
+        "5.1.7",
+        "5.1.8",
+        "5.1.9",
+        "5.2",
+        "5.2.1",
+        "5.2.10",
+        "5.2.11",
+        "5.2.12",
+        "5.2.13",
+        "5.2.14",
+        "5.2.15",
+        "5.2.16",
+        "5.2.17",
+        "5.2.18",
+        "5.2.19",
+        "5.2.2",
+        "5.2.20",
+        "5.2.21",
+        "5.2.22",
+        "5.2.23",
+        "5.2.24",
+        "5.2.25",
+        "5.2.26",
+        "5.2.3",
+        "5.2.4",
+        "5.2.5",
+        "5.2.6",
+        "5.2.7",
+        "5.2.8",
+        "5.2.9",
+        "5.3",
+        "5.3.1",
+        "5.3.10",
+        "5.3.11",
+        "5.3.12",
+        "5.3.13",
+        "5.3.14",
+        "5.3.15",
+        "5.3.16",
+        "5.3.17",
+        "5.3.18",
+        "5.3.19",
+        "5.3.2",
+        "5.3.20",
+        "5.3.21",
+        "5.3.22",
+        "5.3.23",
+        "5.3.3",
+        "5.3.4",
+        "5.3.5",
+        "5.3.6",
+        "5.3.7",
+        "5.3.8",
+        "5.3.9",
+        "5.4",
+        "5.4.1",
+        "5.4.10",
+        "5.4.11",
+        "5.4.12",
+        "5.4.13",
+        "5.4.14",
+        "5.4.15",
+        "5.4.16",
+        "5.4.17",
+        "5.4.18",
+        "5.4.19",
+        "5.4.2",
+        "5.4.20",
+        "5.4.21",
+        "5.4.3",
+        "5.4.4",
+        "5.4.5",
+        "5.4.6",
+        "5.4.7",
+        "5.4.8",
+        "5.4.9",
+        "5.5",
+        "5.5.1",
+        "5.5.10",
+        "5.5.11",
+        "5.5.12",
+        "5.5.13",
+        "5.5.14",
+        "5.5.15",
+        "5.5.16",
+        "5.5.17",
+        "5.5.18",
+        "5.5.19",
+        "5.5.2",
+        "5.5.20",
+        "5.5.3",
+        "5.5.4",
+        "5.5.5",
+        "5.5.6",
+        "5.5.7",
+        "5.5.8",
+        "5.5.9",
+        "5.6",
+        "5.6.1",
+        "5.6.10",
+        "5.6.11",
+        "5.6.12",
+        "5.6.13",
+        "5.6.14",
+        "5.6.15",
+        "5.6.16",
+        "5.6.17",
+        "5.6.18",
+        "5.6.19",
+        "5.6.2",
+        "5.6.3",
+        "5.6.4",
+        "5.6.5",
+        "5.6.6",
+        "5.6.7",
+        "5.6.8",
+        "5.6.9",
+        "5.7",
+        "5.7.1",
+        "5.7.10",
+        "5.7.11",
+        "5.7.12",
+        "5.7.13",
+        "5.7.14",
+        "5.7.15",
+        "5.7.16",
+        "5.7.17",
+        "5.7.2",
+        "5.7.3",
+        "5.7.4",
+        "5.7.5",
+        "5.7.6",
+        "5.7.7",
+        "5.7.8",
+        "5.7.9",
+        "5.8",
+        "5.8.1",
+        "5.8.10",
+        "5.8.11",
+        "5.8.12",
+        "5.8.13",
+        "5.8.14",
+        "5.8.15",
+        "5.8.2",
+        "5.8.3",
+        "5.8.4",
+        "5.8.5",
+        "5.8.6",
+        "5.8.7",
+        "5.8.8",
+        "5.8.9",
+        "5.9",
+        "5.9.1",
+        "5.9.10",
+        "5.9.11",
+        "5.9.12",
+        "5.9.13",
+        "5.9.14",
+        "5.9.15",
+        "5.9.16",
+        "5.9.2",
+        "5.9.3",
+        "5.9.4",
+        "5.9.5",
+        "5.9.6",
+        "5.9.7",
+        "5.9.8",
+        "5.9.9",
+        "6.0",
+        "6.0.1",
+        "6.0.10",
+        "6.0.11",
+        "6.0.12",
+        "6.0.13",
+        "6.0.14",
+        "6.0.2",
+        "6.0.3",
+        "6.0.4",
+        "6.0.5",
+        "6.0.6",
+        "6.0.7",
+        "6.0.8",
+        "6.0.9",
+        "6.1",
+        "6.1.1",
+        "6.1.10",
+        "6.1.11",
+        "6.1.12",
+        "6.1.2",
+        "6.1.3",
+        "6.1.4",
+        "6.1.5",
+        "6.1.6",
+        "6.1.7",
+        "6.1.8",
+        "6.1.9",
+        "6.2",
+        "6.2.1",
+        "6.2.10",
+        "6.2.11",
+        "6.2.2",
+        "6.2.3",
+        "6.2.4",
+        "6.2.5",
+        "6.2.6",
+        "6.2.7",
+        "6.2.8",
+        "6.2.9",
+        "6.3",
+        "6.3.1",
+        "6.3.10",
+        "6.3.2",
+        "6.3.3",
+        "6.3.4",
+        "6.3.5",
+        "6.3.6",
+        "6.3.7",
+        "6.3.8",
+        "6.3.9",
+        "6.4",
+        "6.4.1",
+        "6.4.10",
+        "6.4.2",
+        "6.4.3",
+        "6.4.4",
+        "6.4.5",
+        "6.4.6",
+        "6.4.7",
+        "6.4.8",
+        "6.4.9",
+        "6.5",
+        "6.5.10",
+        "6.5.2",
+        "6.5.3",
+        "6.5.4",
+        "6.5.5",
+        "6.5.6",
+        "6.5.7",
+        "6.5.8",
+        "6.5.9",
+        "6.6",
+        "6.6.1",
+        "6.6.2",
+        "6.6.3",
+        "6.6.4",
+        "6.6.5",
+        "6.6.6",
+        "6.6.7",
+        "6.7",
+        "6.7.1",
+        "6.7.2",
+        "6.7.3",
+        "6.7.4",
+        "6.7.5",
+        "6.7.6",
+        "6.7.7",
+        "6.8",
+        "6.8.1",
+        "6.8.2",
+        "6.8.3",
+        "6.8.4",
+        "6.8.5",
+        "6.8.6",
+        "6.8.7",
+        "6.8.8",
+        "6.9",
+        "6.9.1",
+        "6.9.2",
+        "6.9.3",
+        "6.9.4",
+        "6.9.5",
+        "6.9.6",
+        "6.9.7",
+        "7.0",
+        "7.0.1",
+        "7.0.2",
+        "7.0.3",
+        "7.0.4",
+        "7.1"
+      ],
+      "locator": "Stable Core release downloads",
+      "normalizedSha256": "afc3f344e7177b3d4184ea06494f8d8833a577696e5293925aa524018c2a8877",
+      "observedAt": "2026-09-02T11:11:43.235Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "cc3dd9490cdba9548c65f78c553bc51a9575fdb647c63f4349e6299622828b2d",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T11:11:43.235Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.core-release-index",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "WordPress release archive",
+      "url": "https://wordpress.org/download/releases/",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "identityCapture": 1,
+        "identityFlags": "gi",
+        "identityPattern": "\\\"current\\\"\\s*:\\s*\\\"([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\\"",
+        "kind": "json-pointer"
+      },
+      "fragmentSha256": "2ff2935e9cf687439dfe50d0eafa67a8cc621d1571cdac1a58449bb9213e7086",
+      "identities": [
+        "4.7.35",
+        "4.8.30",
+        "4.9.31",
+        "5.0.27",
+        "5.1.24",
+        "5.2.26",
+        "5.3.23",
+        "5.4.21",
+        "5.5.20",
+        "5.6.19",
+        "5.7.17",
+        "5.8.15",
+        "5.9.16",
+        "6.0.14",
+        "6.1.12",
+        "6.2.11",
+        "6.3.10",
+        "6.4.10",
+        "6.5.10",
+        "6.6.7",
+        "6.7.7",
+        "6.8.8",
+        "6.9.7",
+        "7.0.4",
+        "7.1"
+      ],
+      "locator": "offers current versions",
+      "normalizedSha256": "910209bdbee25af16e7f2e5b731fcc7561f50fd8d7583cf677bd80b28979afa4",
+      "observedAt": "2026-09-02T03:28:24.982Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "910209bdbee25af16e7f2e5b731fcc7561f50fd8d7583cf677bd80b28979afa4",
+      "replacementHistory": [],
+      "requiredTokens": [],
+      "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "reviewedAt": "2026-09-02T03:28:24.982Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.version-check-api",
+      "sourceRole": "release-index",
+      "sourceVersion": {
+        "mode": "release-index"
+      },
+      "title": "WordPress Core version-check API",
+      "url": "https://api.wordpress.org/core/version-check/1.7/",
+      "vendor": "WordPress"
+    },
+    {
+      "applicability": [
+        {
+          "product": "WordPress Core",
+          "profileId": "wordpress.core71-meta",
+          "surface": "storage",
+          "transport": "register_meta args.type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Core REST API",
+          "profileId": "wordpress.core71-rest-schema",
+          "surface": "delivery",
+          "transport": "WordPress REST JSON Schema type",
+          "version": {
+            "label": "7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attributes",
+          "surface": "storage",
+          "transport": "block.json attributes[type]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        },
+        {
+          "product": "WordPress Block Editor",
+          "profileId": "wordpress.core71-block-attribute-source",
+          "surface": "storage",
+          "transport": "block.json attributes[source]",
+          "version": {
+            "label": "WordPress Core 7.1",
+            "mode": "pinned"
+          }
+        }
+      ],
+      "completeness": "supplemental",
+      "extraction": {
+        "kind": "document",
+        "tokens": [
+          "WordPress 7.1"
+        ]
+      },
+      "fragmentSha256": "94a9922bbc17fa10e8f156894bc248ac389fc6c7f3622bd4e28d4b72ece7bca9",
+      "identities": [],
+      "locator": "WordPress 7.1 release page",
+      "normalizedSha256": "2f5b6b9b686155149246aefd9c9af58457c21bddbb947d34c9bc18ebe3de1aec",
+      "observedAt": "2026-09-02T11:11:44.848Z",
+      "observedTokens": null,
+      "observedTokenSetSha256": null,
+      "rawSha256": "6344bde2cb68ed54310627dba400101cb92c7cf9299a6b60d7f5ae66da79d03d",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "WordPress 7.1"
+      ],
+      "requiredTokenSetSha256": "e95d11fbf6bbd9d637fd5725c0521c9bb91ec1243c7d8ed297d0adbec0c0788b",
+      "resolvedRevision": "7.1",
+      "reviewedAt": "2026-09-02T11:11:44.848Z",
+      "reviewer": "wordpress",
+      "reviewStatus": "reviewed",
+      "sourceId": "wordpress.version-71",
+      "sourceRole": "compatibility",
+      "sourceVersion": {
+        "mode": "pinned-version",
+        "value": "7.1"
+      },
+      "title": "WordPress 7.1",
+      "url": "https://wordpress.org/documentation/wordpress-version/version-7-1/",
+      "vendor": "WordPress"
+    }
+  ]
+}

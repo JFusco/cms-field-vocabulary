@@ -1,0 +1,1119 @@
+{
+  "extensibility": "discoverable",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.blocks",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Authors compose an ordered collection of permitted block schemas."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "blocks"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Modular Blocks."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "modular-block",
+            "kind": "array",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "blocks",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.blocks.render",
+          "nullHandling": "not-applicable",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean control."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "boolean"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false choices."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.boolean.render",
+          "nullHandling": "not-applicable",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.file",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "File selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "file"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Assets such as images and documents."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "file",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.file.asset",
+          "nullHandling": "preserve",
+          "operation": "asset",
+          "prohibitionCodes": [
+            "flatten-asset-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.GlobalField",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Inputs defined by the referenced Global Field."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "global_field"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Reuse a Global Field definition in a content type."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "global_field",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.globalfield.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.group",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Grouped nested inputs; may allow multiple values."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "group"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "A reusable group of nested fields within a content type."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "group",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.group.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.isodate",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Date input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "isodate"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Date values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "datetime",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "isodate",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.isodate.render",
+          "nullHandling": "not-applicable",
+          "operation": "format",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.json",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON Rich Text Editor when field_metadata.allow_json_rte is true; extensions may also use JSON."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "json"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON Rich Text Editor content or extension-defined structured JSON."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [
+        {
+          "evidence": [
+            {
+              "locator": "JSON Rich Text Editor",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "nativeToken": "allow_json_rte",
+          "requires": [
+            "field_metadata.allow_json_rte:true"
+          ]
+        }
+      ],
+      "nativeToken": "json",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.json.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.link",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Link editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Authored links with title and URL."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "members": [
+              "title",
+              "href"
+            ],
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "link",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "attributes": {
+            "href": "$.href"
+          },
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.link.anchor",
+          "nullHandling": "undefined-attribute",
+          "operation": "anchor",
+          "prohibitionCodes": [
+            "flatten-link-object"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Number input or select when enum/display_type is configured."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "number"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Numeric values and numeric select options."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "number",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.number.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.reference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Reference selector constrained by reference_to."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "reference"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Reference to entries from configured content types."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "reference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.reference.render",
+          "nullHandling": "not-applicable",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.taxonomy",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Taxonomy term selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Create content type with taxonomy",
+              "sourceId": "contentstack.cma.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "taxonomy"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Terms selected from a configured taxonomy."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "taxonomy",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.taxonomy.render",
+          "nullHandling": "not-applicable",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentstack",
+        "profileId": "contentstack.cma.saas",
+        "surface": "management",
+        "transport": "Content type schema field.data_type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentstack.cma.saas.text",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor behavior is refined by keys including multiline, allow_rich_text, markdown, enum, and display_type."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "text"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": "Title, URL, single-line, multi-line, HTML rich text, Markdown, or select values as refined by field metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "JSON Schema of Fields",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [
+        {
+          "evidence": [
+            {
+              "locator": "Multi line textbox",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "nativeToken": "multiline",
+          "requires": [
+            "field_metadata.multiline:true"
+          ]
+        },
+        {
+          "evidence": [
+            {
+              "locator": "HTML-based Rich text editor",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "nativeToken": "allow_rich_text",
+          "requires": [
+            "field_metadata.allow_rich_text:true"
+          ]
+        },
+        {
+          "evidence": [
+            {
+              "locator": "Markdown",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "nativeToken": "markdown",
+          "requires": [
+            "field_metadata.markdown:true"
+          ]
+        },
+        {
+          "evidence": [
+            {
+              "locator": "Select",
+              "sourceId": "contentstack.content-type-json-schema"
+            }
+          ],
+          "nativeToken": "enum",
+          "requires": [
+            "enum",
+            "display_type"
+          ]
+        }
+      ],
+      "nativeToken": "text",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentstack.cma.saas.text.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "contentstack.cma.saas",
+  "notes": [
+    "Authoring field kinds such as Select and rich-text editors are discriminated by field metadata and are not additional data_type tokens.",
+    "GraphQL delivery mappings remain separate from the management vocabulary."
+  ],
+  "platform": "contentstack",
+  "product": "Contentstack",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "contentstack.cma.content-types",
+    "contentstack.content-type-json-schema",
+    "contentstack.product-changelog-index"
+  ],
+  "surface": "management",
+  "transport": "Content type schema field.data_type",
+  "version": {
+    "label": "SaaS observed 2026-09-01",
+    "mode": "rolling"
+  }
+}

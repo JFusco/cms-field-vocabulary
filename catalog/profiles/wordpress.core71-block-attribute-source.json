@@ -1,0 +1,475 @@
+{
+  "extensibility": "closed-at-profile",
+  "fields": [
+    {
+      "applicability": {
+        "product": "WordPress Block Editor",
+        "profileId": "wordpress.core71-block-attribute-source",
+        "surface": "storage",
+        "transport": "block.json attributes[source]",
+        "version": {
+          "label": "WordPress Core 7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-block-attribute-source.attribute",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Attributes > Type validation",
+              "sourceId": "wordpress.block-attributes"
+            },
+            {
+              "locator": "Type validation",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "attribute"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Extracted from a markup attribute."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Read a value from an HTML attribute selected by source and selector."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "unknown",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "attribute",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-block-attribute-source.attribute.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "assume-undocumented-shape"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Block Editor",
+        "profileId": "wordpress.core71-block-attribute-source",
+        "surface": "storage",
+        "transport": "block.json attributes[source]",
+        "version": {
+          "label": "WordPress Core 7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-block-attribute-source.html",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Attributes > Type validation",
+              "sourceId": "wordpress.block-attributes"
+            },
+            {
+              "locator": "Type validation",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "html"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Extracted HTML string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Read inner HTML from selected markup."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "html",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.storageShape"
+          ],
+          "id": "wordpress.block-source-html.pass-through",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "treat-html-source-as-richtext-type"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Block Editor",
+        "profileId": "wordpress.core71-block-attribute-source",
+        "surface": "storage",
+        "transport": "block.json attributes[source]",
+        "version": {
+          "label": "WordPress Core 7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-block-attribute-source.meta",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Attributes > Type validation",
+              "sourceId": "wordpress.block-attributes"
+            },
+            {
+              "locator": "Type validation",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "meta"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Post meta mapping."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Deprecated block-attribute mapping to post meta."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "unknown",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "meta",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-block-attribute-source.meta.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "assume-undocumented-shape"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Block Editor",
+        "profileId": "wordpress.core71-block-attribute-source",
+        "surface": "storage",
+        "transport": "block.json attributes[source]",
+        "version": {
+          "label": "WordPress Core 7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-block-attribute-source.query",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Attributes > Type validation",
+              "sourceId": "wordpress.block-attributes"
+            },
+            {
+              "locator": "Type validation",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "query"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Array extracted from repeated markup."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Read repeated values from markup matched by a selector."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "selector-match",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "query",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-block-attribute-source.query.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Block Editor",
+        "profileId": "wordpress.core71-block-attribute-source",
+        "surface": "storage",
+        "transport": "block.json attributes[source]",
+        "version": {
+          "label": "WordPress Core 7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-block-attribute-source.text",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Attributes > Type validation",
+              "sourceId": "wordpress.block-attributes"
+            },
+            {
+              "locator": "Type validation",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "text"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Extracted text content."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": "Read text content from selected markup."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Value source",
+              "sourceId": "wordpress.block-attributes-gutenberg-943e0d8"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "text",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-block-attribute-source.text.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "wordpress.core71-block-attribute-source",
+  "notes": [
+    "source describes extraction/storage behavior and is not interchangeable with the attribute type union; omitting source stores data in the block comment delimiter and is not a literal source token; meta is deprecated."
+  ],
+  "platform": "wordpress",
+  "product": "WordPress Block Editor",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "wordpress.block-attributes",
+    "wordpress.block-attributes-gutenberg-943e0d8",
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.core-release-index",
+    "wordpress.version-71",
+    "wordpress.version-check-api"
+  ],
+  "surface": "storage",
+  "transport": "block.json attributes[source]",
+  "version": {
+    "label": "WordPress Core 7.1",
+    "mode": "pinned"
+  }
+}

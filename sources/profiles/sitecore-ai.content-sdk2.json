@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "id": "sitecore-ai.content-sdk2",
+  "platform": "sitecore-ai",
+  "product": "SitecoreAI",
+  "version": {
+    "mode": "rolling",
+    "label": "SitecoreAI delivery observed 2026-09-01",
+    "sdk": "Content SDK 2.x"
+  },
+  "surface": "sdk",
+  "transport": "SitecoreAI rendering data consumed by Content SDK 2.x",
+  "extensibility": "open",
+  "notes": [
+    "SitecoreAI supports custom field types and editors; this is a documented built-in baseline, not an instance inventory.",
+    "Official category and rendering pages disagree on capitalization for some labels. nativeToken preserves the reviewed field-type label and does not claim a machine enum.",
+    "Authoring field identities and editor semantics live in the separate sitecore-ai.authoring.current profile."
+  ],
+  "sourceIds": [
+    "sitecore-ai.field-types",
+    "sitecore-ai.simple-field-types",
+    "sitecore-ai.link-field-types",
+    "sitecore-ai.list-field-types",
+    "sitecore-ai.developer-field-types",
+    "sitecore-ai.system-field-types",
+    "sitecore-ai.rendering-field-types",
+    "sitecore-ai.content-sdk-layout-data",
+    "sitecore-ai.content-sdk-components",
+    "sitecore-ai.changelog-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "sitecore-ai.field-types",
+    "locator": "Data template field types and linked category pages"
+  },
+  "fields": [
+    {
+      "nativeToken": "Checkbox",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "True/false authored choices.",
+      "editorBehavior": "Checkbox control.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the raw value; checked is \"1\" and unchecked is an empty string.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Checkbox"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Checkbox"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.checkbox.branch",
+          "operation": "branch",
+          "authority": "official",
+          "valuePath": "$.value",
+          "nullHandling": "branch",
+          "prohibitionCodes": [
+            "coerce-checkbox-with-generic-truthiness"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-ai.rendering-field-types",
+              "locator": "Checkbox"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "File",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Files selected from the media library.",
+      "editorBehavior": "File selector.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps file data under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "File"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "File"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.file.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.File",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-file-field"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Date",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Date values.",
+      "editorBehavior": "Date input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the raw date string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Date"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Date"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.date.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Date",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Datetime",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the raw date-time string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Date and Datetime"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Date and Datetime"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.datetime.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Date",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Image",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Images selected from the media library.",
+      "editorBehavior": "Image selector with image metadata.",
+      "storageShape": null,
+      "deliveryShape": "value is an object with src and alt and optional string width and height.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Image"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Image"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.image.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Image",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "construct-media-url-manually",
+            "discard-field-metadata"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-ai.content-sdk-layout-data",
+              "locator": "Field values > Image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Integer",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the numeric string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Number and Integer"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Number and Integer"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.integer.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Number",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Numeric values.",
+      "editorBehavior": "Number input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the numeric string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Number and Integer"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Number and Integer"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.number.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Single-Line Text",
+      "canonicalSuffix": "SingleLineText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Single-line plain text.",
+      "editorBehavior": "Single-line text input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Text"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Text"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.single-line-text.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "replace-sdk-field-with-raw-value",
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Multi-Line Text",
+      "canonicalSuffix": "MultiLineText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Multi-line plain text.",
+      "editorBehavior": "Multi-line text input.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps the string under value.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Text"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Text"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.multi-line-text.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Text",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "replace-sdk-field-with-raw-value",
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Rich Text",
+      "canonicalSuffix": "RichText",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Authored formatted HTML content.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": null,
+      "deliveryShape": "Rendering data wraps HTML markup under value and includes editing metadata.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Rich Text"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Rich Text"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.rich-text.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.RichText",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "escape-rich-text-as-plain-text",
+            "discard-field-metadata"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-ai.content-sdk-components",
+              "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "General Link with search",
+      "canonicalSuffix": "GeneralLinkWithSearch",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Links selected through a search-enabled editor.",
+      "editorBehavior": "General Link selector with search.",
+      "storageShape": null,
+      "deliveryShape": "Produces the same nested link value shape as General Link.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "General Link and General Link with search"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "General Link and General Link with search"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.general-link-search.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Link",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-link-field",
+            "discard-field-metadata"
+          ],
+          "claimRefs": [
+            "claims.deliveryShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "General Link",
+      "canonicalSuffix": "GeneralLink",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "valuePath": "$.value",
+        "members": [
+          "value",
+          "metadata"
+        ]
+      },
+      "typicalUse": "Internal, external, email, anchor, or media links.",
+      "editorBehavior": "General Link editor.",
+      "storageShape": null,
+      "deliveryShape": "Nested link object whose fields vary by linktype.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "General Link and General Link with search"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "General Link and General Link with search"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": [
+        {
+          "id": "sitecore-ai.general-link.component",
+          "operation": "component",
+          "authority": "official",
+          "valuePath": "$",
+          "rendererId": "sitecore.content-sdk.Link",
+          "props": {
+            "field": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-link-field",
+            "discard-field-metadata"
+          ],
+          "evidence": [
+            {
+              "sourceId": "sitecore-ai.content-sdk-components",
+              "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Droplink",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Select one Sitecore item.",
+      "editorBehavior": "Single-item drop-link selector.",
+      "storageShape": null,
+      "deliveryShape": "Resolved direct item object in rendering data.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Droplink and Droptree"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Droplink and Droptree"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Droptree",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Select one Sitecore item from a tree.",
+      "editorBehavior": "Tree-based single-item selector.",
+      "storageShape": null,
+      "deliveryShape": "Resolved direct item object in rendering data.",
+      "claimEvidence": {
+        "deliveryShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Droplink and Droptree"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "sitecore-ai.rendering-field-types",
+            "locator": "Droplink and Droptree"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.field-types",
+            "locator": "Data template field types and linked category pages"
+          }
+        ]
+      },
+      "renderingOperations": []
+    },
+    "Version link",
+    "Droplist",
+    "Multilist",
+    "Multilist with Search",
+    "Treelist",
+    "TreelistEx",
+    "Checklist",
+    "Grouped Droplink",
+    "Grouped Droplist",
+    "Name Value List",
+    "Multiroot Treelist",
+    "Taglist",
+    "Icon",
+    "IFrame",
+    "Tristate",
+    "Query Datasource",
+    "Attachment",
+    "File Drop Area",
+    "Internal Link",
+    "Layout",
+    "Rules",
+    "Security",
+    "Template Field Source",
+    "Thumbnail"
+  ]
+}

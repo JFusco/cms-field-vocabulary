@@ -1,0 +1,1129 @@
+{
+  "extensibility": "closed-at-profile",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Block",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Block"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Block reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Block-definition references."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Block",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.block.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.boolean.render",
+          "nullHandling": "preserve",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Category",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Category"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Category selection."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Category selections."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Category",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.category.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.ContentReference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "ContentReference"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Content-item links."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "ContentReference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.contentreference.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Date",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Date"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "datetime",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Date",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.date.render",
+          "nullHandling": "preserve",
+          "operation": "format",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.FloatNumber",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "FloatNumber"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Double."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Floating-point values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "FloatNumber",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.floatnumber.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Json",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Json"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON serialized string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "JSON-serialized structured data."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Json",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.json.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.LinkCollection",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "LinkCollection"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Link collection."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Collections of links."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "link",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "LinkCollection",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.linkcollection.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.LongString",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "LongString"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Unbounded string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Strings without the short-string length limit."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "LongString",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.longstring.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.Number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Number"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Number",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.number.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.PageReference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "PageReference"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Page reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Page links."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "PageReference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.pagereference.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.PageType",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "PageType"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Page type."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Page-type references."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "PageType",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.pagetype.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-property-data-type",
+        "surface": "storage",
+        "transport": "EPiServer.Core.PropertyDataType enum",
+        "version": {
+          "label": "EPiServer.dll 12.0.3",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-property-data-type.String",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "String"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "String up to 255 characters."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Short string values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Class PropertyDataType > Fields",
+              "sourceId": "optimizely-paas.cms12-property-data-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "String",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-property-data-type.string.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "optimizely-paas.cms12-property-data-type",
+  "notes": [
+    "This low-level persistence enum is not the open CLR/editor property vocabulary."
+  ],
+  "platform": "optimizely-paas",
+  "product": "Optimizely CMS 12",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "optimizely-paas.cms12-property-data-type",
+    "optimizely-paas.release-notes-index"
+  ],
+  "surface": "storage",
+  "transport": "EPiServer.Core.PropertyDataType enum",
+  "version": {
+    "label": "EPiServer.dll 12.0.3",
+    "mode": "pinned"
+  }
+}

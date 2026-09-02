@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/source-profile.schema.json",
+  "title": "Human-authored CMS profile source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "platform", "product", "version", "surface", "transport", "extensibility", "sourceIds", "defaultEvidence", "fields"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]+$" },
+    "platform": { "enum": ["contentful", "contentstack", "optimizely-saas", "optimizely-paas", "sitecore-ai", "sitecore-on-prem", "wordpress"] },
+    "product": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "label"],
+      "properties": {
+        "mode": { "enum": ["pinned", "rolling"] },
+        "label": { "type": "string", "minLength": 1 },
+        "sdk": { "type": "string", "minLength": 1 }
+      }
+    },
+    "surface": { "enum": ["authoring", "management", "storage", "delivery", "sdk"] },
+    "transport": { "type": "string", "minLength": 1 },
+    "extensibility": { "enum": ["closed-at-profile", "discoverable", "open"] },
+    "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "defaultEvidence": { "$ref": "#/$defs/evidence" },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          { "type": "string", "minLength": 1 },
+          { "$ref": "#/$defs/field" }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "locator"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "locator": { "type": "string", "minLength": 1 }
+      }
+    },
+    "renderingOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "operation", "authority", "prohibitionCodes"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]+$" },
+        "operation": { "enum": ["direct", "branch", "format", "component", "anchor", "asset", "resolved-content", "reference", "iterate", "pass-through"] },
+        "authority": { "enum": ["official", "contract-derived"] },
+        "valuePath": { "type": "string" },
+        "rendererId": { "type": "string" },
+        "props": { "type": "object", "additionalProperties": { "type": "string" } },
+        "attributes": { "type": "object", "additionalProperties": { "type": "string" } },
+        "editTarget": { "enum": ["self", "wrapper", "container", "none"] },
+        "stableKeyPaths": { "type": "array", "items": { "type": "string" } },
+        "stableKeyFallback": { "enum": ["index-primitive-or-no-identity"] },
+        "selection": { "$ref": "#/$defs/renderingSelection" },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "equals", "attributes"],
+            "properties": {
+              "path": { "type": "string" },
+              "equals": { "type": "string" },
+              "attributes": { "type": "object", "additionalProperties": { "type": "string" } }
+            }
+          }
+        },
+        "nullHandling": { "enum": ["preserve", "undefined-attribute", "branch", "not-applicable"] },
+        "formatStrategy": { "enum": ["shared-util"] },
+        "constraintKeys": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "prohibitionCodes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "apply-edit-attribute-per-item",
+              "apply-preview-attributes-per-item",
+              "apply-preview-attributes-to-richtext-renderer",
+              "assume-binary-string-url",
+              "assume-password-encrypted",
+              "assume-undocumented-shape",
+              "coerce-checkbox-with-generic-truthiness",
+              "coerce-rich-text-to-html-string",
+              "coerce-rich-text-to-plain-string",
+              "construct-media-url-manually",
+              "discard-editable-field-shape",
+              "discard-field-metadata",
+              "escape-rich-text-as-plain-text",
+              "flatten-asset-reference",
+              "flatten-content-reference",
+              "flatten-file-field",
+              "flatten-link-field",
+              "flatten-link-object",
+              "flatten-list",
+              "flatten-resolved-content",
+              "flatten-reference",
+              "flatten-structured-value",
+              "flatten-url-object",
+              "invent-fallback-value",
+              "omit-component-content-type",
+              "pass-content-reference-to-optimizely-component",
+              "pass-url-to-content-reference-resolver",
+              "render-secret-value",
+              "replace-sdk-field-with-raw-html",
+              "replace-sdk-field-with-raw-value",
+              "treat-html-source-as-richtext-type"
+            ]
+          }
+        },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "claimRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "claims.nativeType",
+              "claims.valueShape",
+              "claims.typicalUse",
+              "claims.editorBehavior",
+              "claims.storageShape",
+              "claims.deliveryShape"
+            ]
+          }
+        }
+      }
+    },
+    "renderingSelection": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["discriminator", "equals"],
+          "properties": {
+            "discriminator": { "const": "content-reference-usage" },
+            "equals": { "enum": ["link", "media"] }
+          }
+        }
+      ]
+    },
+    "format": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nativeToken", "evidence"],
+      "properties": {
+        "nativeToken": { "type": "string", "minLength": 1 },
+        "requires": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "evidence": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/evidence" } }
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nativeToken", "valueShape", "renderingOperations"],
+      "properties": {
+        "nativeToken": { "type": "string", "minLength": 1 },
+        "canonicalSuffix": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
+        "displayName": { "type": "string", "minLength": 1 },
+        "valueShape": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "nullable"],
+              "properties": {
+                "kind": { "enum": ["string", "boolean", "integer", "number", "datetime", "object", "array", "reference", "rich-text", "binary", "unknown"] },
+                "nullable": { "type": "boolean" },
+                "valuePath": { "type": "string" },
+                "itemKind": { "type": "string" },
+                "members": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+              }
+            },
+            { "type": "null" }
+          ]
+        },
+        "typicalUse": { "type": ["string", "null"] },
+        "editorBehavior": { "type": ["string", "null"] },
+        "storageShape": { "type": ["string", "null"] },
+        "deliveryShape": { "type": ["string", "null"] },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "claimEvidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "valueShape": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+            "typicalUse": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+            "editorBehavior": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+            "storageShape": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+            "deliveryShape": { "type": "array", "items": { "$ref": "#/$defs/evidence" } }
+          }
+        },
+        "formats": { "type": "array", "items": { "$ref": "#/$defs/format" } },
+        "renderingOperations": { "type": "array", "items": { "$ref": "#/$defs/renderingOperation" } }
+      }
+    }
+  }
+}

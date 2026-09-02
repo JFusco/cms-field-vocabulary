@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "id": "optimizely-saas.cms-api-v1",
+  "platform": "optimizely-saas",
+  "product": "Optimizely CMS SaaS",
+  "version": {
+    "mode": "pinned",
+    "label": "CMS SaaS API v1"
+  },
+  "surface": "management",
+  "transport": "CMS API content-type property schema",
+  "extensibility": "closed-at-profile",
+  "notes": [
+    "SDK-only property types and SDK-resolved delivery shapes are not added to the API profile."
+  ],
+  "sourceIds": [
+    "optimizely-saas.content-types",
+    "optimizely-saas.release-notes-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "optimizely-saas.content-types",
+    "locator": "Property types"
+  },
+  "fields": [
+    {
+      "nativeToken": "string",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Text values.",
+      "editorBehavior": "Text editor refined by format and constraints.",
+      "storageShape": "String.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "richText",
+      "valueShape": {
+        "kind": "rich-text",
+        "nullable": true
+      },
+      "typicalUse": "Structured rich text.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": "Structured rich-text value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false choices.",
+      "editorBehavior": "Boolean control.",
+      "storageShape": "Boolean.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer input with optional bounds.",
+      "storageShape": "Integer.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "float",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Decimal numbers.",
+      "editorBehavior": "Number input with optional bounds.",
+      "storageShape": "Floating-point number.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "dateTime",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": true
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time input with optional bounds.",
+      "storageShape": "ISO date-time string.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "url",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "URL values, optionally refined for images or documents.",
+      "editorBehavior": "URL selector/input.",
+      "storageShape": "URL value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "link",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Links with authored metadata.",
+      "editorBehavior": "Link editor.",
+      "storageShape": "Link value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "json",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Arbitrary structured JSON.",
+      "editorBehavior": "JSON editor.",
+      "storageShape": "JSON value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "content",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Content relationships.",
+      "editorBehavior": "Content selector constrained by permitted types.",
+      "storageShape": "Content relationship.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "contentReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "References to content or media.",
+      "editorBehavior": "Content reference selector constrained by permitted types.",
+      "storageShape": "Content reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "property-defined"
+      },
+      "typicalUse": "Lists whose item type is declared by items.",
+      "editorBehavior": "List editor respecting item and count constraints.",
+      "storageShape": "Array.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "component",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Embedded component properties.",
+      "editorBehavior": "Component selection requiring contentType.",
+      "storageShape": "Embedded component value.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Property types"
+          }
+        ]
+      }
+    }
+  ]
+}

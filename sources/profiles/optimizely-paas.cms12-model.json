@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 1,
+  "id": "optimizely-paas.cms12-model",
+  "platform": "optimizely-paas",
+  "product": "Optimizely CMS 12",
+  "version": {
+    "mode": "pinned",
+    "label": "CMS 12 model/editor surface"
+  },
+  "surface": "sdk",
+  "transport": ".NET content model property types",
+  "extensibility": "open",
+  "notes": [
+    "SelectOne, SelectMany, and AutoSuggestion are editor attributes, not storage types.",
+    "Official pages use both XHtmlString and the CLR spelling XhtmlString; this profile preserves the CLR type spelling and records the source inconsistency."
+  ],
+  "sourceIds": [
+    "optimizely-paas.cms12-builtins",
+    "optimizely-paas.cms12-property-attributes",
+    "optimizely-paas.release-notes-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "optimizely-paas.cms12-builtins",
+    "locator": "Common property types; Work with other content"
+  },
+  "fields": [
+    {
+      "nativeToken": "String",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Short text up to 255 characters.",
+      "editorBehavior": "Single-line text editor by default.",
+      "storageShape": "String.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "XhtmlString",
+      "valueShape": {
+        "kind": "rich-text",
+        "nullable": true
+      },
+      "typicalUse": "Rich formatted text.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": "XHTML string value.",
+      "deliveryShape": null,
+      "evidence": [
+        {
+          "sourceId": "optimizely-paas.cms12-property-attributes",
+          "locator": "Default backing types"
+        }
+      ],
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Int",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer editor.",
+      "storageShape": "Integer.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "DateTime",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": true
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time editor.",
+      "storageShape": "DateTime.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Double",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Floating-point numbers.",
+      "editorBehavior": "Number editor.",
+      "storageShape": "Double.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false values.",
+      "editorBehavior": "Boolean editor.",
+      "storageShape": "Boolean.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "PageType",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Page-type selections.",
+      "editorBehavior": "Page-type selector.",
+      "storageShape": "Page type.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Blob",
+      "valueShape": {
+        "kind": "binary",
+        "nullable": true
+      },
+      "typicalUse": "Binary large objects.",
+      "editorBehavior": null,
+      "storageShape": "Blob.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "PageReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "References to pages.",
+      "editorBehavior": "Page selector.",
+      "storageShape": "Page reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "ContentReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "References to CMS content.",
+      "editorBehavior": "Content selector.",
+      "storageShape": "Content reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Url",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "URL values.",
+      "editorBehavior": "URL selector/input.",
+      "storageShape": "URL.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "ContentArea",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "content"
+      },
+      "typicalUse": "Ordered collections of content items.",
+      "editorBehavior": "Content area editor.",
+      "storageShape": "Content area.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "LinkItemCollection",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "link"
+      },
+      "typicalUse": "Collections of links.",
+      "editorBehavior": "Link collection editor.",
+      "storageShape": "Link item collection.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "LinkItem",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "A single link item in CMS 12.11 and newer.",
+      "editorBehavior": "Link editor.",
+      "storageShape": "Link item.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "ContentReferenceList",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "content-reference"
+      },
+      "typicalUse": "Lists of content references.",
+      "editorBehavior": "Content reference list editor.",
+      "storageShape": "Content reference list.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-builtins",
+            "locator": "Common property types; Work with other content"
+          }
+        ]
+      }
+    }
+  ]
+}

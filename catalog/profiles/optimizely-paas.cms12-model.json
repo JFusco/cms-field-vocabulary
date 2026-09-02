@@ -1,0 +1,1391 @@
+{
+  "extensibility": "open",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.Blob",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Blob"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Blob."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Binary large objects."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "binary",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Blob",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.blob.render",
+          "nullHandling": "preserve",
+          "operation": "asset",
+          "prohibitionCodes": [
+            "assume-binary-string-url"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.Boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            },
+            {
+              "locator": "Default backing types",
+              "sourceId": "optimizely-paas.cms12-property-attributes"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.boolean.render",
+          "nullHandling": "preserve",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.ContentArea",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content area editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "ContentArea"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content area."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Ordered collections of content items."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "content",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "ContentArea",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.contentarea.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.ContentReference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "ContentReference"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "References to CMS content."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "ContentReference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.contentreference.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.ContentReferenceList",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference list editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "ContentReferenceList"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Content reference list."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Lists of content references."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "content-reference",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "ContentReferenceList",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.contentreferencelist.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.DateTime",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            },
+            {
+              "locator": "Default backing types",
+              "sourceId": "optimizely-paas.cms12-property-attributes"
+            }
+          ],
+          "status": "documented",
+          "value": "DateTime"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "DateTime."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Date and time values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "datetime",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "DateTime",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.datetime.render",
+          "nullHandling": "preserve",
+          "operation": "format",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.Double",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Number editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            },
+            {
+              "locator": "Default backing types",
+              "sourceId": "optimizely-paas.cms12-property-attributes"
+            }
+          ],
+          "status": "documented",
+          "value": "Double"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Double."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Floating-point numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Double",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.double.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.Int",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Int"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Int",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.int.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.LinkItem",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Link editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "LinkItem"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Link item."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "A single link item in CMS 12.11 and newer."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "LinkItem",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.linkitem.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.LinkItemCollection",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Link collection editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "LinkItemCollection"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Link item collection."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Collections of links."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "link",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "LinkItemCollection",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.linkitemcollection.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.PageReference",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Page selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "PageReference"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Page reference."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "References to pages."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "PageReference",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.pagereference.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.PageType",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Page-type selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "PageType"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Page type."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Page-type selections."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "PageType",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.pagetype.render",
+          "nullHandling": "preserve",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.String",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-line text editor by default."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            },
+            {
+              "locator": "Default backing types",
+              "sourceId": "optimizely-paas.cms12-property-attributes"
+            }
+          ],
+          "status": "documented",
+          "value": "String"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "String."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Short text up to 255 characters."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "String",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.string.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.Url",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "URL selector/input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Url"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "URL."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "URL values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Url",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.url.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS 12",
+        "profileId": "optimizely-paas.cms12-model",
+        "surface": "sdk",
+        "transport": ".NET content model property types",
+        "version": {
+          "label": "CMS 12 model/editor surface",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "optimizely-paas.cms12-model.XhtmlString",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich-text editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Default backing types",
+              "sourceId": "optimizely-paas.cms12-property-attributes"
+            }
+          ],
+          "status": "documented",
+          "value": "XhtmlString"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "XHTML string value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich formatted text."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Common property types; Work with other content",
+              "sourceId": "optimizely-paas.cms12-builtins"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "rich-text",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "XhtmlString",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "optimizely-paas.cms12-model.xhtmlstring.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "coerce-rich-text-to-plain-string"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "optimizely-paas.cms12-model",
+  "notes": [
+    "SelectOne, SelectMany, and AutoSuggestion are editor attributes, not storage types.",
+    "Official pages use both XHtmlString and the CLR spelling XhtmlString; this profile preserves the CLR type spelling and records the source inconsistency."
+  ],
+  "platform": "optimizely-paas",
+  "product": "Optimizely CMS 12",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "optimizely-paas.cms12-builtins",
+    "optimizely-paas.cms12-property-attributes",
+    "optimizely-paas.release-notes-index"
+  ],
+  "surface": "sdk",
+  "transport": ".NET content model property types",
+  "version": {
+    "label": "CMS 12 model/editor surface",
+    "mode": "pinned"
+  }
+}

@@ -1,0 +1,2299 @@
+{
+  "extensibility": "open",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Attachment",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Attachment"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Attachment",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Checkbox",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checkbox control."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checkbox"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checked stores \"1\" and unchecked stores blank."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false authored choices."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Checkbox",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Checklist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Checklist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Checklist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Custom",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Custom"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Custom",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Date",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Sitecore date string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Date",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Datetime",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date-time input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Datetime"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Sitecore date string."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Date and time values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Datetime",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Droplink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-xp104.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droplink"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droplink",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Droplist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droplist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droplist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Droptree",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-xp104.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Droptree"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Droptree",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.File",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Files selected from the media library."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "File",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.FileDropArea",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "File Drop Area"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "File Drop Area",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.GeneralLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-xp104.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Internal, external, email, anchor, or media links."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "General link",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.GeneralLinkWithSearch",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-xp104.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "General link with search"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "General link with search",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.GroupedDroplink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Grouped Droplink"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Grouped Droplink",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.GroupedDroplist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Grouped Droplist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Grouped Droplist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Icon",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-xp104.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Icon"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Icon",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.IFrame",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-xp104.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "IFrame"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "IFrame",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Image",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Image selector."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Image"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Images selected from the media library."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Image",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Textual numeric value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole numbers."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Integer",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.InternalLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Internal Link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Internal Link",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Layout",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Layout"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Layout",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.MultiLineText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-line text input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-Line Text"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "String."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multi-line plain text."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multi-Line Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Multilist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multilist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multilist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.MultilistWithSearch",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Multilist with Search"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Multilist with Search",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.NameValueList",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Name Value List"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Name Value List",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Number input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Number"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Textual numeric value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Numeric values."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Number",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Password",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Masks the value in the authoring UI."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Password"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Plaintext storage despite masked authoring."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Masked authoring input."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Password",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.QueryDatasource",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Query Datasource"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Query Datasource",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.RichText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich-text editor."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rich Text"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Encoded HTML."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Formatted HTML content."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Rich Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Rules",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Rules"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Rules",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Security",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Security"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Security",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.SingleLineText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-line text input."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-Line Text"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "String."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Data template field types and linked category pages",
+              "sourceId": "sitecore-xp104.field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Single-line plain text."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Single-Line Text",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.TemplateFieldSource",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Template Field Source"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Template Field Source",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Thumbnail",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "System field type table",
+              "sourceId": "sitecore-xp104.system-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Thumbnail"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Thumbnail",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Treelist",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Treelist"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Treelist",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.TreelistEx",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "TreelistEx"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "TreelistEx",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.TreelistWithSearch",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Simple and List field type sections",
+              "sourceId": "sitecore-xp104.simple-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Treelist with Search"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Treelist with Search",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.Tristate",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Developer field type table",
+              "sourceId": "sitecore-xp104.developer-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Tristate"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Tristate",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Sitecore Experience Platform",
+        "profileId": "sitecore-on-prem.xp104-authoring",
+        "surface": "authoring",
+        "transport": "XP 10.4 data template field type names and authoring editors",
+        "version": {
+          "label": "XP 10.4",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "sitecore-on-prem.xp104-authoring.VersionLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Link field type table",
+              "sourceId": "sitecore-xp104.link-field-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Version link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "Version link",
+      "origin": "native",
+      "renderingOperations": []
+    }
+  ],
+  "id": "sitecore-on-prem.xp104-authoring",
+  "notes": [
+    "XP supports custom field types and editors; the documented built-ins are not a closed instance enum.",
+    "Native field labels preserve the exact spelling and case observed in the XP 10.4 authoring documentation.",
+    "JSS 22 layout-data shapes and rendering operations live in the separate sitecore-on-prem.headless22 profile."
+  ],
+  "platform": "sitecore-on-prem",
+  "product": "Sitecore Experience Platform",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "sitecore-xp.downloads-index",
+    "sitecore-xp104.developer-field-types",
+    "sitecore-xp104.field-types",
+    "sitecore-xp104.link-field-types",
+    "sitecore-xp104.simple-field-types",
+    "sitecore-xp104.system-field-types"
+  ],
+  "surface": "authoring",
+  "transport": "XP 10.4 data template field type names and authoring editors",
+  "version": {
+    "label": "XP 10.4",
+    "mode": "pinned"
+  }
+}

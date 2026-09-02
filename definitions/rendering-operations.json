@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "operationKinds": [
+    "direct",
+    "branch",
+    "format",
+    "component",
+    "anchor",
+    "asset",
+    "resolved-content",
+    "reference",
+    "iterate",
+    "pass-through"
+  ],
+  "authorities": ["official", "contract-derived", "consumer-policy"],
+  "claimRefs": [
+    "claims.nativeType",
+    "claims.valueShape",
+    "claims.typicalUse",
+    "claims.editorBehavior",
+    "claims.storageShape",
+    "claims.deliveryShape"
+  ],
+  "formatStrategies": ["shared-util"],
+  "selectionDiscriminators": {
+    "content-reference-usage": ["link", "media"]
+  },
+  "prohibitionCodes": [
+    "apply-edit-attribute-per-item",
+    "apply-preview-attributes-per-item",
+    "apply-preview-attributes-to-richtext-renderer",
+    "assume-binary-string-url",
+    "assume-password-encrypted",
+    "assume-undocumented-shape",
+    "coerce-checkbox-with-generic-truthiness",
+    "coerce-rich-text-to-html-string",
+    "coerce-rich-text-to-plain-string",
+    "construct-media-url-manually",
+    "discard-editable-field-shape",
+    "discard-field-metadata",
+    "escape-rich-text-as-plain-text",
+    "flatten-asset-reference",
+    "flatten-content-reference",
+    "flatten-file-field",
+    "flatten-link-field",
+    "flatten-link-object",
+    "flatten-list",
+    "flatten-resolved-content",
+    "flatten-reference",
+    "flatten-structured-value",
+    "flatten-url-object",
+    "invent-fallback-value",
+    "omit-component-content-type",
+    "pass-content-reference-to-optimizely-component",
+    "pass-url-to-content-reference-resolver",
+    "render-secret-value",
+    "replace-sdk-field-with-raw-html",
+    "replace-sdk-field-with-raw-value",
+    "treat-html-source-as-richtext-type"
+  ]
+}

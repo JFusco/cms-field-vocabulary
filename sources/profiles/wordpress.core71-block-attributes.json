@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "wordpress.core71-block-attributes",
+  "platform": "wordpress",
+  "product": "WordPress Block Editor",
+  "version": {
+    "mode": "pinned",
+    "label": "WordPress Core 7.1"
+  },
+  "surface": "storage",
+  "transport": "block.json attributes[type]",
+  "extensibility": "closed-at-profile",
+  "notes": [
+    "RichText is a component/editor pattern usually backed by a string attribute and is not a block attribute type token.",
+    "The bundled handbook lists number as the same value category as integer; both native tokens remain distinct catalog identities."
+  ],
+  "sourceIds": [
+    "wordpress.block-attributes",
+    "wordpress.block-attributes-gutenberg-943e0d8",
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.version-71",
+    "wordpress.core-release-index",
+    "wordpress.version-check-api"
+  ],
+  "defaultEvidence": {
+    "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+    "locator": "Type validation"
+  },
+  "fields": [
+    {
+      "nativeToken": "null",
+      "valueShape": {
+        "kind": "unknown",
+        "nullable": true
+      },
+      "typicalUse": "An explicitly null block attribute.",
+      "editorBehavior": null,
+      "storageShape": "Null.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": false
+      },
+      "typicalUse": "True/false block state.",
+      "editorBehavior": null,
+      "storageShape": "Boolean attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "object",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "Structured block state.",
+      "editorBehavior": null,
+      "storageShape": "Object attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": false,
+        "itemKind": "schema-defined"
+      },
+      "typicalUse": "List-shaped block state.",
+      "editorBehavior": null,
+      "storageShape": "Array attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "string",
+      "valueShape": {
+        "kind": "string",
+        "nullable": false
+      },
+      "typicalUse": "Text or HTML-backed block state according to source.",
+      "editorBehavior": null,
+      "storageShape": "String attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": false
+      },
+      "typicalUse": "Whole-number block state.",
+      "editorBehavior": null,
+      "storageShape": "Integer attribute.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "number",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": false
+      },
+      "typicalUse": "Integer-equivalent numeric block state.",
+      "editorBehavior": null,
+      "storageShape": "Number token documented as integer-equivalent block state.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+            "locator": "Type validation"
+          }
+        ]
+      }
+    }
+  ]
+}

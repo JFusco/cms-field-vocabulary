@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/consumer-profile.schema.json",
+  "title": "Consumer projection profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "outputMode", "includeProvenanceInAgentContext", "adapters"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]+$" },
+    "agentProfile": { "type": "string", "minLength": 1 },
+    "outputMode": { "enum": ["selected-contract", "official-data"] },
+    "includeProvenanceInAgentContext": { "const": false },
+    "adapters": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "outputMode": { "const": "selected-contract" } }, "required": ["outputMode"] },
+      "then": {
+        "properties": { "agentProfile": { "type": "string", "minLength": 1 } },
+        "required": ["agentProfile"]
+      }
+    },
+    {
+      "if": { "properties": { "outputMode": { "const": "official-data" } }, "required": ["outputMode"] },
+      "then": {
+        "not": {
+          "properties": { "agentProfile": true },
+          "required": ["agentProfile"]
+        }
+      }
+    }
+  ]
+}

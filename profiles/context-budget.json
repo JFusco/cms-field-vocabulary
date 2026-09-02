@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "benchmarkVersion": 1,
+  "policy": "ratchet",
+  "wordsPerToken": 0.75,
+  "fixtures": {
+    "contentstack-link-reference": {
+      "maxBytes": 1349,
+      "maxTokens": 121
+    },
+    "empty": {
+      "maxBytes": 5,
+      "maxTokens": 1
+    },
+    "optimizely-content-reference-link": {
+      "maxBytes": 1060,
+      "maxTokens": 88
+    },
+    "optimizely-content-reference-media": {
+      "maxBytes": 2275,
+      "maxTokens": 163
+    },
+    "optimizely-paas-richtext-reference": {
+      "maxBytes": 1389,
+      "maxTokens": 113
+    },
+    "optimizely-richtext-link": {
+      "maxBytes": 2838,
+      "maxTokens": 225
+    },
+    "sitecore-ai-text-image": {
+      "maxBytes": 1891,
+      "maxTokens": 156
+    }
+  }
+}

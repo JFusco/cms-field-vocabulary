@@ -1,0 +1,1141 @@
+{
+  "extensibility": "closed-at-profile",
+  "fields": [
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Array",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Array",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Array"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Array",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Lists of symbols or links as constrained by the items schema."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Array",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "field-defined",
+            "kind": "array",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Array",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.array.render",
+          "nullHandling": "not-applicable",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Boolean",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Boolean",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false authored choices."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Boolean",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.boolean.render",
+          "nullHandling": "not-applicable",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Date",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Date",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Date"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Date",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Date and time values."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Date",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "datetime",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Date",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.date.render",
+          "nullHandling": "not-applicable",
+          "operation": "format",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Integer",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Integer",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Integer",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Integer",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.integer.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Link",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Link",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Link"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Link",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Reference to an Entry or Asset, distinguished by linkType."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Link",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Link",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.link.render",
+          "nullHandling": "not-applicable",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Location",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Location",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Location"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Location",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Geographic coordinates."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Location",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "members": [
+              "lat",
+              "lon"
+            ],
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Location",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.location.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Number",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Number"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Number",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Decimal numbers."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Number",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Number",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.number.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Object",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Object",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Object"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Object",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Arbitrary JSON data."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Object",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Object",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.object.render",
+          "nullHandling": "not-applicable",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.ResourceLink",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "ResourceLink interface",
+              "sourceId": "contentful-management.resource-link-type"
+            }
+          ],
+          "status": "documented",
+          "value": "ResourceLink"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "ResourceLink interface",
+              "sourceId": "contentful-management.resource-link-type"
+            }
+          ],
+          "status": "documented",
+          "value": "Cross-space or external resource links identified by URN."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "ResourceLink interface",
+              "sourceId": "contentful-management.resource-link-type"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "reference",
+            "members": [
+              "urn"
+            ],
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "ResourceLink",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.resourcelink.render",
+          "nullHandling": "not-applicable",
+          "operation": "reference",
+          "prohibitionCodes": [
+            "flatten-reference"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.RichText",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > RichText",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "RichText"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > RichText",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Structured rich-text documents with embedded entries and assets."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > RichText",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "rich-text",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "RichText",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.richtext.pass-through",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "coerce-rich-text-to-plain-string"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Symbol",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Symbol",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Symbol"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Symbol",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Short text such as a title, name, or label."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Symbol",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Symbol",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.symbol.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "Contentful",
+        "profileId": "contentful.cma.saas",
+        "surface": "management",
+        "transport": "Content Management API content-type field.type",
+        "version": {
+          "label": "SaaS observed 2026-09-01",
+          "mode": "rolling"
+        }
+      },
+      "canonicalId": "contentful.cma.saas.Text",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Control and EditorInterfaceProps interfaces",
+              "sourceId": "contentful-management.editor-interface"
+            }
+          ],
+          "status": "documented",
+          "value": "Editor widget is configured separately for the field through the editor interface."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Content type > createField(id[, opts]) > type",
+              "sourceId": "contentful.cma.field-types"
+            },
+            {
+              "locator": "Field Types table and field examples",
+              "sourceId": "contentful.field-types-guide"
+            },
+            {
+              "locator": "Field Types table > Text",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Text"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Text",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": "Long-form plain text."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "Field Types table > Text",
+              "sourceId": "contentful.field-types-guide"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": false
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "Text",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "contentful.cma.saas.text.render",
+          "nullHandling": "not-applicable",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "contentful.cma.saas",
+  "notes": [
+    "Editor widgets are configured separately from field.type through the editor interface and do not create additional native field types.",
+    "Entry and Asset references are Link fields distinguished by linkType."
+  ],
+  "platform": "contentful",
+  "product": "Contentful",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "contentful-management.editor-interface",
+    "contentful-management.resource-link-type",
+    "contentful.cma.field-types",
+    "contentful.field-types-guide",
+    "contentful.migration-releases-index"
+  ],
+  "surface": "management",
+  "transport": "Content Management API content-type field.type",
+  "version": {
+    "label": "SaaS observed 2026-09-01",
+    "mode": "rolling"
+  }
+}

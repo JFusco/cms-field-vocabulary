@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "sourceId": "contentful.cma.field-types",
+      "locators": [{ "locator": "Content type > createField(id[, opts]) > type" }]
+    },
+    {
+      "sourceId": "contentful.field-types-guide",
+      "locators": [
+        { "locator": "Field Types table and field examples" },
+        { "locator": "Field Types table > Array" },
+        { "locator": "Field Types table > Boolean" },
+        { "locator": "Field Types table > Date" },
+        { "locator": "Field Types table > Integer" },
+        { "locator": "Field Types table > Link" },
+        { "locator": "Field Types table > Location" },
+        { "locator": "Field Types table > Number" },
+        { "locator": "Field Types table > Object" },
+        { "locator": "Field Types table > RichText" },
+        { "locator": "Field Types table > Symbol" },
+        { "locator": "Field Types table > Text" }
+      ]
+    },
+    {
+      "sourceId": "contentful-management.editor-interface",
+      "locators": [{ "locator": "Control and EditorInterfaceProps interfaces" }]
+    },
+    {
+      "sourceId": "contentful-management.resource-link-type",
+      "locators": [{ "locator": "ResourceLink interface" }]
+    },
+    {
+      "sourceId": "contentstack.cma.content-types",
+      "locators": [{ "locator": "Create content type with taxonomy" }]
+    },
+    {
+      "sourceId": "contentstack.content-type-json-schema",
+      "locators": [
+        { "locator": "HTML-based Rich text editor", "tokens": ["allow_rich_text"] },
+        { "locator": "JSON Rich Text Editor", "tokens": ["allow_json_rte"] },
+        { "locator": "JSON Schema of Fields" },
+        { "locator": "Markdown", "tokens": ["markdown"] },
+        { "locator": "Multi line textbox", "tokens": ["multiline"] },
+        { "locator": "Select", "tokens": ["enum"] }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms12-builtins",
+      "locators": [{ "locator": "Common property types; Work with other content" }]
+    },
+    {
+      "sourceId": "optimizely-paas.cms12-property-attributes",
+      "locators": [{ "locator": "Default backing types" }]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-builtins",
+      "locators": [
+        { "locator": "Common property types" },
+        { "locator": "Common property types; Work with other content; ContentReference<T> property type" },
+        { "locator": "ContentReference<T> property type" },
+        { "locator": "Work with other content" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-property-attributes",
+      "locators": [
+        { "locator": "Available attributes", "tokens": ["AllowedTypes", "Range", "StringLength"] },
+        { "locator": "Available attributes; Default backing types" },
+        { "locator": "Default backing types" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-develop-properties",
+      "locators": [
+        { "locator": "Access properties on strongly typed content" },
+        { "locator": "Access properties on non-strongly typed content" },
+        { "locator": "Access properties on strongly typed content; Access properties on non-strongly typed content; Check null values in properties" },
+        { "locator": "Check null values in properties" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms12-property-data-type",
+      "locators": [{ "locator": "Class PropertyDataType > Fields" }]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-building-blocks",
+      "locators": [{ "locator": "Property types and linked property-type pages" }]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-choice-property",
+      "locators": [
+        { "locator": "Choice Type > Drop-down list" },
+        { "locator": "Choice Type > Select List (multiple selection)" },
+        { "locator": "Choice Type > Selected/Not selected" },
+        { "locator": "Configure Choice property > Choice Type" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-content-property",
+      "locators": [
+        { "locator": "Configure Content property > Content Type" },
+        { "locator": "Content Type > Content Area" },
+        { "locator": "Content Type > Content Area Item" },
+        { "locator": "Content Type > Content Reference" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-link-property",
+      "locators": [
+        { "locator": "Configure Link property > Link Type" },
+        { "locator": "Link Type > Link Collection" },
+        { "locator": "Link Type > LinkItem" },
+        { "locator": "Link Type > URL to Document" },
+        { "locator": "Link Type > URL to image" },
+        { "locator": "Link Type > URL to page/external address" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-text-property",
+      "locators": [
+        { "locator": "Configure Text property > Text Type" },
+        { "locator": "Text Type > Long string (>255)" },
+        { "locator": "Text Type > String (<= 255)" },
+        { "locator": "Text Type > XHTML string (>255)" }
+      ]
+    },
+    {
+      "sourceId": "optimizely-saas.content-types",
+      "locators": [{ "locator": "Property types" }]
+    },
+    {
+      "sourceId": "optimizely-saas.sdk-modelling",
+      "locators": [
+        { "locator": "Modelling > Property Configuration > Property Types" },
+        {
+          "locator": "Property formats",
+          "tokens": ["shortString", "guid", "selectOne", "DocumentUrl", "ImageUrl", "selectMany"]
+        }
+      ]
+    },
+    {
+      "sourceId": "sitecore-ai.content-sdk-components",
+      "locators": [
+        { "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef." },
+        { "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0." }
+      ]
+    },
+    {
+      "sourceId": "sitecore-ai.content-sdk-layout-data",
+      "locators": [
+        { "locator": "Field values > Image" },
+        { "locator": "Field values and field metadata" }
+      ]
+    },
+    {
+      "sourceId": "sitecore-ai.developer-field-types",
+      "locators": [{ "locator": "Developer field type table" }]
+    },
+    {
+      "sourceId": "sitecore-ai.field-types",
+      "locators": [{ "locator": "Data template field types and linked category pages" }]
+    },
+    {
+      "sourceId": "sitecore-ai.link-field-types",
+      "locators": [{ "locator": "Link field type table" }]
+    },
+    {
+      "sourceId": "sitecore-ai.list-field-types",
+      "locators": [{ "locator": "List field type table" }]
+    },
+    {
+      "sourceId": "sitecore-ai.rendering-field-types",
+      "locators": [
+        { "locator": "Checkbox" },
+        { "locator": "Date" },
+        { "locator": "Date and Datetime" },
+        { "locator": "Droplink and Droptree" },
+        { "locator": "Field type reference" },
+        { "locator": "File" },
+        { "locator": "General Link and General Link with search" },
+        { "locator": "Image" },
+        { "locator": "Number and Integer" },
+        { "locator": "Rich Text" },
+        { "locator": "Text" }
+      ]
+    },
+    {
+      "sourceId": "sitecore-ai.simple-field-types",
+      "locators": [{ "locator": "Simple, Link, and List field type sections" }]
+    },
+    {
+      "sourceId": "sitecore-ai.system-field-types",
+      "locators": [{ "locator": "System field type table" }]
+    },
+    {
+      "sourceId": "sitecore-xp.headless22-components",
+      "locators": [
+        { "locator": "Date" },
+        { "locator": "Field type to JSS Next.js component table" },
+        { "locator": "File" },
+        { "locator": "General Link > Link" },
+        { "locator": "Image" },
+        { "locator": "Multi-Line Text > Text" },
+        { "locator": "Numeric types > Text" },
+        { "locator": "Rich Text > RichText" },
+        { "locator": "Single-Line Text > Text" }
+      ]
+    },
+    {
+      "sourceId": "sitecore-xp.headless22-layout-data",
+      "locators": [
+        { "locator": "Raw values > Image" },
+        { "locator": "Raw values and editable values" }
+      ]
+    },
+    {
+      "sourceId": "sitecore-xp104.developer-field-types",
+      "locators": [{ "locator": "Developer field type table" }]
+    },
+    {
+      "sourceId": "sitecore-xp104.field-types",
+      "locators": [{ "locator": "Data template field types and linked category pages" }]
+    },
+    {
+      "sourceId": "sitecore-xp104.link-field-types",
+      "locators": [{ "locator": "Link field type table" }]
+    },
+    {
+      "sourceId": "sitecore-xp104.simple-field-types",
+      "locators": [{ "locator": "Simple and List field type sections" }]
+    },
+    {
+      "sourceId": "sitecore-xp104.system-field-types",
+      "locators": [{ "locator": "System field type table" }]
+    },
+    {
+      "sourceId": "wordpress.block-attributes",
+      "locators": [
+        { "locator": "Attributes > Type validation" },
+        { "locator": "Attributes > Value source" }
+      ]
+    },
+    {
+      "sourceId": "wordpress.block-attributes-gutenberg-943e0d8",
+      "locators": [
+        { "locator": "Type validation" },
+        { "locator": "Value source" }
+      ]
+    },
+    {
+      "sourceId": "wordpress.register-meta",
+      "locators": [{ "locator": "Parameters > args > type > valid values" }]
+    },
+    {
+      "sourceId": "wordpress.register-meta-core-7.1.0",
+      "locators": [{ "locator": "register_meta() docblock > args > type > Valid values" }]
+    },
+    {
+      "sourceId": "wordpress.rest-schema",
+      "locators": [{ "locator": "JSON Schema Basics > Primitive Types" }]
+    },
+    {
+      "sourceId": "wordpress.rest-schema-core-7.1.0",
+      "locators": [{ "locator": "rest_validate_value_from_schema() > $allowed_types" }]
+    },
+    {
+      "sourceId": "wordpress.core-7.1.0-gutenberg-manifest",
+      "locators": [{ "locator": "version and gutenberg.sha" }]
+    },
+    {
+      "sourceId": "wordpress.version-71",
+      "locators": [{ "locator": "WordPress 7.1 release page" }]
+    },
+    {
+      "sourceId": "contentful.migration-releases-index",
+      "locators": [{ "locator": "Versioned release tag links" }]
+    },
+    {
+      "sourceId": "contentstack.product-changelog-index",
+      "locators": [{ "locator": "RSS item links" }]
+    },
+    {
+      "sourceId": "optimizely-saas.release-notes-index",
+      "locators": [{ "locator": "CMS SaaS release-note article links" }]
+    },
+    {
+      "sourceId": "optimizely-saas.sdk-releases-index",
+      "locators": [{ "locator": "@optimizely/cms-sdk release tag links" }]
+    },
+    {
+      "sourceId": "optimizely-paas.release-notes-index",
+      "locators": [{ "locator": "CMS PaaS release-note article links" }]
+    },
+    {
+      "sourceId": "sitecore-ai.changelog-index",
+      "locators": [{ "locator": "RSS item links" }]
+    },
+    {
+      "sourceId": "sitecore-xp.downloads-index",
+      "locators": [{ "locator": "Sitecore Experience Platform download links" }]
+    },
+    {
+      "sourceId": "wordpress.core-release-index",
+      "locators": [{ "locator": "Stable Core release downloads" }]
+    },
+    {
+      "sourceId": "wordpress.version-check-api",
+      "locators": [{ "locator": "offers current versions" }]
+    }
+  ]
+}

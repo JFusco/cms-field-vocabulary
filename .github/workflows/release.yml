@@ -1,0 +1,71 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: cms-field-vocabulary-release
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  release:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip release]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.14.0"
+
+      - name: Enable pnpm via Corepack
+        run: corepack enable && corepack prepare pnpm@11.1.1 --activate
+
+      - name: Get pnpm store path
+        id: pnpm-cache
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Reject aggregated breaking-change bodies
+        run: pnpm run release:preflight
+
+      - name: Verify source, projections, and tests
+        run: pnpm run verify:ci
+
+      - name: Pack and clean-install tarball
+        run: node scripts/verify-packed-consumer.mjs
+
+      - name: Inspect packed artifact
+        run: npm publish --dry-run --ignore-scripts --tag development
+
+      - name: Publish, tag, changelog, and GitHub release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          # Trusted publishing/OIDC is attempted first. This optional secret is
+          # only for bootstrapping 1.0.0 when npm cannot bind a publisher until
+          # the unscoped package exists; revoke and delete it immediately after.
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm exec semantic-release

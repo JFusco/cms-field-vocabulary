@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "id": "optimizely-paas.cms12-property-data-type",
+  "platform": "optimizely-paas",
+  "product": "Optimizely CMS 12",
+  "version": {
+    "mode": "pinned",
+    "label": "EPiServer.dll 12.0.3"
+  },
+  "surface": "storage",
+  "transport": "EPiServer.Core.PropertyDataType enum",
+  "extensibility": "closed-at-profile",
+  "notes": [
+    "This low-level persistence enum is not the open CLR/editor property vocabulary."
+  ],
+  "sourceIds": [
+    "optimizely-paas.cms12-property-data-type",
+    "optimizely-paas.release-notes-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "optimizely-paas.cms12-property-data-type",
+    "locator": "Class PropertyDataType > Fields"
+  },
+  "fields": [
+    {
+      "nativeToken": "Block",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Block-definition references.",
+      "editorBehavior": null,
+      "storageShape": "Block reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false values.",
+      "editorBehavior": null,
+      "storageShape": "Boolean.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Category",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Category selections.",
+      "editorBehavior": null,
+      "storageShape": "Category selection.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "ContentReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Content-item links.",
+      "editorBehavior": null,
+      "storageShape": "Content reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Date",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": true
+      },
+      "typicalUse": "Date-time values.",
+      "editorBehavior": null,
+      "storageShape": "Date-time.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "FloatNumber",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Floating-point values.",
+      "editorBehavior": null,
+      "storageShape": "Double.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Json",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "JSON-serialized structured data.",
+      "editorBehavior": null,
+      "storageShape": "JSON serialized string.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "LinkCollection",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "link"
+      },
+      "typicalUse": "Collections of links.",
+      "editorBehavior": null,
+      "storageShape": "Link collection.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "LongString",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Strings without the short-string length limit.",
+      "editorBehavior": null,
+      "storageShape": "Unbounded string.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "Number",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Integer values.",
+      "editorBehavior": null,
+      "storageShape": "Integer.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "PageReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Page links.",
+      "editorBehavior": null,
+      "storageShape": "Page reference.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "PageType",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true
+      },
+      "typicalUse": "Page-type references.",
+      "editorBehavior": null,
+      "storageShape": "Page type.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "String",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Short string values.",
+      "editorBehavior": null,
+      "storageShape": "String up to 255 characters.",
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-paas.cms12-property-data-type",
+            "locator": "Class PropertyDataType > Fields"
+          }
+        ]
+      }
+    }
+  ]
+}

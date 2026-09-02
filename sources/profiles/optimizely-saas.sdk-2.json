@@ -1,0 +1,958 @@
+{
+  "schemaVersion": 1,
+  "id": "optimizely-saas.sdk-2",
+  "platform": "optimizely-saas",
+  "product": "@optimizely/cms-sdk",
+  "version": {
+    "mode": "pinned",
+    "label": "@optimizely/cms-sdk 2.2.0",
+    "sdk": "2.2.0"
+  },
+  "surface": "sdk",
+  "transport": "JavaScript SDK properties[type] and inferred rendering values",
+  "extensibility": "closed-at-profile",
+  "sourceIds": [
+    "optimizely-saas.content-types",
+    "optimizely-saas.sdk-modelling",
+    "optimizely-saas.release-notes-index",
+    "optimizely-saas.sdk-releases-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "optimizely-saas.sdk-modelling",
+    "locator": "Modelling > Property Configuration > Property Types"
+  },
+  "fields": [
+    {
+      "nativeToken": "string",
+      "valueShape": {
+        "kind": "string",
+        "nullable": true
+      },
+      "typicalUse": "Simple text and select-backed authored values.",
+      "editorBehavior": "Text editor; format can select a specialized editor.",
+      "storageShape": "String.",
+      "deliveryShape": "String.",
+      "formats": [
+        {
+          "nativeToken": "shortString",
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        },
+        {
+          "nativeToken": "guid",
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        },
+        {
+          "nativeToken": "selectOne",
+          "requires": [
+            "enum"
+          ],
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        }
+      ],
+      "renderingOperations": [
+        {
+          "id": "optimizely.string.direct",
+          "operation": "direct",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "editTarget": "self",
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "invent-fallback-value"
+          ],
+          "claimRefs": [
+            "claims.valueShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "richText",
+      "valueShape": {
+        "kind": "rich-text",
+        "nullable": true,
+        "valuePath": "$.json"
+      },
+      "typicalUse": "Slate-JS structured rich text.",
+      "editorBehavior": "Rich-text editor.",
+      "storageShape": "Structured rich-text data.",
+      "deliveryShape": "SDK value exposing structured content on .json.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.richtext.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$.json",
+          "rendererId": "optimizely.cms-sdk.RichText",
+          "props": {
+            "content": "$.json"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "coerce-rich-text-to-html-string"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": true
+      },
+      "typicalUse": "True/false authored values.",
+      "editorBehavior": "Boolean control.",
+      "storageShape": "Boolean.",
+      "deliveryShape": "Boolean.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": true
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Integer input supporting minimum and maximum.",
+      "storageShape": "Integer.",
+      "deliveryShape": "Integer.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.integer.direct",
+          "operation": "direct",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "constraintKeys": [
+            "minimum",
+            "maximum"
+          ],
+          "prohibitionCodes": [],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.editorBehavior"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "float",
+      "valueShape": {
+        "kind": "number",
+        "nullable": true
+      },
+      "typicalUse": "Decimal numbers.",
+      "editorBehavior": "Floating-point input supporting minimum and maximum.",
+      "storageShape": "Floating-point number.",
+      "deliveryShape": "Number.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.float.direct",
+          "operation": "direct",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "constraintKeys": [
+            "minimum",
+            "maximum"
+          ],
+          "prohibitionCodes": [],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.editorBehavior"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "dateTime",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": true
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Date-time input supporting minimum and maximum.",
+      "storageShape": "ISO date-time string.",
+      "deliveryShape": "ISO date-time string.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.datetime.format",
+          "operation": "format",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "formatStrategy": "shared-util",
+          "nullHandling": "preserve",
+          "constraintKeys": [
+            "minimum",
+            "maximum"
+          ],
+          "prohibitionCodes": [],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.editorBehavior"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "url",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true,
+        "members": [
+          "default",
+          "base",
+          "hierarchical",
+          "internal"
+        ]
+      },
+      "typicalUse": "Authored URLs, including document- and image-oriented URL editors.",
+      "editorBehavior": "URL editor refined by format.",
+      "storageShape": "URL value.",
+      "deliveryShape": "InferredUrl object with nullable URL variants.",
+      "formats": [
+        {
+          "nativeToken": "DocumentUrl",
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        },
+        {
+          "nativeToken": "ImageUrl",
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        }
+      ],
+      "renderingOperations": [
+        {
+          "id": "optimizely.url.anchor",
+          "operation": "anchor",
+          "authority": "contract-derived",
+          "valuePath": "$.default",
+          "attributes": {
+            "href": "$.default"
+          },
+          "nullHandling": "undefined-attribute",
+          "prohibitionCodes": [
+            "flatten-url-object",
+            "pass-url-to-content-reference-resolver"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "link",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true,
+        "members": [
+          "url",
+          "text",
+          "title",
+          "target"
+        ]
+      },
+      "typicalUse": "Links with authored URL, text, title, and target metadata.",
+      "editorBehavior": "Link editor.",
+      "storageShape": "Link value.",
+      "deliveryShape": "LinkItem object with nullable url, text, title, and target.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.link.anchor",
+          "operation": "anchor",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "attributes": {
+            "href": "$.url",
+            "title": "$.title",
+            "target": "$.target"
+          },
+          "nullHandling": "undefined-attribute",
+          "prohibitionCodes": [
+            "flatten-link-object"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "binary",
+      "valueShape": {
+        "kind": "binary",
+        "nullable": true
+      },
+      "typicalUse": "Binary file data.",
+      "editorBehavior": "Binary/file property.",
+      "storageShape": "Binary data.",
+      "deliveryShape": "SDK/model-specific binary or asset representation.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.binary.asset",
+          "operation": "asset",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "assume-binary-string-url"
+          ],
+          "claimRefs": [
+            "claims.valueShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "json",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Arbitrary structured data.",
+      "editorBehavior": "JSON editor.",
+      "storageShape": "JSON value.",
+      "deliveryShape": "Typed structured data.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "content",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true,
+        "members": [
+          "__typename"
+        ]
+      },
+      "typicalUse": "Resolved CMS content.",
+      "editorBehavior": "Content selector constrained by content type.",
+      "storageShape": "Content relationship.",
+      "deliveryShape": "Resolved content object including __typename.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.content.resolved",
+          "operation": "resolved-content",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "optimizely.cms-sdk.OptimizelyComponent",
+          "props": {
+            "content": "$"
+          },
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "flatten-resolved-content"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "contentReference",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": true,
+        "members": [
+          "key",
+          "url",
+          "item"
+        ]
+      },
+      "typicalUse": "Reference to content or DAM media without the resolved-content discriminator.",
+      "editorBehavior": "Content reference selector constrained by permitted types.",
+      "storageShape": "Content reference.",
+      "deliveryShape": "InferredContentReference with key, url, and item and without __typename.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.content-reference.reference",
+          "operation": "reference",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "selection": {
+            "discriminator": "content-reference-usage",
+            "equals": "link"
+          },
+          "attributes": {
+            "href": "$.url.default"
+          },
+          "nullHandling": "undefined-attribute",
+          "prohibitionCodes": [
+            "pass-content-reference-to-optimizely-component",
+            "flatten-content-reference"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": true,
+        "itemKind": "property-defined"
+      },
+      "typicalUse": "Lists of supported property values.",
+      "editorBehavior": "List editor with item schema and minItems/maxItems.",
+      "storageShape": "Array.",
+      "deliveryShape": "Array of the declared item value shape.",
+      "formats": [
+        {
+          "nativeToken": "selectMany",
+          "requires": [
+            "items.type:string",
+            "items.enum"
+          ],
+          "evidence": [
+            {
+              "sourceId": "optimizely-saas.sdk-modelling",
+              "locator": "Property formats"
+            }
+          ]
+        }
+      ],
+      "renderingOperations": [
+        {
+          "id": "optimizely.array.iterate",
+          "operation": "iterate",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "editTarget": "container",
+          "stableKeyPaths": [
+            "$item._metadata.key"
+          ],
+          "nullHandling": "preserve",
+          "constraintKeys": [
+            "minItems",
+            "maxItems"
+          ],
+          "prohibitionCodes": [
+            "flatten-list",
+            "apply-edit-attribute-per-item"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "component",
+      "valueShape": {
+        "kind": "object",
+        "nullable": true
+      },
+      "typicalUse": "Embedded component content.",
+      "editorBehavior": "Embedded component requiring contentType.",
+      "storageShape": "Embedded component value.",
+      "deliveryShape": "SDK-typed embedded component object.",
+      "renderingOperations": [
+        {
+          "id": "optimizely.component.component",
+          "operation": "component",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "rendererId": "optimizely.cms-sdk.OptimizelyComponent",
+          "props": {
+            "content": "$"
+          },
+          "nullHandling": "preserve",
+          "constraintKeys": [
+            "contentType"
+          ],
+          "prohibitionCodes": [
+            "omit-component-content-type"
+          ],
+          "claimRefs": [
+            "claims.valueShape",
+            "claims.deliveryShape"
+          ]
+        }
+      ],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "storageShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "optimizely-saas.sdk-modelling",
+            "locator": "Modelling > Property Configuration > Property Types"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "id": "contentful.cma.saas",
+  "platform": "contentful",
+  "product": "Contentful",
+  "version": {
+    "mode": "rolling",
+    "label": "SaaS observed 2026-09-01"
+  },
+  "surface": "management",
+  "transport": "Content Management API content-type field.type",
+  "extensibility": "closed-at-profile",
+  "notes": [
+    "Editor widgets are configured separately from field.type through the editor interface and do not create additional native field types.",
+    "Entry and Asset references are Link fields distinguished by linkType."
+  ],
+  "sourceIds": [
+    "contentful.cma.field-types",
+    "contentful.field-types-guide",
+    "contentful-management.editor-interface",
+    "contentful-management.resource-link-type",
+    "contentful.migration-releases-index"
+  ],
+  "defaultEvidence": {
+    "sourceId": "contentful.cma.field-types",
+    "locator": "Content type > createField(id[, opts]) > type"
+  },
+  "fields": [
+    {
+      "nativeToken": "Symbol",
+      "valueShape": {
+        "kind": "string",
+        "nullable": false
+      },
+      "typicalUse": "Short text such as a title, name, or label.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Symbol"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Symbol"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Symbol"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Text",
+      "valueShape": {
+        "kind": "string",
+        "nullable": false
+      },
+      "typicalUse": "Long-form plain text.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Text"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Text"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Text"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "RichText",
+      "valueShape": {
+        "kind": "rich-text",
+        "nullable": false
+      },
+      "typicalUse": "Structured rich-text documents with embedded entries and assets.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > RichText"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > RichText"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > RichText"
+        }
+      ],
+      "renderingOperations": [
+        {
+          "id": "contentful.richtext.pass-through",
+          "operation": "pass-through",
+          "authority": "contract-derived",
+          "valuePath": "$",
+          "nullHandling": "preserve",
+          "prohibitionCodes": [
+            "coerce-rich-text-to-plain-string"
+          ],
+          "claimRefs": [
+            "claims.valueShape"
+          ]
+        }
+      ]
+    },
+    {
+      "nativeToken": "Integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": false
+      },
+      "typicalUse": "Whole numbers.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Integer"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Integer"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Integer"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Number",
+      "valueShape": {
+        "kind": "number",
+        "nullable": false
+      },
+      "typicalUse": "Decimal numbers.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Number"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Number"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Number"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Date",
+      "valueShape": {
+        "kind": "datetime",
+        "nullable": false
+      },
+      "typicalUse": "Date and time values.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Date"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Date"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Date"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": false
+      },
+      "typicalUse": "True/false authored choices.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Boolean"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Boolean"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Boolean"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Object",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "Arbitrary JSON data.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Object"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Object"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Object"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Location",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false,
+        "members": [
+          "lat",
+          "lon"
+        ]
+      },
+      "typicalUse": "Geographic coordinates.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Location"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Location"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Location"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": false,
+        "itemKind": "field-defined"
+      },
+      "typicalUse": "Lists of symbols or links as constrained by the items schema.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Array"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Array"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Array"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "Link",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": false
+      },
+      "typicalUse": "Reference to an Entry or Asset, distinguished by linkType.",
+      "editorBehavior": "Editor widget is configured separately for the field through the editor interface.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "contentful-management.editor-interface",
+            "locator": "Control and EditorInterfaceProps interfaces"
+          }
+        ],
+        "valueShape": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Link"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful.field-types-guide",
+            "locator": "Field Types table > Link"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "contentful.field-types-guide",
+          "locator": "Field Types table > Link"
+        }
+      ],
+      "renderingOperations": []
+    },
+    {
+      "nativeToken": "ResourceLink",
+      "valueShape": {
+        "kind": "reference",
+        "nullable": false,
+        "members": [
+          "urn"
+        ]
+      },
+      "typicalUse": "Cross-space or external resource links identified by URN.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": null,
+      "evidence": [
+        {
+          "sourceId": "contentful-management.resource-link-type",
+          "locator": "ResourceLink interface"
+        }
+      ],
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "contentful-management.resource-link-type",
+            "locator": "ResourceLink interface"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "contentful-management.resource-link-type",
+            "locator": "ResourceLink interface"
+          }
+        ]
+      }
+    }
+  ]
+}

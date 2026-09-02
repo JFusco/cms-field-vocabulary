@@ -1,0 +1,2 @@
+pnpm run verify:ci || exit $?
+pnpm run test:packed || exit $?

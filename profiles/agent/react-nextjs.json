@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "react-nextjs",
+  "framework": "React and Next.js",
+  "rendererBindings": {
+    "optimizely.cms-sdk.RichText": "@optimizely/cms-sdk/react/richText#RichText",
+    "optimizely.cms-sdk.OptimizelyComponent": "@optimizely/cms-sdk/react/server#OptimizelyComponent",
+    "optimizely.cms-sdk.damAssets": "@optimizely/cms-sdk#damAssets",
+    "optimizely.cms-sdk.getPreviewUtils.src": "@optimizely/cms-sdk/react/server#getPreviewUtils.src",
+    "sitecore.content-sdk.Date": "@sitecore-content-sdk/nextjs#Date",
+    "sitecore.content-sdk.File": "@sitecore-content-sdk/nextjs#File",
+    "sitecore.content-sdk.Image": "@sitecore-content-sdk/nextjs#Image",
+    "sitecore.content-sdk.Link": "@sitecore-content-sdk/nextjs#Link",
+    "sitecore.content-sdk.RichText": "@sitecore-content-sdk/nextjs#RichText",
+    "sitecore.content-sdk.Text": "@sitecore-content-sdk/nextjs#Text",
+    "sitecore.jss-nextjs.Date": "@sitecore-jss/sitecore-jss-nextjs#Date",
+    "sitecore.jss-nextjs.File": "@sitecore-jss/sitecore-jss-nextjs#File",
+    "sitecore.jss-nextjs.Image": "@sitecore-jss/sitecore-jss-nextjs#Image",
+    "sitecore.jss-nextjs.Link": "@sitecore-jss/sitecore-jss-nextjs#Link",
+    "sitecore.jss-nextjs.RichText": "@sitecore-jss/sitecore-jss-nextjs#RichText",
+    "sitecore.jss-nextjs.Text": "@sitecore-jss/sitecore-jss-nextjs#Text"
+  },
+  "rules": [
+    {
+      "fieldId": "optimizely-saas.sdk-2.richText",
+      "operations": [
+        {
+          "id": "react-nextjs.optimizely.richtext-edit-wrapper",
+          "operation": "pass-through",
+          "authority": "consumer-policy",
+          "valuePath": "$",
+          "editTarget": "wrapper",
+          "nullHandling": "preserve",
+          "prohibitionCodes": ["apply-preview-attributes-to-richtext-renderer"],
+          "policyId": "react-nextjs.optimizely.preview-attribute-boundary"
+        }
+      ]
+    },
+    {
+      "fieldId": "optimizely-saas.sdk-2.link",
+      "operations": [
+        {
+          "id": "react-nextjs.link-attributes",
+          "operation": "anchor",
+          "authority": "consumer-policy",
+          "valuePath": "$",
+          "attributes": { "href": "$.url??undefined", "title": "$.title??undefined", "target": "$.target??undefined" },
+          "conditions": [{ "path": "$.target", "equals": "_blank", "attributes": { "rel": "noopener noreferrer" } }],
+          "nullHandling": "undefined-attribute",
+          "prohibitionCodes": [],
+          "policyId": "react-nextjs.safe-link-attributes"
+        }
+      ]
+    },
+    {
+      "fieldId": "optimizely-saas.sdk-2.contentReference",
+      "operations": [
+        {
+          "id": "react-nextjs.optimizely.media-reference-dam",
+          "operation": "asset",
+          "authority": "consumer-policy",
+          "valuePath": "$",
+          "selection": {
+            "discriminator": "content-reference-usage",
+            "equals": "media"
+          },
+          "rendererId": "optimizely.cms-sdk.damAssets",
+          "props": { "content": "$content", "property": "$" },
+          "editTarget": "wrapper",
+          "nullHandling": "preserve",
+          "constraintKeys": ["allowedTypes:_image-or-media"],
+          "prohibitionCodes": ["pass-content-reference-to-optimizely-component"],
+          "policyId": "react-nextjs.optimizely.media-reference-resolution"
+        },
+        {
+          "id": "react-nextjs.optimizely.media-reference-src",
+          "operation": "reference",
+          "authority": "consumer-policy",
+          "valuePath": "$",
+          "selection": {
+            "discriminator": "content-reference-usage",
+            "equals": "media"
+          },
+          "rendererId": "optimizely.cms-sdk.getPreviewUtils.src",
+          "props": { "content": "$content", "reference": "$" },
+          "editTarget": "wrapper",
+          "nullHandling": "preserve",
+          "constraintKeys": ["allowedTypes:_image-or-media"],
+          "prohibitionCodes": ["pass-content-reference-to-optimizely-component"],
+          "policyId": "react-nextjs.optimizely.media-reference-resolution"
+        }
+      ]
+    },
+    {
+      "fieldId": "optimizely-saas.sdk-2.array",
+      "operations": [
+        {
+          "id": "react-nextjs.optimizely.array-identity",
+          "operation": "iterate",
+          "authority": "consumer-policy",
+          "valuePath": "$",
+          "editTarget": "container",
+          "stableKeyPaths": ["$item._metadata.key"],
+          "stableKeyFallback": "index-primitive-or-no-identity",
+          "nullHandling": "preserve",
+          "prohibitionCodes": ["apply-preview-attributes-per-item"],
+          "policyId": "react-nextjs.optimizely.list-boundary"
+        }
+      ]
+    }
+  ]
+}

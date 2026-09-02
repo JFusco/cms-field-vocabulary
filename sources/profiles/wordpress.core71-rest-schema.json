@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "wordpress.core71-rest-schema",
+  "platform": "wordpress",
+  "product": "WordPress Core REST API",
+  "version": {
+    "mode": "pinned",
+    "label": "7.1"
+  },
+  "surface": "delivery",
+  "transport": "WordPress REST JSON Schema type",
+  "extensibility": "closed-at-profile",
+  "sourceIds": [
+    "wordpress.rest-schema",
+    "wordpress.rest-schema-core-7.1.0",
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.version-71",
+    "wordpress.core-release-index",
+    "wordpress.version-check-api"
+  ],
+  "defaultEvidence": {
+    "sourceId": "wordpress.rest-schema-core-7.1.0",
+    "locator": "rest_validate_value_from_schema() > $allowed_types"
+  },
+  "fields": [
+    {
+      "nativeToken": "string",
+      "valueShape": {
+        "kind": "string",
+        "nullable": false
+      },
+      "typicalUse": "String response/request values.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON string.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "null",
+      "valueShape": {
+        "kind": "unknown",
+        "nullable": true
+      },
+      "typicalUse": "An explicitly null JSON value.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON null.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "number",
+      "valueShape": {
+        "kind": "number",
+        "nullable": false
+      },
+      "typicalUse": "JSON numbers.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON number.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "integer",
+      "valueShape": {
+        "kind": "integer",
+        "nullable": false
+      },
+      "typicalUse": "JSON whole numbers.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON integer.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "boolean",
+      "valueShape": {
+        "kind": "boolean",
+        "nullable": false
+      },
+      "typicalUse": "JSON true/false values.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON boolean.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "array",
+      "valueShape": {
+        "kind": "array",
+        "nullable": false,
+        "itemKind": "schema-defined"
+      },
+      "typicalUse": "JSON arrays with an item schema.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON array.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    },
+    {
+      "nativeToken": "object",
+      "valueShape": {
+        "kind": "object",
+        "nullable": false
+      },
+      "typicalUse": "JSON objects with a property schema.",
+      "editorBehavior": null,
+      "storageShape": null,
+      "deliveryShape": "JSON object.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "valueShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "typicalUse": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ],
+        "deliveryShape": [
+          {
+            "sourceId": "wordpress.rest-schema-core-7.1.0",
+            "locator": "rest_validate_value_from_schema() > $allowed_types"
+          }
+        ]
+      }
+    }
+  ]
+}

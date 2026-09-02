@@ -1,0 +1,957 @@
+{
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "id": "contentful.cma.field-types",
+      "vendor": "Contentful",
+      "title": "Contentful migration field types",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-migration/d17c844443af05b466748345501044265b8407cf/README.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["contentful.cma.saas"],
+      "role": "enumeration",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "d17c844443af05b466748345501044265b8407cf" },
+      "locator": "Content type > createField(id[, opts]) > type",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["Symbol", "Text", "Integer", "Number", "Date", "Boolean", "Object", "Location", "RichText", "Array", "Link", "ResourceLink"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "field-types",
+              "startPattern": "\\*\\*`type : string`\\*\\*[^:]*:",
+              "endPattern": "\\*\\*`items : [^`]+`\\*\\*",
+              "itemPattern": "- `([^`]+)`(?: \\([^)]*\\))?",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "contentful",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-02T10:52:25Z",
+          "reason": "Replaced the GitHub presentation page with the immutable raw representation of the same official commit so token discovery is bounded to repository content rather than GitHub UI markup.",
+          "replacedUrl": "https://github.com/contentful/contentful-migration/blob/d17c844443af05b466748345501044265b8407cf/README.md",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-migration/d17c844443af05b466748345501044265b8407cf/README.md"
+        }
+      ]
+    },
+    {
+      "id": "contentful.field-types-guide",
+      "vendor": "Contentful",
+      "title": "Contentful content management field types",
+      "url": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["contentful.cma.saas"],
+      "role": "management-schema",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-git-commit", "value": "51f6a0cc2800497589b82e3ef48b8139b92e4f13" },
+      "locator": "Field Types table and field examples",
+      "extract": { "kind": "table", "tokens": ["Symbol", "Text", "Integer", "Number", "Boolean", "Date", "Location", "Object", "RichText", "Link", "Array"] },
+      "reviewOwner": "contentful",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-02T03:21:08.665Z",
+          "reason": "Replaced a rate-limited rolling page with an immutable official Contentful repository document covering the same field-type claims.",
+          "replacedUrl": "https://www.contentful.com/developers/docs/concepts/data-model/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md"
+        },
+        {
+          "recordedAt": "2026-09-02T10:21:08.000Z",
+          "reason": "The required Content Management API content-types page returned HTTP 429 to automated review, so its field-type claims are retained from an immutable official Contentful repository document.",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-management-api/content-types/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/skills/51f6a0cc2800497589b82e3ef48b8139b92e4f13/skills/contentful-api/references/content-management/content-types.md"
+        }
+      ]
+    },
+    {
+      "id": "contentful-management.editor-interface",
+      "vendor": "Contentful",
+      "title": "Contentful management EditorInterface source",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/entities/editor-interface.ts",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["contentful.cma.saas"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-git-commit", "value": "cc096a337f0e1db6114e8da645d69bb6eb90f11c" },
+      "locator": "Control and EditorInterfaceProps interfaces",
+      "extract": { "kind": "symbol", "tokens": ["Control", "EditorInterfaceProps", "fieldId", "widgetNamespace", "widgetId", "controls"] },
+      "reviewOwner": "contentful",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-02T10:21:08.000Z",
+          "reason": "The rolling Content Management API editor-interface reference returned HTTP 429 to automated review, so the field-to-widget contract is pinned to the official Contentful management SDK source.",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-management-api/#/reference/editor-interface",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/entities/editor-interface.ts"
+        }
+      ]
+    },
+    {
+      "id": "contentful-management.resource-link-type",
+      "vendor": "Contentful",
+      "title": "Contentful management ResourceLink interface",
+      "url": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/common-types.ts",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["contentful.cma.saas"],
+      "role": "sdk-source",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-git-commit", "value": "cc096a337f0e1db6114e8da645d69bb6eb90f11c" },
+      "locator": "ResourceLink interface",
+      "extract": { "kind": "symbol", "tokens": ["ResourceLink", "urn"] },
+      "reviewOwner": "contentful",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-02T03:21:08.685Z",
+          "reason": "Replaced a rate-limited rolling page with an immutable official Contentful SDK source for the ResourceLink value shape.",
+          "replacedUrl": "https://www.contentful.com/developers/docs/references/content-delivery-api/resource-links/",
+          "replacementUrl": "https://raw.githubusercontent.com/contentful/contentful-management.js/cc096a337f0e1db6114e8da645d69bb6eb90f11c/lib/common-types.ts"
+        }
+      ]
+    },
+    {
+      "id": "contentstack.content-type-json-schema",
+      "vendor": "Contentstack",
+      "title": "JSON Schema for Creating a Content Type",
+      "url": "https://www.contentstack.com/docs/headless-cms/json-schema-for-creating-a-content-type",
+      "allowedHosts": ["www.contentstack.com"],
+      "profiles": ["contentstack.cma.saas"],
+      "role": "management-schema",
+      "completeness": "exhaustive",
+      "version": { "mode": "rolling-saas" },
+      "locator": "JSON Schema of Fields",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["text", "json", "blocks", "number", "boolean", "isodate", "file", "link", "reference", "group", "global_field"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "field-data-types",
+              "startPattern": "<h2[^>]*>JSON Schema of Fields</h2>",
+              "endPattern": "<div id=\"field-parameters-explained\"",
+              "itemPattern": "\"data_type\": \"([a-z_]+)\"",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "contentstack"
+    },
+    {
+      "id": "contentstack.cma.content-types",
+      "vendor": "Contentstack",
+      "title": "Content Management API - Content Types",
+      "url": "https://www.contentstack.com/docs/developers/apis/content-management-api/content-types",
+      "allowedHosts": ["www.contentstack.com"],
+      "profiles": ["contentstack.cma.saas"],
+      "role": "management-schema",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Create content type with taxonomy",
+      "extract": { "kind": "heading", "tokens": ["taxonomy"] },
+      "reviewOwner": "contentstack"
+    },
+    {
+      "id": "optimizely-saas.content-types",
+      "vendor": "Optimizely",
+      "title": "Content types in Optimizely CMS SaaS",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/content-types-saas",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2"],
+      "role": "management-schema",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-version", "value": "CMS SaaS API v1" },
+      "locator": "Property types",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["string", "richText", "boolean", "integer", "float", "dateTime", "url", "link", "json", "content", "contentReference", "array", "component"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "data-types",
+              "startPattern": "id=\"data-types\"",
+              "endPattern": "id=\"validation-fields\"",
+              "itemPattern": "<li><code[^>]*>([^<]+)</code>",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "optimizely-saas"
+    },
+    {
+      "id": "optimizely-saas.sdk-modelling",
+      "vendor": "Optimizely",
+      "title": "Content JavaScript SDK modelling",
+      "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["optimizely-saas.sdk-2"],
+      "role": "sdk-source",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "@optimizely/cms-sdk 2.2.0; 021ac0931b72b1fa810fdc6eb9f149c4fc87e600" },
+      "locator": "Modelling > Property Configuration > Property Types",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["string", "richText", "boolean", "integer", "float", "dateTime", "url", "link", "binary", "json", "content", "contentReference", "array", "component"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "property-types",
+              "startPattern": "### Property Types",
+              "endPattern": "#### URL Property",
+              "itemPattern": "- \\*\\*`'([^']+)'`\\*\\*",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "optimizely-saas",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-02T10:52:25Z",
+          "reason": "Replaced the GitHub presentation page with the immutable raw representation of the same official commit so token discovery is bounded to repository content rather than GitHub UI markup.",
+          "replacedUrl": "https://github.com/episerver/content-js-sdk/blob/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md",
+          "replacementUrl": "https://raw.githubusercontent.com/episerver/content-js-sdk/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md"
+        }
+      ]
+    },
+    {
+      "id": "optimizely-paas.cms12-property-data-type",
+      "vendor": "Optimizely",
+      "title": "EPiServer.Core.PropertyDataType enum",
+      "url": "https://world.optimizely.com/CsClassLibraries/cms/EPiServer.Core.PropertyDataType?version=12",
+      "allowedHosts": ["world.optimizely.com"],
+      "profiles": ["optimizely-paas.cms12-property-data-type"],
+      "role": "storage",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-version", "value": "EPiServer.dll 12.0.3" },
+      "locator": "Class PropertyDataType > Fields",
+      "extract": {
+        "kind": "table",
+        "tokens": ["Block", "Boolean", "Category", "ContentReference", "Date", "FloatNumber", "Json", "LinkCollection", "LongString", "Number", "PageReference", "PageType", "String"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "enum-fields",
+              "startPattern": "<h3 id=\"fields\"",
+              "endPattern": "<h3 id=\"extensionmethods\"",
+              "itemPattern": "<h4 id=\"[^\"]+\"[^>]*>([A-Za-z][A-Za-z0-9]*)</h4>[\\s\\S]*?<code[^>]*>public const PropertyDataType \\1</code>",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms12-builtins",
+      "vendor": "Optimizely",
+      "title": "CMS 12 built-in property types",
+      "url": "https://docs.developers.optimizely.com/content-management-system/docs/built-in-property-types",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms12-model"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 12" },
+      "locator": "Common property types; Work with other content",
+      "extract": { "kind": "heading", "tokens": ["String", "XHtmlString", "Int", "DateTime", "Double", "Boolean", "PageType", "Blob", "PageReference", "ContentReference", "Url", "ContentArea", "LinkItemCollection", "LinkItem", "ContentReferenceList"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms12-property-attributes",
+      "vendor": "Optimizely",
+      "title": "CMS 12 property attributes",
+      "url": "https://docs.developers.optimizely.com/content-management-system/docs/property-attributes",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms12-model"],
+      "role": "compatibility",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 12" },
+      "locator": "Default backing types",
+      "extract": { "kind": "table", "tokens": ["String", "XhtmlString", "Int32", "DateTime", "Double", "Boolean"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-builtins",
+      "vendor": "Optimizely",
+      "title": "CMS 13 property types",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/built-in-property-types",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-model"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Common property types; Work with other content; ContentReference<T> property type",
+      "extract": {
+        "kind": "heading",
+        "tokens": [
+          "String",
+          "XHtmlString",
+          "Int",
+          "DateTime",
+          "Double",
+          "Boolean",
+          "PageType",
+          "Blob",
+          "ContentArea",
+          "ContentReference",
+          "ContentReference<T>",
+          "PageReference",
+          "Url",
+          "LinkItemCollection",
+          "LinkItem",
+          "ContentReferenceList",
+          "String/Int",
+          "SelectOne",
+          "SelectMany",
+          "AutoSuggestion",
+          "UIHint.MediaFile",
+          "UIHint.Image",
+          "UIHint.Video",
+          "AllowedTypes",
+          "Range",
+          "StringLength",
+          "RegularExpression",
+          "EmailAttribute"
+        ]
+      },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-property-attributes",
+      "vendor": "Optimizely",
+      "title": "CMS 13 property attributes",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/property-attributes",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-model"],
+      "role": "compatibility",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Available attributes; Default backing types",
+      "extract": {
+        "kind": "heading",
+        "tokens": [
+          "AllowedTypes",
+          "Range",
+          "StringLength",
+          "ContentArea",
+          "Boolean",
+          "DateTime",
+          "Double",
+          "LinkItemCollection",
+          "Int32",
+          "PageType",
+          "String",
+          "Url",
+          "XhtmlString",
+          "Blob",
+          "IList<ContentReference>"
+        ]
+      },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-develop-properties",
+      "vendor": "Optimizely",
+      "title": "CMS 13 develop properties",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/develop-properties",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-model"],
+      "role": "sdk-source",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Access properties on strongly typed content; Access properties on non-strongly typed content; Check null values in properties",
+      "extract": { "kind": "heading", "tokens": ["XhtmlString", "PropertyXhtmlString", "null"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-building-blocks",
+      "vendor": "Optimizely",
+      "title": "CMS 13 building blocks of content modeling",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/building-blocks-of-content-modeling",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Property types and linked property-type pages",
+      "extract": { "kind": "heading", "tokens": ["Block", "Content Area", "DateTime", "URL to page/external address", "Integer", "Floating point number", "Blob", "Guid", "JsonString", "OptiAlloy"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-choice-property",
+      "vendor": "Optimizely",
+      "title": "CMS 13 Choice property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/choice-property",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Configure Choice property > Choice Type",
+      "extract": { "kind": "list", "tokens": ["Drop-down list", "Select List (multiple selection)", "Selected/Not selected"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-content-property",
+      "vendor": "Optimizely",
+      "title": "CMS 13 Content property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/content-property",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Configure Content property > Content Type",
+      "extract": { "kind": "list", "tokens": ["Content Area", "Content Area Item", "Content Reference"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-link-property",
+      "vendor": "Optimizely",
+      "title": "CMS 13 Link property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/link-property",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Configure Link property > Link Type",
+      "extract": { "kind": "list", "tokens": ["Link Collection", "LinkItem", "URL to Document", "URL to image", "URL to page/external address"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "optimizely-paas.cms13-text-property",
+      "vendor": "Optimizely",
+      "title": "CMS 13 Text property",
+      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/text-property",
+      "allowedHosts": ["docs.developers.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "CMS 13" },
+      "locator": "Configure Text property > Text Type",
+      "extract": { "kind": "list", "tokens": ["String (<= 255)", "Long string (>255)", "XHTML string (>255)"] },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "sitecore-ai.field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI data template field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Data template field types and linked category pages",
+      "extract": { "kind": "heading" },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.simple-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI simple field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-simple-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Simple, Link, and List field type sections",
+      "extract": { "kind": "heading", "tokens": ["Checkbox", "File", "Date", "Datetime", "Image", "Integer", "Number", "Single-Line Text", "Multi-Line Text", "Rich Text", "Droplink", "Droplist", "Multilist", "Treelist", "TreelistEx", "Checklist", "Multiroot Treelist", "Taglist"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.link-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI Link field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-link-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Link field type table",
+      "extract": { "kind": "table", "tokens": ["General link with search", "Droplink", "Droptree", "General link", "Version link"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.list-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI List field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-list-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "List field type table",
+      "extract": { "kind": "table", "tokens": ["Droplist", "Multilist", "Treelist", "Checklist"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.developer-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI Developer field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-developer-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Developer field type table",
+      "extract": { "kind": "table", "tokens": ["Icon", "IFrame", "Tristate"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.system-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI System field types",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/content-modeling-and-presentation/data-templates/data-template-fields/the-data-template-field-types/the-system-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "System field type table",
+      "extract": { "kind": "table", "tokens": ["Query Datasource", "Attachment", "File Drop Area", "Internal Link", "Layout", "Rules", "Security", "Template Field Source", "Thumbnail"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.rendering-field-types",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI field types in rendering data",
+      "url": "https://doc.sitecore.com/sai/en/developers/sitecoreai/introduction-to-framework-agnostic-sitecore-development/content-rendering/field-types-in-rendering-data.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.content-sdk2"],
+      "role": "delivery",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Field type reference",
+      "extract": { "kind": "table", "tokens": ["value", "html", "href", "src", "General Link", "General Link with search", "Grouped Droplink", "Grouped Droplist", "Name Value List", "Multilist with Search"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.content-sdk-layout-data",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI layout data for fields",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.content-sdk2"],
+      "role": "sdk-source",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "Content SDK 2.x" },
+      "locator": "Field values and field metadata",
+      "extract": { "kind": "heading", "tokens": ["value", "metadata", "Image", "Link"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-ai.content-sdk-components",
+      "vendor": "Sitecore",
+      "title": "Upgrade JSS 22.0 Next.js apps to Content SDK 2.1",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-ai.content-sdk2"],
+      "role": "compatibility",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "Content SDK 2.1" },
+      "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0.",
+      "extract": { "kind": "heading", "tokens": ["@sitecore-content-sdk/nextjs", "RichText", "Link"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-xp104.field-types",
+      "vendor": "Sitecore",
+      "title": "Sitecore XP 10.4 data template field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-data-template-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring", "sitecore-on-prem.headless22"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "XP 10.4" },
+      "locator": "Data template field types and linked category pages",
+      "extract": { "kind": "heading" },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp104.simple-field-types",
+      "vendor": "Sitecore",
+      "title": "Sitecore XP 10.4 simple and list field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-simple-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring", "sitecore-on-prem.headless22"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "XP 10.4" },
+      "locator": "Simple and List field type sections",
+      "extract": { "kind": "heading", "tokens": ["Checkbox", "Date", "Datetime", "File", "Image", "Integer", "Number", "Password", "Single-Line Text", "Multi-Line Text", "Rich Text", "Multilist with Search", "Treelist with Search", "Checklist", "Droplist", "Grouped Droplink", "Grouped Droplist", "Multilist", "Name Value List", "Treelist", "TreelistEx"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp104.link-field-types",
+      "vendor": "Sitecore",
+      "title": "Sitecore XP 10.4 Link field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-link-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring", "sitecore-on-prem.headless22"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "XP 10.4" },
+      "locator": "Link field type table",
+      "extract": { "kind": "table", "tokens": ["General link with search", "Droplink", "Droptree", "General link", "Version link"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp104.developer-field-types",
+      "vendor": "Sitecore",
+      "title": "Sitecore XP 10.4 Developer field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-developer-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "XP 10.4" },
+      "locator": "Developer field type table",
+      "extract": { "kind": "table", "tokens": ["Icon", "IFrame", "Tristate"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp104.system-field-types",
+      "vendor": "Sitecore",
+      "title": "Sitecore XP 10.4 System field types",
+      "url": "https://doc.sitecore.com/xp/en/developers/104/sitecore-experience-manager/the-system-field-types.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "XP 10.4" },
+      "locator": "System field type table",
+      "extract": { "kind": "table", "tokens": ["Query Datasource", "Attachment", "Custom", "File Drop Area", "Internal Link", "Layout", "Rules", "Security", "Template Field Source", "Thumbnail"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp.headless22-components",
+      "vendor": "Sitecore",
+      "title": "JSS components for rendering Sitecore fields in Next.js applications",
+      "url": "https://doc.sitecore.com/xp/en/developers/hd/22/sitecore-headless-development/jss-components-for-rendering-sitecore-fields-in-next-js-applications.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.headless22"],
+      "role": "sdk-source",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "Headless Services 22" },
+      "locator": "Field type to JSS Next.js component table",
+      "extract": { "kind": "table", "tokens": ["Date", "File", "Image", "General Link", "Single-Line Text", "Multi-Line Text", "Rich Text", "Text", "RichText", "Link"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "sitecore-xp.headless22-layout-data",
+      "vendor": "Sitecore",
+      "title": "Field values in JSS layout data",
+      "url": "https://doc.sitecore.com/sai/en/developers/jss/latest/jss-sai/field-values-in-jss-layout-data.html",
+      "allowedHosts": ["doc.sitecore.com"],
+      "profiles": ["sitecore-on-prem.headless22"],
+      "role": "delivery",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "JSS 22.x" },
+      "locator": "Raw values and editable values",
+      "extract": { "kind": "heading", "tokens": ["value", "editable", "Image", "Rich Text", "Link"] },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "wordpress.register-meta",
+      "vendor": "WordPress",
+      "title": "register_meta()",
+      "url": "https://developer.wordpress.org/reference/functions/register_meta/",
+      "allowedHosts": ["developer.wordpress.org"],
+      "profiles": ["wordpress.core71-meta"],
+      "role": "enumeration",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-documentation" },
+      "locator": "Parameters > args > type > valid values",
+      "extract": { "kind": "heading", "tokens": ["string", "boolean", "integer", "number", "array", "object"] },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.register-meta-core-7.1.0",
+      "vendor": "WordPress",
+      "title": "register_meta() Core 7.1.0 docblock",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/src/wp-includes/meta.php",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["wordpress.core71-meta"],
+      "role": "enumeration",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05" },
+      "locator": "register_meta() docblock > args > type > Valid values",
+      "extract": {
+        "kind": "symbol",
+        "tokens": ["string", "boolean", "integer", "number", "array", "object"],
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "id": "registered-meta-types",
+              "startPattern": "\\$type\\s+The type of data associated with this meta key\\.\\s+\\*\\s+Valid values are\\s+",
+              "endPattern": "\\.\\s+\\*\\s+@type\\s+[^$]+\\$label",
+              "itemPattern": "['\"]([^'\"]+)['\"]",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.rest-schema",
+      "vendor": "WordPress",
+      "title": "REST API schema",
+      "url": "https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/",
+      "allowedHosts": ["developer.wordpress.org"],
+      "profiles": ["wordpress.core71-rest-schema"],
+      "role": "delivery",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-documentation" },
+      "locator": "JSON Schema Basics > Primitive Types",
+      "extract": { "kind": "heading", "tokens": ["string", "null", "number", "integer", "boolean", "array", "object"] },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.rest-schema-core-7.1.0",
+      "vendor": "WordPress",
+      "title": "REST schema validation in Core 7.1.0",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/src/wp-includes/rest-api.php",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["wordpress.core71-rest-schema"],
+      "role": "delivery",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05" },
+      "locator": "rest_validate_value_from_schema() > $allowed_types",
+      "extract": {
+        "kind": "symbol",
+        "tokens": ["array", "object", "string", "number", "integer", "boolean", "null"],
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "id": "rest-schema-types",
+              "startPattern": "\\$allowed_types\\s*=\\s*[^\\(]+\\(",
+              "endPattern": "\\);",
+              "itemPattern": "['\"]([^'\"]+)['\"]",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.block-attributes",
+      "vendor": "WordPress",
+      "title": "Block attributes",
+      "url": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/",
+      "allowedHosts": ["developer.wordpress.org"],
+      "profiles": ["wordpress.core71-block-attributes", "wordpress.core71-block-attribute-source"],
+      "role": "storage",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-documentation" },
+      "locator": "Attributes > Type validation",
+      "extract": { "kind": "heading", "tokens": ["null", "boolean", "object", "array", "string", "integer", "number", "attribute", "text", "html", "query", "meta"] },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.block-attributes-gutenberg-943e0d8",
+      "vendor": "WordPress",
+      "title": "Block attributes handbook bundled with Core 7.1.0",
+      "url": "https://raw.githubusercontent.com/WordPress/gutenberg/943e0d825bb66ba582e9a10d32743cbb136de460/docs/reference-guides/block-api/block-attributes.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["wordpress.core71-block-attributes", "wordpress.core71-block-attribute-source"],
+      "role": "storage",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "943e0d825bb66ba582e9a10d32743cbb136de460" },
+      "locator": "Type validation",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["null", "boolean", "object", "array", "string", "integer", "number", "attribute", "text", "html", "query", "meta"],
+        "tokenDiscovery": {
+          "maximumTokens": 32,
+          "regions": [
+            {
+              "id": "attribute-types",
+              "startPattern": "The `type` field MUST be one of the following:",
+              "endPattern": "Note that the validity",
+              "itemPattern": "- `([^`]+)`",
+              "itemCapture": 1
+            },
+            {
+              "id": "value-sources",
+              "startPattern": "The available `source` values are:",
+              "endPattern": "The `source` field is usually combined",
+              "itemPattern": "- `([a-z]+)` -",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.core-7.1.0-gutenberg-manifest",
+      "vendor": "WordPress",
+      "title": "WordPress Core 7.1.0 Gutenberg revision manifest",
+      "url": "https://raw.githubusercontent.com/WordPress/wordpress-develop/daaca56d3d6a9a42a0c87f6eda766c33a77c1d05/package.json",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["wordpress.core71-block-attribute-source", "wordpress.core71-block-attributes", "wordpress.core71-meta", "wordpress.core71-rest-schema"],
+      "role": "compatibility",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-git-commit", "value": "daaca56d3d6a9a42a0c87f6eda766c33a77c1d05" },
+      "locator": "version and gutenberg.sha",
+      "extract": { "kind": "json-pointer", "tokens": ["7.1.0", "943e0d825bb66ba582e9a10d32743cbb136de460"] },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "contentful.migration-releases-index",
+      "vendor": "Contentful",
+      "title": "contentful-migration releases",
+      "url": "https://github.com/contentful/contentful-migration/releases",
+      "allowedHosts": ["github.com"],
+      "profiles": ["contentful.cma.saas"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "Versioned release tag links",
+      "extract": { "kind": "list", "identityPattern": "href=[\"'](/contentful/contentful-migration/releases/tag/v[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?)", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "contentful"
+    },
+    {
+      "id": "contentstack.product-changelog-index",
+      "vendor": "Contentstack",
+      "title": "Contentstack product changelog RSS",
+      "url": "https://www.contentstack.com/api/docs/changelog/rss.xml",
+      "allowedHosts": ["www.contentstack.com"],
+      "profiles": ["contentstack.cma.saas"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "RSS item links",
+      "extract": { "kind": "document", "identityPattern": "<link>([^<]+)</link>", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "contentstack"
+    },
+    {
+      "id": "optimizely-saas.release-notes-index",
+      "vendor": "Optimizely",
+      "title": "Release notes - CMS SaaS",
+      "url": "https://support.optimizely.com/hc/en-us/sections/27677047812109-Release-notes",
+      "allowedHosts": ["support.optimizely.com"],
+      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "CMS SaaS release-note article links",
+      "extract": { "kind": "list", "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "optimizely-saas"
+    },
+    {
+      "id": "optimizely-saas.sdk-releases-index",
+      "vendor": "Optimizely",
+      "title": "content-js-sdk releases",
+      "url": "https://github.com/episerver/content-js-sdk/releases",
+      "allowedHosts": ["github.com"],
+      "profiles": ["optimizely-saas.sdk-2"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "@optimizely/cms-sdk release tag links",
+      "extract": { "kind": "list", "identityPattern": "href=[\"'](/episerver/content-js-sdk/releases/tag/%40optimizely%2Fcms-sdk%40[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?)", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "optimizely-saas"
+    },
+    {
+      "id": "optimizely-paas.release-notes-index",
+      "vendor": "Optimizely",
+      "title": "Release notes - CMS PaaS",
+      "url": "https://support.optimizely.com/hc/en-us/sections/23974970699533-Release-notes",
+      "allowedHosts": ["support.optimizely.com"],
+      "profiles": ["optimizely-paas.cms12-property-data-type", "optimizely-paas.cms12-model", "optimizely-paas.cms13-admin", "optimizely-paas.cms13-model"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "CMS PaaS release-note article links",
+      "extract": { "kind": "list", "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "optimizely-paas"
+    },
+    {
+      "id": "sitecore-ai.changelog-index",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI changelog RSS",
+      "url": "https://developers.sitecore.com/changelog/sitecoreai/rss.xml",
+      "allowedHosts": ["developers.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current", "sitecore-ai.content-sdk2"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "RSS item links",
+      "extract": { "kind": "document", "identityPattern": "<link>([^<]+)</link>", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
+      "id": "sitecore-xp.downloads-index",
+      "vendor": "Sitecore",
+      "title": "Sitecore Experience Platform downloads",
+      "url": "https://developers.sitecore.com/Downloads/Sitecore_Experience_Platform",
+      "allowedHosts": ["developers.sitecore.com"],
+      "profiles": ["sitecore-on-prem.xp104-authoring", "sitecore-on-prem.headless22"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "Sitecore Experience Platform download links",
+      "extract": { "kind": "list", "identityPattern": "href=[\"']([^\"']*/Downloads/Sitecore_Experience_Platform/[^\"'?#]+)", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "sitecore-on-prem"
+    },
+    {
+      "id": "wordpress.core-release-index",
+      "vendor": "WordPress",
+      "title": "WordPress release archive",
+      "url": "https://wordpress.org/download/releases/",
+      "allowedHosts": ["wordpress.org"],
+      "profiles": ["wordpress.core71-meta", "wordpress.core71-rest-schema", "wordpress.core71-block-attributes", "wordpress.core71-block-attribute-source"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "Stable Core release downloads",
+      "extract": { "kind": "table", "identityPattern": "wordpress-([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\.zip", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.version-check-api",
+      "vendor": "WordPress",
+      "title": "WordPress Core version-check API",
+      "url": "https://api.wordpress.org/core/version-check/1.7/",
+      "allowedHosts": ["api.wordpress.org"],
+      "profiles": ["wordpress.core71-meta", "wordpress.core71-rest-schema", "wordpress.core71-block-attributes", "wordpress.core71-block-attribute-source"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "offers current versions",
+      "extract": { "kind": "json-pointer", "identityPattern": "\\\"current\\\"\\s*:\\s*\\\"([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\\"", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "wordpress"
+    },
+    {
+      "id": "wordpress.version-71",
+      "vendor": "WordPress",
+      "title": "WordPress 7.1",
+      "url": "https://wordpress.org/documentation/wordpress-version/version-7-1/",
+      "allowedHosts": ["wordpress.org"],
+      "profiles": ["wordpress.core71-meta", "wordpress.core71-rest-schema", "wordpress.core71-block-attributes", "wordpress.core71-block-attribute-source"],
+      "role": "compatibility",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-version", "value": "7.1" },
+      "locator": "WordPress 7.1 release page",
+      "extract": { "kind": "document", "tokens": ["WordPress 7.1"] },
+      "reviewOwner": "wordpress"
+    }
+  ]
+}

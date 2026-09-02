@@ -1,0 +1,559 @@
+{
+  "extensibility": "open",
+  "fields": [
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.array",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "array"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Array meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Lists of metadata values with an item schema."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "itemKind": "schema-defined",
+            "kind": "array",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "array",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.array.render",
+          "nullHandling": "preserve",
+          "operation": "iterate",
+          "prohibitionCodes": [
+            "flatten-list"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.boolean",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "boolean"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Boolean meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "True/false metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "boolean",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "boolean",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.boolean.render",
+          "nullHandling": "preserve",
+          "operation": "branch",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.integer",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "integer"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Integer meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Whole-number metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "integer",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "integer",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.integer.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.number",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "number"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Number meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Numeric metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "number",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "number",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.number.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.object",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "object"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Object meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Structured metadata with a property schema."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "object",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "object",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.object.render",
+          "nullHandling": "preserve",
+          "operation": "pass-through",
+          "prohibitionCodes": [
+            "flatten-structured-value"
+          ],
+          "valuePath": "$"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "product": "WordPress Core",
+        "profileId": "wordpress.core71-meta",
+        "surface": "storage",
+        "transport": "register_meta args.type",
+        "version": {
+          "label": "7.1",
+          "mode": "pinned"
+        }
+      },
+      "canonicalId": "wordpress.core71-meta.string",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Parameters > args > type > valid values",
+              "sourceId": "wordpress.register-meta"
+            },
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "string"
+        },
+        "storageShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "String meta value."
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": "Text metadata."
+        },
+        "valueShape": {
+          "evidence": [
+            {
+              "locator": "register_meta() docblock > args > type > Valid values",
+              "sourceId": "wordpress.register-meta-core-7.1.0"
+            }
+          ],
+          "status": "documented",
+          "value": {
+            "kind": "string",
+            "nullable": true
+          }
+        }
+      },
+      "formats": [],
+      "nativeToken": "string",
+      "origin": "native",
+      "renderingOperations": [
+        {
+          "authority": "contract-derived",
+          "claimRefs": [
+            "claims.valueShape"
+          ],
+          "id": "wordpress.core71-meta.string.render",
+          "nullHandling": "preserve",
+          "operation": "direct",
+          "prohibitionCodes": [],
+          "valuePath": "$"
+        }
+      ]
+    }
+  ],
+  "id": "wordpress.core71-meta",
+  "notes": [
+    "The type enum is closed for register_meta, while sites and plugins can register arbitrary meta keys and editors."
+  ],
+  "platform": "wordpress",
+  "product": "WordPress Core",
+  "schemaVersion": 1,
+  "sourceIds": [
+    "wordpress.core-7.1.0-gutenberg-manifest",
+    "wordpress.core-release-index",
+    "wordpress.register-meta",
+    "wordpress.register-meta-core-7.1.0",
+    "wordpress.version-71",
+    "wordpress.version-check-api"
+  ],
+  "surface": "storage",
+  "transport": "register_meta args.type",
+  "version": {
+    "label": "7.1",
+    "mode": "pinned"
+  }
+}

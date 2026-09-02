@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFusco/cms-field-vocabulary/schemas/selected-contract.schema.json",
+  "title": "Selected coding-agent CMS field contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "profileId", "agentProfile", "rendererBindings", "contracts"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "profileId": { "type": "string", "minLength": 1 },
+    "agentProfile": { "type": "string", "minLength": 1 },
+    "rendererBindings": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "contracts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/resolvedFieldContract" }
+    }
+  },
+  "$defs": {
+    "valueShape": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "nullable"],
+      "properties": {
+        "kind": {
+          "enum": ["string", "boolean", "integer", "number", "datetime", "object", "array", "reference", "rich-text", "binary", "unknown"]
+        },
+        "nullable": { "type": "boolean" },
+        "valuePath": { "type": "string" },
+        "itemKind": { "type": "string" },
+        "members": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "compactRenderingOperation": {
+      "allOf": [
+        { "$ref": "profile.schema.json#/$defs/renderingOperation" },
+        { "type": "object", "propertyNames": { "not": { "enum": ["evidence", "claimRefs"] } } }
+      ]
+    },
+    "resolvedFieldContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonicalId", "nativeToken", "valueShape", "formats", "operations"],
+      "properties": {
+        "canonicalId": { "type": "string", "minLength": 1 },
+        "nativeToken": { "type": "string", "minLength": 1 },
+        "valueShape": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/valueShape" }
+          ]
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["nativeToken"],
+            "properties": {
+              "nativeToken": { "type": "string", "minLength": 1 },
+              "requires": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "operations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/compactRenderingOperation" }
+        }
+      }
+    }
+  }
+}

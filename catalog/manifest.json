@@ -1,0 +1,88 @@
+{
+  "catalogDigest": "sha256:6674bef50a5815473c09c3608db790106e443258f7dc3d62a342d392c33ea5b7",
+  "profiles": [
+    {
+      "digest": "sha256:6c50851d7d9551cfa03902e704a4966ff001b94899dfea6dca34a7140b59f6c3",
+      "fieldCount": 12,
+      "id": "contentful.cma.saas"
+    },
+    {
+      "digest": "sha256:213b02df23be9f195dfe352ff2195486b011989118fda48ce014d05174abd907",
+      "fieldCount": 12,
+      "id": "contentstack.cma.saas"
+    },
+    {
+      "digest": "sha256:448de6fd65678afe077f533090d52272485a9bb17acef42d2821848368a731bb",
+      "fieldCount": 15,
+      "id": "optimizely-paas.cms12-model"
+    },
+    {
+      "digest": "sha256:3a3deda20539191c29079d5c45a045623b5924c0a949385cee5bdff32d16bf58",
+      "fieldCount": 13,
+      "id": "optimizely-paas.cms12-property-data-type"
+    },
+    {
+      "digest": "sha256:beea19ddd7af251a3b40b6dde5a7fc7670b9d9ac601baf8ed7ca140a60c36616",
+      "fieldCount": 22,
+      "id": "optimizely-paas.cms13-admin"
+    },
+    {
+      "digest": "sha256:79f1996b99ca47ba9c371d9b62122d5bd93295d61f45b19770b8d03c2dbf1f62",
+      "fieldCount": 15,
+      "id": "optimizely-paas.cms13-model"
+    },
+    {
+      "digest": "sha256:9cdea0b5e3cf09471a9e88e73daadb9fe154e73832f4b1ac2fd9774f216025dc",
+      "fieldCount": 13,
+      "id": "optimizely-saas.cms-api-v1"
+    },
+    {
+      "digest": "sha256:835b22e139aa42f000cd0dbfe692616fbb30a5d0d4c38bb74140ee5bd14e7946",
+      "fieldCount": 14,
+      "id": "optimizely-saas.sdk-2"
+    },
+    {
+      "digest": "sha256:bd9d64e0ec38ab7d8c53d17b0a14f01fbf463c5a5d94750eaf524f61019d9731",
+      "fieldCount": 34,
+      "id": "sitecore-ai.authoring.current"
+    },
+    {
+      "digest": "sha256:58749b34ea8cc5e1671509b6c9eea87371f00aef5c6c3804d312c3265b8ea1cf",
+      "fieldCount": 38,
+      "id": "sitecore-ai.content-sdk2"
+    },
+    {
+      "digest": "sha256:2d954d354c712e85c2c5c9b6d76bc6eaee77e6b87055bf2bf0d7e14983cf3bcf",
+      "fieldCount": 11,
+      "id": "sitecore-on-prem.headless22"
+    },
+    {
+      "digest": "sha256:e2e4f809f7c00678b192bc0f2b820212e93c5e4590c1a835638b5f469a614207",
+      "fieldCount": 39,
+      "id": "sitecore-on-prem.xp104-authoring"
+    },
+    {
+      "digest": "sha256:099c636b664339e8779a754e584fe63bd75c385663f384f367f3a39afb182b03",
+      "fieldCount": 5,
+      "id": "wordpress.core71-block-attribute-source"
+    },
+    {
+      "digest": "sha256:e067af019f63350203a079f2ca88d24ade9d79fcd675b5ef29c2f5be45f461c9",
+      "fieldCount": 7,
+      "id": "wordpress.core71-block-attributes"
+    },
+    {
+      "digest": "sha256:d25b98b2f38ae200c01f46f53fecc8980914b0576de884ad0e2d6e3da152e90c",
+      "fieldCount": 6,
+      "id": "wordpress.core71-meta"
+    },
+    {
+      "digest": "sha256:a212c091ad45d1abe50153d7e6b4ecc0d0bcf138c2b82c63667f69bd0ff8d089",
+      "fieldCount": 7,
+      "id": "wordpress.core71-rest-schema"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceLockDigest": "sha256:8079fe4f137b363ea5eb280d7be74b89142705b05a11cb3c187f739819f523e1",
+  "sourceManifestDigest": "sha256:ed1c95f7182c6158fe4c2d1fc62bb78ae47ae535926402a91b06c5d0b4ea2a12"
+}
