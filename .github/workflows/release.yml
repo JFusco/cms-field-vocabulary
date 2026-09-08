@@ -59,7 +59,7 @@ jobs:
         run: node scripts/verify-packed-consumer.mjs
 
       - name: Inspect packed artifact
-        run: npm publish --dry-run --ignore-scripts --tag development
+        run: npm pack --dry-run --ignore-scripts
 
       - name: Publish, tag, changelog, and GitHub release
         env:
