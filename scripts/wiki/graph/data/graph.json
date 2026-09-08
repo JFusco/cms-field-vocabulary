@@ -2,11 +2,11 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 13,
+    "nodes": 14,
     "edges": 28,
     "byType": {
       "index": 3,
-      "journal": 4,
+      "journal": 5,
       "plan": 1,
       "topic": 5
     }
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.568065,
-      "y": 0.822984,
+      "x": 0.62349,
+      "y": 0.781831,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.120537,
-      "y": 0.992709,
+      "x": 0.222521,
+      "y": 0.974928,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": -0.354605,
-      "y": 0.935016,
+      "x": -0.222521,
+      "y": 0.974928,
       "size": 8
     },
     {
@@ -89,8 +89,57 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": -0.748511,
-      "y": 0.663123,
+      "x": -0.62349,
+      "y": 0.781831,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-08-pr-30-chore-sources-review-vendor-documentation-drift.md",
+      "label": "PR #30: chore(sources): review vendor documentation drift",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 16,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/16"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 20,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/20"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 21,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/21"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 22,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/22"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 25,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/25"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 30,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/30"
+        }
+      ],
+      "bytes": 810,
+      "degree": 0,
+      "x": -0.900969,
+      "y": 0.433884,
       "size": 8
     },
     {
@@ -101,8 +150,8 @@
       "githubRefs": [],
       "bytes": 2907,
       "degree": 2,
-      "x": 0.885456,
-      "y": 0.464723,
+      "x": 0.900969,
+      "y": 0.433884,
       "size": 12
     },
     {
@@ -113,8 +162,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.970942,
-      "y": 0.239316,
+      "x": -1,
+      "y": 0,
       "size": 8
     },
     {
@@ -125,8 +174,8 @@
       "githubRefs": [],
       "bytes": 820,
       "degree": 3,
-      "x": -0.970942,
-      "y": -0.239316,
+      "x": -0.900969,
+      "y": -0.433884,
       "size": 12
     },
     {
@@ -142,8 +191,8 @@
       "githubRefs": [],
       "bytes": 1961,
       "degree": 7,
-      "x": -0.748511,
-      "y": -0.663123,
+      "x": -0.62349,
+      "y": -0.781831,
       "size": 8
     },
     {
@@ -159,8 +208,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": -0.354605,
-      "y": -0.935016,
+      "x": -0.222521,
+      "y": -0.974928,
       "size": 8
     },
     {
@@ -176,8 +225,8 @@
       "githubRefs": [],
       "bytes": 2348,
       "degree": 7,
-      "x": 0.120537,
-      "y": -0.992709,
+      "x": 0.222521,
+      "y": -0.974928,
       "size": 8
     },
     {
@@ -193,8 +242,8 @@
       "githubRefs": [],
       "bytes": 1664,
       "degree": 5,
-      "x": 0.568065,
-      "y": -0.822984,
+      "x": 0.62349,
+      "y": -0.781831,
       "size": 8
     },
     {
@@ -209,8 +258,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.885456,
-      "y": -0.464723,
+      "x": 0.900969,
+      "y": -0.433884,
       "size": 8
     }
   ],
