@@ -2,11 +2,11 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 10,
+    "nodes": 11,
     "edges": 28,
     "byType": {
       "index": 3,
-      "journal": 1,
+      "journal": 2,
       "plan": 1,
       "topic": 5
     }
@@ -32,8 +32,27 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.309017,
-      "y": 0.951057,
+      "x": 0.415415,
+      "y": 0.909632,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-08-pr-17-chore-deps-dev-update-development-toolchain.md",
+      "label": "PR #17: chore(deps-dev): update development toolchain",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 17,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/17"
+        }
+      ],
+      "bytes": 421,
+      "degree": 0,
+      "x": -0.142315,
+      "y": 0.989821,
       "size": 8
     },
     {
@@ -44,8 +63,8 @@
       "githubRefs": [],
       "bytes": 2907,
       "degree": 2,
-      "x": 0.809017,
-      "y": 0.587785,
+      "x": 0.841254,
+      "y": 0.540641,
       "size": 12
     },
     {
@@ -56,8 +75,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.309017,
-      "y": 0.951057,
+      "x": -0.654861,
+      "y": 0.75575,
       "size": 8
     },
     {
@@ -68,8 +87,8 @@
       "githubRefs": [],
       "bytes": 820,
       "degree": 3,
-      "x": -0.809017,
-      "y": 0.587785,
+      "x": -0.959493,
+      "y": 0.281733,
       "size": 12
     },
     {
@@ -85,8 +104,8 @@
       "githubRefs": [],
       "bytes": 1961,
       "degree": 7,
-      "x": -1,
-      "y": 0,
+      "x": -0.959493,
+      "y": -0.281733,
       "size": 8
     },
     {
@@ -102,8 +121,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": -0.809017,
-      "y": -0.587785,
+      "x": -0.654861,
+      "y": -0.75575,
       "size": 8
     },
     {
@@ -119,8 +138,8 @@
       "githubRefs": [],
       "bytes": 2348,
       "degree": 7,
-      "x": -0.309017,
-      "y": -0.951057,
+      "x": -0.142315,
+      "y": -0.989821,
       "size": 8
     },
     {
@@ -136,8 +155,8 @@
       "githubRefs": [],
       "bytes": 1664,
       "degree": 5,
-      "x": 0.309017,
-      "y": -0.951057,
+      "x": 0.415415,
+      "y": -0.909632,
       "size": 8
     },
     {
@@ -152,8 +171,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.809017,
-      "y": -0.587785,
+      "x": 0.841254,
+      "y": -0.540641,
       "size": 8
     }
   ],
