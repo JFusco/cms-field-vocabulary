@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.0...v1.0.1) (2026-09-08)
+
+### Bug Fixes
+
+* **release:** inspect tarball without publishing ([#28](https://github.com/JFusco/cms-field-vocabulary/issues/28)) ([a1a5d9b](https://github.com/JFusco/cms-field-vocabulary/commit/a1a5d9b087ba2823852782ca97c89a7677388722))
+
 ## 1.0.0 (2026-09-02)
 
 ### Features
