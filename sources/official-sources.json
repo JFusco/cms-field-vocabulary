@@ -541,7 +541,7 @@
       "id": "sitecore-ai.content-sdk-layout-data",
       "vendor": "Sitecore",
       "title": "SitecoreAI layout data for fields",
-      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/sitecoreai-layout-data-for-fields.html",
       "allowedHosts": ["doc.sitecore.com"],
       "profiles": ["sitecore-ai.content-sdk2"],
       "role": "sdk-source",
@@ -549,21 +549,37 @@
       "version": { "mode": "pinned-version", "value": "Content SDK 2.x" },
       "locator": "Field values and field metadata",
       "extract": { "kind": "heading", "tokens": ["value", "metadata", "Image", "Link"] },
-      "reviewOwner": "sitecore-ai"
+      "reviewOwner": "sitecore-ai",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-08T23:58:00Z",
+          "reason": "Replaced a removed locale-qualified URL with the current official Content SDK 2.x page covering the same layout-data and field metadata claims.",
+          "replacedUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+          "replacementUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/sitecoreai-layout-data-for-fields.html"
+        }
+      ]
     },
     {
       "id": "sitecore-ai.content-sdk-components",
       "vendor": "Sitecore",
-      "title": "Upgrade JSS 22.0 Next.js apps to Content SDK 2.1",
-      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+      "title": "Upgrade Content SDK 1.5.1 Next.js apps to version 2.0",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/upgrade-content-sdk-1-5-1-next-js-apps-to-version-2-0.html",
       "allowedHosts": ["doc.sitecore.com"],
       "profiles": ["sitecore-ai.content-sdk2"],
       "role": "compatibility",
       "completeness": "supplemental",
-      "version": { "mode": "pinned-version", "value": "Content SDK 2.1" },
-      "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0.",
+      "version": { "mode": "pinned-version", "value": "Content SDK 2.0" },
+      "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef.",
       "extract": { "kind": "heading", "tokens": ["@sitecore-content-sdk/nextjs", "RichText", "Link"] },
-      "reviewOwner": "sitecore-ai"
+      "reviewOwner": "sitecore-ai",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-09-08T23:58:00Z",
+          "reason": "Replaced the removed Content SDK 2.1 migration page with the official Content SDK 2.0 migration guide, which documents the same RichText and Link component behavior and @sitecore-content-sdk/nextjs package surface.",
+          "replacedUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+          "replacementUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/upgrade-content-sdk-1-5-1-next-js-apps-to-version-2-0.html"
+        }
+      ]
     },
     {
       "id": "sitecore-xp104.field-types",
