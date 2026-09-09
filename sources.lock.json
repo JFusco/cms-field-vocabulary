@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-08T23:30:25.302Z",
+  "reviewedAt": "2026-09-08T23:58:28.398Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -1869,15 +1869,22 @@
           "Link"
         ]
       },
-      "fragmentSha256": "d874c1fb7a8114ab904e6a7b1b223053e065447abc6f76472e7cf60a18869266",
+      "fragmentSha256": "79069add8c4d1590abec901bd24eb8790c0eb81bf70618edcbf5cbf801924173",
       "identities": [],
       "locator": "Field values and field metadata",
-      "normalizedSha256": "39bfc972d07c4b019e827ccd06612f0ac38e79767b76436ef038c42e6a06cb3f",
-      "observedAt": "2026-09-02T11:11:36.267Z",
+      "normalizedSha256": "d3975f5b51609b2df84ab62a4e960a0ecabcac13dab7f9bb331bb6705bc96c8d",
+      "observedAt": "2026-09-08T23:58:26.035Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "5c83e61cd244e478599de998133983f12128b543ba8401c914ca53439eea1456",
-      "replacementHistory": [],
+      "rawSha256": "fcf17aac623f8dd4da0a1a0d26f37eec7743df3a2414e81df86450dd99d7f54e",
+      "replacementHistory": [
+        {
+          "reason": "Replaced a removed locale-qualified URL with the current official Content SDK 2.x page covering the same layout-data and field metadata claims.",
+          "recordedAt": "2026-09-08T23:58:00Z",
+          "replacedUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+          "replacementUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/sitecoreai-layout-data-for-fields.html"
+        }
+      ],
       "requiredTokens": [
         "Image",
         "Link",
@@ -1886,7 +1893,7 @@
       ],
       "requiredTokenSetSha256": "12beca4e68a137c833be59849ae43ded51b01c6750357f4a736cb4dafdc6e565",
       "resolvedRevision": "Content SDK 2.x",
-      "reviewedAt": "2026-09-02T11:11:36.267Z",
+      "reviewedAt": "2026-09-08T23:58:26.035Z",
       "reviewer": "sitecore-ai",
       "reviewStatus": "reviewed",
       "sourceId": "sitecore-ai.content-sdk-layout-data",
@@ -1896,7 +1903,7 @@
         "value": "Content SDK 2.x"
       },
       "title": "SitecoreAI layout data for fields",
-      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/en/sitecoreai-layout-data-for-fields.html",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/sitecoreai-layout-data-for-fields.html",
       "vendor": "Sitecore"
     },
     {
@@ -1922,33 +1929,40 @@
           "Link"
         ]
       },
-      "fragmentSha256": "b597915d5b26018bf790d52bdf8a75830f03717a5fceadf811bf51b69cfb739a",
+      "fragmentSha256": "95c2b302b233e8064a16ba0669f64da2a9df4e1dd7ef084d058b0797068bde81",
       "identities": [],
-      "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0.",
-      "normalizedSha256": "f3bec6f82305f00d7d463e5a96f782b0370e6452ffcb0163eb698a52ba25aa00",
-      "observedAt": "2026-09-02T11:11:36.641Z",
+      "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef.",
+      "normalizedSha256": "ea7ef7b923f71b1173c9c8460250ac5f29a3f9bcb8357dea9f8310573548109e",
+      "observedAt": "2026-09-08T23:58:26.057Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "7e708948a7f267919175ae4f5a96bdaafefcbabdbe685b7af920a0112893008a",
-      "replacementHistory": [],
+      "rawSha256": "9b264c8fef2635fba9fe8412a2aa16ff11a4f97894407bd8c2c5c3beedf4a6b5",
+      "replacementHistory": [
+        {
+          "reason": "Replaced the removed Content SDK 2.1 migration page with the official Content SDK 2.0 migration guide, which documents the same RichText and Link component behavior and @sitecore-content-sdk/nextjs package surface.",
+          "recordedAt": "2026-09-08T23:58:00Z",
+          "replacedUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+          "replacementUrl": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/upgrade-content-sdk-1-5-1-next-js-apps-to-version-2-0.html"
+        }
+      ],
       "requiredTokens": [
         "@sitecore-content-sdk/nextjs",
         "Link",
         "RichText"
       ],
       "requiredTokenSetSha256": "7364486d1930f90426d9158d23454564a72c1282b36050b64c6137675a8176b5",
-      "resolvedRevision": "Content SDK 2.1",
-      "reviewedAt": "2026-09-02T11:11:36.641Z",
+      "resolvedRevision": "Content SDK 2.0",
+      "reviewedAt": "2026-09-08T23:58:26.057Z",
       "reviewer": "sitecore-ai",
       "reviewStatus": "reviewed",
       "sourceId": "sitecore-ai.content-sdk-components",
       "sourceRole": "compatibility",
       "sourceVersion": {
         "mode": "pinned-version",
-        "value": "Content SDK 2.1"
+        "value": "Content SDK 2.0"
       },
-      "title": "Upgrade JSS 22.0 Next.js apps to Content SDK 2.1",
-      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/DEFAULT/upgrade-jss-22-0-next-js-apps-to-content-sdk-2-1.html",
+      "title": "Upgrade Content SDK 1.5.1 Next.js apps to version 2.0",
+      "url": "https://doc.sitecore.com/sai/en/developers/content-sdk/20/upgrade-content-sdk-1-5-1-next-js-apps-to-version-2-0.html",
       "vendor": "Sitecore"
     },
     {

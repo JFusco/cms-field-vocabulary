@@ -142,8 +142,7 @@
     {
       "sourceId": "sitecore-ai.content-sdk-components",
       "locators": [
-        { "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef." },
-        { "locator": "Replace @sitecore-jss/sitecore-jss-nextjs with @sitecore-content-sdk/nextjs. Set the version to ^2.0.0." }
+        { "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef." }
       ]
     },
     {
