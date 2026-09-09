@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.3...v1.0.4) (2026-09-09)
+
+### Bug Fixes
+
+* **sources:** repair Content SDK evidence ([#32](https://github.com/JFusco/cms-field-vocabulary/issues/32)) ([2bc0a9d](https://github.com/JFusco/cms-field-vocabulary/commit/2bc0a9d63b3c6935f99bfe5f4f1c91cf21c953c4))
+
 ## [1.0.3](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.2...v1.0.3) (2026-09-08)
 
 ## [1.0.2](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.1...v1.0.2) (2026-09-08)
