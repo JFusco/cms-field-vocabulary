@@ -1,5 +1,5 @@
 ---
-pr: pending
+pr: https://github.com/jfusco/cms-field-vocabulary/pull/45
 topics: [release-operations]
 plans: [2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md]
 ---
