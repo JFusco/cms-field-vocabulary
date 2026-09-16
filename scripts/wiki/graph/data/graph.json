@@ -178,8 +178,15 @@
       "label": "Fix wiki-sync token scope",
       "type": "journal",
       "aliases": [],
-      "githubRefs": [],
-      "bytes": 1059,
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 45,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/45"
+        }
+      ],
+      "bytes": 1106,
       "degree": 2,
       "x": -0.654861,
       "y": 0.75575,
