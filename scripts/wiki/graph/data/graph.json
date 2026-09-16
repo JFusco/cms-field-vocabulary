@@ -303,8 +303,15 @@
       "label": "Skip wiki-only releases",
       "type": "journal",
       "aliases": [],
-      "githubRefs": [],
-      "bytes": 951,
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 47,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/47"
+        }
+      ],
+      "bytes": 998,
       "degree": 2,
       "x": -0.965926,
       "y": -0.258819,
