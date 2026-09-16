@@ -2,12 +2,12 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 20,
-    "edges": 34,
+    "nodes": 22,
+    "edges": 38,
     "byType": {
       "index": 3,
-      "journal": 10,
-      "plan": 2,
+      "journal": 11,
+      "plan": 3,
       "topic": 5
     }
   },
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.809017,
-      "y": 0.587785,
+      "x": 0.841254,
+      "y": 0.540641,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.587785,
-      "y": 0.809017,
+      "x": 0.654861,
+      "y": 0.75575,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.309017,
-      "y": 0.951057,
+      "x": 0.415415,
+      "y": 0.909632,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0,
-      "y": 1,
+      "x": 0.142315,
+      "y": 0.989821,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 810,
       "degree": 0,
-      "x": -0.309017,
-      "y": 0.951057,
+      "x": -0.142315,
+      "y": 0.989821,
       "size": 8
     },
     {
@@ -169,8 +169,20 @@
       ],
       "bytes": 679,
       "degree": 0,
-      "x": -0.587785,
-      "y": 0.809017,
+      "x": -0.415415,
+      "y": 0.909632,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-16-fix-wiki-sync-token-scope.md",
+      "label": "Fix wiki-sync token scope",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 1059,
+      "degree": 2,
+      "x": -0.654861,
+      "y": 0.75575,
       "size": 8
     },
     {
@@ -188,8 +200,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": -0.809017,
-      "y": 0.587785,
+      "x": -0.841254,
+      "y": 0.540641,
       "size": 8
     },
     {
@@ -207,8 +219,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": -0.951057,
-      "y": 0.309017,
+      "x": -0.959493,
+      "y": 0.281733,
       "size": 8
     },
     {
@@ -275,8 +287,8 @@
       ],
       "bytes": 2630,
       "degree": 3,
-      "x": -0.951057,
-      "y": -0.309017,
+      "x": -0.959493,
+      "y": -0.281733,
       "size": 8
     },
     {
@@ -287,8 +299,8 @@
       "githubRefs": [],
       "bytes": 2907,
       "degree": 2,
-      "x": 0.951057,
-      "y": 0.309017,
+      "x": 0.959493,
+      "y": 0.281733,
       "size": 12
     },
     {
@@ -299,8 +311,20 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.809017,
-      "y": -0.587785,
+      "x": -0.841254,
+      "y": -0.540641,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md",
+      "label": "Remove wiki-sync read:org dependency",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 1330,
+      "degree": 3,
+      "x": -0.654861,
+      "y": -0.75575,
       "size": 8
     },
     {
@@ -311,8 +335,8 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.587785,
-      "y": -0.809017,
+      "x": -0.415415,
+      "y": -0.909632,
       "size": 8
     },
     {
@@ -321,10 +345,10 @@
       "type": "index",
       "aliases": [],
       "githubRefs": [],
-      "bytes": 1594,
-      "degree": 4,
-      "x": -0.309017,
-      "y": -0.951057,
+      "bytes": 1956,
+      "degree": 5,
+      "x": -0.142315,
+      "y": -0.989821,
       "size": 12
     },
     {
@@ -340,8 +364,8 @@
       "githubRefs": [],
       "bytes": 1961,
       "degree": 7,
-      "x": 0,
-      "y": -1,
+      "x": 0.142315,
+      "y": -0.989821,
       "size": 8
     },
     {
@@ -357,8 +381,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.309017,
-      "y": -0.951057,
+      "x": 0.415415,
+      "y": -0.909632,
       "size": 8
     },
     {
@@ -374,8 +398,8 @@
       "githubRefs": [],
       "bytes": 2563,
       "degree": 9,
-      "x": 0.587785,
-      "y": -0.809017,
+      "x": 0.654861,
+      "y": -0.75575,
       "size": 8
     },
     {
@@ -389,10 +413,10 @@
         "repository workflows"
       ],
       "githubRefs": [],
-      "bytes": 1904,
-      "degree": 7,
-      "x": 0.809017,
-      "y": -0.587785,
+      "bytes": 2097,
+      "degree": 9,
+      "x": 0.841254,
+      "y": -0.540641,
       "size": 8
     },
     {
@@ -407,8 +431,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.951057,
-      "y": -0.309017,
+      "x": 0.959493,
+      "y": -0.281733,
       "size": 8
     }
   ],
@@ -424,6 +448,13 @@
       "id": "083c80806ec2592a",
       "source": "wiki/plans/2026-09-16-review-september-vendor-drift-and-clear-dependency-prs-ec96a10600.md",
       "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "0983a245e1f00dcb",
+      "source": "wiki/journal/2026-09-16-fix-wiki-sync-token-scope.md",
+      "target": "wiki/topics/release-operations.md",
       "type": "topic",
       "relation": "topic"
     },
@@ -454,6 +485,20 @@
       "target": "wiki/MECHANICS.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "3f9a71976bfe430b",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "45b71f7d97fb98c6",
+      "source": "wiki/plans/2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "4f450dad1fd7427c",
@@ -531,6 +576,13 @@
       "target": "wiki/topics/structured-rendering-operations.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "9208c3f0529dff5b",
+      "source": "wiki/journal/2026-09-16-fix-wiki-sync-token-scope.md",
+      "target": "wiki/plans/2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md",
+      "type": "plan",
+      "relation": "plan"
     },
     {
       "id": "a1de6d0080743ea6",
