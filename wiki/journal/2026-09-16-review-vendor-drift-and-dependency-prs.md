@@ -1,6 +1,8 @@
 ---
 topics: [official-source-freshness, release-operations]
 plans: [2026-09-16-review-september-vendor-drift-and-clear-dependency-prs-ec96a10600.md]
+issue: "https://github.com/jfusco/cms-field-vocabulary/issues/34"
+issues: ["https://github.com/jfusco/cms-field-vocabulary/issues/34", "https://github.com/jfusco/cms-field-vocabulary/issues/35", "https://github.com/jfusco/cms-field-vocabulary/issues/39"]
 ---
 # Review vendor drift and dependency pull requests
 
