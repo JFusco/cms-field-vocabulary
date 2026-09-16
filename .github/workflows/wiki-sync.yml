@@ -80,7 +80,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -B "$branch"
           git add wiki scripts/wiki/graph/data/graph.json
-          git commit -m "docs(wiki): reconcile merged PR #$PR_NUMBER"
+          git commit -m "docs(wiki): reconcile merged PR #$PR_NUMBER [skip release]"
           git fetch origin "refs/heads/$branch:refs/remotes/origin/$branch" || true
           git push --force-with-lease origin "HEAD:refs/heads/$branch"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
@@ -91,7 +91,7 @@ jobs:
           BASE_BRANCH: ${{ steps.context.outputs.base_branch }}
           BRANCH: ${{ steps.reconcile.outputs.branch }}
         run: |
-          title="docs(wiki): reconcile PR #$PR_NUMBER"
+          title="docs(wiki): reconcile PR #$PR_NUMBER [skip release]"
           body="Automated, reviewable wiki reconciliation for merged PR #$PR_NUMBER."
           owner="${GITHUB_REPOSITORY%%/*}"
           head="$owner:$BRANCH"

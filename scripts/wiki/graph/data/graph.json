@@ -2,12 +2,12 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 22,
-    "edges": 38,
+    "nodes": 24,
+    "edges": 42,
     "byType": {
       "index": 3,
-      "journal": 11,
-      "plan": 3,
+      "journal": 12,
+      "plan": 4,
       "topic": 5
     }
   },
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.841254,
-      "y": 0.540641,
+      "x": 0.866025,
+      "y": 0.5,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.654861,
-      "y": 0.75575,
+      "x": 0.707107,
+      "y": 0.707107,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.415415,
-      "y": 0.909632,
+      "x": 0.5,
+      "y": 0.866025,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0.142315,
-      "y": 0.989821,
+      "x": 0.258819,
+      "y": 0.965926,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 810,
       "degree": 0,
-      "x": -0.142315,
-      "y": 0.989821,
+      "x": 0,
+      "y": 1,
       "size": 8
     },
     {
@@ -169,8 +169,8 @@
       ],
       "bytes": 679,
       "degree": 0,
-      "x": -0.415415,
-      "y": 0.909632,
+      "x": -0.258819,
+      "y": 0.965926,
       "size": 8
     },
     {
@@ -188,8 +188,8 @@
       ],
       "bytes": 1106,
       "degree": 2,
-      "x": -0.654861,
-      "y": 0.75575,
+      "x": -0.5,
+      "y": 0.866025,
       "size": 8
     },
     {
@@ -207,8 +207,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": -0.841254,
-      "y": 0.540641,
+      "x": -0.707107,
+      "y": 0.707107,
       "size": 8
     },
     {
@@ -226,8 +226,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": -0.959493,
-      "y": 0.281733,
+      "x": -0.866025,
+      "y": 0.5,
       "size": 8
     },
     {
@@ -245,8 +245,8 @@
       ],
       "bytes": 414,
       "degree": 0,
-      "x": -1,
-      "y": 0,
+      "x": -0.965926,
+      "y": 0.258819,
       "size": 8
     },
     {
@@ -294,8 +294,20 @@
       ],
       "bytes": 2630,
       "degree": 3,
-      "x": -0.959493,
-      "y": -0.281733,
+      "x": -1,
+      "y": 0,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-16-skip-wiki-only-releases.md",
+      "label": "Skip wiki-only releases",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 951,
+      "degree": 2,
+      "x": -0.965926,
+      "y": -0.258819,
       "size": 8
     },
     {
@@ -306,8 +318,8 @@
       "githubRefs": [],
       "bytes": 2907,
       "degree": 2,
-      "x": 0.959493,
-      "y": 0.281733,
+      "x": 0.965926,
+      "y": 0.258819,
       "size": 12
     },
     {
@@ -318,8 +330,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.841254,
-      "y": -0.540641,
+      "x": -0.866025,
+      "y": -0.5,
       "size": 8
     },
     {
@@ -330,8 +342,8 @@
       "githubRefs": [],
       "bytes": 1330,
       "degree": 3,
-      "x": -0.654861,
-      "y": -0.75575,
+      "x": -0.707107,
+      "y": -0.707107,
       "size": 8
     },
     {
@@ -342,8 +354,20 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.415415,
-      "y": -0.909632,
+      "x": -0.5,
+      "y": -0.866025,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-09-16-suppress-package-releases-for-wiki-only-reconciliation-51f3eae0c0.md",
+      "label": "Suppress package releases for wiki-only reconciliation",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 976,
+      "degree": 3,
+      "x": -0.258819,
+      "y": -0.965926,
       "size": 8
     },
     {
@@ -352,10 +376,10 @@
       "type": "index",
       "aliases": [],
       "githubRefs": [],
-      "bytes": 1956,
-      "degree": 5,
-      "x": -0.142315,
-      "y": -0.989821,
+      "bytes": 2266,
+      "degree": 6,
+      "x": 0,
+      "y": -1,
       "size": 12
     },
     {
@@ -371,8 +395,8 @@
       "githubRefs": [],
       "bytes": 1961,
       "degree": 7,
-      "x": 0.142315,
-      "y": -0.989821,
+      "x": 0.258819,
+      "y": -0.965926,
       "size": 8
     },
     {
@@ -388,8 +412,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.415415,
-      "y": -0.909632,
+      "x": 0.5,
+      "y": -0.866025,
       "size": 8
     },
     {
@@ -405,8 +429,8 @@
       "githubRefs": [],
       "bytes": 2563,
       "degree": 9,
-      "x": 0.654861,
-      "y": -0.75575,
+      "x": 0.707107,
+      "y": -0.707107,
       "size": 8
     },
     {
@@ -420,10 +444,10 @@
         "repository workflows"
       ],
       "githubRefs": [],
-      "bytes": 2097,
-      "degree": 9,
-      "x": 0.841254,
-      "y": -0.540641,
+      "bytes": 2328,
+      "degree": 11,
+      "x": 0.866025,
+      "y": -0.5,
       "size": 8
     },
     {
@@ -438,8 +462,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.959493,
-      "y": -0.281733,
+      "x": 0.965926,
+      "y": -0.258819,
       "size": 8
     }
   ],
@@ -469,6 +493,13 @@
       "id": "1c5102cd94cd84d6",
       "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
       "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "1d0c62e2e3da85db",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-16-suppress-package-releases-for-wiki-only-reconciliation-51f3eae0c0.md",
       "type": "link",
       "relation": "link"
     },
@@ -548,6 +579,20 @@
       "target": "wiki/topics/official-source-freshness.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "829113a90e4097ef",
+      "source": "wiki/journal/2026-09-16-skip-wiki-only-releases.md",
+      "target": "wiki/plans/2026-09-16-suppress-package-releases-for-wiki-only-reconciliation-51f3eae0c0.md",
+      "type": "plan",
+      "relation": "plan"
+    },
+    {
+      "id": "87df603fbfe24458",
+      "source": "wiki/plans/2026-09-16-suppress-package-releases-for-wiki-only-reconciliation-51f3eae0c0.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "8dcb3523692e5a49",
@@ -672,6 +717,13 @@
       "id": "e083e70293f26618",
       "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
       "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "e157a768c331d34f",
+      "source": "wiki/journal/2026-09-16-skip-wiki-only-releases.md",
+      "target": "wiki/topics/release-operations.md",
       "type": "topic",
       "relation": "topic"
     },
