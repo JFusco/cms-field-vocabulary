@@ -21,4 +21,5 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Conventional Commit type and scope validation remains strict, while subjects may use up to 100 characters beneath the existing 120-character header cap so generated grouped dependency updates can pass the same gate as maintainer commits.
 - Wiki reconciliation manages its review pull requests through GitHub's REST pull-request endpoints so the repository-scoped `PR_BOT_TOKEN` does not require unrelated organization-read access.
 - The explicit `[skip release]` commit marker is reserved for verified non-package follow-ups, including the post-publication wiki evidence commit, so that recording `1.0.0` does not trigger `1.0.1`.
+- Automated wiki reconciliation includes `[skip release]` in both its branch commit and review pull-request title, covering merge, rebase, and squash strategies without suppressing releases for the substantive source pull request.
 - Catalog freshness remains independent and read-only as described in [official-source freshness](./official-source-freshness.md).
