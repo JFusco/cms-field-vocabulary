@@ -93,13 +93,15 @@ jobs:
         run: |
           title="docs(wiki): reconcile PR #$PR_NUMBER"
           body="Automated, reviewable wiki reconciliation for merged PR #$PR_NUMBER."
-          open="$(gh pr list --head "$BRANCH" --state open --limit 100 --json number --jq 'sort_by(.number) | last | .number // empty')"
-          closed="$(gh pr list --head "$BRANCH" --state closed --limit 100 --json number,mergedAt --jq 'map(select(.mergedAt == null)) | sort_by(.number) | last | .number // empty')"
+          owner="${GITHUB_REPOSITORY%%/*}"
+          head="$owner:$BRANCH"
+          open="$(gh api --method GET "repos/$GITHUB_REPOSITORY/pulls" -f state=open -f head="$head" -F per_page=100 --jq 'sort_by(.number) | last | .number // empty')"
+          closed="$(gh api --method GET "repos/$GITHUB_REPOSITORY/pulls" -f state=closed -f head="$head" -F per_page=100 --jq 'map(select(.merged_at == null)) | sort_by(.number) | last | .number // empty')"
           if [ -n "$open" ]; then
-            gh pr edit "$open" --title "$title" --body "$body"
+            gh api --method PATCH "repos/$GITHUB_REPOSITORY/pulls/$open" -f title="$title" -f body="$body" >/dev/null
           elif [ -n "$closed" ]; then
-            gh pr reopen "$closed"
-            gh pr edit "$closed" --title "$title" --body "$body"
+            gh api --method PATCH "repos/$GITHUB_REPOSITORY/pulls/$closed" -f state=open >/dev/null
+            gh api --method PATCH "repos/$GITHUB_REPOSITORY/pulls/$closed" -f title="$title" -f body="$body" >/dev/null
           else
-            gh pr create --base "$BASE_BRANCH" --head "$BRANCH" --title "$title" --body "$body"
+            gh api --method POST "repos/$GITHUB_REPOSITORY/pulls" -f base="$BASE_BRANCH" -f head="$BRANCH" -f title="$title" -f body="$body" --jq '.html_url'
           fi
