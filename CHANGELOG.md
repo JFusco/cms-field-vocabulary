@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.5...v1.0.6) (2026-09-16)
+
+### Bug Fixes
+
+* **ci:** use REST for wiki sync PRs ([ee33e2c](https://github.com/JFusco/cms-field-vocabulary/commit/ee33e2c66e18e5868333a6ac52e5153e7136e366))
+* **release:** skip wiki-only reconciliations [skip release] ([52ed480](https://github.com/JFusco/cms-field-vocabulary/commit/52ed480f5671b5b79c3139a104180970ee3890ed))
+
 ## [1.0.5](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.4...v1.0.5) (2026-09-09)
 
 ## [1.0.4](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.3...v1.0.4) (2026-09-09)
