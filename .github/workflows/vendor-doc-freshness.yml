@@ -23,9 +23,6 @@ concurrency:
   group: vendor-documentation-freshness
   cancel-in-progress: false
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   scan:
     name: scan official vendor documentation
@@ -33,13 +30,13 @@ jobs:
     timeout-minutes: 45
     steps:
       - name: Checkout read-only source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 1
           persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "24.14.0"
 
@@ -51,7 +48,7 @@ jobs:
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -119,7 +116,7 @@ jobs:
 
       - name: Upload scan evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: vendor-doc-freshness-${{ github.run_id }}
           path: ${{ runner.temp }}/vendor-doc-freshness
@@ -128,7 +125,7 @@ jobs:
 
       - name: Open or update source-specific attention issues
         if: always() && steps.scans.outputs.outcome == 'attention'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           INDEX_STATUS: ${{ steps.scans.outputs.index_status }}
           FULL_STATUS: ${{ steps.scans.outputs.full_status }}
