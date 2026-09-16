@@ -2,12 +2,12 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 24,
-    "edges": 42,
+    "nodes": 26,
+    "edges": 47,
     "byType": {
       "index": 3,
-      "journal": 12,
-      "plan": 4,
+      "journal": 13,
+      "plan": 5,
       "topic": 5
     }
   },
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.866025,
-      "y": 0.5,
+      "x": 0.885456,
+      "y": 0.464723,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.707107,
-      "y": 0.707107,
+      "x": 0.748511,
+      "y": 0.663123,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.5,
-      "y": 0.866025,
+      "x": 0.568065,
+      "y": 0.822984,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0.258819,
-      "y": 0.965926,
+      "x": 0.354605,
+      "y": 0.935016,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 810,
       "degree": 0,
-      "x": 0,
-      "y": 1,
+      "x": 0.120537,
+      "y": 0.992709,
       "size": 8
     },
     {
@@ -169,8 +169,8 @@
       ],
       "bytes": 679,
       "degree": 0,
-      "x": -0.258819,
-      "y": 0.965926,
+      "x": -0.120537,
+      "y": 0.992709,
       "size": 8
     },
     {
@@ -188,8 +188,8 @@
       ],
       "bytes": 1106,
       "degree": 2,
-      "x": -0.5,
-      "y": 0.866025,
+      "x": -0.354605,
+      "y": 0.935016,
       "size": 8
     },
     {
@@ -207,8 +207,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": -0.707107,
-      "y": 0.707107,
+      "x": -0.568065,
+      "y": 0.822984,
       "size": 8
     },
     {
@@ -226,8 +226,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": -0.866025,
-      "y": 0.5,
+      "x": -0.748511,
+      "y": 0.663123,
       "size": 8
     },
     {
@@ -245,8 +245,20 @@
       ],
       "bytes": 414,
       "degree": 0,
-      "x": -0.965926,
-      "y": 0.258819,
+      "x": -0.885456,
+      "y": 0.464723,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-16-release-1-0-6-and-native-node-24-actions.md",
+      "label": "Release 1.0.6 and native Node 24 Actions",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 1819,
+      "degree": 3,
+      "x": -0.970942,
+      "y": 0.239316,
       "size": 8
     },
     {
@@ -313,8 +325,8 @@
       ],
       "bytes": 998,
       "degree": 2,
-      "x": -0.965926,
-      "y": -0.258819,
+      "x": -0.970942,
+      "y": -0.239316,
       "size": 8
     },
     {
@@ -325,8 +337,8 @@
       "githubRefs": [],
       "bytes": 2907,
       "degree": 2,
-      "x": 0.965926,
-      "y": 0.258819,
+      "x": 0.970942,
+      "y": 0.239316,
       "size": 12
     },
     {
@@ -337,8 +349,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.866025,
-      "y": -0.5,
+      "x": -0.885456,
+      "y": -0.464723,
       "size": 8
     },
     {
@@ -349,8 +361,8 @@
       "githubRefs": [],
       "bytes": 1330,
       "degree": 3,
-      "x": -0.707107,
-      "y": -0.707107,
+      "x": -0.748511,
+      "y": -0.663123,
       "size": 8
     },
     {
@@ -361,8 +373,8 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.5,
-      "y": -0.866025,
+      "x": -0.568065,
+      "y": -0.822984,
       "size": 8
     },
     {
@@ -373,8 +385,20 @@
       "githubRefs": [],
       "bytes": 976,
       "degree": 3,
-      "x": -0.258819,
-      "y": -0.965926,
+      "x": -0.354605,
+      "y": -0.935016,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-09-16-upgrade-github-actions-to-native-node-24-runtimes-07ee4b0626.md",
+      "label": "Upgrade GitHub Actions to native Node 24 runtimes",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 818,
+      "degree": 3,
+      "x": -0.120537,
+      "y": -0.992709,
       "size": 8
     },
     {
@@ -383,10 +407,10 @@
       "type": "index",
       "aliases": [],
       "githubRefs": [],
-      "bytes": 2266,
-      "degree": 6,
-      "x": 0,
-      "y": -1,
+      "bytes": 2584,
+      "degree": 7,
+      "x": 0.120537,
+      "y": -0.992709,
       "size": 12
     },
     {
@@ -402,8 +426,8 @@
       "githubRefs": [],
       "bytes": 1961,
       "degree": 7,
-      "x": 0.258819,
-      "y": -0.965926,
+      "x": 0.354605,
+      "y": -0.935016,
       "size": 8
     },
     {
@@ -419,8 +443,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.5,
-      "y": -0.866025,
+      "x": 0.568065,
+      "y": -0.822984,
       "size": 8
     },
     {
@@ -436,8 +460,8 @@
       "githubRefs": [],
       "bytes": 2563,
       "degree": 9,
-      "x": 0.707107,
-      "y": -0.707107,
+      "x": 0.748511,
+      "y": -0.663123,
       "size": 8
     },
     {
@@ -451,10 +475,10 @@
         "repository workflows"
       ],
       "githubRefs": [],
-      "bytes": 2328,
-      "degree": 11,
-      "x": 0.866025,
-      "y": -0.5,
+      "bytes": 2888,
+      "degree": 14,
+      "x": 0.885456,
+      "y": -0.464723,
       "size": 8
     },
     {
@@ -469,8 +493,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.965926,
-      "y": -0.258819,
+      "x": 0.970942,
+      "y": -0.239316,
       "size": 8
     }
   ],
@@ -523,6 +547,13 @@
       "target": "wiki/topics/catalog-authority.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "2c890d6a2c4b9331",
+      "source": "wiki/plans/2026-09-16-upgrade-github-actions-to-native-node-24-runtimes-07ee4b0626.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "355b085344694472",
@@ -579,6 +610,13 @@
       "target": "wiki/topics/official-source-freshness.md",
       "type": "topic",
       "relation": "topic"
+    },
+    {
+      "id": "7509ed62b570e128",
+      "source": "wiki/journal/2026-09-16-release-1-0-6-and-native-node-24-actions.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "link",
+      "relation": "link"
     },
     {
       "id": "8140d3c7d7b5f8fa",
@@ -644,11 +682,25 @@
       "relation": "plan"
     },
     {
+      "id": "9b9d51f76e933905",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-16-upgrade-github-actions-to-native-node-24-runtimes-07ee4b0626.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
       "id": "a1de6d0080743ea6",
       "source": "wiki/plans/2026-09-16-review-september-vendor-drift-and-clear-dependency-prs-ec96a10600.md",
       "target": "wiki/topics/release-operations.md",
       "type": "topic",
       "relation": "topic"
+    },
+    {
+      "id": "a6c10bd07e9bc9da",
+      "source": "wiki/journal/2026-09-16-release-1-0-6-and-native-node-24-actions.md",
+      "target": "wiki/plans/2026-09-16-upgrade-github-actions-to-native-node-24-runtimes-07ee4b0626.md",
+      "type": "plan",
+      "relation": "plan"
     },
     {
       "id": "a793f8afeb279990",
@@ -660,6 +712,13 @@
     {
       "id": "ab80d5ff4a785ea0",
       "source": "wiki/journal/2026-09-16-review-vendor-drift-and-dependency-prs.md",
+      "target": "wiki/topics/release-operations.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "b7d6b97e4c5b6e32",
+      "source": "wiki/journal/2026-09-16-release-1-0-6-and-native-node-24-actions.md",
       "target": "wiki/topics/release-operations.md",
       "type": "topic",
       "relation": "topic"
