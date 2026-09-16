@@ -1,5 +1,5 @@
 ---
-pr: pending
+pr: https://github.com/jfusco/cms-field-vocabulary/pull/47
 topics: [release-operations]
 plans: [2026-09-16-suppress-package-releases-for-wiki-only-reconciliation-51f3eae0c0.md]
 ---
