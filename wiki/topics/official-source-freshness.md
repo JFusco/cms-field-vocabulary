@@ -19,6 +19,7 @@ Freshness automation detects changes in official vendor documentation while pres
 ## Decisions
 
 - Rolling SaaS documentation uses observation dates and fingerprints; pinned products and SDKs retain exact versions or commits.
+- Release-index drift advances the reviewed identity window only after a full scan confirms that claim and enumeration sources remain stable. Discovering a prerelease does not silently migrate a pinned SDK profile.
 - Missing exact native tokens fail review rather than being accepted as implied by an overview page.
 - When an exact official page blocks automated review, replacement history records that URL and the immutable official vendor-repository source used for the reviewed claim set.
 - Vendor outages retain the last reviewed snapshot and are surfaced as unreachable.
