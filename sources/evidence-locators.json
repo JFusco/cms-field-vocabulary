@@ -140,6 +140,14 @@
       ]
     },
     {
+      "sourceId": "optimizely-saas.sdk3-modelling",
+      "locators": [
+        { "locator": "Modelling > Property Configuration > Property Types" },
+        { "locator": "RichText Property > GraphQL query format", "tokens": ["richText", "json", "html", "richTextFormat"] },
+        { "locator": "Content Relationships", "tokens": ["content", "contentReference", "contentType", "allowedTypes", "restrictedTypes"] }
+      ]
+    },
+    {
       "sourceId": "sitecore-ai.content-sdk-components",
       "locators": [
         { "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef." }
