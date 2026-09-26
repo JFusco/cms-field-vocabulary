@@ -43,7 +43,7 @@ Never repair `catalog/`, `docs/platforms/`, or `dist/` directly.
 
 ## Vendor-documentation freshness
 
-The `Vendor documentation freshness` workflow runs an index scan daily at 13:17 UTC and runs an index scan plus the full official-source scan every Monday at 13:47 UTC. A manual dispatch can select either depth. It has read-only repository access plus permission to open or update scanner-failure issues. A Codex project task reviews completed scans daily at 15:00 UTC.
+The `Vendor documentation freshness` workflow runs an index scan daily at 13:17 UTC and runs an index scan plus the full official-source scan every Monday at 13:47 UTC. A manual dispatch can select either depth. It has read-only repository access plus permission to open or update scanner-failure issues. A Codex project task reviews the weekly full scan and intervening daily observations every Monday at 15:00 UTC.
 
 The workflow:
 

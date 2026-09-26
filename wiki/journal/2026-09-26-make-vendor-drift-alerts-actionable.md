@@ -9,4 +9,6 @@ The September vendor scan repeatedly commented on open issues with classificatio
 
 The scan workflow now uploads a readable summary containing source URLs, locators, affected profiles, observation fingerprints, and added or removed release identities. It creates GitHub issues only for scanner or checkout-integrity failures. The separate Codex review task can turn official evidence into a focused draft pull request and a linked issue. Maintainers retain acceptance authority for source observations and merges. The Optimizely SDK 3.0 candidate is tracked in its own change to preserve the pinned SDK 2.2.0 profile.
 
+The Codex review runs Mondays at 15:00 UTC after the weekly full scan and includes daily index observations since the previous review.
+
 Local verification: the September 25 report rendered with identity deltas; `pnpm run verify:ci` passed with 80 tests. The eight legacy issues remain for evidence-based triage and disposition.

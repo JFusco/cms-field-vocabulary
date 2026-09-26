@@ -15,7 +15,7 @@ Freshness automation detects changes in official vendor documentation while pres
 - Daily runs scan release indexes; weekly and manual full runs inspect all declared sources and upload evidence outside the checkout.
 - Drift is classified as unchanged, cosmetic, claim-changing, enumeration-changing, version-changing, unreachable, or removed.
 - The scanner uploads a readable source-by-source summary with changed release identities, affected profiles, and observation fingerprints. Ordinary drift does not create a generic issue; scanner failures and checkout mutations do.
-- A daily Codex task reviews scan evidence against official sources and may prepare a focused draft pull request linked to an actionable issue. A maintainer accepts source observations and reviews the draft before merge. The scanner cannot add, rename, or remove field types and cannot publish a release.
+- A Monday Codex task reviews the weekly full scan and intervening daily observations against official sources and may prepare a focused draft pull request linked to an actionable issue. A maintainer accepts source observations and reviews the draft before merge. The scanner cannot add, rename, or remove field types and cannot publish a release.
 
 ## Decisions
 
