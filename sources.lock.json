@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-16T13:55:52.966Z",
+  "reviewedAt": "2026-09-26T10:16:01.797Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -459,6 +459,17 @@
             "mode": "pinned",
             "sdk": "2.2.0"
           }
+        },
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-3",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 3.0.0",
+            "mode": "pinned",
+            "sdk": "3.0.0"
+          }
         }
       ],
       "completeness": "exhaustive",
@@ -651,6 +662,107 @@
       },
       "title": "Content JavaScript SDK modelling",
       "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/021ac0931b72b1fa810fdc6eb9f149c4fc87e600/docs/3-modelling.md",
+      "vendor": "Optimizely"
+    },
+    {
+      "applicability": [
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-3",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 3.0.0",
+            "mode": "pinned",
+            "sdk": "3.0.0"
+          }
+        }
+      ],
+      "completeness": "exhaustive",
+      "extraction": {
+        "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "#### URL Property",
+              "id": "property-types",
+              "itemCapture": 1,
+              "itemPattern": "- \\*\\*`'([^']+)'`\\*\\*",
+              "startPattern": "### Property Types"
+            }
+          ]
+        },
+        "tokens": [
+          "string",
+          "richText",
+          "boolean",
+          "integer",
+          "float",
+          "dateTime",
+          "url",
+          "link",
+          "binary",
+          "json",
+          "content",
+          "contentReference",
+          "array",
+          "component"
+        ]
+      },
+      "fragmentSha256": "d8243250c6dc35f4c18b7d2248385de954ecfd54c22ff9f46c4dc01e37a5b4ec",
+      "identities": [],
+      "locator": "Modelling > Property Configuration > Property Types",
+      "normalizedSha256": "7c6ea6d47a7372ce1129a2ec941d967900927ae7cfaccc81b60a2c02b7e4553f",
+      "observedAt": "2026-09-26T10:16:01.554Z",
+      "observedTokens": [
+        "array",
+        "binary",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "observedTokenSetSha256": "1317df55596b400d12f5f5ccc519c9abfc96faf0e002c0717875a098770ac3c1",
+      "rawSha256": "0194cc0e72bd9dd3bc811c3c80ef128a271e0efc74b16f52bf64f58e79027c55",
+      "replacementHistory": [],
+      "requiredTokens": [
+        "array",
+        "binary",
+        "boolean",
+        "component",
+        "content",
+        "contentReference",
+        "dateTime",
+        "float",
+        "integer",
+        "json",
+        "link",
+        "richText",
+        "string",
+        "url"
+      ],
+      "requiredTokenSetSha256": "1317df55596b400d12f5f5ccc519c9abfc96faf0e002c0717875a098770ac3c1",
+      "resolvedRevision": "@optimizely/cms-sdk 3.0.0; c771d824f2328e1a51c111b61b9853141fa66333",
+      "reviewedAt": "2026-09-26T10:16:01.554Z",
+      "reviewer": "optimizely-saas",
+      "reviewStatus": "reviewed",
+      "sourceId": "optimizely-saas.sdk3-modelling",
+      "sourceRole": "sdk-source",
+      "sourceVersion": {
+        "mode": "pinned-git-commit",
+        "value": "@optimizely/cms-sdk 3.0.0; c771d824f2328e1a51c111b61b9853141fa66333"
+      },
+      "title": "Content JavaScript SDK 3.0.0 modelling",
+      "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/c771d824f2328e1a51c111b61b9853141fa66333/docs/3-modelling.md",
       "vendor": "Optimizely"
     },
     {
@@ -3273,6 +3385,17 @@
             "mode": "pinned",
             "sdk": "2.2.0"
           }
+        },
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-3",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 3.0.0",
+            "mode": "pinned",
+            "sdk": "3.0.0"
+          }
         }
       ],
       "completeness": "supplemental",
@@ -3322,6 +3445,17 @@
             "label": "@optimizely/cms-sdk 2.2.0",
             "mode": "pinned",
             "sdk": "2.2.0"
+          }
+        },
+        {
+          "product": "@optimizely/cms-sdk",
+          "profileId": "optimizely-saas.sdk-3",
+          "surface": "sdk",
+          "transport": "JavaScript SDK properties[type] and inferred rendering values",
+          "version": {
+            "label": "@optimizely/cms-sdk 3.0.0",
+            "mode": "pinned",
+            "sdk": "3.0.0"
           }
         }
       ],

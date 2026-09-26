@@ -48,6 +48,10 @@ const EXPECTED_NATIVE_TOKENS = {
     'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
     'binary', 'json', 'content', 'contentReference', 'array', 'component',
   ],
+  'optimizely-saas.sdk-3': [
+    'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
+    'binary', 'json', 'content', 'contentReference', 'array', 'component',
+  ],
   'sitecore-ai.authoring.current': [
     'Checkbox', 'File', 'Date', 'Datetime', 'Image', 'Integer', 'Number',
     'Single-Line Text', 'Multi-Line Text', 'Rich Text', 'General link with search',
@@ -107,6 +111,19 @@ test('official source profiles preserve the exact profile-local native vocabular
     assert.deepEqual(sourceTokens(profile), EXPECTED_NATIVE_TOKENS[profile.id], profile.id);
     assert.equal(new Set(sourceTokens(profile)).size, profile.fields.length, `${profile.id} contains duplicate native tokens`);
   }
+});
+
+test('SDK 3.0 keeps a separate versioned contract with its changed rich-text and relationship rules', async () => {
+  const profiles = await loadSourceProfiles();
+  const sdk2 = profiles.find((profile) => profile.id === 'optimizely-saas.sdk-2');
+  const sdk3 = profiles.find((profile) => profile.id === 'optimizely-saas.sdk-3');
+  assert.equal(sdk2.version.sdk, '2.2.0');
+  assert.equal(sdk3.version.sdk, '3.0.0');
+  assert.match(field(sdk3, 'richText').deliveryShape, /\.json by default/);
+  for (const token of ['content', 'contentReference']) {
+    assert.match(field(sdk3, token).editorBehavior, /requires contentType or a non-empty allowedTypes\/restrictedTypes list/);
+  }
+  assert.equal(field(sdk2, 'richText').deliveryShape.includes('by default'), false);
 });
 
 test('surface-specific vocabularies remain isolated instead of being collapsed by vendor or token', async () => {
