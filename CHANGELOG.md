@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.9...v1.0.10) (2026-09-26)
+
+### Bug Fixes
+
+* **ci:** preserve required main verification [skip release] ([2b7c5e7](https://github.com/JFusco/cms-field-vocabulary/commit/2b7c5e71847759cc8a2a7d7966fd3dc661390083))
+* **wiki:** emit formatter-stable recovery journals ([99eafe2](https://github.com/JFusco/cms-field-vocabulary/commit/99eafe2f9e18ea0a4c64348ff9da72bc2094fde2))
+* **wiki:** preserve authored journal attribution [skip release] ([#64](https://github.com/JFusco/cms-field-vocabulary/issues/64)) ([d5355ff](https://github.com/JFusco/cms-field-vocabulary/commit/d5355ffe635a8c710936acc5f760375e3687d224))
+
 ## [1.0.9](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.8...v1.0.9) (2026-09-26)
 
 ### Bug Fixes
