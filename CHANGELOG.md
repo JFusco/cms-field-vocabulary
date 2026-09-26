@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/JFusco/cms-field-vocabulary/compare/v1.1.0...v1.2.0) (2026-09-26)
+
+### Features
+
+* **sources:** complete SitecoreAI authoring list fields ([14d11ee](https://github.com/JFusco/cms-field-vocabulary/commit/14d11ee693eb177cf1ea5b6f528a34308bdb1ce3))
+
 ## [1.1.0](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.11...v1.1.0) (2026-09-26)
 
 ### Features
