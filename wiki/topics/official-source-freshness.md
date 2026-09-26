@@ -14,12 +14,15 @@ Freshness automation detects changes in official vendor documentation while pres
 - Rolling WordPress handbook pages remain registered as supplemental documentation, while the Core 7.1 facts resolve to immutable official Core and bundled Gutenberg revisions.
 - Daily runs scan release indexes; weekly and manual full runs inspect all declared sources and upload evidence outside the checkout.
 - Drift is classified as unchanged, cosmetic, claim-changing, enumeration-changing, version-changing, unreachable, or removed.
-- Actionable drift creates or updates a source-specific issue. Raw-only cosmetic churn remains in the uploaded report without creating issue noise. Automation cannot add, rename, or remove field types and cannot publish a release.
+- The scanner uploads a readable source-by-source summary with changed release identities, affected profiles, and observation fingerprints. Ordinary drift does not create a generic issue; scanner failures and checkout mutations do.
+- A daily Codex task reviews scan evidence against official sources and may prepare a focused draft pull request linked to an actionable issue. A maintainer accepts source observations and reviews the draft before merge. The scanner cannot add, rename, or remove field types and cannot publish a release.
 
 ## Decisions
 
 - Rolling SaaS documentation uses observation dates and fingerprints; pinned products and SDKs retain exact versions or commits.
 - Release-index drift advances the reviewed identity window only after a full scan confirms that claim and enumeration sources remain stable. Discovering a prerelease does not silently migrate a pinned SDK profile.
+- A stable major release with official field evidence is proposed as a separate versioned profile; it does not replace an older pinned SDK profile or change consumer routing by default.
+- Close a no-impact drift issue with a recorded finding and a stable observation fingerprint. Close a change issue after its linked review pull request merges; keep uncertain findings open with a specific verification need.
 - Missing exact native tokens fail review rather than being accepted as implied by an overview page.
 - When an exact official page blocks automated review, replacement history records that URL and the immutable official vendor-repository source used for the reviewed claim set.
 - Vendor outages retain the last reviewed snapshot and are surfaced as unreachable.

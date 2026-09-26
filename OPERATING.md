@@ -43,21 +43,21 @@ Never repair `catalog/`, `docs/platforms/`, or `dist/` directly.
 
 ## Vendor-documentation freshness
 
-The `Vendor documentation freshness` workflow runs an index scan daily at 13:17 UTC and runs an index scan plus the full official-source scan every Monday at 13:47 UTC. A manual dispatch can select either depth. It has read-only repository access plus permission to open or update issues.
+The `Vendor documentation freshness` workflow runs an index scan daily at 13:17 UTC and runs an index scan plus the full official-source scan every Monday at 13:47 UTC. A manual dispatch can select either depth. It has read-only repository access plus permission to open or update scanner-failure issues. A Codex project task reviews completed scans daily at 15:00 UTC.
 
 The workflow:
 
 1. checks out the repository without persisted credentials;
 2. runs the release-index scan, adding the full official-source scan on the weekly schedule or a manual `full` dispatch;
 3. verifies that the scanner did not mutate the checkout;
-4. uploads logs and evidence for 30 days;
-5. opens or updates a source-specific attention issue when either scan reports drift or retrieval fails, and uses a scanner-integrity issue when the checkout changes.
+4. uploads logs, JSON observations, and a readable source-by-source summary for 30 days;
+5. opens an issue only if the scanner or summary fails unexpectedly or the checkout changes.
 
-It does not edit source, update `sources.lock.json`, open a vocabulary pull request, or publish.
+It does not edit source, update `sources.lock.json`, open a vocabulary pull request, or publish. The Codex task examines official evidence and proposes a focused draft pull request when a supported vocabulary change is clear. New major versions receive separate versioned profiles. It records a concrete finding and issue link with the draft. A reviewer accepts source observations and approves any merge; the task does not merge or publish.
 
-### Triage an attention issue
+### Triage a scan finding
 
-1. Open the linked workflow run and download the artifact.
+1. Open the latest completed workflow run and download the artifact.
 2. Inspect `index.log`, `full.log`, and `worktree-status.txt`.
 3. Identify each observation that is not `unchanged`.
 4. Open the registered official URL and review the exact locator in `sources/official-sources.json`.
@@ -91,7 +91,7 @@ pnpm run test:packed
 
 `pnpm sources:review -- --all` is reserved for an intentional complete-lock refresh. `--allow-manual` is an exception for an independently reviewed official source that automation cannot retrieve; the pull request must explain the failure and review method, and the reviewer must manually verify every required token. It cannot override a fetched observation that reports missing tokens or establish a new independent enumeration baseline.
 
-Close the attention issue only after the reviewed pull request is merged or the evidence establishes a transient false alarm. Link the issue to the reviewing pull request.
+Close a drift issue with a recorded no-impact finding, or after its reviewed pull request merges. The task must compare observation fingerprints with prior closed findings so a previously reviewed observation does not recreate the same issue. Link a change issue to its draft pull request. Leave a finding open when official evidence is missing, and state exactly what remains to verify.
 
 ## Review and release impact
 
