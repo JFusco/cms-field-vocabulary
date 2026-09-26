@@ -9,7 +9,7 @@ Freshness automation detects changes in official vendor documentation while pres
 
 - `sources/official-sources.json` declares official URLs, product and profile applicability, source roles, extraction locators, exact token sets, version mode, and allowed redirect hosts.
 - `sources.lock.json` records reviewed URLs, timestamps, raw and normalized fingerprints, token-set fingerprints, reachability, and manual-review notes.
-- The catalog currently binds 53 reviewed official sources to 17 surface-specific profiles and 277 exact native field facts.
+- The catalog currently binds 53 reviewed official sources to 17 surface-specific profiles and 281 exact native field facts.
 - Exhaustive enumeration sources use schema-v2 structural discovery regions. Their independently observed token sets are hashed separately from the required evidence tokens, so a vendor-added or vendor-removed native type is detectable without first teaching the scanner that token.
 - Rolling WordPress handbook pages remain registered as supplemental documentation, while the Core 7.1 facts resolve to immutable official Core and bundled Gutenberg revisions.
 - Daily runs scan release indexes; weekly and manual full runs inspect all declared sources and upload evidence outside the checkout.
@@ -24,6 +24,7 @@ Freshness automation detects changes in official vendor documentation while pres
 - A stable major release with official field evidence is proposed as a separate versioned profile; it does not replace an older pinned SDK profile or change consumer routing by default.
 - Close a no-impact drift issue with a recorded finding and a stable observation fingerprint. Close a change issue after its linked review pull request merges; keep uncertain findings open with a specific verification need.
 - Missing exact native tokens fail review rather than being accepted as implied by an overview page.
+- Supplemental field tables declare each authoring label used as exact native-token evidence; the SitecoreAI list-field observation was refreshed when four additional labels were registered.
 - When an exact official page blocks automated review, replacement history records that URL and the immutable official vendor-repository source used for the reviewed claim set.
 - Vendor outages retain the last reviewed snapshot and are surfaced as unreachable.
 - Approved facts flow into [catalog authority](./catalog-authority.md); release policy is tracked in [release operations](./release-operations.md).

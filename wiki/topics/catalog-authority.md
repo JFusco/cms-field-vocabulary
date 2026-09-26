@@ -20,4 +20,5 @@ The catalog is an official-source-backed record of CMS field identities and sema
 - WordPress Core is split into meta, REST schema, block attribute type, and block attribute source surfaces; plugin vocabularies are extensions.
 - Optimizely CMS 13 admin labels and .NET model types are separate profiles, and Sitecore authoring tokens are isolated from Content SDK and Headless Services delivery contracts.
 - Optimizely CMS SDK 3.0.0 has its own pinned profile. Its default rich-text payload and required content-relationship constraints differ from the retained SDK 2.2.0 profile; consumer routes remain on 2.2.0 until a separate migration decision.
+- The SitecoreAI authoring profile includes the list-field labels `Multilist with search`, `Grouped droplink`, `Grouped droplist`, and `Name value list` from the official authoring table. Their casing and profile IDs remain separate from Content SDK labels.
 - Rendering behavior is governed by [structured rendering operations](./structured-rendering-operations.md), and source evidence is maintained through [official-source freshness](./official-source-freshness.md).

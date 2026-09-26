@@ -13165,6 +13165,114 @@
               "mode": "rolling"
             }
           },
+          "canonicalId": "sitecore-ai.authoring.current.GroupedDroplink",
+          "claims": {
+            "deliveryShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "editorBehavior": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "nativeType": {
+              "evidence": [
+                {
+                  "locator": "List field type table",
+                  "sourceId": "sitecore-ai.list-field-types"
+                }
+              ],
+              "status": "documented",
+              "value": "Grouped droplink"
+            },
+            "storageShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "typicalUse": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "valueShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            }
+          },
+          "formats": [],
+          "nativeToken": "Grouped droplink",
+          "origin": "native",
+          "renderingOperations": []
+        },
+        {
+          "applicability": {
+            "product": "SitecoreAI",
+            "profileId": "sitecore-ai.authoring.current",
+            "surface": "authoring",
+            "transport": "Data template field type names and authoring editors",
+            "version": {
+              "label": "SitecoreAI observed 2026-09-01",
+              "mode": "rolling"
+            }
+          },
+          "canonicalId": "sitecore-ai.authoring.current.GroupedDroplist",
+          "claims": {
+            "deliveryShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "editorBehavior": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "nativeType": {
+              "evidence": [
+                {
+                  "locator": "List field type table",
+                  "sourceId": "sitecore-ai.list-field-types"
+                }
+              ],
+              "status": "documented",
+              "value": "Grouped droplist"
+            },
+            "storageShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "typicalUse": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "valueShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            }
+          },
+          "formats": [],
+          "nativeToken": "Grouped droplist",
+          "origin": "native",
+          "renderingOperations": []
+        },
+        {
+          "applicability": {
+            "product": "SitecoreAI",
+            "profileId": "sitecore-ai.authoring.current",
+            "surface": "authoring",
+            "transport": "Data template field type names and authoring editors",
+            "version": {
+              "label": "SitecoreAI observed 2026-09-01",
+              "mode": "rolling"
+            }
+          },
           "canonicalId": "sitecore-ai.authoring.current.Icon",
           "claims": {
             "deliveryShape": {
@@ -13631,6 +13739,60 @@
               "mode": "rolling"
             }
           },
+          "canonicalId": "sitecore-ai.authoring.current.MultilistWithSearch",
+          "claims": {
+            "deliveryShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "editorBehavior": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "nativeType": {
+              "evidence": [
+                {
+                  "locator": "List field type table",
+                  "sourceId": "sitecore-ai.list-field-types"
+                }
+              ],
+              "status": "documented",
+              "value": "Multilist with search"
+            },
+            "storageShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "typicalUse": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "valueShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            }
+          },
+          "formats": [],
+          "nativeToken": "Multilist with search",
+          "origin": "native",
+          "renderingOperations": []
+        },
+        {
+          "applicability": {
+            "product": "SitecoreAI",
+            "profileId": "sitecore-ai.authoring.current",
+            "surface": "authoring",
+            "transport": "Data template field type names and authoring editors",
+            "version": {
+              "label": "SitecoreAI observed 2026-09-01",
+              "mode": "rolling"
+            }
+          },
           "canonicalId": "sitecore-ai.authoring.current.MultirootTreelist",
           "claims": {
             "deliveryShape": {
@@ -13671,6 +13833,60 @@
           },
           "formats": [],
           "nativeToken": "Multiroot Treelist",
+          "origin": "native",
+          "renderingOperations": []
+        },
+        {
+          "applicability": {
+            "product": "SitecoreAI",
+            "profileId": "sitecore-ai.authoring.current",
+            "surface": "authoring",
+            "transport": "Data template field type names and authoring editors",
+            "version": {
+              "label": "SitecoreAI observed 2026-09-01",
+              "mode": "rolling"
+            }
+          },
+          "canonicalId": "sitecore-ai.authoring.current.NameValueList",
+          "claims": {
+            "deliveryShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "editorBehavior": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "nativeType": {
+              "evidence": [
+                {
+                  "locator": "List field type table",
+                  "sourceId": "sitecore-ai.list-field-types"
+                }
+              ],
+              "status": "documented",
+              "value": "Name value list"
+            },
+            "storageShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "typicalUse": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            },
+            "valueShape": {
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
+            }
+          },
+          "formats": [],
+          "nativeToken": "Name value list",
           "origin": "native",
           "renderingOperations": []
         },
@@ -23054,5 +23270,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:ead9d86336c9d9934a8f33a630ddd0924f1906e5596fbb905225c63a4bcba96d"
+  "sourceLockDigest": "sha256:dab95d7242c27c3d0eda8c177c59ec4757c7c2b93986e2164dda9e68e2c40186"
 }

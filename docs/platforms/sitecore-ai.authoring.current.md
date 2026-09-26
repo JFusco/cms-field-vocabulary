@@ -21,6 +21,8 @@
 | `File Drop Area` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.system-field-types — System field type table |
 | `General link` | Undocumented | Internal, external, email, anchor, or media links. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.link-field-types — Link field type table |
 | `General link with search` | Undocumented | Links selected through a search-enabled editor. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.link-field-types — Link field type table |
+| `Grouped droplink` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.list-field-types — List field type table |
+| `Grouped droplist` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.list-field-types — List field type table |
 | `Icon` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.developer-field-types — Developer field type table |
 | `IFrame` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.developer-field-types — Developer field type table |
 | `Image` | Undocumented | Images selected from the media library. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
@@ -29,7 +31,9 @@
 | `Layout` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.system-field-types — System field type table |
 | `Multi-Line Text` | Undocumented | Multi-line plain text. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
 | `Multilist` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.list-field-types — List field type table<br>sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
+| `Multilist with search` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.list-field-types — List field type table |
 | `Multiroot Treelist` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
+| `Name value list` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.list-field-types — List field type table |
 | `Number` | Undocumented | Numeric values. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
 | `Query Datasource` | Undocumented | Undocumented | Undocumented | undocumented | sitecore-ai.system-field-types — System field type table |
 | `Rich Text` | Undocumented | Authored formatted HTML content. | Undocumented | undocumented | sitecore-ai.field-types — Data template field types and linked category pages<br>sitecore-ai.simple-field-types — Simple, Link, and List field type sections |
