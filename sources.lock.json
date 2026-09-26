@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-26T10:16:01.797Z",
+  "reviewedAt": "2026-09-26T10:39:46.897Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -1729,27 +1729,35 @@
         "tokens": [
           "Droplist",
           "Multilist",
+          "Multilist with search",
           "Treelist",
-          "Checklist"
+          "Checklist",
+          "Grouped droplink",
+          "Grouped droplist",
+          "Name value list"
         ]
       },
       "fragmentSha256": "be9de750ccabe2999e5936bdc766c6f2c196240de963c4b50a48964168b4c9f1",
       "identities": [],
       "locator": "List field type table",
-      "normalizedSha256": "bfba8fddde5d04b9537077d3cc15b776c7a04f2ef500cc4630f568c31364ead7",
-      "observedAt": "2026-09-02T11:11:35.309Z",
+      "normalizedSha256": "decfb05bcb4f1efa3de00d8587a4d48c55e1bfc4e0b0c25be599f2b941e05d1b",
+      "observedAt": "2026-09-26T10:39:45.626Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "a66011819a117ce32c99dc5bf5df84989d8529542dab5f6fb7b4080ec4ae5ccb",
+      "rawSha256": "cab0b8c5f494131657b4eb4c5e9c74e16078629b58889de6014bf0ca04ba597c",
       "replacementHistory": [],
       "requiredTokens": [
         "Checklist",
         "Droplist",
+        "Grouped droplink",
+        "Grouped droplist",
         "Multilist",
+        "Multilist with search",
+        "Name value list",
         "Treelist"
       ],
-      "requiredTokenSetSha256": "30441ea0732871cee3c39b82fb13c08f14f031c541ca78f95f27f8b68ee43bd5",
-      "reviewedAt": "2026-09-02T11:11:35.309Z",
+      "requiredTokenSetSha256": "630e6ba97cf39a9db32be62906f071a31294eb617db6cc368e69612d62ac7347",
+      "reviewedAt": "2026-09-26T10:39:45.626Z",
       "reviewer": "sitecore-ai",
       "reviewStatus": "reviewed",
       "sourceId": "sitecore-ai.list-field-types",

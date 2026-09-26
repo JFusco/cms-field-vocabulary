@@ -2,12 +2,12 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 34,
-    "edges": 61,
+    "nodes": 36,
+    "edges": 67,
     "byType": {
       "index": 3,
-      "journal": 18,
-      "plan": 8,
+      "journal": 19,
+      "plan": 9,
       "topic": 5
     }
   },
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.932472,
-      "y": 0.361242,
+      "x": 0.939693,
+      "y": 0.34202,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.850217,
-      "y": 0.526432,
+      "x": 0.866025,
+      "y": 0.5,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.739009,
-      "y": 0.673696,
+      "x": 0.766044,
+      "y": 0.642788,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0.602635,
-      "y": 0.798017,
+      "x": 0.642788,
+      "y": 0.766044,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 810,
       "degree": 0,
-      "x": 0.445738,
-      "y": 0.895163,
+      "x": 0.5,
+      "y": 0.866025,
       "size": 8
     },
     {
@@ -169,8 +169,8 @@
       ],
       "bytes": 679,
       "degree": 0,
-      "x": 0.273663,
-      "y": 0.961826,
+      "x": 0.34202,
+      "y": 0.939693,
       "size": 8
     },
     {
@@ -188,8 +188,8 @@
       ],
       "bytes": 1106,
       "degree": 2,
-      "x": 0.092268,
-      "y": 0.995734,
+      "x": 0.173648,
+      "y": 0.984808,
       "size": 8
     },
     {
@@ -207,8 +207,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": -0.092268,
-      "y": 0.995734,
+      "x": 0,
+      "y": 1,
       "size": 8
     },
     {
@@ -226,8 +226,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": -0.273663,
-      "y": 0.961826,
+      "x": -0.173648,
+      "y": 0.984808,
       "size": 8
     },
     {
@@ -245,8 +245,8 @@
       ],
       "bytes": 414,
       "degree": 0,
-      "x": -0.445738,
-      "y": 0.895163,
+      "x": -0.34202,
+      "y": 0.939693,
       "size": 8
     },
     {
@@ -257,8 +257,8 @@
       "githubRefs": [],
       "bytes": 1819,
       "degree": 3,
-      "x": -0.602635,
-      "y": 0.798017,
+      "x": -0.5,
+      "y": 0.866025,
       "size": 8
     },
     {
@@ -306,8 +306,8 @@
       ],
       "bytes": 2630,
       "degree": 3,
-      "x": -0.739009,
-      "y": 0.673696,
+      "x": -0.642788,
+      "y": 0.766044,
       "size": 8
     },
     {
@@ -325,8 +325,8 @@
       ],
       "bytes": 998,
       "degree": 2,
-      "x": -0.850217,
-      "y": 0.526432,
+      "x": -0.766044,
+      "y": 0.642788,
       "size": 8
     },
     {
@@ -350,8 +350,27 @@
       ],
       "bytes": 1023,
       "degree": 2,
-      "x": -0.932472,
-      "y": 0.361242,
+      "x": -0.866025,
+      "y": 0.5,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-26-complete-sitecoreai-authoring-list-fields.md",
+      "label": "Complete SitecoreAI authoring list fields",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 56,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/56"
+        }
+      ],
+      "bytes": 1285,
+      "degree": 3,
+      "x": -0.939693,
+      "y": 0.34202,
       "size": 8
     },
     {
@@ -411,8 +430,8 @@
       ],
       "bytes": 2084,
       "degree": 2,
-      "x": -0.982973,
-      "y": 0.18375,
+      "x": -0.984808,
+      "y": 0.173648,
       "size": 8
     },
     {
@@ -449,8 +468,8 @@
       ],
       "bytes": 423,
       "degree": 0,
-      "x": -0.982973,
-      "y": -0.18375,
+      "x": -0.984808,
+      "y": -0.173648,
       "size": 8
     },
     {
@@ -468,8 +487,8 @@
       ],
       "bytes": 1364,
       "degree": 3,
-      "x": -0.932472,
-      "y": -0.361242,
+      "x": -0.939693,
+      "y": -0.34202,
       "size": 8
     },
     {
@@ -480,8 +499,8 @@
       "githubRefs": [],
       "bytes": 3129,
       "degree": 2,
-      "x": 0.982973,
-      "y": 0.18375,
+      "x": 0.984808,
+      "y": 0.173648,
       "size": 12
     },
     {
@@ -492,8 +511,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.850217,
-      "y": -0.526432,
+      "x": -0.866025,
+      "y": -0.5,
       "size": 8
     },
     {
@@ -504,8 +523,8 @@
       "githubRefs": [],
       "bytes": 1330,
       "degree": 3,
-      "x": -0.739009,
-      "y": -0.673696,
+      "x": -0.766044,
+      "y": -0.642788,
       "size": 8
     },
     {
@@ -516,8 +535,8 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.602635,
-      "y": -0.798017,
+      "x": -0.642788,
+      "y": -0.766044,
       "size": 8
     },
     {
@@ -528,8 +547,8 @@
       "githubRefs": [],
       "bytes": 976,
       "degree": 3,
-      "x": -0.445738,
-      "y": -0.895163,
+      "x": -0.5,
+      "y": -0.866025,
       "size": 8
     },
     {
@@ -540,8 +559,20 @@
       "githubRefs": [],
       "bytes": 818,
       "degree": 3,
-      "x": -0.273663,
-      "y": -0.961826,
+      "x": -0.34202,
+      "y": -0.939693,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-09-26-complete-the-sitecoreai-authoring-list-field-vocabulary-119fff380e.md",
+      "label": "Complete the SitecoreAI authoring list-field vocabulary",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 787,
+      "degree": 4,
+      "x": -0.173648,
+      "y": -0.984808,
       "size": 8
     },
     {
@@ -559,8 +590,8 @@
       ],
       "bytes": 1377,
       "degree": 3,
-      "x": -0.092268,
-      "y": -0.995734,
+      "x": 0,
+      "y": -1,
       "size": 8
     },
     {
@@ -571,8 +602,8 @@
       "githubRefs": [],
       "bytes": 937,
       "degree": 4,
-      "x": 0.092268,
-      "y": -0.995734,
+      "x": 0.173648,
+      "y": -0.984808,
       "size": 8
     },
     {
@@ -590,8 +621,8 @@
       ],
       "bytes": 1416,
       "degree": 3,
-      "x": 0.273663,
-      "y": -0.961826,
+      "x": 0.34202,
+      "y": -0.939693,
       "size": 8
     },
     {
@@ -607,10 +638,10 @@
           "url": "https://github.com/jfusco/cms-field-vocabulary/issues/59"
         }
       ],
-      "bytes": 3652,
-      "degree": 10,
-      "x": 0.445738,
-      "y": -0.895163,
+      "bytes": 4084,
+      "degree": 11,
+      "x": 0.5,
+      "y": -0.866025,
       "size": 12
     },
     {
@@ -624,10 +655,10 @@
         "source profiles"
       ],
       "githubRefs": [],
-      "bytes": 2207,
-      "degree": 9,
-      "x": 0.602635,
-      "y": -0.798017,
+      "bytes": 2465,
+      "degree": 11,
+      "x": 0.642788,
+      "y": -0.766044,
       "size": 8
     },
     {
@@ -643,8 +674,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.739009,
-      "y": -0.673696,
+      "x": 0.766044,
+      "y": -0.642788,
       "size": 8
     },
     {
@@ -658,10 +689,10 @@
         "freshness automation"
       ],
       "githubRefs": [],
-      "bytes": 3322,
-      "degree": 13,
-      "x": 0.850217,
-      "y": -0.526432,
+      "bytes": 3513,
+      "degree": 15,
+      "x": 0.866025,
+      "y": -0.5,
       "size": 8
     },
     {
@@ -677,8 +708,8 @@
       "githubRefs": [],
       "bytes": 3293,
       "degree": 16,
-      "x": 0.932472,
-      "y": -0.361242,
+      "x": 0.939693,
+      "y": -0.34202,
       "size": 8
     },
     {
@@ -693,8 +724,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.982973,
-      "y": -0.18375,
+      "x": 0.984808,
+      "y": -0.173648,
       "size": 8
     }
   ],
@@ -791,6 +822,13 @@
       "relation": "link"
     },
     {
+      "id": "3c61dad2c96a2d79",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-26-complete-the-sitecoreai-authoring-list-field-vocabulary-119fff380e.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
       "id": "3f9a71976bfe430b",
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-09-16-remove-wiki-sync-read-org-dependency-c033b010ae.md",
@@ -836,6 +874,13 @@
       "id": "5953a42675dd7f59",
       "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
       "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "5b0fb87b3555db63",
+      "source": "wiki/plans/2026-09-26-complete-the-sitecoreai-authoring-list-field-vocabulary-119fff380e.md",
+      "target": "wiki/topics/catalog-authority.md",
       "type": "topic",
       "relation": "topic"
     },
@@ -938,6 +983,13 @@
       "relation": "link"
     },
     {
+      "id": "997a4c4767f99d99",
+      "source": "wiki/plans/2026-09-26-complete-the-sitecoreai-authoring-list-field-vocabulary-119fff380e.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
       "id": "9b9d51f76e933905",
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-09-16-upgrade-github-actions-to-native-node-24-runtimes-07ee4b0626.md",
@@ -1022,6 +1074,13 @@
       "relation": "link"
     },
     {
+      "id": "c05e1f5b36d449ca",
+      "source": "wiki/journal/2026-09-26-complete-sitecoreai-authoring-list-fields.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
       "id": "c13e1d53c3928f89",
       "source": "wiki/topics/structured-rendering-operations.md",
       "target": "wiki/topics/deterministic-consumer-projection.md",
@@ -1048,6 +1107,20 @@
       "target": "wiki/topics/catalog-authority.md",
       "type": "topic",
       "relation": "topic"
+    },
+    {
+      "id": "d01698debdee9f3b",
+      "source": "wiki/journal/2026-09-26-complete-sitecoreai-authoring-list-fields.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
+      "id": "d25cb2f9916975d0",
+      "source": "wiki/journal/2026-09-26-complete-sitecoreai-authoring-list-fields.md",
+      "target": "wiki/plans/2026-09-26-complete-the-sitecoreai-authoring-list-field-vocabulary-119fff380e.md",
+      "type": "plan",
+      "relation": "plan"
     },
     {
       "id": "d314690a466b28c4",

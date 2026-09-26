@@ -521,7 +521,7 @@
       "completeness": "supplemental",
       "version": { "mode": "rolling-saas" },
       "locator": "List field type table",
-      "extract": { "kind": "table", "tokens": ["Droplist", "Multilist", "Treelist", "Checklist"] },
+      "extract": { "kind": "table", "tokens": ["Droplist", "Multilist", "Multilist with search", "Treelist", "Checklist", "Grouped droplink", "Grouped droplist", "Name value list"] },
       "reviewOwner": "sitecore-ai"
     },
     {
