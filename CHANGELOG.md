@@ -1,3 +1,5 @@
+## [1.0.11](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.10...v1.0.11) (2026-09-26)
+
 ## [1.0.10](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.9...v1.0.10) (2026-09-26)
 
 ### Bug Fixes
