@@ -3,7 +3,7 @@ date: 2026-09-25
 topics: [release-operations]
 plans: [2026-09-26-reduce-actions-usage-and-recover-wiki-synchronization-a7e32708e7.md]
 issue: https://github.com/JFusco/cms-field-vocabulary/issues/59
-pr: pending
+pr: https://github.com/JFusco/cms-field-vocabulary/pull/60
 ---
 # Reduce Actions work and add wiki recovery
 
