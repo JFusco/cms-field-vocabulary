@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.8...v1.0.9) (2026-09-26)
+
+### Bug Fixes
+
+* **wiki:** handle large reconciliation responses ([#63](https://github.com/JFusco/cms-field-vocabulary/issues/63)) ([00184da](https://github.com/JFusco/cms-field-vocabulary/commit/00184da237a7f6a6a84dea2a53f0e1c236e6f61d))
+
 ## [1.0.8](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.7...v1.0.8) (2026-09-26)
 
 ### Bug Fixes
