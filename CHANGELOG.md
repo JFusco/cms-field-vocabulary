@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.11...v1.1.0) (2026-09-26)
+
+### Features
+
+* **sources:** add Optimizely CMS SDK 3.0 profile ([974aee6](https://github.com/JFusco/cms-field-vocabulary/commit/974aee6199f80fbcbd3bfbd4d6eae3c02e6995e3))
+
 ## [1.0.11](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.10...v1.0.11) (2026-09-26)
 
 ## [1.0.10](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.9...v1.0.10) (2026-09-26)
