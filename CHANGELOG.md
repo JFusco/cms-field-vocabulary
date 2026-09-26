@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.7...v1.0.8) (2026-09-26)
+
+### Bug Fixes
+
+* **wiki:** authenticate bot branch pushes ([#61](https://github.com/JFusco/cms-field-vocabulary/issues/61)) ([3f75cdd](https://github.com/JFusco/cms-field-vocabulary/commit/3f75cdd557d68709e64e57440c1a0fcde716e347))
+
 ## [1.0.7](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.6...v1.0.7) (2026-09-26)
 
 ## [1.0.6](https://github.com/JFusco/cms-field-vocabulary/compare/v1.0.5...v1.0.6) (2026-09-16)
