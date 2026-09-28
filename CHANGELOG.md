@@ -1,3 +1,26 @@
+# Release 1.2.1
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- Merge pull request #76 from JFusco/codex/75-standardize-git-delivery (`1c3f10b`)
+- **tooling:** standardize git delivery (`7012e26`)
+
 ## [1.2.0](https://github.com/JFusco/cms-field-vocabulary/compare/v1.1.0...v1.2.0) (2026-09-26)
 
 ### Features
