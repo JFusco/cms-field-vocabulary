@@ -1,3 +1,28 @@
+# Release 1.2.2
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 4 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- Merge pull request #72 from JFusco/dependabot/npm_and_yarn/main/development-minor-and-patch-d39c78e18e (`66d861b`)
+- Merge pull request #77 from JFusco/bot/wiki-sync/76 (`886acdb`)
+- **deps-dev:** bump the development-minor-and-patch group across 1 directory with 4 updates (`5f94069`)
+- **wiki:** reconcile merged PR #76 [skip release] (`75c7312`)
+
 # Release 1.2.1
 
 ## Summary
