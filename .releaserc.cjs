@@ -22,7 +22,7 @@ module.exports = {
         ],
       },
     ],
-    ['@semantic-release/release-notes-generator', conventionalCommits],
+    './scripts/semantic-release-notes.cjs',
     ['@semantic-release/changelog', { changelogFile: 'CHANGELOG.md' }],
     ['@semantic-release/npm', { npmPublish: true }],
     [
