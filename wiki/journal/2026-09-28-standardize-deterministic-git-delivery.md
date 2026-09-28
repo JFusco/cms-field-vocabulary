@@ -1,7 +1,8 @@
 ---
 topics: [release-operations]
 plans: [2026-09-28-standardize-deterministic-git-delivery-d9459693bc.md, 2026-09-28-deterministic-release-cycle-notes-2201697554.md]
-issue: "https://github.com/JFusco/cms-field-vocabulary/issues/75"
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/75'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/75']
 ---
 
 # Standardize deterministic Git delivery
