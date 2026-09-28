@@ -17,6 +17,7 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 
 ## Decisions
 
+- 2026-09-28 — Exclude standard Git merge subjects before release-note classification and bind PR-body regression coverage to the checked-in canonical template ([issue #84](https://github.com/JFusco/cms-field-vocabulary/issues/84)).
 - 2026-09-28 — Standardized issue-first delivery, standalone Commitlint, deterministic PR-body validation, and the `BOT_TOKEN` secret name while stopping agent delivery before merge ([issue #75](https://github.com/JFusco/cms-field-vocabulary/issues/75)).
 - The first stable release is `1.0.0`.
 - npm publication uses trusted publishing/OIDC only.
