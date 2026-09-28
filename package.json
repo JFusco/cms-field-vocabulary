@@ -1,6 +1,6 @@
 {
   "name": "cms-field-vocabulary",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Official-source-backed CMS field vocabularies and deterministic coding-agent contracts",
   "type": "module",
   "private": false,
@@ -109,7 +109,7 @@
     "prepack": "pnpm run validate && pnpm run catalog:check && pnpm run types:build"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.0",
+    "@commitlint/cli": "21.2.3",
     "@commitlint/config-conventional": "21.2.3",
     "@eslint/js": "10.0.1",
     "@semantic-release/changelog": "6.0.3",

@@ -1,3 +1,49 @@
+# Release 1.2.4
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- Merge pull request #74 from JFusco/dependabot/npm_and_yarn/main/commitlint/cli-21.2.3 (`ab070ba`)
+- **deps-dev:** bump @commitlint/cli from 20.5.0 to 21.2.3 (`c6b0ff4`)
+
+# Release 1.2.3
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- Merge pull request #73 from JFusco/dependabot/npm_and_yarn/main/commitlint/config-conventional-21.2.3 (`701a456`)
+- **deps-dev:** bump @commitlint/config-conventional (`4596fde`)
+
 # Release 1.2.2
 
 ## Summary
