@@ -1,11 +1,15 @@
-const baseConfig = require('@verndale/ai-commit');
+"use strict";
 
 module.exports = {
-  ...baseConfig,
+  extends: ["@commitlint/config-conventional"],
   rules: {
-    ...baseConfig.rules,
-    // Dependabot group titles include dependency versions and the group name.
-    // Keep the shared 120-character header cap while allowing those subjects.
-    'subject-max-length': [2, 'always', 100],
+    "type-enum": [2, "always", ["build", "chore", "ci", "docs", "feat", "fix", "perf", "refactor", "revert", "style", "test"]],
+    "scope-empty": [2, "never"],
+    "scope-case": [2, "always", "lower-case"],
+    "subject-max-length": [2, "always", 100],
+    "subject-case": [0],
+    "header-max-length": [2, "always", 120],
+    "body-max-line-length": [2, "always", 72],
+    "footer-max-line-length": [2, "always", 72],
   },
 };

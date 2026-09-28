@@ -110,7 +110,7 @@ Treat canonical-ID removals or renames, profile removal, incompatible schema cha
 
 ## Release model
 
-`semantic-release` owns versions, tags, release notes, the changelog, npm publication, and the release commit. Do not run `npm version`, edit the package version manually, create the release tag manually, or reuse an existing version.
+`semantic-release` owns versions, tags, release notes, the changelog, npm publication, and the release commit. Do not run `npm version`, edit the package version manually, create the release tag manually, or reuse an existing version. `scripts/semantic-release-notes.cjs` renders every release with `Summary`, `Breaking changes`, `Features`, `Fixes`, and `Other changes` exactly once and in that order; empty sections remain explicit.
 
 Configured analysis rules are:
 
@@ -136,9 +136,7 @@ The literal commit marker `[skip release]` skips only the release job on a push;
 - performs an npm publish dry run;
 - invokes `semantic-release` to assign the version, update the changelog, publish npm with provenance, create the immutable `v${version}` tag, push the release commit, and publish the GitHub Release.
 
-The workflow grants `contents: write` for the release commit, tag, and GitHub Release, and `id-token: write` for npm trusted publishing and provenance. Bind the npm trusted publisher to `JFusco/cms-field-vocabulary` and `.github/workflows/release.yml`; use a protected GitHub environment when the npm binding requires one.
-
-If npm does not allow the trusted publisher to be attached before the unscoped package exists, create a least-privileged one-time granular access token that can create and publish `cms-field-vocabulary`, store it temporarily as the repository secret `NPM_TOKEN`, and run the same release workflow. `@semantic-release/npm` attempts OIDC first and uses the token only as a fallback. Immediately after `1.0.0` exists, bind the trusted publisher, delete the GitHub secret, and revoke the token. Do not retain a long-lived npm token for later releases.
+The workflow grants `contents: write` for the release commit, tag, and GitHub Release, and `id-token: write` for npm trusted publishing and provenance. Bind the npm trusted publisher to `JFusco/cms-field-vocabulary` and `.github/workflows/release.yml`; use a protected GitHub environment when the npm binding requires one. Publication is OIDC-only and must not depend on a repository release secret.
 
 ## First release: 1.0.0
 
@@ -159,11 +157,9 @@ pnpm run release:dry
 ```
 
 7. Inspect the dry-run release notes and packed file list. Confirm the proposed version is exactly `1.0.0`.
-8. If the new package cannot yet accept a trusted-publisher binding, install the one-time `NPM_TOKEN` repository secret described above.
-9. Dispatch or allow the release job from `main`.
-10. After a token-bootstrap release, bind the trusted publisher, delete the GitHub secret, and revoke the token before any later release.
-11. Do not retry blindly if the job becomes uncertain after npm publication. Check npm, GitHub Releases, and tags first.
-12. Promote the Phase 1 wiki archive from `partial` to `implemented`, record the npm/tag/GitHub Release evidence, verify the wiki locally, and push that documentation-only commit with `[skip release]` so it cannot create an unintended `1.0.1`.
+8. Dispatch or allow the release job from `main`.
+9. Do not retry blindly if the job becomes uncertain after npm publication. Check npm, GitHub Releases, and tags first.
+10. Promote the Phase 1 wiki archive from `partial` to `implemented`, record the npm/tag/GitHub Release evidence, verify the wiki locally, and push that documentation-only commit with `[skip release]` so it cannot create an unintended `1.0.1`.
 
 ### Verify 1.0.0
 

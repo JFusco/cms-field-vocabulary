@@ -1,3 +1,50 @@
+## Git delivery flow
+
+For repository changes that include delivery, complete this sequence:
+
+1. Confirm the worktree is safe to switch, then switch to `main` and run
+   `git pull --ff-only` so the branch point is the current remote main.
+2. Create one actionable GitHub issue with the repository's canonical labels
+   using the `github-issue-creator` workflow, and read the saved issue back
+   before creating downstream artifacts.
+3. Create `codex/<issue-number>-<short-slug>` from that updated `main`.
+4. Implement only the issue scope, record substantive work in the wiki in the
+   same delivery, and run `pnpm run verify:ci`.
+5. Commit with a valid conventional message, then push the issue branch with
+   ordinary Git commands.
+6. Open a pull request with a conventional title and the canonical
+   `.github/pull_request_template.md` body. Keep its level-two headings exactly
+   once and in order; replace every placeholder with meaningful content,
+   include `Closes #<issue-number>`, record verification and risk/rollback,
+   and complete every required checkbox. Run `pnpm run lint:pr` before opening
+   the PR and read the saved PR back afterward.
+7. Stop after the pull request is open and verified. Never merge it, enable
+   auto-merge, delete the delivery branch, or close the issue as part of this
+   flow. Leave review and merging to the user.
+
+
+## Release cycle
+
+This repository publishes the public `cms-field-vocabulary` npm package. A
+release begins only after the user merges a qualifying PR to `main`; the agent
+delivery flow above never merges, tags, versions, or publishes.
+
+- `scripts/semantic-release-notes.cjs` generates release notes from conventional
+  commits with `Summary`, `Breaking changes`, `Features`, `Fixes`, and
+  `Other changes` exactly once and in that order. Never hand-author, AI-generate,
+  or conditionally omit this structure.
+- Conventional commits determine the semantic version. Do not edit the package
+  version, changelog, release tag, or GitHub Release manually.
+- Before opening the PR, run `pnpm run release:preflight`,
+  `pnpm run verify:ci`, `pnpm run test:packed`, and
+  `npm pack --dry-run --ignore-scripts`.
+- After a user-authorized merge, the `Release` workflow is the only publisher.
+  It uses GitHub permissions and npm trusted publishing through OIDC; do not add
+  release-note AI credentials or a long-lived npm token.
+- When asked to monitor a release, verify the workflow revision, Git tag, GitHub
+  Release, npm version, and provenance. If a run fails after an external side
+  effect, inspect all four surfaces before retrying.
+
 <!-- wiki-skill:start -->
 ## Context wiki
 
