@@ -1,3 +1,33 @@
+# Release 1.2.5
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 9 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- Merge branch 'main' into bot/wiki-sync/73 (`85fa085`)
+- Merge branch 'main' into bot/wiki-sync/74 (`2b499ab`)
+- Merge pull request #81 from JFusco/bot/wiki-sync/72 (`4ff2ae8`)
+- Merge pull request #82 from JFusco/bot/wiki-sync/73 (`b845197`)
+- Merge pull request #83 from JFusco/bot/wiki-sync/74 (`71725f9`)
+- **tooling:** standardize commits and Graphify (#87) (`79ca8bc`)
+- **wiki:** reconcile merged PR #72 [skip release] (`7492327`)
+- **wiki:** reconcile merged PR #73 [skip release] (`bce4ba2`)
+- **wiki:** reconcile merged PR #74 [skip release] (`68ffbe6`)
+
 # Release 1.2.4
 
 ## Summary
