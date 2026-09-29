@@ -2,13 +2,13 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 42,
-    "edges": 74,
+    "nodes": 45,
+    "edges": 81,
     "byType": {
       "index": 3,
-      "journal": 23,
-      "plan": 11,
-      "topic": 5
+      "journal": 24,
+      "plan": 12,
+      "topic": 6
     }
   },
   "nodes": [
@@ -18,8 +18,8 @@
       "type": "index",
       "aliases": [],
       "githubRefs": [],
-      "bytes": 1361,
-      "degree": 2,
+      "bytes": 1472,
+      "degree": 3,
       "x": 1,
       "y": 0,
       "size": 12
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.955573,
-      "y": 0.294755,
+      "x": 0.961262,
+      "y": 0.275637,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.900969,
-      "y": 0.433884,
+      "x": 0.913545,
+      "y": 0.406737,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.826239,
-      "y": 0.56332,
+      "x": 0.848048,
+      "y": 0.529919,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0.733052,
-      "y": 0.680173,
+      "x": 0.766044,
+      "y": 0.642788,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 810,
       "degree": 0,
-      "x": 0.62349,
-      "y": 0.781831,
+      "x": 0.669131,
+      "y": 0.743145,
       "size": 8
     },
     {
@@ -169,8 +169,8 @@
       ],
       "bytes": 679,
       "degree": 0,
-      "x": 0.5,
-      "y": 0.866025,
+      "x": 0.559193,
+      "y": 0.829038,
       "size": 8
     },
     {
@@ -188,8 +188,8 @@
       ],
       "bytes": 1106,
       "degree": 2,
-      "x": 0.365341,
-      "y": 0.930874,
+      "x": 0.438371,
+      "y": 0.898794,
       "size": 8
     },
     {
@@ -207,8 +207,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": 0.222521,
-      "y": 0.974928,
+      "x": 0.309017,
+      "y": 0.951057,
       "size": 8
     },
     {
@@ -226,8 +226,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": 0.07473,
-      "y": 0.997204,
+      "x": 0.173648,
+      "y": 0.984808,
       "size": 8
     },
     {
@@ -245,8 +245,8 @@
       ],
       "bytes": 414,
       "degree": 0,
-      "x": -0.07473,
-      "y": 0.997204,
+      "x": 0.034899,
+      "y": 0.999391,
       "size": 8
     },
     {
@@ -257,8 +257,8 @@
       "githubRefs": [],
       "bytes": 1819,
       "degree": 3,
-      "x": -0.222521,
-      "y": 0.974928,
+      "x": -0.104528,
+      "y": 0.994522,
       "size": 8
     },
     {
@@ -306,8 +306,8 @@
       ],
       "bytes": 2630,
       "degree": 3,
-      "x": -0.365341,
-      "y": 0.930874,
+      "x": -0.241922,
+      "y": 0.970296,
       "size": 8
     },
     {
@@ -325,8 +325,8 @@
       ],
       "bytes": 998,
       "degree": 2,
-      "x": -0.5,
-      "y": 0.866025,
+      "x": -0.374607,
+      "y": 0.927184,
       "size": 8
     },
     {
@@ -350,8 +350,8 @@
       ],
       "bytes": 1023,
       "degree": 2,
-      "x": -0.62349,
-      "y": 0.781831,
+      "x": -0.5,
+      "y": 0.866025,
       "size": 8
     },
     {
@@ -369,8 +369,8 @@
       ],
       "bytes": 1285,
       "degree": 3,
-      "x": -0.733052,
-      "y": 0.680173,
+      "x": -0.615661,
+      "y": 0.788011,
       "size": 8
     },
     {
@@ -430,8 +430,8 @@
       ],
       "bytes": 2084,
       "degree": 2,
-      "x": -0.826239,
-      "y": 0.56332,
+      "x": -0.71934,
+      "y": 0.694658,
       "size": 8
     },
     {
@@ -449,8 +449,8 @@
       ],
       "bytes": 435,
       "degree": 0,
-      "x": -0.900969,
-      "y": 0.433884,
+      "x": -0.809017,
+      "y": 0.587785,
       "size": 8
     },
     {
@@ -468,8 +468,8 @@
       ],
       "bytes": 423,
       "degree": 0,
-      "x": -0.955573,
-      "y": 0.294755,
+      "x": -0.882948,
+      "y": 0.469472,
       "size": 8
     },
     {
@@ -487,8 +487,8 @@
       ],
       "bytes": 1364,
       "degree": 3,
-      "x": -0.988831,
-      "y": 0.149042,
+      "x": -0.939693,
+      "y": 0.34202,
       "size": 8
     },
     {
@@ -512,8 +512,8 @@
       ],
       "bytes": 627,
       "degree": 0,
-      "x": -1,
-      "y": 0,
+      "x": -0.978148,
+      "y": 0.207912,
       "size": 8
     },
     {
@@ -537,8 +537,8 @@
       ],
       "bytes": 569,
       "degree": 0,
-      "x": -0.988831,
-      "y": -0.149042,
+      "x": -0.997564,
+      "y": 0.069756,
       "size": 8
     },
     {
@@ -562,8 +562,8 @@
       ],
       "bytes": 559,
       "degree": 0,
-      "x": -0.955573,
-      "y": -0.294755,
+      "x": -0.997564,
+      "y": -0.069756,
       "size": 8
     },
     {
@@ -581,8 +581,27 @@
       ],
       "bytes": 1782,
       "degree": 3,
-      "x": -0.900969,
-      "y": -0.433884,
+      "x": -0.978148,
+      "y": -0.207912,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-09-29-commit-and-graphify-workflow.md",
+      "label": "Maintainer workflow",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 86,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/86"
+        }
+      ],
+      "bytes": 787,
+      "degree": 4,
+      "x": -0.939693,
+      "y": -0.34202,
       "size": 8
     },
     {
@@ -593,8 +612,8 @@
       "githubRefs": [],
       "bytes": 3126,
       "degree": 2,
-      "x": 0.988831,
-      "y": 0.149042,
+      "x": 0.990268,
+      "y": 0.139173,
       "size": 12
     },
     {
@@ -605,8 +624,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.826239,
-      "y": -0.56332,
+      "x": -0.882948,
+      "y": -0.469472,
       "size": 8
     },
     {
@@ -617,8 +636,8 @@
       "githubRefs": [],
       "bytes": 1330,
       "degree": 3,
-      "x": -0.733052,
-      "y": -0.680173,
+      "x": -0.809017,
+      "y": -0.587785,
       "size": 8
     },
     {
@@ -629,8 +648,8 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.62349,
-      "y": -0.781831,
+      "x": -0.71934,
+      "y": -0.694658,
       "size": 8
     },
     {
@@ -641,8 +660,8 @@
       "githubRefs": [],
       "bytes": 976,
       "degree": 3,
-      "x": -0.5,
-      "y": -0.866025,
+      "x": -0.615661,
+      "y": -0.788011,
       "size": 8
     },
     {
@@ -653,8 +672,8 @@
       "githubRefs": [],
       "bytes": 818,
       "degree": 3,
-      "x": -0.365341,
-      "y": -0.930874,
+      "x": -0.5,
+      "y": -0.866025,
       "size": 8
     },
     {
@@ -665,8 +684,8 @@
       "githubRefs": [],
       "bytes": 787,
       "degree": 4,
-      "x": -0.222521,
-      "y": -0.974928,
+      "x": -0.374607,
+      "y": -0.927184,
       "size": 8
     },
     {
@@ -684,8 +703,8 @@
       ],
       "bytes": 1377,
       "degree": 3,
-      "x": -0.07473,
-      "y": -0.997204,
+      "x": -0.241922,
+      "y": -0.970296,
       "size": 8
     },
     {
@@ -696,8 +715,8 @@
       "githubRefs": [],
       "bytes": 937,
       "degree": 4,
-      "x": 0.07473,
-      "y": -0.997204,
+      "x": -0.104528,
+      "y": -0.994522,
       "size": 8
     },
     {
@@ -715,8 +734,8 @@
       ],
       "bytes": 1416,
       "degree": 3,
-      "x": 0.222521,
-      "y": -0.974928,
+      "x": 0.034899,
+      "y": -0.999391,
       "size": 8
     },
     {
@@ -734,8 +753,8 @@
       ],
       "bytes": 1120,
       "degree": 3,
-      "x": 0.365341,
-      "y": -0.930874,
+      "x": 0.173648,
+      "y": -0.984808,
       "size": 8
     },
     {
@@ -753,8 +772,20 @@
       ],
       "bytes": 1649,
       "degree": 3,
-      "x": 0.5,
-      "y": -0.866025,
+      "x": 0.309017,
+      "y": -0.951057,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md",
+      "label": "Standardize commit messages and Graphify across eight repositories",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 2227,
+      "degree": 4,
+      "x": 0.438371,
+      "y": -0.898794,
       "size": 8
     },
     {
@@ -776,10 +807,10 @@
           "url": "https://github.com/jfusco/cms-field-vocabulary/issues/75"
         }
       ],
-      "bytes": 4763,
-      "degree": 13,
-      "x": 0.62349,
-      "y": -0.781831,
+      "bytes": 5129,
+      "degree": 14,
+      "x": 0.559193,
+      "y": -0.829038,
       "size": 12
     },
     {
@@ -795,8 +826,8 @@
       "githubRefs": [],
       "bytes": 2465,
       "degree": 11,
-      "x": 0.733052,
-      "y": -0.680173,
+      "x": 0.669131,
+      "y": -0.743145,
       "size": 8
     },
     {
@@ -812,8 +843,27 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.826239,
-      "y": -0.56332,
+      "x": 0.766044,
+      "y": -0.642788,
+      "size": 8
+    },
+    {
+      "id": "wiki/topics/maintainer-workflow.md",
+      "label": "Maintainer workflow",
+      "type": "topic",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 86,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/86"
+        }
+      ],
+      "bytes": 1395,
+      "degree": 4,
+      "x": 0.848048,
+      "y": -0.529919,
       "size": 8
     },
     {
@@ -829,8 +879,8 @@
       "githubRefs": [],
       "bytes": 3513,
       "degree": 15,
-      "x": 0.900969,
-      "y": -0.433884,
+      "x": 0.913545,
+      "y": -0.406737,
       "size": 8
     },
     {
@@ -853,8 +903,8 @@
       ],
       "bytes": 3373,
       "degree": 19,
-      "x": 0.955573,
-      "y": -0.294755,
+      "x": 0.961262,
+      "y": -0.275637,
       "size": 8
     },
     {
@@ -869,8 +919,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.988831,
-      "y": -0.149042,
+      "x": 0.990268,
+      "y": -0.139173,
       "size": 8
     }
   ],
@@ -911,6 +961,20 @@
       "relation": "topic"
     },
     {
+      "id": "09ee3fedbbd1edc3",
+      "source": "wiki/INDEX.md",
+      "target": "wiki/topics/maintainer-workflow.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "0b2fa31c9021afcb",
+      "source": "wiki/plans/2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md",
+      "target": "wiki/topics/maintainer-workflow.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
       "id": "0de0518a183e078a",
       "source": "wiki/journal/2026-09-26-make-vendor-drift-alerts-actionable.md",
       "target": "wiki/topics/official-source-freshness.md",
@@ -925,11 +989,25 @@
       "relation": "link"
     },
     {
+      "id": "1653fcc6f5145e62",
+      "source": "wiki/journal/2026-09-29-commit-and-graphify-workflow.md",
+      "target": "wiki/plans/2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
       "id": "168a94a66bf8f4a6",
       "source": "wiki/journal/2026-09-25-actions-budget-and-wiki-recovery.md",
       "target": "wiki/plans/2026-09-26-reduce-actions-usage-and-recover-wiki-synchronization-a7e32708e7.md",
       "type": "plan",
       "relation": "plan"
+    },
+    {
+      "id": "17a1c94a46ce43f9",
+      "source": "wiki/journal/2026-09-29-commit-and-graphify-workflow.md",
+      "target": "wiki/topics/maintainer-workflow.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "1a473741c0b0c730",
@@ -1063,6 +1141,13 @@
       "target": "wiki/topics/official-source-freshness.md",
       "type": "topic",
       "relation": "topic"
+    },
+    {
+      "id": "66f4b75cbfb4d281",
+      "source": "wiki/journal/2026-09-29-commit-and-graphify-workflow.md",
+      "target": "wiki/topics/maintainer-workflow.md",
+      "type": "link",
+      "relation": "link"
     },
     {
       "id": "7509ed62b570e128",
@@ -1324,6 +1409,13 @@
       "relation": "topic"
     },
     {
+      "id": "dfbf8b3022b7d062",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
       "id": "e083e70293f26618",
       "source": "wiki/plans/2026-09-01-phase-1-deterministic-cms-field-vocabulary-1-0-0-2353c85cd0.md",
       "target": "wiki/topics/deterministic-consumer-projection.md",
@@ -1343,6 +1435,13 @@
       "target": "wiki/plans/INDEX.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "ec16fc1117f87382",
+      "source": "wiki/journal/2026-09-29-commit-and-graphify-workflow.md",
+      "target": "wiki/plans/2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md",
+      "type": "plan",
+      "relation": "plan"
     },
     {
       "id": "ee4038fa373cd0dc",
