@@ -1,6 +1,8 @@
 ---
 topics: [maintainer-workflow]
 plans: [2026-09-29-standardize-commit-messages-and-graphify-across-eight-repositories-e4b953bbda.md]
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/86'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/86']
 ---
 
 # Maintainer workflow
