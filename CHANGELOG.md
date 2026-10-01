@@ -1,3 +1,26 @@
+# Release 1.2.6
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **release:** exclude merge commits from notes (`fad836c`)
+
+## Other changes
+
+- **merge:** resolve main conflict (`9c2e4dc`)
+- **wiki:** reconcile merged PR #87 [skip release] (`891af2e`)
+
 # Release 1.2.5
 
 ## Summary
