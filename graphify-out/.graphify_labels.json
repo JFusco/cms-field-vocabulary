@@ -1,0 +1,23 @@
+{
+  "0": "index.ts",
+  "1": "archive-plan.cjs",
+  "2": "on-merge-sync.cjs",
+  "3": "audit-plan-candidates.cjs",
+  "4": "catalog.mjs",
+  "5": "viewer.js",
+  "6": "routing.cjs",
+  "7": "validate.mjs",
+  "8": "source-scan.mjs",
+  "9": "dates.cjs",
+  "10": "reconcile-merges.cjs",
+  "11": "check-release-commit.selftest.cjs",
+  "12": "source-review.mjs",
+  "13": "check-context-budget.mjs",
+  "14": "serve-graph.cjs",
+  "15": "validate_pr_body.cjs",
+  "16": "semantic-release-notes.cjs",
+  "17": "verify-packed-consumer.mjs",
+  "18": "readJson",
+  "19": "routing.js",
+  "20": "validate-staged-json.mjs"
+}

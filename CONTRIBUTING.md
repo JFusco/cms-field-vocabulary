@@ -144,6 +144,15 @@ If a consumer needs additional framework behavior, add a named agent policy with
 
 Use Conventional Commits. `pnpm commit` invokes the repository's commit helper, and pull-request titles and commits are checked by commitlint.
 
+Use a specific scoped Conventional Commit, for example
+`fix(auth): reject expired reset tokens`. Begin the subject with an action verb
+and keep the subject at most 50 characters. Leave a blank line before an
+optional body; explain the reason, impact, or tradeoff when the diff alone does
+not make it clear. Wrap body and footer lines at 72 characters. Mark breaking
+changes with `!` or a `BREAKING CHANGE:` footer. Follow the repository's
+commitlint rules for allowed types and scopes. Avoid vague or ticket-only
+subjects.
+
 - `feat:` produces a minor release after `1.0.0`.
 - `fix:`, `docs:`, `chore:`, `ci:`, `refactor:`, `test:`, and the other configured non-feature types produce a patch release.
 - An intentional breaking release uses `type!:` or `type(scope)!:` in the subject. Do not add an aggregated `BREAKING CHANGE:` body; release preflight rejects it.
