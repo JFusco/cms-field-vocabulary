@@ -1,6 +1,8 @@
 ---
 topics: [release-operations]
 plans: [2026-09-28-repair-release-note-merge-filtering-and-pr-template-coverage-e04279affb.md]
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/84'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/84']
 ---
 # Repair release-note merge filtering and PR-template coverage
 
