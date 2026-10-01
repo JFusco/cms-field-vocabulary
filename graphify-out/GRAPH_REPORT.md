@@ -1,7 +1,8 @@
-# Graph Report - .  (2026-09-29)
+# Graph Report - cms-field-vocabulary  (2026-09-30)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 43 files · ~25,933 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 529 nodes · 1211 edges · 21 communities (20 shown, 1 thin omitted)
@@ -9,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `71725f97`
+- Built from commit: `fad836ca`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

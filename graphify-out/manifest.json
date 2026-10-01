@@ -35,9 +35,9 @@
     "semantic_hash": "6c00404799db9ba05835ff79d4caf1ed"
   },
   "scripts/semantic-release-notes.cjs": {
-    "mtime": 1790703480.1577427,
-    "ast_hash": "fd9121149dc92d7dec379a8202a17e7a",
-    "semantic_hash": "fd9121149dc92d7dec379a8202a17e7a"
+    "mtime": 1790815472.2228553,
+    "ast_hash": "759da2d147895588f4bb0b360571864a",
+    "semantic_hash": ""
   },
   "scripts/source-review.mjs": {
     "mtime": 1788345436.0,

@@ -10,6 +10,7 @@ const commits = [
   { message: "fix(api): correct output", hash: "bbbbbbbb" },
   { message: "feat(core)!: replace schema", hash: "cccccccc", notes: [{ title: "BREAKING CHANGE", text: "schema" }] },
   { message: "feat(ui): add search", hash: "aaaaaaaa" },
+  { message: "Merge pull request #83 from JFusco/bot/wiki-sync/74", hash: "eeeeeeee" },
 ];
 
 test("release notes use the fixed deterministic structure", async () => {

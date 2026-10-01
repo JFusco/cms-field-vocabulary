@@ -50,6 +50,7 @@ function renderEntry(item) {
 async function generateNotes(_pluginConfig, context) {
   const grouped = Object.fromEntries(GROUPS.map(({ key }) => [key, []]));
   for (const commit of context.commits || []) {
+    if (/^Merge (?:pull request|branch|remote-tracking branch) /.test(clean(commit.subject || commit.message))) continue;
     const item = classify(commit);
     grouped[item.key].push(item);
   }
