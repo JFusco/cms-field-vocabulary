@@ -392,12 +392,21 @@
           "value": null
         },
         "editorBehavior": {
-          "evidence": [],
-          "status": "undocumented",
-          "value": null
+          "evidence": [
+            {
+              "locator": "Resolved issues > Droplist selected value comparison",
+              "sourceId": "sitecore-ai.droplist-case-insensitive"
+            }
+          ],
+          "status": "documented",
+          "value": "Selected-value comparison is case insensitive, so the selected item displays correctly in the UI."
         },
         "nativeType": {
           "evidence": [
+            {
+              "locator": "Resolved issues > Droplist selected value comparison",
+              "sourceId": "sitecore-ai.droplist-case-insensitive"
+            },
             {
               "locator": "Simple, Link, and List field type sections",
               "sourceId": "sitecore-ai.simple-field-types"
@@ -2226,6 +2235,7 @@
   "sourceIds": [
     "sitecore-ai.changelog-index",
     "sitecore-ai.developer-field-types",
+    "sitecore-ai.droplist-case-insensitive",
     "sitecore-ai.field-types",
     "sitecore-ai.link-field-types",
     "sitecore-ai.list-field-types",

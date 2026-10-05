@@ -17,6 +17,7 @@
   ],
   "sourceIds": [
     "sitecore-ai.field-types",
+    "sitecore-ai.droplist-case-insensitive",
     "sitecore-ai.simple-field-types",
     "sitecore-ai.link-field-types",
     "sitecore-ai.list-field-types",
@@ -357,7 +358,20 @@
       }
     },
     "Version link",
-    "Droplist",
+    {
+      "nativeToken": "Droplist",
+      "valueShape": null,
+      "editorBehavior": "Selected-value comparison is case insensitive, so the selected item displays correctly in the UI.",
+      "renderingOperations": [],
+      "claimEvidence": {
+        "editorBehavior": [
+          {
+            "sourceId": "sitecore-ai.droplist-case-insensitive",
+            "locator": "Resolved issues > Droplist selected value comparison"
+          }
+        ]
+      }
+    },
     "Multilist",
     "Multilist with search",
     "Treelist",
