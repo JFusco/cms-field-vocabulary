@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-26T10:39:46.897Z",
+  "reviewedAt": "2026-10-12T19:08:24.143Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -479,11 +479,11 @@
           "maximumTokens": 64,
           "regions": [
             {
-              "endPattern": "id=\"validation-fields\"",
+              "endPattern": "data-cy=\"heading-three-element\"><span><span><span>Validation fields</span>",
               "id": "data-types",
               "itemCapture": 1,
-              "itemPattern": "<li><code[^>]*>([^<]+)</code>",
-              "startPattern": "id=\"data-types\""
+              "itemPattern": "<li[^>]*data-cy=\"list-item-li\"><span><span[^>]*><span[^>]*data-cy=\"editor-marks-inline-code\"><span>([^<]+)</span>",
+              "startPattern": "data-cy=\"heading-three-element\"><span><span><span>Data types</span>"
             }
           ]
         },
@@ -503,11 +503,11 @@
           "component"
         ]
       },
-      "fragmentSha256": "b08bda7796a40b7e508e7c58709021cd23b4cc10d7fe6141b61066213fa56971",
+      "fragmentSha256": "73a9c61ceb704aa28bae58157d416d39627beb3dc3905e4ed96b05e09153c565",
       "identities": [],
       "locator": "Property types",
-      "normalizedSha256": "b1943e711d01ee85481ccda0d96e890f0f0e0a0ba43765f41aafa1bfd4f1bebd",
-      "observedAt": "2026-09-02T10:54:24.337Z",
+      "normalizedSha256": "fc7b11b9676f6bad969250e4441dad683ee8f02ca9242d074e3b43c748a8c89f",
+      "observedAt": "2026-10-12T19:08:21.030Z",
       "observedTokens": [
         "array",
         "boolean",
@@ -524,7 +524,7 @@
         "url"
       ],
       "observedTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
-      "rawSha256": "019e8a5d89a9da5771956f514fd20ee450148e1c257e80bd4640a531206dfdaf",
+      "rawSha256": "551713410b03d840806e191ba2c257621e6faa88ac6f03c29d193a5ea49ee591",
       "replacementHistory": [],
       "requiredTokens": [
         "array",
@@ -543,7 +543,7 @@
       ],
       "requiredTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
       "resolvedRevision": "CMS SaaS API v1",
-      "reviewedAt": "2026-09-02T10:54:24.337Z",
+      "reviewedAt": "2026-10-12T19:08:21.030Z",
       "reviewer": "optimizely-saas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-saas.content-types",
@@ -553,7 +553,7 @@
         "value": "CMS SaaS API v1"
       },
       "title": "Content types in Optimizely CMS SaaS",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/content-types-saas",
+      "url": "https://docs.optimizely.com/cms-saas/docs/content-types-saas",
       "vendor": "Optimizely"
     },
     {
@@ -896,14 +896,14 @@
           "ContentReferenceList"
         ]
       },
-      "fragmentSha256": "3240acc4bffd41fbf4caf24be02d181230c70294feecd15d2e235ed0adeaaa32",
+      "fragmentSha256": "31b988ea3f146a72a50751530077152d969badc7a3b53cc8def1a8444379742f",
       "identities": [],
       "locator": "Common property types; Work with other content",
-      "normalizedSha256": "4b5faa3907586131a8c924455279e8078496b451535545fd893947b74173ae25",
-      "observedAt": "2026-09-02T11:11:33.506Z",
+      "normalizedSha256": "d26c3f32340d7f6f82e6b9b1b356b1907b8371817bbeb7a849b8e46b9113e22a",
+      "observedAt": "2026-10-12T19:08:21.049Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "69df20767964539d1287b12ee48071e3e7ea830ab7ab7cf528e8dc84f3e4abb9",
+      "rawSha256": "8d01e0aecc3c36d035aedaca6fa7e4ba210e8ac5cfe1751d6358f0197a00b7a0",
       "replacementHistory": [],
       "requiredTokens": [
         "Blob",
@@ -924,7 +924,7 @@
       ],
       "requiredTokenSetSha256": "e249136530f7169d458157b525d0bd692e1fa38867a310d3c8a18691e08bd18e",
       "resolvedRevision": "CMS 12",
-      "reviewedAt": "2026-09-02T11:11:33.506Z",
+      "reviewedAt": "2026-10-12T19:08:21.049Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms12-builtins",
@@ -934,7 +934,7 @@
         "value": "CMS 12"
       },
       "title": "CMS 12 built-in property types",
-      "url": "https://docs.developers.optimizely.com/content-management-system/docs/built-in-property-types",
+      "url": "https://docs.optimizely.com/cms-12/docs/built-in-property-types",
       "vendor": "Optimizely"
     },
     {
@@ -962,14 +962,14 @@
           "Boolean"
         ]
       },
-      "fragmentSha256": "e2beec71b99ee83b84504711ae319df55764bb5a03c6de805c72cc3236eb939b",
+      "fragmentSha256": "b17ef906e9ceb8495203d6e754dd58b741ca2215b27915628641da0460c12339",
       "identities": [],
       "locator": "Default backing types",
-      "normalizedSha256": "86b3101b07171a7fae492f535ab97331473b8c91c75f22b53b7590b9c8b29903",
-      "observedAt": "2026-09-02T11:11:33.712Z",
+      "normalizedSha256": "dfc2aab84abbe2d0e92518a1d791250fa145b32ff863d0e687a8a5d78e44bc94",
+      "observedAt": "2026-10-12T19:08:21.050Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "b86f716be3d3f3292860e579e27b152eff93903ce7351f1c9072c9748f32a0f9",
+      "rawSha256": "f80655ced1ccd386dc3e37e06494af00a262ca7b5d3227eae5a976142abe18ff",
       "replacementHistory": [],
       "requiredTokens": [
         "Boolean",
@@ -981,7 +981,7 @@
       ],
       "requiredTokenSetSha256": "35ffbec761515d8a03de8d4a9591e05fcfd744bbbaabe78e0edd01b3d02ce2b9",
       "resolvedRevision": "CMS 12",
-      "reviewedAt": "2026-09-02T11:11:33.712Z",
+      "reviewedAt": "2026-10-12T19:08:21.050Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms12-property-attributes",
@@ -991,7 +991,7 @@
         "value": "CMS 12"
       },
       "title": "CMS 12 property attributes",
-      "url": "https://docs.developers.optimizely.com/content-management-system/docs/property-attributes",
+      "url": "https://docs.optimizely.com/cms-12/docs/property-attributes",
       "vendor": "Optimizely"
     },
     {
@@ -1041,14 +1041,14 @@
           "EmailAttribute"
         ]
       },
-      "fragmentSha256": "c00714a77bf49b96ce290982184c053bd15856846e37d9e7ae6be680b5850c06",
+      "fragmentSha256": "3a7a6b9ed3f58dbc9eba12c0c6fb2af7b6d6812e6cd48280336d3abcb673709f",
       "identities": [],
       "locator": "Common property types; Work with other content; ContentReference<T> property type",
-      "normalizedSha256": "cc4852a32780ceb66b8acdf78399de0bfaf72477dc5fd43c604da8aa4e92150f",
-      "observedAt": "2026-09-08T23:30:22.656Z",
+      "normalizedSha256": "955f2d44a63854a3cc509d4a310b1c9eef3d1c714c0461d3198f198b154a7680",
+      "observedAt": "2026-10-12T19:08:21.819Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "f7aace0892da189e957cc36cd6c73ac4bef46fb25c2ff94a5028c53750bfe5e0",
+      "rawSha256": "58e154db38e66212f310ec0f8e7e930b8cdeafe734891ca541330f79039601cc",
       "replacementHistory": [],
       "requiredTokens": [
         "AllowedTypes",
@@ -1082,7 +1082,7 @@
       ],
       "requiredTokenSetSha256": "19d408122d9721f7e68f58979b4b4a63221cc86130debc826708ac468b243ef7",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-08T23:30:22.656Z",
+      "reviewedAt": "2026-10-12T19:08:21.819Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-builtins",
@@ -1092,7 +1092,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 property types",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/built-in-property-types",
+      "url": "https://docs.optimizely.com/cms-13/docs/built-in-property-types",
       "vendor": "Optimizely"
     },
     {
@@ -1129,14 +1129,14 @@
           "IList<ContentReference>"
         ]
       },
-      "fragmentSha256": "d40c39e4565882540fac4e9c254314bdc75440164d35aad463b4afc0c005a20d",
+      "fragmentSha256": "c9028b941117c1152cb8c0c16491eb82edb244fb52cdb6030a267af360d92a10",
       "identities": [],
       "locator": "Available attributes; Default backing types",
-      "normalizedSha256": "8929c99f095333e2e73d7407d1d11da56f5bd42639bccb38324520d9b3921841",
-      "observedAt": "2026-09-02T11:11:33.840Z",
+      "normalizedSha256": "2118ef84703343480f6bde69cd2d950f3861e99c66d7ff20a58760a4f3ceba9e",
+      "observedAt": "2026-10-12T19:08:21.829Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "3727773cbde0dc00c6632117f46cb1800c335c21b43fdea80f03bf5b5e20a3d4",
+      "rawSha256": "a3ecd22fb64a38927027c4a53876ee744437556f4db3c092ac0dfdf59b2281b0",
       "replacementHistory": [],
       "requiredTokens": [
         "AllowedTypes",
@@ -1157,7 +1157,7 @@
       ],
       "requiredTokenSetSha256": "fc033a0bc4b68de7aef8bdf9781a619ffd244e77bfedb952cac2ff1d94004092",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:33.840Z",
+      "reviewedAt": "2026-10-12T19:08:21.829Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-property-attributes",
@@ -1167,7 +1167,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 property attributes",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/property-attributes",
+      "url": "https://docs.optimizely.com/cms-13/docs/property-attributes",
       "vendor": "Optimizely"
     },
     {
@@ -1192,14 +1192,14 @@
           "null"
         ]
       },
-      "fragmentSha256": "a39cab7be8ad397dc430a714f61dc09e067fee035247bafe2a5523e7070016e5",
+      "fragmentSha256": "7d2c5d346b4f76632f5acf7ac87c14cf8486b35cceb6ee5399def87689722341",
       "identities": [],
       "locator": "Access properties on strongly typed content; Access properties on non-strongly typed content; Check null values in properties",
-      "normalizedSha256": "b463f8f56d54caf4f361ba22cbe130bd9f1815857428504f0135d1f02eccdecd",
-      "observedAt": "2026-09-02T11:11:33.896Z",
+      "normalizedSha256": "a0fe14b85c87896ba4a258f245c1b9036ddbdbd7bcba53e0c9fb4a21e1a3f7f1",
+      "observedAt": "2026-10-12T19:08:22.067Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "e4f222f0eb26b62c52cb934a201147e21cecb2116f8236cd408d30355c127cf8",
+      "rawSha256": "0cd291fbe6cf4b7e0438a706b7d10a6e411833e7759a03889a7f6ecf9ebce481",
       "replacementHistory": [],
       "requiredTokens": [
         "PropertyXhtmlString",
@@ -1208,7 +1208,7 @@
       ],
       "requiredTokenSetSha256": "fa2704ec29f7b794291f5e850625b146e369b7b26622926c88f53e9a1c1a6f48",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:33.896Z",
+      "reviewedAt": "2026-10-12T19:08:22.067Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-develop-properties",
@@ -1218,7 +1218,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 develop properties",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/develop-properties",
+      "url": "https://docs.optimizely.com/cms-13/docs/develop-properties",
       "vendor": "Optimizely"
     },
     {
@@ -1250,14 +1250,14 @@
           "OptiAlloy"
         ]
       },
-      "fragmentSha256": "f18298243bd1e3dc0d64e7b3d0b6bab824c8c8adfbe2a8100317a81aed38f4cb",
+      "fragmentSha256": "0e18a9c170c92a46183cded18129b34688a06836b45a8451f25c3e24ac5f8c91",
       "identities": [],
       "locator": "Property types and linked property-type pages",
-      "normalizedSha256": "180a8c113fce47c88a69d83f06b333dc734f57ffdd27e82fa7a632c97abc0d1c",
-      "observedAt": "2026-09-02T11:11:33.962Z",
+      "normalizedSha256": "4d3e552e57bda8703cf92592759250a2f6920e820c59ec0203217d00b142f57b",
+      "observedAt": "2026-10-12T19:08:22.284Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "957b47e0363b0be860c800d071283d74de9ff15a140c24da2671448bd2a7ccb7",
+      "rawSha256": "9ceb36633887e6a6d2a935a29d9e5b95484663c822077f74115bcf0f7e5ee6ec",
       "replacementHistory": [],
       "requiredTokens": [
         "Blob",
@@ -1273,7 +1273,7 @@
       ],
       "requiredTokenSetSha256": "fb5c1cf941baa7991afb6f6d3363e165ce4ead43fde41006ff18bef3379a4109",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:33.962Z",
+      "reviewedAt": "2026-10-12T19:08:22.284Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-building-blocks",
@@ -1283,7 +1283,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 building blocks of content modeling",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/building-blocks-of-content-modeling",
+      "url": "https://docs.optimizely.com/cms-13/docs/building-blocks-of-content-modeling",
       "vendor": "Optimizely"
     },
     {
@@ -1308,14 +1308,14 @@
           "Selected/Not selected"
         ]
       },
-      "fragmentSha256": "10fd0910a0b3fa3f7e7bcd2804f61073efba00f747409403f620fbfb0458e0e2",
+      "fragmentSha256": "4b0d0909ed5b071427e74f7c5c3d926834f55525ae596216f9a4619d382dc994",
       "identities": [],
       "locator": "Configure Choice property > Choice Type",
-      "normalizedSha256": "5143dd476afb41b801746eaf0843c664136aac313fc3701dffb71ffaff4a0009",
-      "observedAt": "2026-09-02T11:11:34.019Z",
+      "normalizedSha256": "c039453bc683a15d0ea1c003f6f234bd7e2ee8661c0f9006c62b33e1ba3045b0",
+      "observedAt": "2026-10-12T19:08:23.101Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "6afade7f4a868f66aace09826004e190fadb35b10ab6bd0cf19260f3efb4ab07",
+      "rawSha256": "f61e9653b598133d69f21b7ab172330970f24ca28a33c715b89be44e8a9fb4d3",
       "replacementHistory": [],
       "requiredTokens": [
         "Drop-down list",
@@ -1324,7 +1324,7 @@
       ],
       "requiredTokenSetSha256": "f175ad96bbc418f511edde2190e79c02c54316477267ba4fbff8fb45c3eeec83",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:34.019Z",
+      "reviewedAt": "2026-10-12T19:08:23.101Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-choice-property",
@@ -1334,7 +1334,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 Choice property",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/choice-property",
+      "url": "https://docs.optimizely.com/cms-13/docs/choice-property",
       "vendor": "Optimizely"
     },
     {
@@ -1359,14 +1359,14 @@
           "Content Reference"
         ]
       },
-      "fragmentSha256": "6ad40f9502a68a69b4fe5dd13a7261d371335e10681f245b68c3df31c296c3bc",
+      "fragmentSha256": "71b8702b69b0050a6a8f294a84e1c97f849aaac04ecf43f37d43751232ab1565",
       "identities": [],
       "locator": "Configure Content property > Content Type",
-      "normalizedSha256": "7c5ffc9df7b22c971fd62cdfb367afb07a60fc453f60d0502c1d3b142fee9c3a",
-      "observedAt": "2026-09-02T11:11:34.072Z",
+      "normalizedSha256": "fbd17d98036ef038897cc9aea946b2e92efd6cc6692288c38c9f591172c63307",
+      "observedAt": "2026-10-12T19:08:23.187Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "e89bc3678a64f4d593c105209108e1a52cbc8b089e02c5e5134c11bc1d3f840a",
+      "rawSha256": "60fb8bb7e23f63e3cb773ed96d6ac01af58d79839535c096b3c194a67a1da549",
       "replacementHistory": [],
       "requiredTokens": [
         "Content Area",
@@ -1375,7 +1375,7 @@
       ],
       "requiredTokenSetSha256": "a306c909862c1bc4ebcd515d8f7ef99cbdf1783da0835a145c27dd5751a1a845",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:34.072Z",
+      "reviewedAt": "2026-10-12T19:08:23.187Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-content-property",
@@ -1385,7 +1385,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 Content property",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/content-property",
+      "url": "https://docs.optimizely.com/cms-13/docs/content-property",
       "vendor": "Optimizely"
     },
     {
@@ -1412,14 +1412,14 @@
           "URL to page/external address"
         ]
       },
-      "fragmentSha256": "2aa87a2804ee510e395dacc76d85c3c79c2ebd417b7d33694af6be4b7a7dbeaf",
+      "fragmentSha256": "9410083986f6e8bc017a7418c343943a3e3da12bfaa1ff984533d0fdb8ae5c6a",
       "identities": [],
       "locator": "Configure Link property > Link Type",
-      "normalizedSha256": "3d5e9a86d3dfa7f2d3ae50ab3a554c5bbd10246d750879600b668f76aa570aab",
-      "observedAt": "2026-09-02T11:11:34.137Z",
+      "normalizedSha256": "8fed53be6eea052a2bf631fb8b96409571882d7b214fe38bfdd788e680a52459",
+      "observedAt": "2026-10-12T19:08:23.525Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "7ac40424739e77a42b2d7222c2b55effcfac077a5513c974a9e4a88a0401301c",
+      "rawSha256": "4fd14d31b011b54225393251a551d999c696bc6d9cb0c0c289b7b12b0fb8fbfb",
       "replacementHistory": [],
       "requiredTokens": [
         "Link Collection",
@@ -1430,7 +1430,7 @@
       ],
       "requiredTokenSetSha256": "adc068791e648e08ac01a8b9fcf1ab6e71766078d3a6d7ad65322f4bd4a8f085",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:34.137Z",
+      "reviewedAt": "2026-10-12T19:08:23.525Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-link-property",
@@ -1440,7 +1440,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 Link property",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/link-property",
+      "url": "https://docs.optimizely.com/cms-13/docs/link-property",
       "vendor": "Optimizely"
     },
     {
@@ -1465,14 +1465,14 @@
           "XHTML string (>255)"
         ]
       },
-      "fragmentSha256": "88e18225fd3c8fa32bf2fa2cd53ce3abdda842bc9ec4ba89c110d60c6b782b24",
+      "fragmentSha256": "6ee9a07236935a15d7586b93d77174ffc18c32995ca2de7a2ab8f3c7f681a182",
       "identities": [],
       "locator": "Configure Text property > Text Type",
-      "normalizedSha256": "4d3bba4b3fb3af8e93699435d785684d4992077566631fbea1ac5e0f94366841",
-      "observedAt": "2026-09-02T11:11:34.197Z",
+      "normalizedSha256": "98b17226fda10bed35be65631bf6b7a1cd04dbeb232f51e1f9b14a7046e8ea9c",
+      "observedAt": "2026-10-12T19:08:23.564Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "291db3fcc85265c41922a201b4af0a0fd6f73523f766e7e58072f4440851a9f1",
+      "rawSha256": "4227c77a6c11b0c85be8701f2b3514b81ee22e62aa7aa02b4e69b1b9a186e1d5",
       "replacementHistory": [],
       "requiredTokens": [
         "Long string (>255)",
@@ -1481,7 +1481,7 @@
       ],
       "requiredTokenSetSha256": "c637f7a1bb45d354d292d01aa06a661ae53efd0fc10cf9fef7abd9f625f6f15f",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:34.197Z",
+      "reviewedAt": "2026-10-12T19:08:23.564Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-text-property",
@@ -1491,7 +1491,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 Text property",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/text-property",
+      "url": "https://docs.optimizely.com/cms-13/docs/text-property",
       "vendor": "Optimizely"
     },
     {
