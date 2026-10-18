@@ -1,3 +1,25 @@
+# Release 1.2.13
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** link Optimizely issue history (`5b40b85`)
+
 # Release 1.2.12
 
 ## Summary
