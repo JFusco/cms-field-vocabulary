@@ -1,7 +1,11 @@
 ---
 pr: "https://github.com/jfusco/cms-field-vocabulary/pull/32"
-issue: "https://github.com/jfusco/cms-field-vocabulary/issues/23"
-issues: ["https://github.com/jfusco/cms-field-vocabulary/issues/23", "https://github.com/jfusco/cms-field-vocabulary/issues/24"]
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/23'
+issues:
+  [
+    'https://github.com/jfusco/cms-field-vocabulary/issues/23',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/24',
+  ]
 topics: []
 plans: []
 draft: github-reconciliation

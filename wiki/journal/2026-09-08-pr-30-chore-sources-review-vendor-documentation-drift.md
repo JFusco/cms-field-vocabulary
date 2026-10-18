@@ -1,7 +1,14 @@
 ---
 pr: "https://github.com/jfusco/cms-field-vocabulary/pull/30"
-issue: "https://github.com/jfusco/cms-field-vocabulary/issues/16"
-issues: ["https://github.com/jfusco/cms-field-vocabulary/issues/16", "https://github.com/jfusco/cms-field-vocabulary/issues/20", "https://github.com/jfusco/cms-field-vocabulary/issues/21", "https://github.com/jfusco/cms-field-vocabulary/issues/22", "https://github.com/jfusco/cms-field-vocabulary/issues/25"]
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/16'
+issues:
+  [
+    'https://github.com/jfusco/cms-field-vocabulary/issues/16',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/20',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/21',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/22',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/25',
+  ]
 topics: []
 plans: []
 draft: github-reconciliation
