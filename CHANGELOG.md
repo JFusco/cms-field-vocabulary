@@ -1,3 +1,25 @@
+# Release 1.2.9
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** record dependency merge (`a43d1a4`)
+
 # Release 1.2.8
 
 ## Summary
