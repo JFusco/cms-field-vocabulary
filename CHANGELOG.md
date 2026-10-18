@@ -1,3 +1,25 @@
+# Release 1.2.12
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** link Sitecore issue history (`29be256`)
+
 # Release 1.2.11
 
 ## Summary
