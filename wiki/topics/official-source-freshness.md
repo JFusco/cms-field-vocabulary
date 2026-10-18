@@ -28,4 +28,5 @@ Freshness automation detects changes in official vendor documentation while pres
 - The SitecoreAI base image 1.10.13 Droplist fix is recorded as an authoring editor claim: selected-value comparison is case insensitive. It does not change the native field identity or Content SDK delivery shape.
 - When an exact official page blocks automated review, replacement history records that URL and the immutable official vendor-repository source used for the reviewed claim set.
 - Vendor outages retain the last reviewed snapshot and are surfaced as unreachable.
+- Optimizely field-documentation redirects to `docs.optimizely.com` are scoped to the eleven registered CMS SaaS, CMS 12, and CMS 13 sources. A markup move requires the exhaustive SaaS field-token extractor and the proposed source-lock observations to be reviewed together; the redirect or a changed fragment hash alone does not change a field fact.
 - Approved facts flow into [catalog authority](./catalog-authority.md); release policy is tracked in [release operations](./release-operations.md).

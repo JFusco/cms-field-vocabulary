@@ -475,18 +475,6 @@
       "completeness": "exhaustive",
       "extraction": {
         "kind": "heading",
-        "tokenDiscovery": {
-          "maximumTokens": 64,
-          "regions": [
-            {
-              "endPattern": "id=\"validation-fields\"",
-              "id": "data-types",
-              "itemCapture": 1,
-              "itemPattern": "<li><code[^>]*>([^<]+)</code>",
-              "startPattern": "id=\"data-types\""
-            }
-          ]
-        },
         "tokens": [
           "string",
           "richText",
@@ -501,7 +489,19 @@
           "contentReference",
           "array",
           "component"
-        ]
+        ],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "data-types",
+              "startPattern": "data-cy=\"heading-three-element\"><span><span><span>Data types</span>",
+              "endPattern": "data-cy=\"heading-three-element\"><span><span><span>Validation fields</span>",
+              "itemPattern": "<li[^>]*data-cy=\"list-item-li\"><span><span[^>]*><span[^>]*data-cy=\"editor-marks-inline-code\"><span>([^<]+)</span>",
+              "itemCapture": 1
+            }
+          ]
+        }
       },
       "fragmentSha256": "b08bda7796a40b7e508e7c58709021cd23b4cc10d7fe6141b61066213fa56971",
       "identities": [],
