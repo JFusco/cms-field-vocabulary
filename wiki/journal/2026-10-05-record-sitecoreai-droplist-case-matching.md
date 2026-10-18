@@ -1,7 +1,8 @@
 ---
 topics: [official-source-freshness, catalog-authority]
 plans: [2026-10-05-record-sitecoreai-droplist-case-matching-68236723bc.md]
-issue: "https://github.com/JFusco/cms-field-vocabulary/issues/92"
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/92'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/92']
 ---
 # Record SitecoreAI Droplist case matching
 
