@@ -1,3 +1,25 @@
+# Release 1.2.11
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **sources:** follow Optimizely redirects (`58a7557`)
+
+## Other changes
+
+- None.
+
 # Release 1.2.10
 
 ## Summary
