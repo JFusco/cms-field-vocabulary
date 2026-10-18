@@ -1,7 +1,8 @@
 ---
 topics: [official-source-freshness]
 plans: [2026-10-12-restore-optimizely-field-documentation-scans-e45c9097f9.md]
-issue: "https://github.com/JFusco/cms-field-vocabulary/issues/94"
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/94'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/94']
 ---
 # Restore Optimizely field-documentation scans
 
