@@ -12805,12 +12805,21 @@
               "value": null
             },
             "editorBehavior": {
-              "evidence": [],
-              "status": "undocumented",
-              "value": null
+              "evidence": [
+                {
+                  "locator": "Resolved issues > Droplist selected value comparison",
+                  "sourceId": "sitecore-ai.droplist-case-insensitive"
+                }
+              ],
+              "status": "documented",
+              "value": "Selected-value comparison is case insensitive, so the selected item displays correctly in the UI."
             },
             "nativeType": {
               "evidence": [
+                {
+                  "locator": "Resolved issues > Droplist selected value comparison",
+                  "sourceId": "sitecore-ai.droplist-case-insensitive"
+                },
                 {
                   "locator": "Simple, Link, and List field type sections",
                   "sourceId": "sitecore-ai.simple-field-types"
@@ -14639,6 +14648,7 @@
       "sourceIds": [
         "sitecore-ai.changelog-index",
         "sitecore-ai.developer-field-types",
+        "sitecore-ai.droplist-case-insensitive",
         "sitecore-ai.field-types",
         "sitecore-ai.link-field-types",
         "sitecore-ai.list-field-types",
@@ -23270,5 +23280,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:c0ecc14daadd1376f2700ed5211d701ede2c8eda67c2cfb6c017b3b4bb6d8b65"
+  "sourceLockDigest": "sha256:b850073ded98eeeb726f1dd1e95e701995efa482d80f7b77a60de81f3d854009"
 }

@@ -469,6 +469,20 @@
       "reviewOwner": "optimizely-paas"
     },
     {
+      "id": "sitecore-ai.droplist-case-insensitive",
+      "vendor": "Sitecore",
+      "title": "SitecoreAI base image 1.10.13 Droplist fix",
+      "url": "https://developers.sitecore.com/changelog/sitecoreai/29092026/sitecoreai-base-image-release-1.10.13",
+      "allowedHosts": ["developers.sitecore.com"],
+      "profiles": ["sitecore-ai.authoring.current"],
+      "role": "editor",
+      "completeness": "supplemental",
+      "version": { "mode": "rolling-saas" },
+      "locator": "Resolved issues > Droplist selected value comparison",
+      "extract": { "kind": "heading", "tokens": ["Droplist", "case insensitive"] },
+      "reviewOwner": "sitecore-ai"
+    },
+    {
       "id": "sitecore-ai.field-types",
       "vendor": "Sitecore",
       "title": "SitecoreAI data template field types",

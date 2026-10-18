@@ -28,3 +28,23 @@ The following live observations are proposals in the draft PR's source lock. A r
 The source lock and catalog digests are regenerated as draft proposals for maintainer review. A post-review full scan reached all eleven official pages with no missing required or observed tokens and classified only cosmetic response changes at those sources. No package version, published release, or consumer routing changes follow from this repair.
 
 Local verification passed: `pnpm run release:preflight`, `pnpm run verify:ci` (86 tests), `pnpm run test:packed`, `npm pack --dry-run --ignore-scripts` with a writable temporary npm cache, and the wiki graph/integrity checks. Full-history plan discovery could not read one oversized global Codex session file; the one-day recovery pass completed with no matched plan for this repository. The plan for this change is archived in this wiki delivery.
+
+## October 18 follow-up
+
+A fresh full scan after the SitecoreAI source merge reached all eleven Optimizely field pages with no missing required tokens. The SaaS page still independently yielded the same thirteen data types. However, all eleven fragment fingerprints now differ from the October 12 proposals and classify as `claim-changing`. The CMS 13 [Content property](https://docs.optimizely.com/cms-13/docs/content-property) page now includes sections on typed references to global contracts and mappings for external content that are not expressed in the current `optimizely-paas.cms13-admin` profile. The redirect repair updates only the reviewed SaaS extraction configuration snapshot needed for validation; it does not accept the October 12 observed fingerprints or resolved URLs into the lock. The separate [claim-review issue #100](https://github.com/JFusco/cms-field-vocabulary/issues/100) tracks exact comparison and any focused profile change. Issue [#94](https://github.com/JFusco/cms-field-vocabulary/issues/94) can close after the redirect repair merges.
+
+The fresh scan is saved at `/private/tmp/cms-pr95-full-20261018.json`. Its eleven source IDs and fragment fingerprints are:
+
+| Source ID | October 18 fingerprint |
+| --- | --- |
+| `optimizely-saas.content-types` | `0f2ff392eb9f64fd61b78af3fa51738508e4521d46a19489a844791eb3d6eeff` |
+| `optimizely-paas.cms12-builtins` | `13ae65547e663a8f62b1419e6211b21acc29215d432a1282eedbd8e86e6d1775` |
+| `optimizely-paas.cms12-property-attributes` | `a9486dd98deff3063002e0e940e59f07c524358e02ddc5753541e6131eca6ece` |
+| `optimizely-paas.cms13-builtins` | `5a725efe5a65d5ea908e49190643c3787267d3996702cc0ecdbc5daecb15bf50` |
+| `optimizely-paas.cms13-property-attributes` | `ec0ebefe3c6c1d1294e3582733cd75d51954b58c0cc5493447ec6fc802b561d8` |
+| `optimizely-paas.cms13-develop-properties` | `3b9e3c4046ca94b6fb4a359f2afd03034f3fa77554c51ccdf15857e3e92d8c09` |
+| `optimizely-paas.cms13-building-blocks` | `cf86b76a4ed3ab6617aef2b79e6815bb20a3d597e746190e7b9f5b04d79ac3a0` |
+| `optimizely-paas.cms13-choice-property` | `69ea92a700d0979cf4fd7f74fb32ddd1c9ed9ef3387cf01d11d0820aaff801a7` |
+| `optimizely-paas.cms13-content-property` | `e7cc1734897bd4fbb2a636db46bfbd703783878c57517dfacc4848935378ef0b` |
+| `optimizely-paas.cms13-link-property` | `d538749e66276a4d7c6ee6374fcffec80fe2969606e10685ae5d2b877126a7b1` |
+| `optimizely-paas.cms13-text-property` | `0bd5960f44c99306640cf9f5d675baea3070f216e6a3009bf54b1998b4b38d2b` |
