@@ -1,3 +1,25 @@
+# Release 1.2.8
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** reconcile prior issue links (`dc63703`)
+
 # Release 1.2.7
 
 ## Summary
