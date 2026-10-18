@@ -1,5 +1,5 @@
 {
-  "catalogDigest": "sha256:d50cc0de095f18111af8cd224fbb10085e9df09b26d4013bfbca809781e2d136",
+  "catalogDigest": "sha256:f23fc3b785cbec8c7dd8ac8291368895ab5387f8523780c9ddd8bb9cb410648d",
   "profiles": [
     {
       "digest": "sha256:6c50851d7d9551cfa03902e704a4966ff001b94899dfea6dca34a7140b59f6c3",
@@ -47,7 +47,7 @@
       "id": "optimizely-saas.sdk-3"
     },
     {
-      "digest": "sha256:fd3e902f08aab019ae5579f7ab2e89de04f73536e565ac15c20d5fd6d5b74d5d",
+      "digest": "sha256:28ab554039687378a1d52e5daa24ff2acc18ebc0f5f74ecf019464943d1dfb96",
       "fieldCount": 38,
       "id": "sitecore-ai.authoring.current"
     },
@@ -88,6 +88,6 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:dab95d7242c27c3d0eda8c177c59ec4757c7c2b93986e2164dda9e68e2c40186",
-  "sourceManifestDigest": "sha256:e0abd6406bdf09c1ed107e47500bd0aca11e9d4c0e0f670103c450dc1932a2ce"
+  "sourceLockDigest": "sha256:d125430f8469c8c7e1093ac9dede68f7b5ada0b546bc067f01b5e73aec64f166",
+  "sourceManifestDigest": "sha256:9f875e978079779caa66a7feb07aa500826786c460ce0ff7ab420aefb5665a7e"
 }

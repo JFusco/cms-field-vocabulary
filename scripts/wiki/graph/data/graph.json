@@ -2,12 +2,12 @@
   "version": 1,
   "wikiRoot": "wiki",
   "counts": {
-    "nodes": 48,
-    "edges": 86,
+    "nodes": 50,
+    "edges": 91,
     "byType": {
       "index": 3,
-      "journal": 26,
-      "plan": 13,
+      "journal": 27,
+      "plan": 14,
       "topic": 6
     }
   },
@@ -32,8 +32,8 @@
       "githubRefs": [],
       "bytes": 3667,
       "degree": 11,
-      "x": 0.965926,
-      "y": 0.258819,
+      "x": 0.968583,
+      "y": 0.24869,
       "size": 8
     },
     {
@@ -51,8 +51,8 @@
       ],
       "bytes": 421,
       "degree": 0,
-      "x": 0.92388,
-      "y": 0.382683,
+      "x": 0.929776,
+      "y": 0.368125,
       "size": 8
     },
     {
@@ -70,8 +70,8 @@
       ],
       "bytes": 406,
       "degree": 0,
-      "x": 0.866025,
-      "y": 0.5,
+      "x": 0.876307,
+      "y": 0.481754,
       "size": 8
     },
     {
@@ -89,8 +89,8 @@
       ],
       "bytes": 398,
       "degree": 0,
-      "x": 0.793353,
-      "y": 0.608761,
+      "x": 0.809017,
+      "y": 0.587785,
       "size": 8
     },
     {
@@ -138,8 +138,8 @@
       ],
       "bytes": 837,
       "degree": 0,
-      "x": 0.707107,
-      "y": 0.707107,
+      "x": 0.728969,
+      "y": 0.684547,
       "size": 8
     },
     {
@@ -169,8 +169,8 @@
       ],
       "bytes": 694,
       "degree": 0,
-      "x": 0.608761,
-      "y": 0.793353,
+      "x": 0.637424,
+      "y": 0.770513,
       "size": 8
     },
     {
@@ -188,8 +188,8 @@
       ],
       "bytes": 1106,
       "degree": 2,
-      "x": 0.5,
-      "y": 0.866025,
+      "x": 0.535827,
+      "y": 0.844328,
       "size": 8
     },
     {
@@ -207,8 +207,8 @@
       ],
       "bytes": 410,
       "degree": 0,
-      "x": 0.382683,
-      "y": 0.92388,
+      "x": 0.425779,
+      "y": 0.904827,
       "size": 8
     },
     {
@@ -226,8 +226,8 @@
       ],
       "bytes": 412,
       "degree": 0,
-      "x": 0.258819,
-      "y": 0.965926,
+      "x": 0.309017,
+      "y": 0.951057,
       "size": 8
     },
     {
@@ -245,8 +245,8 @@
       ],
       "bytes": 414,
       "degree": 0,
-      "x": 0.130526,
-      "y": 0.991445,
+      "x": 0.187381,
+      "y": 0.982287,
       "size": 8
     },
     {
@@ -257,8 +257,8 @@
       "githubRefs": [],
       "bytes": 1819,
       "degree": 3,
-      "x": 0,
-      "y": 1,
+      "x": 0.062791,
+      "y": 0.998027,
       "size": 8
     },
     {
@@ -306,8 +306,8 @@
       ],
       "bytes": 2649,
       "degree": 3,
-      "x": -0.130526,
-      "y": 0.991445,
+      "x": -0.062791,
+      "y": 0.998027,
       "size": 8
     },
     {
@@ -325,8 +325,8 @@
       ],
       "bytes": 998,
       "degree": 2,
-      "x": -0.258819,
-      "y": 0.965926,
+      "x": -0.187381,
+      "y": 0.982287,
       "size": 8
     },
     {
@@ -350,8 +350,8 @@
       ],
       "bytes": 1023,
       "degree": 2,
-      "x": -0.382683,
-      "y": 0.92388,
+      "x": -0.309017,
+      "y": 0.951057,
       "size": 8
     },
     {
@@ -369,8 +369,8 @@
       ],
       "bytes": 1285,
       "degree": 3,
-      "x": -0.5,
-      "y": 0.866025,
+      "x": -0.425779,
+      "y": 0.904827,
       "size": 8
     },
     {
@@ -430,8 +430,8 @@
       ],
       "bytes": 2084,
       "degree": 2,
-      "x": -0.608761,
-      "y": 0.793353,
+      "x": -0.535827,
+      "y": 0.844328,
       "size": 8
     },
     {
@@ -449,8 +449,8 @@
       ],
       "bytes": 435,
       "degree": 0,
-      "x": -0.707107,
-      "y": 0.707107,
+      "x": -0.637424,
+      "y": 0.770513,
       "size": 8
     },
     {
@@ -468,8 +468,8 @@
       ],
       "bytes": 423,
       "degree": 0,
-      "x": -0.793353,
-      "y": 0.608761,
+      "x": -0.728969,
+      "y": 0.684547,
       "size": 8
     },
     {
@@ -487,8 +487,8 @@
       ],
       "bytes": 1364,
       "degree": 3,
-      "x": -0.866025,
-      "y": 0.5,
+      "x": -0.809017,
+      "y": 0.587785,
       "size": 8
     },
     {
@@ -512,8 +512,8 @@
       ],
       "bytes": 627,
       "degree": 0,
-      "x": -0.92388,
-      "y": 0.382683,
+      "x": -0.876307,
+      "y": 0.481754,
       "size": 8
     },
     {
@@ -537,8 +537,8 @@
       ],
       "bytes": 569,
       "degree": 0,
-      "x": -0.965926,
-      "y": 0.258819,
+      "x": -0.929776,
+      "y": 0.368125,
       "size": 8
     },
     {
@@ -562,8 +562,8 @@
       ],
       "bytes": 559,
       "degree": 0,
-      "x": -0.991445,
-      "y": 0.130526,
+      "x": -0.968583,
+      "y": 0.24869,
       "size": 8
     },
     {
@@ -581,8 +581,8 @@
       ],
       "bytes": 1434,
       "degree": 3,
-      "x": -1,
-      "y": 0,
+      "x": -0.992115,
+      "y": 0.125333,
       "size": 8
     },
     {
@@ -600,8 +600,8 @@
       ],
       "bytes": 1782,
       "degree": 3,
-      "x": -0.991445,
-      "y": -0.130526,
+      "x": -1,
+      "y": 0,
       "size": 8
     },
     {
@@ -619,8 +619,57 @@
       ],
       "bytes": 922,
       "degree": 4,
-      "x": -0.965926,
-      "y": -0.258819,
+      "x": -0.992115,
+      "y": -0.125333,
+      "size": 8
+    },
+    {
+      "id": "wiki/journal/2026-10-05-record-sitecoreai-droplist-case-matching.md",
+      "label": "Record SitecoreAI Droplist case matching",
+      "type": "journal",
+      "aliases": [],
+      "githubRefs": [
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 50,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/50"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 52,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/52"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 53,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/53"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 91,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/91"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "issue",
+          "number": 92,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/issues/92"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 70,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/70"
+        }
+      ],
+      "bytes": 6810,
+      "degree": 3,
+      "x": -0.968583,
+      "y": -0.24869,
       "size": 8
     },
     {
@@ -638,8 +687,8 @@
       ],
       "bytes": 492,
       "degree": 0,
-      "x": -0.92388,
-      "y": -0.382683,
+      "x": -0.929776,
+      "y": -0.368125,
       "size": 8
     },
     {
@@ -650,8 +699,8 @@
       "githubRefs": [],
       "bytes": 3126,
       "degree": 2,
-      "x": 0.991445,
-      "y": 0.130526,
+      "x": 0.992115,
+      "y": 0.125333,
       "size": 12
     },
     {
@@ -662,8 +711,8 @@
       "githubRefs": [],
       "bytes": 13319,
       "degree": 7,
-      "x": -0.866025,
-      "y": -0.5,
+      "x": -0.876307,
+      "y": -0.481754,
       "size": 8
     },
     {
@@ -674,8 +723,8 @@
       "githubRefs": [],
       "bytes": 1330,
       "degree": 3,
-      "x": -0.793353,
-      "y": -0.608761,
+      "x": -0.809017,
+      "y": -0.587785,
       "size": 8
     },
     {
@@ -686,8 +735,8 @@
       "githubRefs": [],
       "bytes": 1783,
       "degree": 4,
-      "x": -0.707107,
-      "y": -0.707107,
+      "x": -0.728969,
+      "y": -0.684547,
       "size": 8
     },
     {
@@ -698,8 +747,8 @@
       "githubRefs": [],
       "bytes": 976,
       "degree": 3,
-      "x": -0.608761,
-      "y": -0.793353,
+      "x": -0.637424,
+      "y": -0.770513,
       "size": 8
     },
     {
@@ -710,8 +759,8 @@
       "githubRefs": [],
       "bytes": 818,
       "degree": 3,
-      "x": -0.5,
-      "y": -0.866025,
+      "x": -0.535827,
+      "y": -0.844328,
       "size": 8
     },
     {
@@ -722,8 +771,8 @@
       "githubRefs": [],
       "bytes": 787,
       "degree": 4,
-      "x": -0.382683,
-      "y": -0.92388,
+      "x": -0.425779,
+      "y": -0.904827,
       "size": 8
     },
     {
@@ -741,8 +790,8 @@
       ],
       "bytes": 1377,
       "degree": 3,
-      "x": -0.258819,
-      "y": -0.965926,
+      "x": -0.309017,
+      "y": -0.951057,
       "size": 8
     },
     {
@@ -753,8 +802,8 @@
       "githubRefs": [],
       "bytes": 937,
       "degree": 4,
-      "x": -0.130526,
-      "y": -0.991445,
+      "x": -0.187381,
+      "y": -0.982287,
       "size": 8
     },
     {
@@ -772,8 +821,8 @@
       ],
       "bytes": 1416,
       "degree": 3,
-      "x": 0,
-      "y": -1,
+      "x": -0.062791,
+      "y": -0.998027,
       "size": 8
     },
     {
@@ -791,8 +840,8 @@
       ],
       "bytes": 1120,
       "degree": 3,
-      "x": 0.130526,
-      "y": -0.991445,
+      "x": 0.062791,
+      "y": -0.998027,
       "size": 8
     },
     {
@@ -810,8 +859,8 @@
       ],
       "bytes": 1290,
       "degree": 3,
-      "x": 0.258819,
-      "y": -0.965926,
+      "x": 0.187381,
+      "y": -0.982287,
       "size": 8
     },
     {
@@ -829,8 +878,8 @@
       ],
       "bytes": 1649,
       "degree": 3,
-      "x": 0.382683,
-      "y": -0.92388,
+      "x": 0.309017,
+      "y": -0.951057,
       "size": 8
     },
     {
@@ -841,8 +890,20 @@
       "githubRefs": [],
       "bytes": 2227,
       "degree": 4,
-      "x": 0.5,
-      "y": -0.866025,
+      "x": 0.425779,
+      "y": -0.904827,
+      "size": 8
+    },
+    {
+      "id": "wiki/plans/2026-10-05-record-sitecoreai-droplist-case-matching-68236723bc.md",
+      "label": "Record SitecoreAI Droplist case matching",
+      "type": "plan",
+      "aliases": [],
+      "githubRefs": [],
+      "bytes": 939,
+      "degree": 3,
+      "x": 0.535827,
+      "y": -0.844328,
       "size": 8
     },
     {
@@ -870,10 +931,10 @@
           "url": "https://github.com/jfusco/cms-field-vocabulary/issues/84"
         }
       ],
-      "bytes": 5537,
-      "degree": 15,
-      "x": 0.608761,
-      "y": -0.793353,
+      "bytes": 5884,
+      "degree": 16,
+      "x": 0.637424,
+      "y": -0.770513,
       "size": 12
     },
     {
@@ -888,9 +949,9 @@
       ],
       "githubRefs": [],
       "bytes": 2465,
-      "degree": 11,
-      "x": 0.707107,
-      "y": -0.707107,
+      "degree": 12,
+      "x": 0.728969,
+      "y": -0.684547,
       "size": 8
     },
     {
@@ -906,8 +967,8 @@
       "githubRefs": [],
       "bytes": 1740,
       "degree": 6,
-      "x": 0.793353,
-      "y": -0.608761,
+      "x": 0.809017,
+      "y": -0.587785,
       "size": 8
     },
     {
@@ -925,8 +986,8 @@
       ],
       "bytes": 1395,
       "degree": 4,
-      "x": 0.866025,
-      "y": -0.5,
+      "x": 0.876307,
+      "y": -0.481754,
       "size": 8
     },
     {
@@ -940,10 +1001,10 @@
         "freshness automation"
       ],
       "githubRefs": [],
-      "bytes": 3513,
-      "degree": 15,
-      "x": 0.92388,
-      "y": -0.382683,
+      "bytes": 3727,
+      "degree": 17,
+      "x": 0.929776,
+      "y": -0.368125,
       "size": 8
     },
     {
@@ -972,8 +1033,8 @@
       ],
       "bytes": 3608,
       "degree": 22,
-      "x": 0.965926,
-      "y": -0.258819,
+      "x": 0.968583,
+      "y": -0.24869,
       "size": 8
     },
     {
@@ -988,8 +1049,8 @@
       "githubRefs": [],
       "bytes": 1748,
       "degree": 6,
-      "x": 0.991445,
-      "y": -0.130526,
+      "x": 0.992115,
+      "y": -0.125333,
       "size": 8
     }
   ],
@@ -1177,6 +1238,13 @@
       "relation": "plan"
     },
     {
+      "id": "4e91c3d29effd69d",
+      "source": "wiki/journal/2026-10-05-record-sitecoreai-droplist-case-matching.md",
+      "target": "wiki/topics/catalog-authority.md",
+      "type": "topic",
+      "relation": "topic"
+    },
+    {
       "id": "4f450dad1fd7427c",
       "source": "wiki/journal/2026-09-01-phase-1-deterministic-cms-field-vocabulary.md",
       "target": "wiki/topics/catalog-authority.md",
@@ -1273,6 +1341,13 @@
       "target": "wiki/topics/release-operations.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "8e6321ef2212961f",
+      "source": "wiki/plans/2026-10-05-record-sitecoreai-droplist-case-matching-68236723bc.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "8ed5b1d7b8a28e6b",
@@ -1387,6 +1462,13 @@
       "relation": "topic"
     },
     {
+      "id": "b74a93bad5411a1c",
+      "source": "wiki/journal/2026-10-05-record-sitecoreai-droplist-case-matching.md",
+      "target": "wiki/plans/2026-10-05-record-sitecoreai-droplist-case-matching-68236723bc.md",
+      "type": "plan",
+      "relation": "plan"
+    },
+    {
       "id": "b7d6b97e4c5b6e32",
       "source": "wiki/journal/2026-09-16-release-1-0-6-and-native-node-24-actions.md",
       "target": "wiki/topics/release-operations.md",
@@ -1425,6 +1507,13 @@
       "id": "c13e1d53c3928f89",
       "source": "wiki/topics/structured-rendering-operations.md",
       "target": "wiki/topics/deterministic-consumer-projection.md",
+      "type": "link",
+      "relation": "link"
+    },
+    {
+      "id": "c30a40533d2c71c9",
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-10-05-record-sitecoreai-droplist-case-matching-68236723bc.md",
       "type": "link",
       "relation": "link"
     },
@@ -1574,6 +1663,13 @@
       "target": "wiki/topics/structured-rendering-operations.md",
       "type": "link",
       "relation": "link"
+    },
+    {
+      "id": "fd47dff95e538ff6",
+      "source": "wiki/journal/2026-10-05-record-sitecoreai-droplist-case-matching.md",
+      "target": "wiki/topics/official-source-freshness.md",
+      "type": "topic",
+      "relation": "topic"
     },
     {
       "id": "fd87a0f0192d9bef",

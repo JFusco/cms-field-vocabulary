@@ -165,6 +165,10 @@
       "locators": [{ "locator": "Developer field type table" }]
     },
     {
+      "sourceId": "sitecore-ai.droplist-case-insensitive",
+      "locators": [{ "locator": "Resolved issues > Droplist selected value comparison" }]
+    },
+    {
       "sourceId": "sitecore-ai.field-types",
       "locators": [{ "locator": "Data template field types and linked category pages" }]
     },
