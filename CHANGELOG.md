@@ -1,3 +1,48 @@
+# Release 1.2.8
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** reconcile prior issue links (`dc63703`)
+
+# Release 1.2.7
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **deps-dev:** update development tools (`1636227`)
+- **wiki:** reconcile merged PR #85 [skip release] (`b17c93b`)
+
 # Release 1.2.6
 
 ## Summary
