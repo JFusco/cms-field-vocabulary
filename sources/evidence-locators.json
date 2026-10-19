@@ -102,7 +102,9 @@
         { "locator": "Configure Content property > Content Type" },
         { "locator": "Content Type > Content Area" },
         { "locator": "Content Type > Content Area Item" },
-        { "locator": "Content Type > Content Reference" }
+        { "locator": "Content Type > Content Reference" },
+        { "locator": "Select global contracts for typed content reference properties" },
+        { "locator": "Property mapping for external content" }
       ]
     },
     {

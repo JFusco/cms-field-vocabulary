@@ -1,0 +1,16 @@
+---
+topics: [official-source-freshness]
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/107'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/107', 'https://github.com/jfusco/cms-field-vocabulary/issues/100']
+---
+# Propose CMS 13 Content Reference contracts
+
+The [October 18 full observation](https://github.com/JFusco/cms-field-vocabulary/issues/100) for `optimizely-paas.cms13-content-property` has fragment fingerprint `e7cc1734897bd4fbb2a636db46bfbd703783878c57517dfacc4848935378ef0b`. The October 19 official-source review reproduced that fingerprint at the registered legacy URL, which resolves to [Optimizely's CMS 13 Content property guide](https://docs.optimizely.com/cms-13/docs/content-property). The registered source locator is `Configure Content property > Content Type`; the evidence registry additionally names `Select global contracts for typed content reference properties` and `Property mapping for external content` on that same page. The page still names Content Area, Content Area Item, and Content Reference; no native token was added or removed.
+
+The guide says a specific Reference Type filters the picker to matching content types. A global contract can serve as that Reference Type and makes connected types implementing the contract selectable. Under `Content Type > Content Reference`, Optimizely Graph returns the full object for a specific type, but returns only `contentLink` for Any with allowed content types. The current `optimizely-paas.cms13-admin` Content Reference fact said only "Content selector" and left delivery undocumented. The draft adds the supported editor and delivery claims with exact source locators. This affects the pinned CMS 13 admin profile and generated catalog/docs; it does not alter the CMS 12 profile, CMS 13 CLR model profile, field identity, or consumer routing.
+
+The separate `Property mapping for external content` section says mapped external properties become read-only in the CMS Edit UI, while unmapped properties remain editable. It also documents more permissive source-to-target mappings for connected content than for internal CMS content. This is a CMS 13 authoring behavior, not a new native field token; the draft records the bounded behavior in the admin profile notes. It does not infer a new CLR type or storage shape from the mapping table.
+
+Only this source-lock observation is proposed here. The other ten Optimizely field-guide fingerprints in [issue #100](https://github.com/JFusco/cms-field-vocabulary/issues/100) still need their own claim dispositions. The two Optimizely release-note indexes remain unreachable in the scanner under [issue #91](https://github.com/JFusco/cms-field-vocabulary/issues/91); this proposal does not accept those indexes. Maintainer review is required before the source-lock proposal or profile claim is accepted.
+
+Local verification passed `pnpm run verify:ci` (86 tests), `pnpm run test:packed`, and `npm pack --dry-run --ignore-scripts` with a writable temporary cache. The wiki graph and integrity checks passed. The generated catalog and platform document reflect only the CMS 13 admin profile claim and reviewed source-lock proposal; no release was made.
