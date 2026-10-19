@@ -1,3 +1,26 @@
+# Release 1.2.14
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **deps:** bump changelog preset to 10.4.1 (`781ef57`)
+- **deps:** bump tsup to 9.0.0 (`afbf9f4`)
+
 # Release 1.2.13
 
 ## Summary
