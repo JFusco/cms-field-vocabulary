@@ -1,7 +1,11 @@
 ---
 topics: [official-source-freshness]
 issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/107'
-issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/107', 'https://github.com/jfusco/cms-field-vocabulary/issues/100']
+issues:
+  [
+    'https://github.com/jfusco/cms-field-vocabulary/issues/107',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/100',
+  ]
 ---
 # Propose CMS 13 Content Reference contracts
 
