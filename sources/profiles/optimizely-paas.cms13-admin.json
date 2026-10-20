@@ -11,7 +11,8 @@
   "transport": "CMS 13 admin content-modeling property labels",
   "extensibility": "open",
   "notes": [
-    "These exact admin labels are not interchangeable with CLR types or serialized delivery tokens."
+    "These exact admin labels are not interchangeable with CLR types or serialized delivery tokens.",
+    "External connected-content property mappings are not separate native property types; mapped fields are read-only in the CMS Edit UI."
   ],
   "sourceIds": [
     "optimizely-paas.cms13-building-blocks",
@@ -263,9 +264,9 @@
         "nullable": true
       },
       "typicalUse": "References to content.",
-      "editorBehavior": "Content selector.",
+      "editorBehavior": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract.",
       "storageShape": null,
-      "deliveryShape": null,
+      "deliveryShape": "Optimizely Graph returns the full typed object for a specific Reference Type, but only contentLink when Reference Type is Any with allowed content types.",
       "renderingOperations": [],
       "claimEvidence": {
         "valueShape": [
@@ -281,6 +282,12 @@
           }
         ],
         "editorBehavior": [
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Select global contracts for typed content reference properties"
+          }
+        ],
+        "deliveryShape": [
           {
             "sourceId": "optimizely-paas.cms13-content-property",
             "locator": "Content Type > Content Reference"

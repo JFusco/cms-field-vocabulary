@@ -5159,11 +5159,6 @@
           "canonicalId": "optimizely-paas.cms13-admin.ContentReference",
           "claims": {
             "deliveryShape": {
-              "evidence": [],
-              "status": "undocumented",
-              "value": null
-            },
-            "editorBehavior": {
               "evidence": [
                 {
                   "locator": "Content Type > Content Reference",
@@ -5171,7 +5166,17 @@
                 }
               ],
               "status": "documented",
-              "value": "Content selector."
+              "value": "Optimizely Graph returns the full typed object for a specific Reference Type, but only contentLink when Reference Type is Any with allowed content types."
+            },
+            "editorBehavior": {
+              "evidence": [
+                {
+                  "locator": "Select global contracts for typed content reference properties",
+                  "sourceId": "optimizely-paas.cms13-content-property"
+                }
+              ],
+              "status": "documented",
+              "value": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract."
             },
             "nativeType": {
               "evidence": [
@@ -6718,7 +6723,8 @@
       ],
       "id": "optimizely-paas.cms13-admin",
       "notes": [
-        "These exact admin labels are not interchangeable with CLR types or serialized delivery tokens."
+        "These exact admin labels are not interchangeable with CLR types or serialized delivery tokens.",
+        "External connected-content property mappings are not separate native property types; mapped fields are read-only in the CMS Edit UI."
       ],
       "platform": "optimizely-paas",
       "product": "Optimizely CMS 13",
@@ -23280,5 +23286,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:b850073ded98eeeb726f1dd1e95e701995efa482d80f7b77a60de81f3d854009"
+  "sourceLockDigest": "sha256:1c5c474b9062a38f046f1e6e43127a1867f553415237d9668646dd1cf39aa6b6"
 }

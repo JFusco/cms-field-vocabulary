@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-05T19:10:05.376Z",
+  "reviewedAt": "2026-10-19T19:00:05.748Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -475,6 +475,18 @@
       "completeness": "exhaustive",
       "extraction": {
         "kind": "heading",
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "endPattern": "data-cy=\"heading-three-element\"><span><span><span>Validation fields</span>",
+              "id": "data-types",
+              "itemCapture": 1,
+              "itemPattern": "<li[^>]*data-cy=\"list-item-li\"><span><span[^>]*><span[^>]*data-cy=\"editor-marks-inline-code\"><span>([^<]+)</span>",
+              "startPattern": "data-cy=\"heading-three-element\"><span><span><span>Data types</span>"
+            }
+          ]
+        },
         "tokens": [
           "string",
           "richText",
@@ -489,19 +501,7 @@
           "contentReference",
           "array",
           "component"
-        ],
-        "tokenDiscovery": {
-          "maximumTokens": 64,
-          "regions": [
-            {
-              "id": "data-types",
-              "startPattern": "data-cy=\"heading-three-element\"><span><span><span>Data types</span>",
-              "endPattern": "data-cy=\"heading-three-element\"><span><span><span>Validation fields</span>",
-              "itemPattern": "<li[^>]*data-cy=\"list-item-li\"><span><span[^>]*><span[^>]*data-cy=\"editor-marks-inline-code\"><span>([^<]+)</span>",
-              "itemCapture": 1
-            }
-          ]
-        }
+        ]
       },
       "fragmentSha256": "b08bda7796a40b7e508e7c58709021cd23b4cc10d7fe6141b61066213fa56971",
       "identities": [],
@@ -1359,14 +1359,14 @@
           "Content Reference"
         ]
       },
-      "fragmentSha256": "6ad40f9502a68a69b4fe5dd13a7261d371335e10681f245b68c3df31c296c3bc",
+      "fragmentSha256": "e7cc1734897bd4fbb2a636db46bfbd703783878c57517dfacc4848935378ef0b",
       "identities": [],
       "locator": "Configure Content property > Content Type",
-      "normalizedSha256": "7c5ffc9df7b22c971fd62cdfb367afb07a60fc453f60d0502c1d3b142fee9c3a",
-      "observedAt": "2026-09-02T11:11:34.072Z",
+      "normalizedSha256": "a0923faed62afd7a95c980b6659101bb19bb6ec2ffdc81de746bdca837f94ccf",
+      "observedAt": "2026-10-19T19:00:05.034Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "e89bc3678a64f4d593c105209108e1a52cbc8b089e02c5e5134c11bc1d3f840a",
+      "rawSha256": "5b621225782d7f61bd081e9c2b6189e3c9d2d7db340edb35266c1d29d6c965c0",
       "replacementHistory": [],
       "requiredTokens": [
         "Content Area",
@@ -1375,7 +1375,7 @@
       ],
       "requiredTokenSetSha256": "a306c909862c1bc4ebcd515d8f7ef99cbdf1783da0835a145c27dd5751a1a845",
       "resolvedRevision": "CMS 13",
-      "reviewedAt": "2026-09-02T11:11:34.072Z",
+      "reviewedAt": "2026-10-19T19:00:05.034Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-content-property",
@@ -1385,7 +1385,7 @@
         "value": "CMS 13"
       },
       "title": "CMS 13 Content property",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/content-property",
+      "url": "https://docs.optimizely.com/cms-13/docs/content-property",
       "vendor": "Optimizely"
     },
     {
