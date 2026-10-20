@@ -1,3 +1,26 @@
+# Release 1.3.0
+
+## Summary
+
+This release contains 0 breaking changes, 1 feature, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **optimizely:** document CMS 13 references (`8d0427c`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** reconcile PR 102 [skip release] (`bc1176e`)
+- **wiki:** reconcile merged PR #103 [skip release] (#105) (`6f5496f`)
+
 # Release 1.2.14
 
 ## Summary
