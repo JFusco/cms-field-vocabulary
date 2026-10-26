@@ -1,3 +1,26 @@
+# Release 1.3.1
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **deps:** update commitlint and eslint (`dbdceee`)
+- **wiki:** reconcile PR 108 [skip release] (`15a1e40`)
+
 # Release 1.3.0
 
 ## Summary
