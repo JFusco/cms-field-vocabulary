@@ -270,6 +270,9 @@ export async function observeSource(source) {
     }
     const normalized = normalizeDocument(fetched.body);
     const identities = extractSourceIdentities(source, normalized);
+    if (source.role === 'release-index' && identities.length === 0) {
+      throw new Error('Release index returned no version or entry identities');
+    }
     const fragment = source.extract.identityPattern ? json(identities) : extractEvidenceFragment(source, normalized);
     const declaredTokens = [...(source.extract.tokens || [])];
     const requiredTokens = extractRequiredTokens(source, fragment);

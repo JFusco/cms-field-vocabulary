@@ -6734,8 +6734,8 @@
         "optimizely-paas.cms13-choice-property",
         "optimizely-paas.cms13-content-property",
         "optimizely-paas.cms13-link-property",
-        "optimizely-paas.cms13-text-property",
-        "optimizely-paas.release-notes-index"
+        "optimizely-paas.cms13-release-notes-index",
+        "optimizely-paas.cms13-text-property"
       ],
       "surface": "authoring",
       "transport": "CMS 13 admin content-modeling property labels",
@@ -8121,7 +8121,7 @@
         "optimizely-paas.cms13-builtins",
         "optimizely-paas.cms13-develop-properties",
         "optimizely-paas.cms13-property-attributes",
-        "optimizely-paas.release-notes-index"
+        "optimizely-paas.cms13-release-notes-index"
       ],
       "surface": "sdk",
       "transport": ".NET content model property types",
@@ -23286,5 +23286,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:1c5c474b9062a38f046f1e6e43127a1867f553415237d9668646dd1cf39aa6b6"
+  "sourceLockDigest": "sha256:3b4c0a586987e3b9270e7cb3f75ca901f1a61f640c35747277410fae374f0cf0"
 }

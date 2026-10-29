@@ -19,7 +19,7 @@
     "optimizely-paas.cms13-builtins",
     "optimizely-paas.cms13-property-attributes",
     "optimizely-paas.cms13-develop-properties",
-    "optimizely-paas.release-notes-index"
+    "optimizely-paas.cms13-release-notes-index"
   ],
   "defaultEvidence": {
     "sourceId": "optimizely-paas.cms13-builtins",

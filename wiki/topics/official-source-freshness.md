@@ -9,7 +9,7 @@ Freshness automation detects changes in official vendor documentation while pres
 
 - `sources/official-sources.json` declares official URLs, product and profile applicability, source roles, extraction locators, exact token sets, version mode, and allowed redirect hosts.
 - `sources.lock.json` records reviewed URLs, timestamps, raw and normalized fingerprints, token-set fingerprints, reachability, and manual-review notes.
-- The catalog currently binds 54 reviewed official sources to 17 surface-specific profiles and 281 exact native field facts.
+- The catalog currently binds 55 reviewed official sources to 17 surface-specific profiles and 281 exact native field facts.
 - Exhaustive enumeration sources use schema-v2 structural discovery regions. Their independently observed token sets are hashed separately from the required evidence tokens, so a vendor-added or vendor-removed native type is detectable without first teaching the scanner that token.
 - Rolling WordPress handbook pages remain registered as supplemental documentation, while the Core 7.1 facts resolve to immutable official Core and bundled Gutenberg revisions.
 - Daily runs scan release indexes; weekly and manual full runs inspect all declared sources and upload evidence outside the checkout.
@@ -30,4 +30,5 @@ Freshness automation detects changes in official vendor documentation while pres
 - Vendor outages retain the last reviewed snapshot and are surfaced as unreachable.
 - Optimizely field-documentation redirects to `docs.optimizely.com` are scoped to the eleven registered CMS SaaS, CMS 12, and CMS 13 sources. A markup move requires the exhaustive SaaS field-token extractor and the proposed source-lock observations to be reviewed together; the redirect or a changed fragment hash alone does not change a field fact.
 - The CMS 13 Content property guide explicitly documents typed Content Reference selection through global contracts and distinct Optimizely Graph results for typed versus Any references. A focused draft proposes these claims for `optimizely-paas.cms13-admin`; connected external property mappings describe behavior, not another native property label. The other ten Optimizely field-guide observations remain separate review work in issue #100.
+- Optimizely release notes are indexed from the official current-year CMS SaaS, CMS 12, and CMS 13 docs pages by dated entry-heading identities ([restoration record](../journal/2026-10-29-restore-optimizely-release-note-indexes.md)). CMS 13 has its own index source. A release index that yields no entry identities, such as a sign-in or unrelated in-host page, is unreachable rather than observed content.
 - Approved facts flow into [catalog authority](./catalog-authority.md); release policy is tracked in [release operations](./release-operations.md).
