@@ -15,7 +15,7 @@ The registered support-center sections for `optimizely-saas.release-notes-index`
 - All three sources extract identities from dated `h2`/`h3` heading IDs, for example `october-21` or `october-271350`. Replacement history records the two retired support-center URLs.
 - If a release-index page returns no entry identities, the scanner now reports it as `unreachable` instead of observing it as source content. This covers sign-in pages and unrelated in-host redirects. The allowlist still rejects off-host redirects.
 
-On October 29 the reviewed observations were:
+The first observations, from October 29, are kept here as history. The response bodies behind them were not retained. The separately saved review pages reproduced their identities and fragment fingerprints, but not their raw or normalized fingerprints. These observations are therefore superseded by the October 30 amendment below.
 
 | Source | Identities | Fragment fingerprint | Raw fingerprint |
 | --- | --- | --- | --- |
@@ -24,6 +24,18 @@ On October 29 the reviewed observations were:
 | `optimizely-paas.cms13-release-notes-index` | 42 | `cc0a39a0150a26e980e26ae708352f54bc24ed2b1c64e5a891a3656a78f063b4` | `1e9f741fcb2c9de4d511f907aea47582f709b39eadb5bac0cd7595b49f71a11c` |
 
 A follow-up index scan matched all three fragments to the reviewed lock (`cosmetic`, raw markup only).
+
+### October 30 amendment observations
+
+The maintainer-approved amendment re-reviewed only these three sources. Each official response body was retained privately with the native observation computed from that same response. The lock rows below are the proposed baselines and remain subject to maintainer acceptance.
+
+| Source | Identities | Fragment fingerprint | Raw fingerprint | Normalized fingerprint |
+| --- | --- | --- | --- | --- |
+| `optimizely-saas.release-notes-index` | 32 | `a690604186b8ef506173ea03805c784dc4e8cb1748212df0791c4505b9066abd` | `e9ee9a01d05853f7525041fd26230bc6bf23fb55cfde6f9471bf522101d03486` | `e266f35b8c6049f7aa057b743d42bffd0876a74e0ee890d32cf336d45f76a9f0` |
+| `optimizely-paas.release-notes-index` | 52 | `bac88f723394fb1f7a66c238b926825b7d41a356ed6e33a3d2814a48d5d2d6e8` | `5b4379b7f1a7322b67f4a2ecf8592cbe9dccec7261d046041c139a673c0dc2fa` | `e3f09038b645437e522bed1477dd0536fb691822e001b46e9f30c798ca927669` |
+| `optimizely-paas.cms13-release-notes-index` | 43 | `93da716e5ff1f279df3577396ff98a7d03fc566a27aee7eaddf184f3d2bb30cc` | `d04bdddf6ed9461dee8f42bcc338c2b4fc964553bf876baffe00e7553a4e6ee4` | `c6b05e68abf5265dc686f6acede53e1ebdd7ee77e660cdf691d6bee1f2a821d6` |
+
+The SaaS and CMS 12 identity sets and entry text match the October 29 review pages. CMS 13 adds one entry, `october-291340`; its only other change is the page's relative "Updated" footer.
 
 ## Claim dispositions
 
@@ -50,6 +62,7 @@ Every field-relevant 2026 entry was compared with the affected profiles. Identit
 
 ### CMS 13 (`optimizely-paas.cms13-admin`, `optimizely-paas.cms13-model`)
 
+- `october-291340` (October 30 amendment): Opti ID sign-in for the CMS MCP server through `Optimizely.Cms.Mcp.Tools.OptimizelyIdentity`, with session revocation. No impact. This is authentication for a tooling package and makes no property, value, or delivery claim.
 - `october-151340`: DAM rendition selection for single-item image properties. No impact. This is editor UX with no new token.
 - `june-11310`: external-content property mappings expand, LinkItem DAM URLs are indexed in Graph, and `VisibleInMenu` joins the Graph schema. No impact. Mappings are already recorded as behavior, `VisibleInMenu` is page metadata rather than a property type, and the LinkItem delivery shape is unclaimed.
 - `april-91301`: **Create a new block** in content areas defaults to inline blocks. No impact. The Content Area editor claim remains accurate.

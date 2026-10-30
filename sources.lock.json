@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-29T12:44:48.197Z",
+  "reviewedAt": "2026-10-30T08:00:22.706Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -3496,11 +3496,11 @@
         "september-24"
       ],
       "locator": "CMS SaaS dated release-note entry headings",
-      "normalizedSha256": "095250cc288fd4a29080b9acfdae6a1070d65f50dbf6a07182eb272262fd2b3c",
-      "observedAt": "2026-10-29T12:44:46.058Z",
+      "normalizedSha256": "e266f35b8c6049f7aa057b743d42bffd0876a74e0ee890d32cf336d45f76a9f0",
+      "observedAt": "2026-10-30T08:00:20.308Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "2ce44c99ec0ad01a7e7580c71c27a24fe9c152507f8ef279ee8c446c82bd34af",
+      "rawSha256": "e9ee9a01d05853f7525041fd26230bc6bf23fb55cfde6f9471bf522101d03486",
       "replacementHistory": [
         {
           "reason": "The support-center section redirects off the official host allowlist and no longer lists release articles; the current-year CMS SaaS release notes are published on one official docs page whose dated entry headings replace the old article-link identities.",
@@ -3511,7 +3511,7 @@
       ],
       "requiredTokens": [],
       "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "reviewedAt": "2026-10-29T12:44:46.058Z",
+      "reviewedAt": "2026-10-30T08:00:20.308Z",
       "reviewer": "optimizely-saas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-saas.release-notes-index",
@@ -3670,11 +3670,11 @@
         "september-812242"
       ],
       "locator": "CMS 12 dated release-note entry headings",
-      "normalizedSha256": "5cd7d2f55a56fd7e28dc7b57444ce8789b4ab5c8c9edf19fe2ff794febc823da",
-      "observedAt": "2026-10-29T12:44:46.098Z",
+      "normalizedSha256": "e3f09038b645437e522bed1477dd0536fb691822e001b46e9f30c798ca927669",
+      "observedAt": "2026-10-30T08:00:20.341Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "d5bbdae9a33a291028fe1ee3e9d57c2da3c746eb13f825bf80412d65117b9255",
+      "rawSha256": "5b4379b7f1a7322b67f4a2ecf8592cbe9dccec7261d046041c139a673c0dc2fa",
       "replacementHistory": [
         {
           "reason": "The combined PaaS support-center section redirects off the official host allowlist and no longer lists release articles; CMS 12 and CMS 13 release notes are now separate official docs pages, so this index covers CMS 12 and optimizely-paas.cms13-release-notes-index covers CMS 13.",
@@ -3685,7 +3685,7 @@
       ],
       "requiredTokens": [],
       "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "reviewedAt": "2026-10-29T12:44:46.098Z",
+      "reviewedAt": "2026-10-30T08:00:20.341Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.release-notes-index",
@@ -3727,7 +3727,7 @@
         "identityPattern": "<h[23]\\b[^>]*\\bid=[\"']((?:january|february|march|april|may|june|july|august|september|october|november|december)-[a-z0-9-]+)[\"']",
         "kind": "list"
       },
-      "fragmentSha256": "cc0a39a0150a26e980e26ae708352f54bc24ed2b1c64e5a891a3656a78f063b4",
+      "fragmentSha256": "93da716e5ff1f279df3577396ff98a7d03fc566a27aee7eaddf184f3d2bb30cc",
       "identities": [
         "april-221302",
         "april-24beta-feature",
@@ -3762,6 +3762,7 @@
         "october-261341",
         "october-261342",
         "october-271350",
+        "october-291340",
         "october-51330",
         "september-111320",
         "september-18optimizelycmsforms-200",
@@ -3773,15 +3774,15 @@
         "september-91313"
       ],
       "locator": "CMS 13 dated release-note entry headings",
-      "normalizedSha256": "639fb066b7c03a54288fd8d1456d20340e83b4bc4a72b5e61f585efcdce08a62",
-      "observedAt": "2026-10-29T12:44:46.100Z",
+      "normalizedSha256": "c6b05e68abf5265dc686f6acede53e1ebdd7ee77e660cdf691d6bee1f2a821d6",
+      "observedAt": "2026-10-30T08:00:20.342Z",
       "observedTokens": null,
       "observedTokenSetSha256": null,
-      "rawSha256": "1e9f741fcb2c9de4d511f907aea47582f709b39eadb5bac0cd7595b49f71a11c",
+      "rawSha256": "d04bdddf6ed9461dee8f42bcc338c2b4fc964553bf876baffe00e7553a4e6ee4",
       "replacementHistory": [],
       "requiredTokens": [],
       "requiredTokenSetSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "reviewedAt": "2026-10-29T12:44:46.100Z",
+      "reviewedAt": "2026-10-30T08:00:20.342Z",
       "reviewer": "optimizely-paas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-paas.cms13-release-notes-index",
