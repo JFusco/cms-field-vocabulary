@@ -1,5 +1,5 @@
 {
-  "catalogDigest": "sha256:f05d02982c360b4f72051c59def1d835a47e83f173a41b153a81f82ce5ee5ee2",
+  "catalogDigest": "sha256:4659847408a487fa43b1030998137ae0c61e40971240bfb223faddceddcd5e55",
   "profiles": [
     {
       "digest": "sha256:6c50851d7d9551cfa03902e704a4966ff001b94899dfea6dca34a7140b59f6c3",
@@ -12,7 +12,7 @@
       "id": "contentstack.cma.saas"
     },
     {
-      "digest": "sha256:448de6fd65678afe077f533090d52272485a9bb17acef42d2821848368a731bb",
+      "digest": "sha256:8431107a07c5a9f2eaf01052c000b81208dd516ea56bd039d2686b58433e230f",
       "fieldCount": 15,
       "id": "optimizely-paas.cms12-model"
     },
