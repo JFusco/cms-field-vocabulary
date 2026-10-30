@@ -3422,12 +3422,12 @@
             "typicalUse": {
               "evidence": [
                 {
-                  "locator": "Common property types; Work with other content",
+                  "locator": "Common property types",
                   "sourceId": "optimizely-paas.cms12-builtins"
                 }
               ],
               "status": "documented",
-              "value": "Short text up to 255 characters."
+              "value": "Short or long plain text; length is configured with StringLength."
             },
             "valueShape": {
               "evidence": [

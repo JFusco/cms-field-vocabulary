@@ -47,7 +47,10 @@
     },
     {
       "sourceId": "optimizely-paas.cms12-builtins",
-      "locators": [{ "locator": "Common property types; Work with other content" }]
+      "locators": [
+        { "locator": "Common property types; Work with other content" },
+        { "locator": "Common property types" }
+      ]
     },
     {
       "sourceId": "optimizely-paas.cms12-property-attributes",
