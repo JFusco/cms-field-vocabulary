@@ -132,7 +132,11 @@
     },
     {
       "sourceId": "optimizely-saas.content-types",
-      "locators": [{ "locator": "Property types" }]
+      "locators": [
+        { "locator": "Property types" },
+        { "locator": "Properties > Data types" },
+        { "locator": "Properties > Validation fields" }
+      ]
     },
     {
       "sourceId": "optimizely-saas.sdk-modelling",

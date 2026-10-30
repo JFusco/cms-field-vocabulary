@@ -1,3 +1,25 @@
+# Release 1.3.2
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** correct SaaS URL and composition (`b254c03`)
+
+## Other changes
+
+- **wiki:** reconcile merged PR #110 [skip release] (`b95969c`)
+
 # Release 1.3.1
 
 ## Summary
