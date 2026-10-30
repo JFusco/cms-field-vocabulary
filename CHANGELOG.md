@@ -1,3 +1,25 @@
+# Release 1.3.3
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** correct CMS 12 String usage (`3368fe2`)
+
+## Other changes
+
+- **merge:** integrate main into 113 branch (`b373970`)
+
 # Release 1.3.2
 
 ## Summary
