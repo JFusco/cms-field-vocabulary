@@ -253,7 +253,7 @@
     {
       "nativeToken": "url",
       "valueShape": {
-        "kind": "object",
+        "kind": "string",
         "nullable": true
       },
       "typicalUse": "URL values, optionally refined for images or documents.",
@@ -265,7 +265,7 @@
         "valueShape": [
           {
             "sourceId": "optimizely-saas.content-types",
-            "locator": "Property types"
+            "locator": "Properties > Data types"
           }
         ],
         "typicalUse": [
@@ -366,38 +366,27 @@
     },
     {
       "nativeToken": "content",
-      "valueShape": {
-        "kind": "reference",
-        "nullable": true
-      },
-      "typicalUse": "Content relationships.",
-      "editorBehavior": "Content selector constrained by permitted types.",
-      "storageShape": "Content relationship.",
+      "valueShape": null,
+      "typicalUse": "Composition of another content item, inline or referenced.",
+      "editorBehavior": "Accepts any content type unless limited: allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes.",
+      "storageShape": null,
       "deliveryShape": null,
       "renderingOperations": [],
       "claimEvidence": {
-        "valueShape": [
-          {
-            "sourceId": "optimizely-saas.content-types",
-            "locator": "Property types"
-          }
-        ],
         "typicalUse": [
           {
             "sourceId": "optimizely-saas.content-types",
-            "locator": "Property types"
+            "locator": "Properties > Data types"
           }
         ],
         "editorBehavior": [
           {
             "sourceId": "optimizely-saas.content-types",
-            "locator": "Property types"
-          }
-        ],
-        "storageShape": [
+            "locator": "Properties > Validation fields"
+          },
           {
             "sourceId": "optimizely-saas.content-types",
-            "locator": "Property types"
+            "locator": "Properties > Data types"
           }
         ]
       }

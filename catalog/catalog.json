@@ -8438,12 +8438,16 @@
             "editorBehavior": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Validation fields",
+                  "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Content selector constrained by permitted types."
+              "value": "Accepts any content type unless limited: allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes."
             },
             "nativeType": {
               "evidence": [
@@ -8456,57 +8460,30 @@
               "value": "content"
             },
             "storageShape": {
-              "evidence": [
-                {
-                  "locator": "Property types",
-                  "sourceId": "optimizely-saas.content-types"
-                }
-              ],
-              "status": "documented",
-              "value": "Content relationship."
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
             },
             "typicalUse": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Content relationships."
+              "value": "Composition of another content item, inline or referenced."
             },
             "valueShape": {
-              "evidence": [
-                {
-                  "locator": "Property types",
-                  "sourceId": "optimizely-saas.content-types"
-                }
-              ],
-              "status": "documented",
-              "value": {
-                "kind": "reference",
-                "nullable": true
-              }
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
             }
           },
           "formats": [],
           "nativeToken": "content",
           "origin": "native",
-          "renderingOperations": [
-            {
-              "authority": "contract-derived",
-              "claimRefs": [
-                "claims.valueShape"
-              ],
-              "id": "optimizely-saas.cms-api-v1.content.render",
-              "nullHandling": "preserve",
-              "operation": "reference",
-              "prohibitionCodes": [
-                "flatten-reference"
-              ],
-              "valuePath": "$"
-            }
-          ]
+          "renderingOperations": []
         },
         {
           "applicability": {
@@ -9289,13 +9266,13 @@
             "valueShape": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
               "value": {
-                "kind": "object",
+                "kind": "string",
                 "nullable": true
               }
             }
@@ -9311,10 +9288,8 @@
               ],
               "id": "optimizely-saas.cms-api-v1.url.render",
               "nullHandling": "preserve",
-              "operation": "pass-through",
-              "prohibitionCodes": [
-                "flatten-structured-value"
-              ],
+              "operation": "direct",
+              "prohibitionCodes": [],
               "valuePath": "$"
             }
           ]
@@ -23298,5 +23273,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:1c5c474b9062a38f046f1e6e43127a1867f553415237d9668646dd1cf39aa6b6"
+  "sourceLockDigest": "sha256:6c8617b27fe01601bb11e2417002718754359c555fc7c4fe1d02f705e71994c9"
 }
