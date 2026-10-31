@@ -188,7 +188,7 @@
         "itemKind": "content"
       },
       "typicalUse": "Ordered collections of content.",
-      "editorBehavior": "Content area editor.",
+      "editorBehavior": "Content area editor. Not available for elements; Content Reference is the only Content Type option available for elements.",
       "storageShape": null,
       "deliveryShape": null,
       "renderingOperations": [],
@@ -209,6 +209,10 @@
           {
             "sourceId": "optimizely-paas.cms13-content-property",
             "locator": "Content Type > Content Area"
+          },
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Note following Content Reference"
           }
         ]
       }
@@ -226,7 +230,7 @@
         "nullable": true
       },
       "typicalUse": "An item placed in a content area.",
-      "editorBehavior": "Content area item configuration.",
+      "editorBehavior": "Content area item configuration. Not available for elements; Content Reference is the only Content Type option available for elements.",
       "storageShape": null,
       "deliveryShape": null,
       "renderingOperations": [],
@@ -247,6 +251,10 @@
           {
             "sourceId": "optimizely-paas.cms13-content-property",
             "locator": "Content Type > Content Area Item"
+          },
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Note following Content Reference"
           }
         ]
       }
@@ -264,7 +272,7 @@
         "nullable": true
       },
       "typicalUse": "References to content.",
-      "editorBehavior": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract.",
+      "editorBehavior": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract. Content Reference is the only Content Type option available for elements.",
       "storageShape": null,
       "deliveryShape": "Optimizely Graph returns the full typed object for a specific Reference Type, but only contentLink when Reference Type is Any with allowed content types.",
       "renderingOperations": [],
@@ -285,6 +293,10 @@
           {
             "sourceId": "optimizely-paas.cms13-content-property",
             "locator": "Select global contracts for typed content reference properties"
+          },
+          {
+            "sourceId": "optimizely-paas.cms13-content-property",
+            "locator": "Content Type > Note following Content Reference"
           }
         ],
         "deliveryShape": [

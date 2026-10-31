@@ -3422,12 +3422,12 @@
             "typicalUse": {
               "evidence": [
                 {
-                  "locator": "Common property types; Work with other content",
+                  "locator": "Common property types",
                   "sourceId": "optimizely-paas.cms12-builtins"
                 }
               ],
               "status": "documented",
-              "value": "Short text up to 255 characters."
+              "value": "Short or long plain text; length is configured with StringLength."
             },
             "valueShape": {
               "evidence": [
@@ -4983,10 +4983,14 @@
                 {
                   "locator": "Content Type > Content Area",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content area editor."
+              "value": "Content area editor. Not available for elements; Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
@@ -5078,10 +5082,14 @@
                 {
                   "locator": "Content Type > Content Area Item",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content area item configuration."
+              "value": "Content area item configuration. Not available for elements; Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
@@ -5173,10 +5181,14 @@
                 {
                   "locator": "Select global contracts for typed content reference properties",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract."
+              "value": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract. Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
@@ -8426,12 +8438,16 @@
             "editorBehavior": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Validation fields",
+                  "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Content selector constrained by permitted types."
+              "value": "Accepts any content type unless limited: allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes."
             },
             "nativeType": {
               "evidence": [
@@ -8444,57 +8460,30 @@
               "value": "content"
             },
             "storageShape": {
-              "evidence": [
-                {
-                  "locator": "Property types",
-                  "sourceId": "optimizely-saas.content-types"
-                }
-              ],
-              "status": "documented",
-              "value": "Content relationship."
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
             },
             "typicalUse": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Content relationships."
+              "value": "Composition of another content item, inline or referenced."
             },
             "valueShape": {
-              "evidence": [
-                {
-                  "locator": "Property types",
-                  "sourceId": "optimizely-saas.content-types"
-                }
-              ],
-              "status": "documented",
-              "value": {
-                "kind": "reference",
-                "nullable": true
-              }
+              "evidence": [],
+              "status": "undocumented",
+              "value": null
             }
           },
           "formats": [],
           "nativeToken": "content",
           "origin": "native",
-          "renderingOperations": [
-            {
-              "authority": "contract-derived",
-              "claimRefs": [
-                "claims.valueShape"
-              ],
-              "id": "optimizely-saas.cms-api-v1.content.render",
-              "nullHandling": "preserve",
-              "operation": "reference",
-              "prohibitionCodes": [
-                "flatten-reference"
-              ],
-              "valuePath": "$"
-            }
-          ]
+          "renderingOperations": []
         },
         {
           "applicability": {
@@ -9277,13 +9266,13 @@
             "valueShape": {
               "evidence": [
                 {
-                  "locator": "Property types",
+                  "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
               "value": {
-                "kind": "object",
+                "kind": "string",
                 "nullable": true
               }
             }
@@ -9299,10 +9288,8 @@
               ],
               "id": "optimizely-saas.cms-api-v1.url.render",
               "nullHandling": "preserve",
-              "operation": "pass-through",
-              "prohibitionCodes": [
-                "flatten-structured-value"
-              ],
+              "operation": "direct",
+              "prohibitionCodes": [],
               "valuePath": "$"
             }
           ]
@@ -23286,5 +23273,5 @@
     }
   ],
   "schemaVersion": 1,
-  "sourceLockDigest": "sha256:fd97bc72a7f5f173d4a0817d44cc1f7d6b4ddfb59de52ae92d603fdc3daa4db7"
+  "sourceLockDigest": "sha256:b2c514832fac29ec153e0fb2519e02380e2b5042b34430d1a302e4ee199fb9ff"
 }

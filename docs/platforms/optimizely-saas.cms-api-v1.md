@@ -12,7 +12,7 @@
 | `array` | {"kind":"array","nullable":true,"itemKind":"property-defined"} | Lists whose item type is declared by items. | iterate; read $; forbid flatten-list | contract-derived | optimizely-saas.content-types — Property types |
 | `boolean` | {"kind":"boolean","nullable":true} | True/false choices. | branch; read $ | contract-derived | optimizely-saas.content-types — Property types |
 | `component` | {"kind":"object","nullable":true} | Embedded component properties. | pass-through; read $; forbid flatten-structured-value | contract-derived | optimizely-saas.content-types — Property types |
-| `content` | {"kind":"reference","nullable":true} | Content relationships. | reference; read $; forbid flatten-reference | contract-derived | optimizely-saas.content-types — Property types |
+| `content` | Undocumented | Composition of another content item, inline or referenced. | Undocumented | undocumented | optimizely-saas.content-types — Properties > Data types<br>optimizely-saas.content-types — Properties > Validation fields<br>optimizely-saas.content-types — Property types |
 | `contentReference` | {"kind":"reference","nullable":true} | References to content or media. | reference; read $; forbid flatten-reference | contract-derived | optimizely-saas.content-types — Property types |
 | `dateTime` | {"kind":"datetime","nullable":true} | Date and time values. | format; read $ | contract-derived | optimizely-saas.content-types — Property types |
 | `float` | {"kind":"number","nullable":true} | Decimal numbers. | direct; read $ | contract-derived | optimizely-saas.content-types — Property types |
@@ -21,4 +21,4 @@
 | `link` | {"kind":"object","nullable":true} | Links with authored metadata. | pass-through; read $; forbid flatten-structured-value | contract-derived | optimizely-saas.content-types — Property types |
 | `richText` | {"kind":"rich-text","nullable":true} | Structured rich text. | pass-through; read $; forbid coerce-rich-text-to-plain-string | contract-derived | optimizely-saas.content-types — Property types |
 | `string` | {"kind":"string","nullable":true} | Text values. | direct; read $ | contract-derived | optimizely-saas.content-types — Property types |
-| `url` | {"kind":"object","nullable":true} | URL values, optionally refined for images or documents. | pass-through; read $; forbid flatten-structured-value | contract-derived | optimizely-saas.content-types — Property types |
+| `url` | {"kind":"string","nullable":true} | URL values, optionally refined for images or documents. | direct; read $ | contract-derived | optimizely-saas.content-types — Properties > Data types<br>optimizely-saas.content-types — Property types |
