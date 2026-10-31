@@ -30,7 +30,7 @@
         "kind": "string",
         "nullable": true
       },
-      "typicalUse": "Short text up to 255 characters.",
+      "typicalUse": "Short or long plain text; length is configured with StringLength.",
       "editorBehavior": "Single-line text editor by default.",
       "storageShape": "String.",
       "deliveryShape": null,
@@ -45,7 +45,7 @@
         "typicalUse": [
           {
             "sourceId": "optimizely-paas.cms12-builtins",
-            "locator": "Common property types; Work with other content"
+            "locator": "Common property types"
           }
         ],
         "editorBehavior": [

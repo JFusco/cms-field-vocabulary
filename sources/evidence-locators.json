@@ -47,7 +47,10 @@
     },
     {
       "sourceId": "optimizely-paas.cms12-builtins",
-      "locators": [{ "locator": "Common property types; Work with other content" }]
+      "locators": [
+        { "locator": "Common property types; Work with other content" },
+        { "locator": "Common property types" }
+      ]
     },
     {
       "sourceId": "optimizely-paas.cms12-property-attributes",
@@ -103,6 +106,7 @@
         { "locator": "Content Type > Content Area" },
         { "locator": "Content Type > Content Area Item" },
         { "locator": "Content Type > Content Reference" },
+        { "locator": "Content Type > Note following Content Reference" },
         { "locator": "Select global contracts for typed content reference properties" },
         { "locator": "Property mapping for external content" }
       ]
@@ -129,7 +133,11 @@
     },
     {
       "sourceId": "optimizely-saas.content-types",
-      "locators": [{ "locator": "Property types" }]
+      "locators": [
+        { "locator": "Property types" },
+        { "locator": "Properties > Data types" },
+        { "locator": "Properties > Validation fields" }
+      ]
     },
     {
       "sourceId": "optimizely-saas.sdk-modelling",

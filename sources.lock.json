@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-29T12:30:41.088Z",
+  "reviewedAt": "2026-10-30T02:35:00.357Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -503,11 +503,11 @@
           "component"
         ]
       },
-      "fragmentSha256": "b08bda7796a40b7e508e7c58709021cd23b4cc10d7fe6141b61066213fa56971",
+      "fragmentSha256": "af0bbf3380b0da68cfa9434f3d99636c51fa9ac525882aa392f6df6f8e11956a",
       "identities": [],
       "locator": "Property types",
-      "normalizedSha256": "b1943e711d01ee85481ccda0d96e890f0f0e0a0ba43765f41aafa1bfd4f1bebd",
-      "observedAt": "2026-09-02T10:54:24.337Z",
+      "normalizedSha256": "e54ab03cb85de84b73cee4258e893c5d6aaa2bf07ee8d7df28017b7990905c8c",
+      "observedAt": "2026-10-30T02:34:59.488Z",
       "observedTokens": [
         "array",
         "boolean",
@@ -524,7 +524,7 @@
         "url"
       ],
       "observedTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
-      "rawSha256": "019e8a5d89a9da5771956f514fd20ee450148e1c257e80bd4640a531206dfdaf",
+      "rawSha256": "97af0f7385d435f82d4300397f765e980c0be872f0449907ad9e9a575152f4cd",
       "replacementHistory": [],
       "requiredTokens": [
         "array",
@@ -543,7 +543,7 @@
       ],
       "requiredTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
       "resolvedRevision": "CMS SaaS API v1",
-      "reviewedAt": "2026-09-02T10:54:24.337Z",
+      "reviewedAt": "2026-10-30T02:34:59.488Z",
       "reviewer": "optimizely-saas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-saas.content-types",
@@ -553,7 +553,7 @@
         "value": "CMS SaaS API v1"
       },
       "title": "Content types in Optimizely CMS SaaS",
-      "url": "https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/content-types-saas",
+      "url": "https://docs.optimizely.com/cms-saas/docs/content-types-saas",
       "vendor": "Optimizely"
     },
     {

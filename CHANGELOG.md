@@ -1,3 +1,69 @@
+# Release 1.3.4
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** qualify CMS 13 element content (`7c367b4`)
+
+## Other changes
+
+- None.
+
+# Release 1.3.3
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** correct CMS 12 String usage (`3368fe2`)
+
+## Other changes
+
+- **merge:** integrate main into 113 branch (`b373970`)
+
+# Release 1.3.2
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** correct SaaS URL and composition (`b254c03`)
+
+## Other changes
+
+- **wiki:** reconcile merged PR #110 [skip release] (`b95969c`)
+
 # Release 1.3.1
 
 ## Summary
