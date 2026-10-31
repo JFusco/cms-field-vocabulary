@@ -1,3 +1,29 @@
+# Release 1.3.6
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 3 fixes, and 3 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **sources:** rebind Optimizely index observations (`15e85e5`)
+- **sources:** reject wrong-product release redirects (`7f84b46`)
+- **sources:** restore Optimizely release indexes (`8d1ea2b`)
+
+## Other changes
+
+- **merge:** integrate main into 91 branch (`0f97945`)
+- **merge:** integrate main into 91 branch (`d878bd9`)
+- **wiki:** record CMS 13 GA release-note review (`454d3a7`)
+
 # Release 1.3.5
 
 ## Summary
