@@ -14,6 +14,7 @@ The registered support-center sections for `optimizely-saas.release-notes-index`
 - The new `optimizely-paas.cms13-release-notes-index` covers the CMS 13 page for `optimizely-paas.cms13-admin` and `optimizely-paas.cms13-model`.
 - All three sources extract identities from dated `h2`/`h3` heading IDs, for example `october-21` or `october-271350`. Replacement history records the two retired support-center URLs.
 - If a release-index page returns no entry identities, the scanner now reports it as `unreachable` instead of observing it as source content. This covers sign-in pages and unrelated in-host redirects. The allowlist still rejects off-host redirects.
+- A release index must also resolve to its registered document. A redirect whose final origin and path differ from the registered URL, ignoring a trailing slash and query string, is `unreachable`. Before this guard, an in-host redirect from the SaaS page to the CMS 12 page would have been observed as SaaS content with valid CMS 12 entry identities.
 
 The October 29 observations below are retained as historical proposals. Their metadata alone does not establish retained same-response body evidence; the amendment ledger records the current response binding.
 
@@ -39,7 +40,16 @@ Every field-relevant 2026 entry was compared with the affected profiles. Identit
 - `may-18`: content type binding maps less capable property types to more capable ones, and Graph indexes the external DAM URL for LinkItem `url.default`/`url.hierarchical`. No impact. Binding mappings are not native types, and the URL fix corrects a value without changing the LinkItem delivery shape.
 - `march-28`: select and dropdown choice values are validated against their options. No impact. This is consistent with constraint-refined string editors.
 - `february-24` (contracts) and `february-13` (SDK GA, block property binding, nested block saves): no field-type or shape claim.
-- Mark agents, analytics, forms, Graph and REST API administration, security, and bug-fix entries make no field-vocabulary claim. The bug fixes restore documented behavior.
+- `october-30`: saves now enforce nesting limits (inline blocks 8 levels, Visual Builder layouts 4, JSON property values 8, REST request bodies 64). CMS-57992 stops applying `required` to single block properties but keeps it on block lists. CMS-57293 fixes rich text over 255 characters missing from inline blocks loaded in batches. No impact. The official [content-types reference](https://docs.optimizely.com/cms-saas/docs/content-types-saas) already documents these depth limits. They constrain values without adding a token or changing a value, storage or delivery shape, and the profiles make no depth or `required` claim.
+- `september-14`: an experience can hold several compositions. Administrators add a composition property in Settings > Content Types, choose an Outline or Grid layout type, and restrict accepted content types. CMS-55291 adds full CSS property names to rich-text JSON delivered to Graph. CMS-54849 and CMS-52979 fix DateTime display and the `formsElementEnabled` composition behavior. No evidenced impact. The entry names no REST property type token or value shape. On October 31 the cited content-types reference still listed exactly the 13 profile tokens, with no composition type, so no token is inferred. Layout composition stays an experience-level structure, and `compositionBehaviors` is a type-level setting. The rich-text change adds style names inside the same JSON shape. If Optimizely documents a native composition property type, it needs its own focused profile change.
+- `october-7`: REST API scopes, file sanitization, indexing speed, category fallback names, and composition order in Visual Builder. No impact.
+- `september-22`: experience preview, and a block list referencing a missing content type now returns a validation error. No impact. This is error handling, not a shape change.
+- `august-31`: categories are indexed into Graph as `_itemMetadata.categories` and `_TaxonomyTerm`. The REST OpenAPI 3.1 specification lists former strict enum values as examples, and the entry states runtime behavior is unchanged. No impact. Categories are item metadata, not a property type. The API profile's tokens come from the content-types reference, not an OpenAPI enum.
+- `august-7`: creating content from a blueprint, form step rules, Graph `item` queries for CMS assets in a content reference, and TinyMCE link indexing. No impact. These fixes restore documented behavior.
+- `july-15`: property filters in Content Manager, form submission columns, read-only block lists, and strict REST number handling (CMS-53094). No impact. Strict number handling matches the integer and float value kinds.
+- `may-5`: JavaScript SDK general availability summary. No impact. The pinned SDK profiles record the SDK contracts.
+- `april-21`, `february-3`, `january-27`, `june-23`: DAM picker, external content sources, read-only mapped properties, Mark tools, and editor fixes for Content Area, ContentReference and XhtmlString. No impact. These are editor, integration and tooling changes.
+- Mark agents, analytics, forms, Graph and REST API administration, security, and bug-fix entries make no field-vocabulary claim. The bug fixes restore documented behavior. This covers every other SaaS identity.
 
 ### CMS 12 (`optimizely-paas.cms12-property-data-type`, `optimizely-paas.cms12-model`)
 
@@ -55,9 +65,17 @@ Every field-relevant 2026 entry was compared with the affected profiles. Identit
 - `april-91301`: **Create a new block** in content areas defaults to inline blocks. No impact. The Content Area editor claim remains accurate.
 - `july-301311`: Graph C# SDK field-name mappings. No impact. This is SDK configuration, not a field type.
 - `august-191300`: Content Delivery API 13.0 uses `System.Text.Json` and `/api/episerver/v4.0`. No impact on these profiles, which claim no Content Delivery API delivery shape.
-- Other CMS Core fixes (13.0.1 through 13.5.0), Forms, Mark tools, Language Manager, MA connectors, DXP, and the duplicated JavaScript SDK entries: no field-vocabulary claim.
+- `october-301351` (13.5.1): Graph no longer indexes fallback versions for languages with no content and no global fallback language. No impact. This is language indexing, not a property shape.
+- `october-291340` (13.4.0 MCP): Opti ID sign-in for the MCP server. No impact.
+- `september-91313` (13.1.3): CMS-53287 lets Graph `item` queries return CMS assets in a content reference field. CMS-54881 honors `[AllowedTypes]` in the block type dialog. CMS-55218 persists `PropertyList<T>` items containing XhtmlString. CMS-55298 indexes rich text nested past the configured maximum depth as HTML only. No impact. The admin Content Reference delivery claim distinguishes specific and Any reference types, and this fix does not change that distinction. The other fixes restore documented editor behavior. The profiles make no rich-text Graph delivery claim.
+- `september-211320` (13.2.0): CMS-55319 fixes creating typed block lists (`IList<TBlock>`) through the CMS REST API. No impact. This restores documented behavior, and these profiles claim no REST wire shape.
+- `october-51330`, `october-261341`, `october-261342`, `october-271350`, `april-221302`, `august-211312`: DAM migration, mapped-property validation, culture-specific value loss, inline block and content-area editor fixes, and composition cache keys. No impact. These fixes restore documented behavior.
+- `may-221300`, `august-211311`, `august-281312`, `september-231331`: CMS 13 Mark tools for content types, compositions and content areas. No impact. Tool payloads are not native field types.
+- Other CMS Core fixes (13.0.1 through 13.5.1), Forms, Mark tools, Language Manager, MA connectors, DXP, and the duplicated JavaScript SDK entries: no field-vocabulary claim.
 
-None of these 2026 entries contradicts a structured claim in the seven listed profiles, so no profile change is proposed. The same scan found unrelated `version-changing` release-index drift for other vendors and for `optimizely-saas.sdk-releases-index`. That drift is out of scope here. The Optimizely source-lock observations need maintainer acceptance before merge.
+None of these 2026 entries contradicts a structured claim in the seven listed profiles, so no profile change is proposed. The October 31 review re-read every dated entry on all three pages, including the entries published after the first proposal. The same scan found unrelated `version-changing` release-index drift for other vendors and for `optimizely-saas.sdk-releases-index`. That drift is out of scope here. The Optimizely source-lock observations need maintainer acceptance before merge.
+
+The October 30 response bindings (SaaS raw `e9ee9a01…`, CMS 12 raw `5b4379b7…`, CMS 13 raw `d04bdddf…`, CMS 13 fragment `93da716e…`) are superseded below. They predate the redirect guard and the `october-30` and `october-301351` entries.
 
 <!-- office-source-amendment-evidence:v1 -->
 ## Source amendment evidence
@@ -66,15 +84,15 @@ These three proposed response bindings require independent source review and QA.
 
 | Source | Observed at (UTC) | Identities | Raw SHA-256 | Normalized SHA-256 | Fragment SHA-256 |
 | --- | --- | --- | --- | --- | --- |
-| `optimizely-saas.release-notes-index` | 2026-10-30T08:00:20.308Z | 32 | `e9ee9a01d05853f7525041fd26230bc6bf23fb55cfde6f9471bf522101d03486` | `e266f35b8c6049f7aa057b743d42bffd0876a74e0ee890d32cf336d45f76a9f0` | `a690604186b8ef506173ea03805c784dc4e8cb1748212df0791c4505b9066abd` |
-| `optimizely-paas.release-notes-index` | 2026-10-30T08:00:20.341Z | 52 | `5b4379b7f1a7322b67f4a2ecf8592cbe9dccec7261d046041c139a673c0dc2fa` | `e3f09038b645437e522bed1477dd0536fb691822e001b46e9f30c798ca927669` | `bac88f723394fb1f7a66c238b926825b7d41a356ed6e33a3d2814a48d5d2d6e8` |
-| `optimizely-paas.cms13-release-notes-index` | 2026-10-30T08:00:20.342Z | 43 | `d04bdddf6ed9461dee8f42bcc338c2b4fc964553bf876baffe00e7553a4e6ee4` | `c6b05e68abf5265dc686f6acede53e1ebdd7ee77e660cdf691d6bee1f2a821d6` | `93da716e5ff1f279df3577396ff98a7d03fc566a27aee7eaddf184f3d2bb30cc` |
+| `optimizely-saas.release-notes-index` | 2026-10-31T18:09:02.303Z | 33 | `32394707896f1ff10543de99db946cad93161cf3d931294a5571fff0a048cb23` | `3cadd938ffe81b27a3015e235838851f309beac0c9813b6f06dde71318312d35` | `913b3fd6f0da1956e4b97ebec1434decb10b57744dbf8bda89e0091a62ed02b1` |
+| `optimizely-paas.release-notes-index` | 2026-10-31T18:09:03.867Z | 52 | `a400a84ad653ceefefeab4305488f40028932e46e29386d023ae822900560a5a` | `03776faa51989e7b74f6f110b45d86a1087136654e5772db8975db6480433278` | `bac88f723394fb1f7a66c238b926825b7d41a356ed6e33a3d2814a48d5d2d6e8` |
+| `optimizely-paas.cms13-release-notes-index` | 2026-10-31T18:09:05.268Z | 44 | `925eebc44c6f2f876b24945d9c503a7364cd921a73520707725bbd75237596ba` | `aed259c7051f60574f27ec11b8df993e06ad2483d349c775a43ce7250d59b4d2` | `d4addda65fad9cc531e6901bff59f441aa471f1b0aaa0be4640b5a9042e1b406` |
 
 Identity changes relative to the original proposal are inventory evidence; their claim applicability remains an independent review obligation.
 
 | Source | Added identities | Removed identities |
 | --- | --- | --- |
-| `optimizely-saas.release-notes-index` | none | none |
+| `optimizely-saas.release-notes-index` | `october-30` | none |
 | `optimizely-paas.release-notes-index` | none | none |
-| `optimizely-paas.cms13-release-notes-index` | `october-291340` | none |
+| `optimizely-paas.cms13-release-notes-index` | `october-291340`, `october-301351` | none |
 <!-- /office-source-amendment-evidence:v1 -->

@@ -248,6 +248,32 @@ test('Optimizely release indexes identify dated entries and reject pages without
   assert.equal(classifyObservation(signIn, locked(), source), 'unreachable');
 });
 
+test('release indexes reject redirects to a different product document', async (t) => {
+  const originalFetch = globalThis.fetch;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+  const manifest = await readJson('sources/official-sources.json');
+  const source = manifest.sources.find((entry) => entry.id === 'optimizely-saas.release-notes-index');
+  const page = '<h2 id="october-9" class="ab-h2">October 9</h2>';
+  const redirectTo = (location) => async (url) => (String(url) === source.url
+    ? new Response(null, { status: 301, headers: { location } })
+    : new Response(page, { status: 200 }));
+
+  globalThis.fetch = redirectTo('https://docs.optimizely.com/cms-12/release-notes');
+  const wrongProduct = await observeSource(source);
+  assert.equal(wrongProduct.reviewStatus, 'unreachable');
+  assert.equal(wrongProduct.url, source.url);
+  assert.deepEqual(wrongProduct.identities, []);
+  assert.match(wrongProduct.note, /redirected to a different document: https:\/\/docs\.optimizely\.com\/cms-12\/release-notes/);
+  assert.equal(classifyObservation(wrongProduct, locked(), source), 'unreachable');
+
+  globalThis.fetch = redirectTo(`${source.url}/?lang=en`);
+  const sameDocument = await observeSource(source);
+  assert.equal(sameDocument.reviewStatus, 'reviewed');
+  assert.deepEqual(sameDocument.identities, ['october-9']);
+});
+
 test('a source present in the reviewed lock but removed from the manifest is classified as removed', () => {
   assert.equal(classifyObservation(observation({ removed: true }), locked(), 'enumeration'), 'removed');
 });
