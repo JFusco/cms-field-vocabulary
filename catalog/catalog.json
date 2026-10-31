@@ -4983,10 +4983,14 @@
                 {
                   "locator": "Content Type > Content Area",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content area editor."
+              "value": "Content area editor. Not available for elements; Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
@@ -5078,10 +5082,14 @@
                 {
                   "locator": "Content Type > Content Area Item",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content area item configuration."
+              "value": "Content area item configuration. Not available for elements; Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
@@ -5173,10 +5181,14 @@
                 {
                   "locator": "Select global contracts for typed content reference properties",
                   "sourceId": "optimizely-paas.cms13-content-property"
+                },
+                {
+                  "locator": "Content Type > Note following Content Reference",
+                  "sourceId": "optimizely-paas.cms13-content-property"
                 }
               ],
               "status": "documented",
-              "value": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract."
+              "value": "Content selector. A typed Reference Type limits the picker to matching content types; a global contract also offers connected types that implement that contract. Content Reference is the only Content Type option available for elements."
             },
             "nativeType": {
               "evidence": [
