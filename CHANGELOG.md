@@ -1,3 +1,27 @@
+# Release 1.3.5
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 3 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **merge:** integrate main into 100 branch (`7d3d4aa`)
+- **sources:** review Optimizely field-doc claims (`2586892`)
+- **wiki:** link Optimizely claim follow-ups (`9ec87b6`)
+
 # Release 1.3.4
 
 ## Summary
