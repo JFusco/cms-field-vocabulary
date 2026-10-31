@@ -1,3 +1,25 @@
+# Release 1.3.4
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **optimizely:** qualify CMS 13 element content (`7c367b4`)
+
+## Other changes
+
+- None.
+
 # Release 1.3.3
 
 ## Summary
