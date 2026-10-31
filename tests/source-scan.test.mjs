@@ -10,7 +10,7 @@ import {
   observeSource,
   requiresAttention,
 } from '../scripts/source-scan.mjs';
-import { canonicalJson } from './helpers.mjs';
+import { canonicalJson, readJson } from './helpers.mjs';
 
 function hash(value) {
   return createHash('sha256').update(value).digest('hex');
@@ -221,6 +221,57 @@ test('source fetching refuses redirects outside each source allowlist', async (t
     /Redirect escaped official host allowlist: untrusted\.example/,
   );
   assert.equal(calls, 1);
+});
+
+test('Optimizely release indexes identify dated entries and reject pages without them', async (t) => {
+  const originalFetch = globalThis.fetch;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+  const manifest = await readJson('sources/official-sources.json');
+  const source = manifest.sources.find((entry) => entry.id === 'optimizely-paas.cms13-release-notes-index');
+  globalThis.fetch = async () => new Response([
+    '<h1>2026 Optimizely CMS 13 release notes</h1>',
+    '<h2 id="release-highlights" class="ab-h2">Release highlights</h2>',
+    '<h2 id="august-27" class="ab-h2">August 27</h2>',
+    '<h3 class="ab-h3" id="october-271350">October 27—13.5.0</h3>',
+    '<a href="/cms-13/release-notes#october-261342">October 26</a>',
+  ].join(''), { status: 200 });
+  const listed = await observeSource(source);
+  assert.equal(listed.reviewStatus, 'reviewed');
+  assert.deepEqual(listed.identities, ['august-27', 'october-271350']);
+
+  globalThis.fetch = async () => new Response('<h1>Sign in</h1><h2 id="sign-in-to-optimizely">Sign in to Optimizely</h2>', { status: 200 });
+  const signIn = await observeSource(source);
+  assert.equal(signIn.reviewStatus, 'unreachable');
+  assert.match(signIn.note, /no version or entry identities/);
+  assert.equal(classifyObservation(signIn, locked(), source), 'unreachable');
+});
+
+test('release indexes reject redirects to a different product document', async (t) => {
+  const originalFetch = globalThis.fetch;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+  const manifest = await readJson('sources/official-sources.json');
+  const source = manifest.sources.find((entry) => entry.id === 'optimizely-saas.release-notes-index');
+  const page = '<h2 id="october-9" class="ab-h2">October 9</h2>';
+  const redirectTo = (location) => async (url) => (String(url) === source.url
+    ? new Response(null, { status: 301, headers: { location } })
+    : new Response(page, { status: 200 }));
+
+  globalThis.fetch = redirectTo('https://docs.optimizely.com/cms-12/release-notes');
+  const wrongProduct = await observeSource(source);
+  assert.equal(wrongProduct.reviewStatus, 'unreachable');
+  assert.equal(wrongProduct.url, source.url);
+  assert.deepEqual(wrongProduct.identities, []);
+  assert.match(wrongProduct.note, /redirected to a different document: https:\/\/docs\.optimizely\.com\/cms-12\/release-notes/);
+  assert.equal(classifyObservation(wrongProduct, locked(), source), 'unreachable');
+
+  globalThis.fetch = redirectTo(`${source.url}/?lang=en`);
+  const sameDocument = await observeSource(source);
+  assert.equal(sameDocument.reviewStatus, 'reviewed');
+  assert.deepEqual(sameDocument.identities, ['october-9']);
 });
 
 test('a source present in the reviewed lock but removed from the manifest is classified as removed', () => {

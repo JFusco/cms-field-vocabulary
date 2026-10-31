@@ -1954,8 +1954,8 @@
     "optimizely-paas.cms13-choice-property",
     "optimizely-paas.cms13-content-property",
     "optimizely-paas.cms13-link-property",
-    "optimizely-paas.cms13-text-property",
-    "optimizely-paas.release-notes-index"
+    "optimizely-paas.cms13-release-notes-index",
+    "optimizely-paas.cms13-text-property"
   ],
   "surface": "authoring",
   "transport": "CMS 13 admin content-modeling property labels",

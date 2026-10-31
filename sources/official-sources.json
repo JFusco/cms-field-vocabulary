@@ -904,15 +904,23 @@
       "id": "optimizely-saas.release-notes-index",
       "vendor": "Optimizely",
       "title": "Release notes - CMS SaaS",
-      "url": "https://support.optimizely.com/hc/en-us/sections/27677047812109-Release-notes",
-      "allowedHosts": ["support.optimizely.com"],
+      "url": "https://docs.optimizely.com/cms-saas/release-notes",
+      "allowedHosts": ["docs.optimizely.com"],
       "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2", "optimizely-saas.sdk-3"],
       "role": "release-index",
       "completeness": "supplemental",
       "version": { "mode": "release-index" },
-      "locator": "CMS SaaS release-note article links",
-      "extract": { "kind": "list", "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)", "identityFlags": "gi", "identityCapture": 1 },
-      "reviewOwner": "optimizely-saas"
+      "locator": "CMS SaaS dated release-note entry headings",
+      "extract": { "kind": "list", "identityPattern": "<h[23]\\b[^>]*\\bid=[\"']((?:january|february|march|april|may|june|july|august|september|october|november|december)-[a-z0-9-]+)[\"']", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "optimizely-saas",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-10-29T12:45:00Z",
+          "reason": "The support-center section redirects off the official host allowlist and no longer lists release articles; the current-year CMS SaaS release notes are published on one official docs page whose dated entry headings replace the old article-link identities.",
+          "replacedUrl": "https://support.optimizely.com/hc/en-us/sections/27677047812109-Release-notes",
+          "replacementUrl": "https://docs.optimizely.com/cms-saas/release-notes"
+        }
+      ]
     },
     {
       "id": "optimizely-saas.sdk-releases-index",
@@ -931,15 +939,37 @@
     {
       "id": "optimizely-paas.release-notes-index",
       "vendor": "Optimizely",
-      "title": "Release notes - CMS PaaS",
-      "url": "https://support.optimizely.com/hc/en-us/sections/23974970699533-Release-notes",
-      "allowedHosts": ["support.optimizely.com"],
-      "profiles": ["optimizely-paas.cms12-property-data-type", "optimizely-paas.cms12-model", "optimizely-paas.cms13-admin", "optimizely-paas.cms13-model"],
+      "title": "Release notes - CMS 12",
+      "url": "https://docs.optimizely.com/cms-12/release-notes",
+      "allowedHosts": ["docs.optimizely.com"],
+      "profiles": ["optimizely-paas.cms12-property-data-type", "optimizely-paas.cms12-model"],
       "role": "release-index",
       "completeness": "supplemental",
       "version": { "mode": "release-index" },
-      "locator": "CMS PaaS release-note article links",
-      "extract": { "kind": "list", "identityPattern": "href=[\"']([^\"']*/hc/en-us/articles/[0-9]+-[^\"'?#]+)", "identityFlags": "gi", "identityCapture": 1 },
+      "locator": "CMS 12 dated release-note entry headings",
+      "extract": { "kind": "list", "identityPattern": "<h[23]\\b[^>]*\\bid=[\"']((?:january|february|march|april|may|june|july|august|september|october|november|december)-[a-z0-9-]+)[\"']", "identityFlags": "gi", "identityCapture": 1 },
+      "reviewOwner": "optimizely-paas",
+      "replacementHistory": [
+        {
+          "recordedAt": "2026-10-29T12:45:00Z",
+          "reason": "The combined PaaS support-center section redirects off the official host allowlist and no longer lists release articles; CMS 12 and CMS 13 release notes are now separate official docs pages, so this index covers CMS 12 and optimizely-paas.cms13-release-notes-index covers CMS 13.",
+          "replacedUrl": "https://support.optimizely.com/hc/en-us/sections/23974970699533-Release-notes",
+          "replacementUrl": "https://docs.optimizely.com/cms-12/release-notes"
+        }
+      ]
+    },
+    {
+      "id": "optimizely-paas.cms13-release-notes-index",
+      "vendor": "Optimizely",
+      "title": "Release notes - CMS 13",
+      "url": "https://docs.optimizely.com/cms-13/release-notes",
+      "allowedHosts": ["docs.optimizely.com"],
+      "profiles": ["optimizely-paas.cms13-admin", "optimizely-paas.cms13-model"],
+      "role": "release-index",
+      "completeness": "supplemental",
+      "version": { "mode": "release-index" },
+      "locator": "CMS 13 dated release-note entry headings",
+      "extract": { "kind": "list", "identityPattern": "<h[23]\\b[^>]*\\bid=[\"']((?:january|february|march|april|may|june|july|august|september|october|november|december)-[a-z0-9-]+)[\"']", "identityFlags": "gi", "identityCapture": 1 },
       "reviewOwner": "optimizely-paas"
     },
     {

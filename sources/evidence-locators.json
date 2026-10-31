@@ -303,7 +303,7 @@
     },
     {
       "sourceId": "optimizely-saas.release-notes-index",
-      "locators": [{ "locator": "CMS SaaS release-note article links" }]
+      "locators": [{ "locator": "CMS SaaS dated release-note entry headings" }]
     },
     {
       "sourceId": "optimizely-saas.sdk-releases-index",
@@ -311,7 +311,11 @@
     },
     {
       "sourceId": "optimizely-paas.release-notes-index",
-      "locators": [{ "locator": "CMS PaaS release-note article links" }]
+      "locators": [{ "locator": "CMS 12 dated release-note entry headings" }]
+    },
+    {
+      "sourceId": "optimizely-paas.cms13-release-notes-index",
+      "locators": [{ "locator": "CMS 13 dated release-note entry headings" }]
     },
     {
       "sourceId": "sitecore-ai.changelog-index",

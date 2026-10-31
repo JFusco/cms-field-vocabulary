@@ -268,8 +268,18 @@ export async function observeSource(source) {
         note: `Official source returned HTTP ${fetched.status}`,
       };
     }
+    if (source.role === 'release-index') {
+      const documentOf = (value) => `${value.origin}${value.pathname.replace(/\/+$/, '')}`;
+      const finalUrl = new URL(fetched.url);
+      if (documentOf(finalUrl) !== documentOf(new URL(source.url))) {
+        throw new Error(`Release index redirected to a different document: ${finalUrl}`);
+      }
+    }
     const normalized = normalizeDocument(fetched.body);
     const identities = extractSourceIdentities(source, normalized);
+    if (source.role === 'release-index' && identities.length === 0) {
+      throw new Error('Release index returned no version or entry identities');
+    }
     const fragment = source.extract.identityPattern ? json(identities) : extractEvidenceFragment(source, normalized);
     const declaredTokens = [...(source.extract.tokens || [])];
     const requiredTokens = extractRequiredTokens(source, fragment);

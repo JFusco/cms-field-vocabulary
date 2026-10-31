@@ -20,7 +20,7 @@
     "optimizely-paas.cms13-content-property",
     "optimizely-paas.cms13-link-property",
     "optimizely-paas.cms13-text-property",
-    "optimizely-paas.release-notes-index"
+    "optimizely-paas.cms13-release-notes-index"
   ],
   "defaultEvidence": {
     "sourceId": "optimizely-paas.cms13-building-blocks",
