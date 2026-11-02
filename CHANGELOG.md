@@ -1,3 +1,25 @@
+# Release 1.3.7
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **commitlint:** exempt Dependabot pull requests (`1e2c252`)
+
 # Release 1.3.6
 
 ## Summary
