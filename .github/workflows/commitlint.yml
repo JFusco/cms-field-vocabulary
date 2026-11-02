@@ -47,17 +47,19 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Validate PR body
-        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/wiki-') }}
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/wiki-') && !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: pnpm run lint:pr
 
       - name: Lint PR title
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: printf '%s\n' "$PR_TITLE" | pnpm exec commitlint --config commitlint.config.cjs --verbose
 
       - name: Lint commit messages
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
         run: |
           pnpm exec commitlint --config commitlint.config.cjs \
             --from "${{ github.event.pull_request.base.sha }}" \

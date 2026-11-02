@@ -11,6 +11,11 @@ configuration remains the enforcement source; history is not rewritten.
 The subject limit changed from 100 to 50 characters to match the other seven
 repositories. Conventional Commit release semantics are unchanged.
 
+Dependabot pull requests (`dependabot/` head refs) skip the PR body, title, and
+commit-message lint steps, because Dependabot writes those itself and grouped
+update subjects exceed the limit. See
+[Exempt Dependabot pull requests from commitlint](../journal/2026-11-02-exempt-dependabot-prs-from-commitlint.md).
+
 ## Code map
 
 Graphify 0.9.36 maps src/ and maintained scripts. The code map was introduced from local AST extraction without model calls. A repository-local
