@@ -1,3 +1,25 @@
+# Release 1.3.8
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **deps-dev:** bump the development-minor-and-patch group across 1 directory with 2 updates (`c68756e`)
+
 # Release 1.3.7
 
 ## Summary
