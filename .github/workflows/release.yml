@@ -58,7 +58,36 @@ jobs:
       - name: Inspect packed artifact
         run: npm pack --dry-run --ignore-scripts
 
+      - name: Record pre-release revision
+        id: before
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Publish, tag, changelog, and GitHub release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: pnpm exec semantic-release
+
+      - name: Detect a published release
+        id: released
+        env:
+          BEFORE_SHA: ${{ steps.before.outputs.sha }}
+        run: |
+          # @semantic-release/git commits the release, so HEAD moves only when a version was published.
+          if [ "$(git rev-parse HEAD)" != "$BEFORE_SHA" ]; then echo 'published=true' >> "$GITHUB_OUTPUT"; fi
+
+      - name: Mint Pin Courier token
+        id: courier
+        if: steps.released.outputs.published == 'true'
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ secrets.RENOVATE_APP_CLIENT_ID }}
+          private-key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
+          owner: JFusco
+          repositories: renovate-config
+          permission-contents: write
+
+      - name: Notify the Renovate runner
+        if: steps.released.outputs.published == 'true'
+        env:
+          GH_TOKEN: ${{ steps.courier.outputs.token }}
+        run: gh api --method POST repos/JFusco/renovate-config/dispatches -f event_type=package-released
