@@ -13,6 +13,7 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Official JavaScript actions run on their native Node 24 majors (`checkout@v7`, `setup-node@v7`, `cache@v6`, `upload-artifact@v7`, and `github-script@v9`); no runtime-forcing compatibility flag remains.
 - Semantic Release on `main` derives versions from Conventional Commits, updates the changelog and package metadata, publishes npm provenance, tags `v${version}`, and creates the GitHub Release.
 - npm trusts the `JFusco/cms-field-vocabulary` `release.yml` workflow through OIDC; publication requires no repository release secret.
+- After a published release, `release.yml` sends a `package-released` dispatch to the shared Renovate runner as the Pin Courier GitHub App, using the `RENOVATE_APP_CLIENT_ID` and `RENOVATE_APP_PRIVATE_KEY` secrets ([issue #126](https://github.com/JFusco/cms-field-vocabulary/issues/126)).
 - Packed ESM and CommonJS fixtures exercise the actual tarball and the closed consumer CLI contract before publication.
 
 ## Decisions
