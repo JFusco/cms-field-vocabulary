@@ -1,3 +1,26 @@
+# Release 1.3.9
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **release:** notify Renovate runner on publish (`9387a8a`)
+- **wiki:** reconcile merged PR #121 [skip release] (`ff57612`)
+
 # Release 1.3.8
 
 ## Summary
