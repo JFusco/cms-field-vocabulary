@@ -1,3 +1,25 @@
+# Release 1.3.12
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **ci:** adopt Renovate dependency updates (`558012d`)
+
 # Release 1.3.11
 
 ## Summary
