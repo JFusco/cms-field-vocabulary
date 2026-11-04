@@ -1,7 +1,7 @@
 ---
 topics: [release-operations]
-issue: 'https://github.com/JFusco/cms-field-vocabulary/issues/131'
-issues: ['https://github.com/JFusco/cms-field-vocabulary/issues/131']
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/131'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/131']
 ---
 # Adopt Renovate for dependency maintenance
 
