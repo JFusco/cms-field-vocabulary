@@ -1,3 +1,25 @@
+# Release 1.3.11
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **release:** wait for the npm tarball (`e27e87e`)
+
 # Release 1.3.10
 
 ## Summary
