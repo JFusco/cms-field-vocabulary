@@ -80,7 +80,7 @@ jobs:
         timeout-minutes: 12
         continue-on-error: true
         run: |
-          # npm accepts the upload minutes before the registry serves it; Renovate reads the packument.
+          # npm accepts the upload minutes before the registry serves it, and the tarball can lag the packument.
           node --input-type=module <<'EOF'
           import { readFile } from 'node:fs/promises';
           const { name, version } = JSON.parse(await readFile('package.json', 'utf8'));
@@ -88,8 +88,9 @@ jobs:
           for (let attempt = 1; attempt <= 40; attempt++) {
             try {
               const response = await fetch(url);
-              if (response.ok && (await response.json()).versions?.[version]) {
-                console.log(`${name}@${version} is on the registry after ${attempt} check(s).`);
+              const tarball = response.ok && (await response.json()).versions?.[version]?.dist?.tarball;
+              if (tarball && (await fetch(tarball, { method: 'HEAD' })).ok) {
+                console.log(`${name}@${version} and its tarball are on the registry after ${attempt} check(s).`);
                 process.exit(0);
               }
             } catch (error) {
@@ -97,7 +98,7 @@ jobs:
             }
             await new Promise((resolve) => setTimeout(resolve, 15_000));
           }
-          console.log(`::warning::${name}@${version} is not on the registry after 10 minutes; dispatching anyway.`);
+          console.log(`::warning::${name}@${version} and its tarball are not on the registry after 10 minutes; dispatching anyway.`);
           EOF
 
       - name: Mint Pin Courier token
