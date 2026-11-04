@@ -1,22 +1,22 @@
-# Graph Report - cms-field-vocabulary  (2026-09-30)
+# Graph Report - cms-renovate-131  (2026-11-04)
 
 ## Corpus Check
-- 43 files · ~25,933 words
+- 44 files · ~26,072 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 529 nodes · 1211 edges · 21 communities (20 shown, 1 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 128 edges (avg confidence: 0.5)
+- 532 nodes · 1213 edges · 22 communities (20 shown, 2 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 129 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fad836ca`
+- Built from commit: `dfdd8791`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - index.ts
-- archive-plan.cjs
+- common.cjs
 - on-merge-sync.cjs
 - audit-plan-candidates.cjs
 - catalog.mjs
@@ -24,7 +24,7 @@
 - routing.cjs
 - validate.mjs
 - source-scan.mjs
-- dates.cjs
+- archive-plan.cjs
 - reconcile-merges.cjs
 - check-release-commit.selftest.cjs
 - source-review.mjs
@@ -35,6 +35,7 @@
 - verify-packed-consumer.mjs
 - readJson
 - routing.js
+- is-pin-courier-pr.cjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `repoRoot()` - 26 edges
@@ -63,34 +64,29 @@
 ## Import Cycles
 - 2-file cycle: `src/catalog.ts -> src/data.ts -> src/catalog.ts`
 
-## Communities (21 total, 1 thin omitted)
+## Communities (22 total, 2 thin omitted)
 
 ### Community 0 - "index.ts"
 Cohesion: 0.06
 Nodes (82): catalog, compactOperation(), fields, findFieldFact(), getCanonicalField(), getCanonicalProfile(), getFieldFact(), getProfile() (+74 more)
 
-### Community 1 - "archive-plan.cjs"
-Cohesion: 0.05
-Nodes (80): archive(), cell(), { cleanCursor }, { digest, repoRoot, slugify, slash, ensureInside, hasSymlinkComponent, atomicWrite, walk }, ensureIndex(), fromArgs(), fs, { inferPlanDate } (+72 more)
+### Community 1 - "common.cjs"
+Cohesion: 0.06
+Nodes (60): { collect, resolveWikiLink, kind }, connections(), fs, path, { repoRoot, slash, hasSymlinkComponent, atomicWrite }, { discover }, fs, main() (+52 more)
 
 ### Community 2 - "on-merge-sync.cjs"
 Cohesion: 0.07
-Nodes (61): fs, { key: githubRefKey }, { loadPolicy, policyProblems }, main(), path, {
+Nodes (61): main(), fs, { key: githubRefKey }, { loadPolicy, policyProblems }, main(), path, {
   repoRoot,
   walk,
   slash,
   digest,
   hasSymlinkComponent,
-}, { spawnSync }, {
-  splitFrontmatter,
-  scalar,
-  list,
-  frontmatterProblems,
-} (+53 more)
+}, { spawnSync } (+53 more)
 
 ### Community 3 - "audit-plan-candidates.cjs"
 Cohesion: 0.12
-Nodes (32): audit(), branchIssueNumbers(), classify(), distinctiveTitleWords(), { execFileSync }, extractPaths(), findPrForMergeSubject(), fmtCommit() (+24 more)
+Nodes (33): audit(), branchIssueNumbers(), classify(), distinctiveTitleWords(), { execFileSync }, extractPaths(), findPrForMergeSubject(), fmtCommit() (+25 more)
 
 ### Community 4 - "catalog.mjs"
 Cohesion: 0.13
@@ -102,7 +98,7 @@ Nodes (25): addMetaLink(), addMetaRow(), addRelationship(), applyView(), buildIn
 
 ### Community 6 - "routing.cjs"
 Cohesion: 0.15
-Nodes (25): adjacency(), edgeCost(), edgeKey(), edgeType(), EVIDENCE_TYPE_PRIORITY, formatBytes(), formatGithubRef(), formatRoute() (+17 more)
+Nodes (24): adjacency(), edgeCost(), edgeKey(), edgeType(), EVIDENCE_TYPE_PRIORITY, formatBytes(), formatGithubRef(), fs (+16 more)
 
 ### Community 7 - "validate.mjs"
 Cohesion: 0.09
@@ -112,13 +108,13 @@ Nodes (22): buildEvidenceLocatorIndex(), uniqueMap(), validateProfileEvidence(),
 Cohesion: 0.17
 Nodes (23): canonicalize(), json(), allOccurrences(), argument(), classifyObservation(), compileDiscoveryPattern(), decodeHtml(), discoverObservedTokens() (+15 more)
 
-### Community 9 - "dates.cjs"
-Cohesion: 0.15
-Nodes (21): { archive, validateArchiveInput, STATUSES }, fs, { inferPlanDate }, main(), parse(), path, { repoRoot }, STATUSES (+13 more)
+### Community 9 - "archive-plan.cjs"
+Cohesion: 0.09
+Nodes (40): { archive, validateArchiveInput, STATUSES }, fs, { inferPlanDate }, main(), parse(), path, { repoRoot }, archive() (+32 more)
 
 ### Community 10 - "reconcile-merges.cjs"
 Cohesion: 0.18
-Nodes (16): collectPulls(), copyWikiForDryRun(), { execFileSync }, flattenPages(), fs, githubRequest(), isWikiBotPull(), main() (+8 more)
+Nodes (17): remoteSlug(), collectPulls(), copyWikiForDryRun(), { execFileSync }, flattenPages(), fs, githubRequest(), isWikiBotPull() (+9 more)
 
 ### Community 11 - "check-release-commit.selftest.cjs"
 Cohesion: 0.20
@@ -157,24 +153,24 @@ Cohesion: 0.60
 Nodes (5): readJson(), argument(), main(), renderScanSummary(), shortList()
 
 ## Knowledge Gaps
-- **144 isolated node(s):** `check`, `catalogJson`, `files`, `catalogManifest`, `managed` (+139 more)
+- **145 isolated node(s):** `check`, `catalogJson`, `files`, `catalogManifest`, `managed` (+140 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `key()` connect `on-merge-sync.cjs` to `index.ts`?**
-  _High betweenness centrality (0.171) - this node is a cross-community bridge._
-- **Why does `validateConfigObject()` connect `index.ts` to `on-merge-sync.cjs`?**
   _High betweenness centrality (0.169) - this node is a cross-community bridge._
-- **Why does `repoRoot()` connect `archive-plan.cjs` to `on-merge-sync.cjs`, `audit-plan-candidates.cjs`, `dates.cjs`, `reconcile-merges.cjs`, `serve-graph.cjs`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+- **Why does `validateConfigObject()` connect `index.ts` to `on-merge-sync.cjs`?**
+  _High betweenness centrality (0.167) - this node is a cross-community bridge._
+- **Why does `repoRoot()` connect `on-merge-sync.cjs` to `common.cjs`, `audit-plan-candidates.cjs`, `archive-plan.cjs`, `reconcile-merges.cjs`, `serve-graph.cjs`?**
+  _High betweenness centrality (0.080) - this node is a cross-community bridge._
 - **What connects `check`, `catalogJson`, `files` to the rest of the system?**
-  _144 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _145 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.06292134831460675 - nodes in this community are weakly interconnected._
-- **Should `archive-plan.cjs` be split into smaller, more focused modules?**
-  _Cohesion score 0.05041797283176593 - nodes in this community are weakly interconnected._
+- **Should `common.cjs` be split into smaller, more focused modules?**
+  _Cohesion score 0.05698778833107191 - nodes in this community are weakly interconnected._
 - **Should `on-merge-sync.cjs` be split into smaller, more focused modules?**
-  _Cohesion score 0.0710085933966531 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07372229760289462 - nodes in this community are weakly interconnected._
