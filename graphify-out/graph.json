@@ -383,6 +383,40 @@
       "norm_label": "clean.mjs"
     },
     {
+      "label": "is-pin-courier-pr.cjs",
+      "file_type": "code",
+      "source_file": "scripts/is-pin-courier-pr.cjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_is_pin_courier_pr",
+      "community": 21,
+      "community_name": "is-pin-courier-pr.cjs",
+      "norm_label": "is-pin-courier-pr.cjs"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/is-pin-courier-pr.cjs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "scripts_is_pin_courier_pr_fs",
+      "community": 21,
+      "community_name": "is-pin-courier-pr.cjs",
+      "norm_label": "fs"
+    },
+    {
+      "label": "isPinCourierPR()",
+      "file_type": "code",
+      "source_file": "scripts/is-pin-courier-pr.cjs",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_is_pin_courier_pr_ispincourierpr",
+      "community": 21,
+      "community_name": "is-pin-courier-pr.cjs",
+      "norm_label": "ispincourierpr()"
+    },
+    {
       "label": "catalog.mjs",
       "file_type": "code",
       "source_file": "scripts/lib/catalog.mjs",
@@ -1184,7 +1218,7 @@
       "label": "classifyObservation()",
       "file_type": "code",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L327",
+      "source_location": "L337",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_source_scan_classifyobservation",
@@ -1196,7 +1230,7 @@
       "label": "requiresAttention()",
       "file_type": "code",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L351",
+      "source_location": "L361",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_source_scan_requiresattention",
@@ -1208,7 +1242,7 @@
       "label": "outputFile()",
       "file_type": "code",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L355",
+      "source_location": "L365",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_source_scan_outputfile",
@@ -1220,7 +1254,7 @@
       "label": "mapWithConcurrency()",
       "file_type": "code",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L363",
+      "source_location": "L373",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_source_scan_mapwithconcurrency",
@@ -1232,7 +1266,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L377",
+      "source_location": "L387",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_source_scan_main",
@@ -1676,7 +1710,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "apply-plan-audit.cjs"
     },
     {
@@ -1687,7 +1721,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_fs",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "fs"
     },
     {
@@ -1698,7 +1732,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_path",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "path"
     },
     {
@@ -1709,7 +1743,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_archive_validatearchiveinput_statuses",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "{ archive, validatearchiveinput, statuses }"
     },
     {
@@ -1720,7 +1754,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_reporoot",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "{ reporoot }"
     },
     {
@@ -1731,7 +1765,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_inferplandate",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "{ inferplandate }"
     },
     {
@@ -1743,7 +1777,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_parse",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "parse()"
     },
     {
@@ -1755,7 +1789,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_apply_plan_audit_main",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "main()"
     },
     {
@@ -1765,7 +1799,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "archive-plan.cjs"
     },
@@ -1776,7 +1810,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_fs",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "fs"
     },
@@ -1787,7 +1821,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_path",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "path"
     },
@@ -1798,7 +1832,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_digest_reporoot_slugify_slash_ensureinside_hassymlinkcomponent_atomicwrite_walk",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "{ digest, reporoot, slugify, slash, ensureinside, hassymlinkcomponent, atomicwrite, walk }"
     },
@@ -1809,7 +1843,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_inferplandate",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "{ inferplandate }"
     },
@@ -1820,7 +1854,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_titlefrombody_render",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "{ titlefrombody, render }"
     },
@@ -1831,7 +1865,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_cleancursor",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "{ cleancursor }"
     },
@@ -1843,7 +1877,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_statuses",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "statuses"
     },
     {
@@ -1854,7 +1888,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_parse",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "parse()"
     },
@@ -1866,7 +1900,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_fromargs",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "fromargs()"
     },
@@ -1878,7 +1912,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_ensureindex",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "ensureindex()"
     },
@@ -1890,7 +1924,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_validdate",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "validdate()"
     },
@@ -1902,7 +1936,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_stringlist",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "stringlist()"
     },
@@ -1914,7 +1948,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_cell",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "cell()"
     },
@@ -1926,7 +1960,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_label",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "label()"
     },
@@ -1938,7 +1972,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_validatearchiveinput",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "validatearchiveinput()"
     },
@@ -1950,7 +1984,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_archive",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "archive()"
     },
@@ -1962,7 +1996,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_archive_plan_main",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "main()"
     },
@@ -2363,7 +2397,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "build-graph.cjs"
     },
     {
@@ -2374,7 +2408,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_fs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "fs"
     },
     {
@@ -2385,7 +2419,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -2396,7 +2430,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_reporoot_slash_hassymlinkcomponent_atomicwrite",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ reporoot, slash, hassymlinkcomponent, atomicwrite }"
     },
     {
@@ -2407,7 +2441,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_collect_resolvewikilink_kind",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ collect, resolvewikilink, kind }"
     },
     {
@@ -2419,7 +2453,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_connections",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "connections()"
     },
     {
@@ -2430,8 +2464,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_build_graph_main",
-      "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community": 2,
+      "community_name": "on-merge-sync.cjs",
       "norm_label": "main()"
     },
     {
@@ -2542,7 +2576,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "discover-plans.cjs"
     },
     {
@@ -2553,7 +2587,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_fs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "fs"
     },
     {
@@ -2564,7 +2598,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -2575,7 +2609,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_reporoot_atomicwrite",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ reporoot, atomicwrite }"
     },
     {
@@ -2586,7 +2620,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_discover",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ discover }"
     },
     {
@@ -2598,7 +2632,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_parse",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "parse()"
     },
     {
@@ -2610,7 +2644,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_discover_plans_main",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "main()"
     },
     {
@@ -2979,7 +3013,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "common.cjs"
     },
     {
@@ -2990,7 +3024,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_crypto",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "crypto"
     },
     {
@@ -3001,7 +3035,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_fs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "fs"
     },
     {
@@ -3012,7 +3046,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -3023,7 +3057,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_execfilesync",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ execfilesync }"
     },
     {
@@ -3034,7 +3068,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_digest",
-      "community": 1,
+      "community": 9,
       "community_name": "archive-plan.cjs",
       "norm_label": "digest()"
     },
@@ -3047,7 +3081,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_slash",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "slash()"
     },
     {
@@ -3070,8 +3104,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_git",
-      "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community": 3,
+      "community_name": "audit-plan-candidates.cjs",
       "norm_label": "git()"
     },
     {
@@ -3082,8 +3116,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_reporoot",
-      "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community": 2,
+      "community_name": "on-merge-sync.cjs",
       "norm_label": "reporoot()"
     },
     {
@@ -3094,8 +3128,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_remoteslug",
-      "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community": 10,
+      "community_name": "reconcile-merges.cjs",
       "norm_label": "remoteslug()"
     },
     {
@@ -3107,7 +3141,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_walk",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "walk()"
     },
     {
@@ -3119,7 +3153,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_wikipath",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "wikipath()"
     },
     {
@@ -3166,8 +3200,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_substantive",
-      "community": 2,
-      "community_name": "on-merge-sync.cjs",
+      "community": 1,
+      "community_name": "common.cjs",
       "norm_label": "substantive()"
     },
     {
@@ -3179,7 +3213,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_common_today",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "today()"
     },
     {
@@ -3190,7 +3224,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "dates.cjs"
     },
     {
@@ -3201,7 +3235,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_fs",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "fs"
     },
     {
@@ -3212,7 +3246,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_path",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "path"
     },
     {
@@ -3223,7 +3257,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_git_today",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "{ git, today }"
     },
     {
@@ -3235,7 +3269,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_isodatefromms",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "isodatefromms()"
     },
     {
@@ -3247,7 +3281,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_validdate",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "validdate()"
     },
     {
@@ -3259,7 +3293,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_datefromplanbasename",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "datefromplanbasename()"
     },
     {
@@ -3271,7 +3305,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_datefromsessionpath",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "datefromsessionpath()"
     },
     {
@@ -3283,7 +3317,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_gitcommitdate",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "gitcommitdate()"
     },
     {
@@ -3295,7 +3329,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_filemtimedate",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "filemtimedate()"
     },
     {
@@ -3307,7 +3341,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_evidencedates",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "evidencedates()"
     },
     {
@@ -3319,7 +3353,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_sourcepathdates",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "sourcepathdates()"
     },
     {
@@ -3331,7 +3365,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_dates_inferplandate",
       "community": 9,
-      "community_name": "dates.cjs",
+      "community_name": "archive-plan.cjs",
       "norm_label": "inferplandate()"
     },
     {
@@ -3438,7 +3472,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_frontmatter_titlefrombody",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "titlefrombody()"
     },
     {
@@ -3449,8 +3483,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_frontmatter_quote",
-      "community": 2,
-      "community_name": "on-merge-sync.cjs",
+      "community": 9,
+      "community_name": "archive-plan.cjs",
       "norm_label": "quote()"
     },
     {
@@ -3461,8 +3495,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_frontmatter_render",
-      "community": 2,
-      "community_name": "on-merge-sync.cjs",
+      "community": 9,
+      "community_name": "archive-plan.cjs",
       "norm_label": "render()"
     },
     {
@@ -3592,7 +3626,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "plans.cjs"
     },
     {
@@ -3603,7 +3637,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_fs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "fs"
     },
     {
@@ -3614,7 +3648,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_os",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "os"
     },
     {
@@ -3625,7 +3659,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -3636,7 +3670,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_digest_git_remoteslug_walk_slash",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ digest, git, remoteslug, walk, slash }"
     },
     {
@@ -3647,7 +3681,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_splitfrontmatter_scalar_titlefrombody",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ splitfrontmatter, scalar, titlefrombody }"
     },
     {
@@ -3658,8 +3692,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_cleancursor",
-      "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community": 2,
+      "community_name": "on-merge-sync.cjs",
       "norm_label": "cleancursor()"
     },
     {
@@ -3671,7 +3705,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_plantitle",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "plantitle()"
     },
     {
@@ -3683,7 +3717,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_proposedplans",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "proposedplans()"
     },
     {
@@ -3695,7 +3729,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_sourcetimestamp",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "sourcetimestamp()"
     },
     {
@@ -3707,7 +3741,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_latestsourcems",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "latestsourcems()"
     },
     {
@@ -3719,7 +3753,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_normalizetitle",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "normalizetitle()"
     },
     {
@@ -3731,7 +3765,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_collapsebytitle",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "collapsebytitle()"
     },
     {
@@ -3743,7 +3777,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_association",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "association()"
     },
     {
@@ -3755,7 +3789,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_frommarkdown",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "frommarkdown()"
     },
     {
@@ -3767,7 +3801,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_candidate",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "candidate()"
     },
     {
@@ -3779,7 +3813,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_githistoryplans",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "githistoryplans()"
     },
     {
@@ -3791,7 +3825,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_auditeddigests",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "auditeddigests()"
     },
     {
@@ -3803,7 +3837,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_plans_discover",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "discover()"
     },
     {
@@ -3814,7 +3848,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "wiki-graph.cjs"
     },
     {
@@ -3825,7 +3859,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_fs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "fs"
     },
     {
@@ -3836,7 +3870,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -3847,7 +3881,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_walk_slash_digest_ensureinside_remoteslug",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ walk, slash, digest, ensureinside, remoteslug }"
     },
     {
@@ -3858,7 +3892,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_splitfrontmatter_list_titlefrombody",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ splitfrontmatter, list, titlefrombody }"
     },
     {
@@ -3869,7 +3903,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_githubrefs_withoutfencedcode",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ githubrefs, withoutfencedcode }"
     },
     {
@@ -3881,7 +3915,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_normalizewikiroot",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "normalizewikiroot()"
     },
     {
@@ -3893,7 +3927,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_kind",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "kind()"
     },
     {
@@ -3905,7 +3939,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_scanforsymlinks",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "scanforsymlinks()"
     },
     {
@@ -3917,7 +3951,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_resolvewikilink",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "resolvewikilink()"
     },
     {
@@ -3929,7 +3963,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_frontmattertarget",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "frontmattertarget()"
     },
     {
@@ -3941,7 +3975,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_lib_wiki_graph_collect",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "collect()"
     },
     {
@@ -3952,7 +3986,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "navigate.cjs"
     },
     {
@@ -3963,7 +3997,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_reporoot",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ reporoot }"
     },
     {
@@ -3974,7 +4008,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_collect_normalizewikiroot",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ collect, normalizewikiroot }"
     },
     {
@@ -3985,7 +4019,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_route_formatroute",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ route, formatroute }"
     },
     {
@@ -3997,7 +4031,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_parseargs",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "parseargs()"
     },
     {
@@ -4009,7 +4043,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_usage",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "usage()"
     },
     {
@@ -4021,7 +4055,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_navigate_main",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "main()"
     },
     {
@@ -4241,7 +4275,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "pre-commit.cjs"
     },
     {
@@ -4252,7 +4286,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit_path",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "path"
     },
     {
@@ -4263,7 +4297,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit_spawnsync",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ spawnsync }"
     },
     {
@@ -4274,7 +4308,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit_reporoot_git_substantive",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ reporoot, git, substantive }"
     },
     {
@@ -4285,7 +4319,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit_discover",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "{ discover }"
     },
     {
@@ -4297,7 +4331,7 @@
       "_origin": "ast",
       "id": "scripts_wiki_pre_commit_main",
       "community": 1,
-      "community_name": "archive-plan.cjs",
+      "community_name": "common.cjs",
       "norm_label": "main()"
     },
     {
@@ -4971,8 +5005,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_wiki_routing_formatroute",
-      "community": 6,
-      "community_name": "routing.cjs",
+      "community": 1,
+      "community_name": "common.cjs",
       "norm_label": "formatroute()"
     },
     {
@@ -6692,6 +6726,29 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/is-pin-courier-pr.cjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_is_pin_courier_pr",
+      "target": "scripts_is_pin_courier_pr_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/is-pin-courier-pr.cjs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "collection",
+      "source": "scripts_is_pin_courier_pr",
+      "target": "scripts_is_pin_courier_pr_ispincourierpr",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/lib/catalog.mjs",
       "source_location": "L8",
       "weight": 1.0,
@@ -7058,7 +7115,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L412",
+      "source_location": "L422",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -7071,7 +7128,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L273",
+      "source_location": "L283",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -7119,7 +7176,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L294",
+      "source_location": "L304",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -7190,7 +7247,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L381",
+      "source_location": "L391",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -7931,7 +7988,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L327",
+      "source_location": "L337",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan",
@@ -8041,7 +8098,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L377",
+      "source_location": "L387",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan",
@@ -8052,7 +8109,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L363",
+      "source_location": "L373",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan",
@@ -8085,7 +8142,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L355",
+      "source_location": "L365",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan",
@@ -8096,7 +8153,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L351",
+      "source_location": "L361",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan",
@@ -8153,7 +8210,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L378",
+      "source_location": "L388",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -8177,7 +8234,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L271",
+      "source_location": "L278",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -8249,7 +8306,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L273",
+      "source_location": "L283",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -8261,7 +8318,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L272",
+      "source_location": "L279",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -8273,7 +8330,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L275",
+      "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -8345,7 +8402,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L281",
+      "source_location": "L291",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_observesource",
@@ -8369,7 +8426,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L386",
+      "source_location": "L396",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -8381,7 +8438,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L389",
+      "source_location": "L399",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -8393,7 +8450,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L407",
+      "source_location": "L417",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -8405,7 +8462,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L410",
+      "source_location": "L420",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -8417,7 +8474,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/source-scan.mjs",
-      "source_location": "L385",
+      "source_location": "L395",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_source_scan_main",
@@ -20349,5 +20406,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fad836ca52fd0393d0f136ac30715d94048ffe8c"
+  "built_at_commit": "dfdd8791865fd776720a09dfe36431681d9382b6"
 }

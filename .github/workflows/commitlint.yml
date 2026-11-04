@@ -31,6 +31,10 @@ jobs:
       - name: Enable pnpm via Corepack
         run: corepack enable && corepack prepare pnpm@11.1.1 --activate
 
+      - name: Identify trusted Pin Courier PR
+        id: pin_courier
+        run: node scripts/is-pin-courier-pr.cjs
+
       - name: Get pnpm store path
         id: pnpm-cache
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
@@ -47,19 +51,19 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Validate PR body
-        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/wiki-') && !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/wiki-') && !startsWith(github.event.pull_request.head.ref, 'dependabot/') && steps.pin_courier.outputs.trusted != 'true' }}
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: pnpm run lint:pr
 
       - name: Lint PR title
-        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') && steps.pin_courier.outputs.trusted != 'true' }}
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: printf '%s\n' "$PR_TITLE" | pnpm exec commitlint --config commitlint.config.cjs --verbose
 
       - name: Lint commit messages
-        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') }}
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'dependabot/') && steps.pin_courier.outputs.trusted != 'true' }}
         run: |
           pnpm exec commitlint --config commitlint.config.cjs \
             --from "${{ github.event.pull_request.base.sha }}" \

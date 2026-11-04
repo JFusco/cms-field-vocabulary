@@ -1,6 +1,6 @@
 {
   "0": "index.ts",
-  "1": "archive-plan.cjs",
+  "1": "common.cjs",
   "2": "on-merge-sync.cjs",
   "3": "audit-plan-candidates.cjs",
   "4": "catalog.mjs",
@@ -8,7 +8,7 @@
   "6": "routing.cjs",
   "7": "validate.mjs",
   "8": "source-scan.mjs",
-  "9": "dates.cjs",
+  "9": "archive-plan.cjs",
   "10": "reconcile-merges.cjs",
   "11": "check-release-commit.selftest.cjs",
   "12": "source-review.mjs",
@@ -19,5 +19,6 @@
   "17": "verify-packed-consumer.mjs",
   "18": "readJson",
   "19": "routing.js",
-  "20": "validate-staged-json.mjs"
+  "20": "validate-staged-json.mjs",
+  "21": "is-pin-courier-pr.cjs"
 }
