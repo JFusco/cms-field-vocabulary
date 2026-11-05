@@ -5,7 +5,7 @@ const fs = require("node:fs");
 /** GitHub's installed App identity, not a branch prefix, grants this metadata exception. */
 function isPinCourierPR(pull, repository) {
   return typeof repository === "string" && repository.length > 0 && pull?.draft !== true &&
-    pull.user?.login === "pin-courier[bot]" && pull.user.id === 351979519 &&
+    pull?.user?.login === "pin-courier[bot]" && pull.user.id === 351979519 &&
     pull.user.type === "Bot" && pull.head?.repo?.full_name === repository &&
     pull.base?.repo?.full_name === repository && pull.base.ref === "main" &&
     typeof pull.head.ref === "string" && pull.head.ref.startsWith("renovate/");
