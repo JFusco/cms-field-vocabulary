@@ -1,3 +1,26 @@
+# Release 1.3.13
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **commitlint:** keep the guard safe for a missing pull (`368314c`)
+
+## Other changes
+
+- **commitlint:** refuse drafts in the Pin Courier guard (`1a2b6e3`)
+- **wiki:** reconcile merged PR #133 [skip release] (`ffd4780`)
+
 # Release 1.3.12
 
 ## Summary
