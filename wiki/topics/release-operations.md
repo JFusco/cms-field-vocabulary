@@ -34,3 +34,4 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Automated wiki reconciliation includes `[skip release]` in both its branch commit and review pull-request title, covering merge, rebase, and squash strategies without suppressing releases for the substantive source pull request.
 - Catalog freshness remains independent and read-only as described in [official-source freshness](./official-source-freshness.md).
 - Draft and wiki-only changes keep stable checks through lightweight validation; ready code changes and `main` code updates retain the complete verifier.
+- The Pin Courier metadata exemption refuses draft pull requests, re-evaluates on `ready_for_review`, and its test pins each lint step's exact condition and the guard ordering ([issue #135](https://github.com/JFusco/cms-field-vocabulary/issues/135), [journal](../journal/2026-11-05-refuse-draft-pin-courier.md)).
