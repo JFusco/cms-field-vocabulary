@@ -1,3 +1,25 @@
+# Release 1.4.0
+
+## Summary
+
+This release contains 0 breaking changes, 1 feature, 0 fixes, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **sources:** add Optimizely CMS SDK 3.1 profile (`46e0e26`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- None.
+
 # Release 1.3.14
 
 ## Summary
