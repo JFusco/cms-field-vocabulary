@@ -159,7 +159,7 @@
       "title": "Content types in Optimizely CMS SaaS",
       "url": "https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/content-types-saas",
       "allowedHosts": ["docs.developers.optimizely.com", "docs.optimizely.com"],
-      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2", "optimizely-saas.sdk-3"],
+      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2", "optimizely-saas.sdk-3", "optimizely-saas.sdk-3-1"],
       "role": "management-schema",
       "completeness": "exhaustive",
       "version": { "mode": "pinned-version", "value": "CMS SaaS API v1" },
@@ -246,6 +246,49 @@
           ]
         }
       },
+      "reviewOwner": "optimizely-saas"
+    },
+    {
+      "id": "optimizely-saas.sdk31-property-types",
+      "vendor": "Optimizely",
+      "title": "Content JavaScript SDK 3.1.0 property types",
+      "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/bf3ad005aa4e6942c2fcc48348d439f31a7e8076/docs/reference/property-types.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["optimizely-saas.sdk-3-1"],
+      "role": "sdk-source",
+      "completeness": "exhaustive",
+      "version": { "mode": "pinned-git-commit", "value": "@optimizely/cms-sdk 3.1.0; bf3ad005aa4e6942c2fcc48348d439f31a7e8076" },
+      "locator": "Property types",
+      "extract": {
+        "kind": "heading",
+        "tokens": ["string", "richText", "boolean", "integer", "float", "dateTime", "url", "link", "binary", "json", "content", "contentReference", "array", "component"],
+        "tokenDiscovery": {
+          "maximumTokens": 64,
+          "regions": [
+            {
+              "id": "property-types",
+              "startPattern": "\\| Type +\\|",
+              "endPattern": "## Reference",
+              "itemPattern": "\\| \\[`([^`]+)`\\]\\(#",
+              "itemCapture": 1
+            }
+          ]
+        }
+      },
+      "reviewOwner": "optimizely-saas"
+    },
+    {
+      "id": "optimizely-saas.sdk31-changelog",
+      "vendor": "Optimizely",
+      "title": "@optimizely/cms-sdk 3.1.0 changelog",
+      "url": "https://raw.githubusercontent.com/episerver/content-js-sdk/bf3ad005aa4e6942c2fcc48348d439f31a7e8076/packages/optimizely-cms-sdk/CHANGELOG.md",
+      "allowedHosts": ["raw.githubusercontent.com"],
+      "profiles": ["optimizely-saas.sdk-3-1"],
+      "role": "sdk-source",
+      "completeness": "supplemental",
+      "version": { "mode": "pinned-git-commit", "value": "@optimizely/cms-sdk 3.1.0; bf3ad005aa4e6942c2fcc48348d439f31a7e8076" },
+      "locator": "3.1.0 > Minor Changes",
+      "extract": { "kind": "heading", "tokens": ["contentReference", "item", "_image", "_video", "_media"] },
       "reviewOwner": "optimizely-saas"
     },
     {
@@ -907,7 +950,7 @@
       "title": "Release notes - CMS SaaS",
       "url": "https://docs.optimizely.com/cms-saas/release-notes",
       "allowedHosts": ["docs.optimizely.com"],
-      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2", "optimizely-saas.sdk-3"],
+      "profiles": ["optimizely-saas.cms-api-v1", "optimizely-saas.sdk-2", "optimizely-saas.sdk-3", "optimizely-saas.sdk-3-1"],
       "role": "release-index",
       "completeness": "supplemental",
       "version": { "mode": "release-index" },
@@ -929,7 +972,7 @@
       "title": "content-js-sdk releases",
       "url": "https://github.com/episerver/content-js-sdk/releases",
       "allowedHosts": ["github.com"],
-      "profiles": ["optimizely-saas.sdk-2", "optimizely-saas.sdk-3"],
+      "profiles": ["optimizely-saas.sdk-2", "optimizely-saas.sdk-3", "optimizely-saas.sdk-3-1"],
       "role": "release-index",
       "completeness": "supplemental",
       "version": { "mode": "release-index" },

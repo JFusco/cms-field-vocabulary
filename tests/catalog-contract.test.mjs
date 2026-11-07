@@ -52,6 +52,10 @@ const EXPECTED_NATIVE_TOKENS = {
     'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
     'binary', 'json', 'content', 'contentReference', 'array', 'component',
   ],
+  'optimizely-saas.sdk-3-1': [
+    'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
+    'binary', 'json', 'content', 'contentReference', 'array', 'component',
+  ],
   'sitecore-ai.authoring.current': [
     'Checkbox', 'File', 'Date', 'Datetime', 'Image', 'Integer', 'Number',
     'Single-Line Text', 'Multi-Line Text', 'Rich Text', 'General link with search',
@@ -125,6 +129,19 @@ test('SDK 3.0 keeps a separate versioned contract with its changed rich-text and
     assert.match(field(sdk3, token).editorBehavior, /requires contentType or a non-empty allowedTypes\/restrictedTypes list/);
   }
   assert.equal(field(sdk2, 'richText').deliveryShape.includes('by default'), false);
+});
+
+test('SDK 3.1 keeps a separate versioned contract for media references and content constraints', async () => {
+  const profiles = await loadSourceProfiles();
+  const sdk3 = profiles.find((profile) => profile.id === 'optimizely-saas.sdk-3');
+  const sdk31 = profiles.find((profile) => profile.id === 'optimizely-saas.sdk-3-1');
+  assert.equal(sdk3.version.sdk, '3.0.0');
+  assert.equal(sdk31.version.sdk, '3.1.0');
+  assert.match(field(sdk31, 'contentReference').deliveryShape, /allow media .* item resolves the media item in the same request; page and component references remain key and url/);
+  assert.match(field(sdk31, 'content').editorBehavior, /rejects contentType on content properties/);
+  assert.match(field(sdk31, 'contentReference').editorBehavior, /either contentType or a non-empty allowedTypes\/restrictedTypes list, not both/);
+  assert.match(field(sdk3, 'content').editorBehavior, /requires contentType or a non-empty allowedTypes\/restrictedTypes list/);
+  assert.equal(field(sdk3, 'contentReference').deliveryShape.includes('media item'), false);
 });
 
 test('surface-specific vocabularies remain isolated instead of being collapsed by vendor or token', async () => {

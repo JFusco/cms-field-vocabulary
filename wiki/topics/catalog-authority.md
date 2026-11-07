@@ -7,7 +7,7 @@ The catalog is an official-source-backed record of CMS field identities and sema
 
 ## Current state
 
-- Seventeen profiles keep represented management, storage, authoring, REST, SDK, product-version, and delivery surfaces distinct across seven platform families; an unmodeled surface remains undocumented instead of being folded into another profile.
+- Eighteen profiles keep represented management, storage, authoring, REST, SDK, product-version, and delivery surfaces distinct across seven platform families; an unmodeled surface remains undocumented instead of being folded into another profile.
 - Each native type has a stable profile-scoped canonical ID and preserves the exact spelling and case of a designated official source.
 - Documented claims carry official evidence. Unknown value shapes and uses remain explicitly undocumented rather than inferred.
 - Extensible platforms are labeled open; a documented built-in list is never represented as a closed instance inventory when custom field types are supported.
@@ -20,5 +20,6 @@ The catalog is an official-source-backed record of CMS field identities and sema
 - WordPress Core is split into meta, REST schema, block attribute type, and block attribute source surfaces; plugin vocabularies are extensions.
 - Optimizely CMS 13 admin labels and .NET model types are separate profiles, and Sitecore authoring tokens are isolated from Content SDK and Headless Services delivery contracts.
 - Optimizely CMS SDK 3.0.0 has its own pinned profile. Its default rich-text payload and required content-relationship constraints differ from the retained SDK 2.2.0 profile; consumer routes remain on 2.2.0 until a separate migration decision.
+- Optimizely CMS SDK 3.1.0 has its own pinned profile. Media `contentReference` values resolve `item` in the page request, and `content` properties reject `contentType`; the SDK 3.0.0 profile keeps its original contract and routing.
 - The SitecoreAI authoring profile includes the list-field labels `Multilist with search`, `Grouped droplink`, `Grouped droplist`, and `Name value list` from the official authoring table. Their casing and profile IDs remain separate from Content SDK labels.
 - Rendering behavior is governed by [structured rendering operations](./structured-rendering-operations.md), and source evidence is maintained through [official-source freshness](./official-source-freshness.md).
