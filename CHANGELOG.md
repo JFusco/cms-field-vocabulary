@@ -1,3 +1,25 @@
+# Release 1.3.14
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **sources:** retain Contentstack changelog item text (`b88ea5c`)
+
+## Other changes
+
+- None.
+
 # Release 1.3.13
 
 ## Summary
