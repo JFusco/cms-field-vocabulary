@@ -1,6 +1,7 @@
 ---
 topics: [catalog-authority, official-source-freshness]
-issue: "https://github.com/JFusco/cms-field-vocabulary/issues/112"
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/112'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/112']
 ---
 # Propose Optimizely CMS SDK 3.1 profile
 
