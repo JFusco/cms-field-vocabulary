@@ -1,14 +1,19 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import test from 'node:test';
 import {
   classifyObservation,
   discoverObservedTokens,
+  extractItemText,
   fetchOfficialSource,
   mapWithConcurrency,
   normalizeDocument,
   observeSource,
   requiresAttention,
+  validateItemTextConfiguration,
 } from '../scripts/source-scan.mjs';
 import { canonicalJson, readJson } from './helpers.mjs';
 
@@ -295,4 +300,128 @@ test('only semantic, enumeration, version, reachability, or removal drift requir
   ]) {
     assert.equal(requiresAttention(classification), true);
   }
+});
+
+function rssItem({ link, title, pubDate, description }) {
+  return `<item><title><![CDATA[${title}]]></title><description><![CDATA[${description}]]></description><link>${link}</link><pubDate>${pubDate}</pubDate></item>`;
+}
+
+function rssFeed(items) {
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>',
+    '<title><![CDATA[Contentstack Changelog]]></title>',
+    '<link>https://www.contentstack.com/docs/changelog/</link>',
+    ...items.map(rssItem),
+    '</channel></rss>',
+  ].join('\n');
+}
+
+const visualBuilderEntry = {
+  link: 'https://www.contentstack.com/docs/changelog/?cs_source=rss#manage-entries-directly-from-the-visual-builder-form-panel',
+  title: 'Manage Entries Directly from the Visual Builder Form Panel',
+  pubDate: 'Tue, 03 Nov 2026 00:00:00 GMT',
+  description: '<p><strong>New Features</strong></p><ul><li>Edit <span class="code">reference</span> fields &amp; entries in the form panel.</li></ul>',
+};
+const webhookEntry = {
+  link: 'https://www.contentstack.com/docs/changelog/?cs_source=rss#webhook-rate-limit',
+  title: 'Webhook Rate Limit',
+  pubDate: 'Mon, 02 Nov 2026 00:00:00 GMT',
+  description: '<p>Webhooks are limited to 10 requests per second.</p>',
+};
+
+async function contentstackSource() {
+  const manifest = await readJson('sources/official-sources.json');
+  return manifest.sources.find((entry) => entry.id === 'contentstack.product-changelog-index');
+}
+
+test('Contentstack changelog scans retain each RSS item title, date and description with its identity', async (t) => {
+  const originalFetch = globalThis.fetch;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+  const source = await contentstackSource();
+  globalThis.fetch = async () => new Response(rssFeed([visualBuilderEntry, webhookEntry]), { status: 200 });
+  const result = await observeSource(source);
+  assert.equal(result.reviewStatus, 'reviewed');
+  assert.deepEqual(result.items, [
+    {
+      identity: visualBuilderEntry.link,
+      title: 'Manage Entries Directly from the Visual Builder Form Panel',
+      publishedAt: 'Tue, 03 Nov 2026 00:00:00 GMT',
+      description: 'New Features Edit reference fields & entries in the form panel.',
+      truncated: false,
+    },
+    {
+      identity: webhookEntry.link,
+      title: 'Webhook Rate Limit',
+      publishedAt: 'Mon, 02 Nov 2026 00:00:00 GMT',
+      description: 'Webhooks are limited to 10 requests per second.',
+      truncated: false,
+    },
+  ]);
+  assert.equal(result.identities.length, 3);
+  assert.equal(result.fragmentSha256, hash(canonicalJson(result.identities)), 'the fingerprint still covers identities only');
+});
+
+test('retained item text is bounded and read only for links on the registered allowed host', async () => {
+  const source = await contentstackSource();
+  const long = { ...webhookEntry, description: `<p>${'Webhook detail. '.repeat(400)}</p>` };
+  const offHost = { ...visualBuilderEntry, link: 'https://untrusted.example/changelog#entry' };
+  const escaped = rssFeed([long, offHost]).replace(
+    '<![CDATA[Webhook Rate Limit]]>',
+    '&lt;strong&gt;Webhook&lt;/strong&gt; Rate &amp;amp; Limit',
+  );
+  const items = extractItemText(source, escaped);
+  assert.deepEqual(items.map((item) => item.identity), [webhookEntry.link]);
+  assert.equal(items[0].title, 'Webhook Rate & Limit');
+  assert.equal(items[0].truncated, true);
+  assert.ok([...items[0].description].length <= source.itemText.maximumCharacters);
+  assert.ok(items[0].description.startsWith('Webhook detail. Webhook detail.'));
+});
+
+test('item text requires an opted-in release index and is absent elsewhere', async (t) => {
+  const originalFetch = globalThis.fetch;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+  const source = await contentstackSource();
+  assert.throws(
+    () => validateItemTextConfiguration({ ...source, role: 'editor' }),
+    /itemText requires a release-index source with an identityPattern/,
+  );
+  globalThis.fetch = async () => new Response(rssFeed([webhookEntry]), { status: 200 });
+  const { itemText, ...withoutItemText } = source;
+  assert.ok(itemText);
+  assert.equal('items' in await observeSource(withoutItemText), false);
+
+  globalThis.fetch = async () => new Response(null, { status: 302, headers: { location: 'https://untrusted.example/rss.xml' } });
+  const escapedHost = await observeSource(source);
+  assert.equal(escapedHost.reviewStatus, 'unreachable');
+  assert.deepEqual(escapedHost.items, []);
+});
+
+test('an identity withdrawn from a later feed keeps its earlier retained text readable', async (t) => {
+  const originalFetch = globalThis.fetch;
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'source-scan-items-'));
+  t.after(async () => {
+    globalThis.fetch = originalFetch;
+    await rm(directory, { recursive: true, force: true });
+  });
+  const source = await contentstackSource();
+  globalThis.fetch = async () => new Response(rssFeed([visualBuilderEntry, webhookEntry]), { status: 200 });
+  const earlier = await observeSource(source);
+  const earlierReport = path.join(directory, 'index-earlier.json');
+  await writeFile(earlierReport, canonicalJson({ schemaVersion: 2, mode: 'index', observations: [earlier] }));
+
+  globalThis.fetch = async () => new Response(rssFeed([webhookEntry]), { status: 200 });
+  const later = await observeSource(source);
+  assert.equal(later.identities.includes(visualBuilderEntry.link), false);
+  assert.deepEqual(later.items.map((item) => item.identity), [webhookEntry.link]);
+  assert.equal(classifyObservation(later, locked({ fragmentSha256: earlier.fragmentSha256 }), source), 'version-changing');
+
+  const retained = JSON.parse(await readFile(earlierReport, 'utf8')).observations[0].items
+    .find((item) => item.identity === visualBuilderEntry.link);
+  assert.equal(retained.title, 'Manage Entries Directly from the Visual Builder Form Panel');
+  assert.equal(retained.publishedAt, 'Tue, 03 Nov 2026 00:00:00 GMT');
+  assert.equal(retained.description, 'New Features Edit reference fields & entries in the form panel.');
 });

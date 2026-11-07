@@ -43,6 +43,7 @@ function lockEntry(source, observation, previous) {
   const reviewed = Object.fromEntries(
     Object.entries(observation).filter(([key]) => ![
       'enumerationExtractionError',
+      'items',
       'missingObservedTokens',
       'missingRequiredTokens',
       'removed',

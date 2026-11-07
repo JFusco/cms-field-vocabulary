@@ -898,6 +898,7 @@
       "version": { "mode": "release-index" },
       "locator": "RSS item links",
       "extract": { "kind": "document", "identityPattern": "<link>([^<]+)</link>", "identityFlags": "gi", "identityCapture": 1 },
+      "itemText": { "format": "rss", "maximumCharacters": 4000 },
       "reviewOwner": "contentstack"
     },
     {

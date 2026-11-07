@@ -121,6 +121,15 @@
           }
         },
         "reviewOwner": { "type": "string", "minLength": 1 },
+        "itemText": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["format", "maximumCharacters"],
+          "properties": {
+            "format": { "enum": ["rss"] },
+            "maximumCharacters": { "type": "integer", "minimum": 200, "maximum": 8000 }
+          }
+        },
         "replacementHistory": {
           "type": "array",
           "items": {

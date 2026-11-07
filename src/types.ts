@@ -86,6 +86,7 @@ export interface OfficialSource {
     };
   };
   reviewOwner: string;
+  itemText?: { format: 'rss'; maximumCharacters: number };
   replacementHistory?: Array<{
     recordedAt: string;
     reason: string;

@@ -130,6 +130,70 @@ export function extractSourceIdentities(source, normalized) {
   return [...identities].sort();
 }
 
+const ITEM_TITLE_CHARACTERS = 500;
+const ITEM_DATE_CHARACTERS = 100;
+
+export function validateItemTextConfiguration(source) {
+  if (!source.itemText) return;
+  if (source.role !== 'release-index' || !source.extract.identityPattern) {
+    throw new Error(`${source.id}: itemText requires a release-index source with an identityPattern`);
+  }
+  if (source.itemText.format !== 'rss') throw new Error(`${source.id}: unsupported itemText format ${source.itemText.format}`);
+}
+
+function bounded(value, limit) {
+  const characters = [...value];
+  if (characters.length <= limit) return { text: value, truncated: false };
+  return { text: characters.slice(0, limit).join('').trimEnd(), truncated: true };
+}
+
+function rssElement(block, name) {
+  const expression = new RegExp(`<${name}\\b[^>]*>\\s*(?:<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>|([\\s\\S]*?))\\s*</${name}\\s*>`, 'i');
+  const match = expression.exec(block);
+  if (!match) return '';
+  const markup = match[1] ?? decodeHtml(match[2]);
+  return decodeHtml(markup
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<!--([\s\S]*?)-->/g, ' ')
+    .replace(/<\/?(?:p|div|li|ul|ol|br|hr|h[1-6]|table|tr|td|th|blockquote|pre|iframe|img)\b[^>]*>/gi, ' ')
+    .replace(/<[^>]+>/g, ''))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function extractItemText(source, body) {
+  if (!source.itemText) return null;
+  validateItemTextConfiguration(source);
+  const flags = (source.extract.identityFlags || '').replaceAll('g', '');
+  const identityExpression = new RegExp(source.extract.identityPattern, flags);
+  const capture = source.extract.identityCapture || 0;
+  const items = new Map();
+  for (const match of body.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item\s*>/gi)) {
+    const identity = identityExpression.exec(normalizeDocument(match[1]))?.[capture]?.trim();
+    if (!identity || items.has(identity)) continue;
+    let host;
+    try {
+      host = new URL(identity).hostname;
+    } catch {
+      continue;
+    }
+    if (!source.allowedHosts.includes(host)) continue;
+    const title = bounded(rssElement(match[1], 'title'), ITEM_TITLE_CHARACTERS);
+    const publishedAt = bounded(rssElement(match[1], 'pubDate'), ITEM_DATE_CHARACTERS);
+    const description = bounded(rssElement(match[1], 'description'), source.itemText.maximumCharacters);
+    items.set(identity, {
+      identity,
+      title: title.text,
+      publishedAt: publishedAt.text,
+      description: description.text,
+      truncated: title.truncated || publishedAt.truncated || description.truncated,
+    });
+    if (items.size > 2000) throw new Error(`${source.id}: item text extraction exceeded 2000 entries`);
+  }
+  return [...items.values()].sort((left, right) => (left.identity < right.identity ? -1 : 1));
+}
+
 export function extractRequiredTokens(source, fragment) {
   return [...(source.extract.tokens || [])].filter((token) => fragment.includes(token)).sort();
 }
@@ -264,6 +328,7 @@ export async function observeSource(source) {
         identities: [],
         missingRequiredTokens: [...(source.extract.tokens || [])],
         missingObservedTokens: [],
+        ...(source.itemText ? { items: [] } : {}),
         removed: true,
         note: `Official source returned HTTP ${fetched.status}`,
       };
@@ -281,6 +346,7 @@ export async function observeSource(source) {
       throw new Error('Release index returned no version or entry identities');
     }
     const fragment = source.extract.identityPattern ? json(identities) : extractEvidenceFragment(source, normalized);
+    const items = extractItemText(source, fetched.body);
     const declaredTokens = [...(source.extract.tokens || [])];
     const requiredTokens = extractRequiredTokens(source, fragment);
     const requiredTokenSet = new Set(requiredTokens);
@@ -311,6 +377,7 @@ export async function observeSource(source) {
       identities,
       missingRequiredTokens,
       missingObservedTokens,
+      ...(items ? { items } : {}),
       ...(enumerationExtractionError ? { enumerationExtractionError } : {}),
     };
   } catch (error) {
@@ -329,6 +396,7 @@ export async function observeSource(source) {
       identities: [],
       missingRequiredTokens: [],
       missingObservedTokens: [],
+      ...(source.itemText ? { items: [] } : {}),
       note: error instanceof Error ? error.message : String(error),
     };
   }
