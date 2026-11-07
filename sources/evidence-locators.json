@@ -158,6 +158,23 @@
       ]
     },
     {
+      "sourceId": "optimizely-saas.sdk31-property-types",
+      "locators": [
+        { "locator": "Property types" },
+        { "locator": "Reference > richText", "tokens": ["richText", "json", "html", "richTextFormat"] },
+        { "locator": "Reference > content", "tokens": ["content", "allowedTypes", "restrictedTypes"] },
+        { "locator": "Reference > contentReference", "tokens": ["contentReference", "contentType", "allowedTypes", "restrictedTypes", "key", "url", "item"] },
+        { "locator": "Reference > Caveats", "tokens": ["content", "contentReference", "contentType", "allowedTypes", "restrictedTypes"] }
+      ]
+    },
+    {
+      "sourceId": "optimizely-saas.sdk31-changelog",
+      "locators": [
+        { "locator": "3.1.0 > Minor Changes", "tokens": ["contentReference", "item", "_image", "_video", "_media"] },
+        { "locator": "3.1.0 > Patch Changes", "tokens": ["content", "contentType", "allowedTypes", "restrictedTypes", "contentReference", "url", "link"] }
+      ]
+    },
+    {
       "sourceId": "sitecore-ai.content-sdk-components",
       "locators": [
         { "locator": "All built-in Content SDK components that previously relied on React.forwardRef (such as RichText, Link, and others) now treat ref as a regular prop instead of using forwardRef." }

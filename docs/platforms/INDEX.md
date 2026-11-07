@@ -11,6 +11,7 @@
 - [optimizely-saas.cms-api-v1](./optimizely-saas.cms-api-v1.md) — Optimizely CMS SaaS; management; CMS SaaS API v1
 - [optimizely-saas.sdk-2](./optimizely-saas.sdk-2.md) — @optimizely/cms-sdk; sdk; @optimizely/cms-sdk 2.2.0
 - [optimizely-saas.sdk-3](./optimizely-saas.sdk-3.md) — @optimizely/cms-sdk; sdk; @optimizely/cms-sdk 3.0.0
+- [optimizely-saas.sdk-3-1](./optimizely-saas.sdk-3-1.md) — @optimizely/cms-sdk; sdk; @optimizely/cms-sdk 3.1.0
 - [sitecore-ai.authoring.current](./sitecore-ai.authoring.current.md) — SitecoreAI; authoring; SitecoreAI observed 2026-09-01
 - [sitecore-ai.content-sdk2](./sitecore-ai.content-sdk2.md) — SitecoreAI; sdk; SitecoreAI delivery observed 2026-09-01
 - [sitecore-on-prem.headless22](./sitecore-on-prem.headless22.md) — Sitecore Experience Platform; sdk; XP 10.4 with Headless Services 22

@@ -30,7 +30,7 @@ Generated Markdown is a readable view, not another source of truth. Do not edit 
 
 ## Included profiles
 
-Seven CMS identities are represented by sixteen versioned surface profiles:
+Seven CMS identities are represented by eighteen versioned surface profiles:
 
 | Platform | Profile | Surface | Version boundary |
 | --- | --- | --- | --- |
@@ -39,6 +39,7 @@ Seven CMS identities are represented by sixteen versioned surface profiles:
 | Optimizely SaaS | `optimizely-saas.cms-api-v1` | Management | CMS SaaS API v1 |
 | Optimizely SaaS | `optimizely-saas.sdk-2` | SDK | `@optimizely/cms-sdk` 2.x contract snapshot |
 | Optimizely SaaS | `optimizely-saas.sdk-3` | SDK | `@optimizely/cms-sdk` 3.0.0 contract snapshot |
+| Optimizely SaaS | `optimizely-saas.sdk-3-1` | SDK | `@optimizely/cms-sdk` 3.1.0 contract snapshot |
 | Optimizely PaaS | `optimizely-paas.cms12-model` | SDK/model | CMS 12 model and editor surface |
 | Optimizely PaaS | `optimizely-paas.cms12-property-data-type` | Storage | `EPiServer.dll` 12.0.3 enum |
 | Optimizely PaaS | `optimizely-paas.cms13-admin` | Authoring | CMS 13 admin labels |
