@@ -1,7 +1,7 @@
 import Ajv2020 from 'ajv/dist/2020.js';
 import { compileCatalog, json, listJson, readJson, sha256 } from './lib/catalog.mjs';
 import { buildEvidenceLocatorIndex, validateProfileEvidence } from './lib/evidence.mjs';
-import { validateTokenDiscoveryConfiguration } from './source-scan.mjs';
+import { validateItemTextConfiguration, validateTokenDiscoveryConfiguration } from './source-scan.mjs';
 
 const ajv = new Ajv2020({ allErrors: true, strict: true, validateFormats: false });
 const schemas = {
@@ -48,6 +48,7 @@ for (const sourceId of lockIds) if (!sourceIds.has(sourceId)) throw new Error(`s
 for (const source of sourceManifest.sources) {
   const locked = lockById.get(source.id);
   validateTokenDiscoveryConfiguration(source);
+  validateItemTextConfiguration(source);
   if (
     sourceManifest.schemaVersion >= 2
     && source.completeness === 'exhaustive'
