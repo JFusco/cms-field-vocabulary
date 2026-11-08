@@ -2,8 +2,9 @@
 date: 2026-11-08
 topics: [release-operations]
 plans: []
-pr: pending
-issue: https://github.com/JFusco/cms-field-vocabulary/issues/151
+pr: 'https://github.com/jfusco/cms-field-vocabulary/pull/152'
+issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/151'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/151']
 ---
 # Align security producer guidance
 
