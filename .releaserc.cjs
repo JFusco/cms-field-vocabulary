@@ -10,7 +10,7 @@ module.exports = {
   tagFormat: 'v${version}',
   plugins: [
     [
-      '@semantic-release/commit-analyzer',
+      './scripts/semantic-release-analyzer.cjs',
       {
         ...conventionalCommits,
         releaseRules: [

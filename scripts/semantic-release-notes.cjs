@@ -1,5 +1,7 @@
 "use strict";
 
+const { filterReleaseCommits } = require("./release-commits.cjs");
+
 const GROUPS = [
   { key: "breaking", heading: "Breaking changes" },
   { key: "features", heading: "Features" },
@@ -49,7 +51,7 @@ function renderEntry(item) {
 
 async function generateNotes(_pluginConfig, context) {
   const grouped = Object.fromEntries(GROUPS.map(({ key }) => [key, []]));
-  for (const commit of context.commits || []) {
+  for (const commit of filterReleaseCommits(context.commits)) {
     if (/^Merge (?:pull request|branch|remote-tracking branch) /.test(clean(commit.subject || commit.message))) continue;
     const item = classify(commit);
     grouped[item.key].push(item);
