@@ -1171,9 +1171,15 @@
           "kind": "issue",
           "number": 142,
           "url": "https://github.com/jfusco/cms-field-vocabulary/issues/142"
+        },
+        {
+          "repository": "jfusco/cms-field-vocabulary",
+          "kind": "pull-request",
+          "number": 143,
+          "url": "https://github.com/jfusco/cms-field-vocabulary/pull/143"
         }
       ],
-      "bytes": 1131,
+      "bytes": 1253,
       "degree": 3,
       "x": -0.548843,
       "y": -0.835925,
