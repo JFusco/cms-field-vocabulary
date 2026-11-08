@@ -3,9 +3,13 @@ date: 2026-11-08
 topics: [release-operations]
 plans: [2026-11-08-harden-publisher-release-maintenance-e03cb8ddea.md]
 pr: 'https://github.com/jfusco/cms-field-vocabulary/pull/143'
-follow_up_pr: pending
+follow_up_pr: 'https://github.com/jfusco/cms-field-vocabulary/pull/147'
 issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/142'
-issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/142']
+issues:
+  [
+    'https://github.com/jfusco/cms-field-vocabulary/issues/142',
+    'https://github.com/jfusco/cms-field-vocabulary/issues/146',
+  ]
 ---
 # Suppress maintenance releases per commit
 
