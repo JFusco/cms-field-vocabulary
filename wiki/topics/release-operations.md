@@ -10,16 +10,18 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Node 24.14.0 and pnpm 11.1.1 are pinned; the lockfile and pnpm build allowlist are committed.
 - Offline hooks run commitlint, staged linting, catalog validation, generated-output checks, wiki lifecycle work, full verification, and packed-consumer tests.
 - GitHub workflows cover commit and PR-body linting, quality, release, wiki integrity/sync, issue-state sync, and vendor-document freshness.
-- Official JavaScript actions run on their native Node 24 majors (`checkout@v7`, `setup-node@v7`, `cache@v6`, `upload-artifact@v7`, and `github-script@v9`); no runtime-forcing compatibility flag remains.
+- Privileged release-workflow actions are pinned to reviewed full SHAs on their existing release lines. Other official JavaScript actions run on their native Node 24 majors (`checkout@v7`, `setup-node@v7`, `cache@v6`, `upload-artifact@v7`, and `github-script@v9`); no runtime-forcing compatibility flag remains.
 - Semantic Release on `main` derives versions from Conventional Commits, updates the changelog and package metadata, publishes npm provenance, tags `v${version}`, and creates the GitHub Release.
 - npm trusts the `JFusco/cms-field-vocabulary` `release.yml` workflow through OIDC; publication requires no repository release secret.
 - After a published release, `release.yml` sends a `package-released` dispatch to the shared Renovate runner as the Pin Courier GitHub App, using the `RENOVATE_APP_CLIENT_ID` and `RENOVATE_APP_PRIVATE_KEY` secrets ([issue #126](https://github.com/JFusco/cms-field-vocabulary/issues/126)). It first waits, for up to about ten minutes, until the npm registry serves the new version ([issue #128](https://github.com/JFusco/cms-field-vocabulary/issues/128)) and its tarball ([issue #130](https://github.com/JFusco/cms-field-vocabulary/issues/130)).
-- Repository dependency maintenance opts into `JFusco/renovate-config:maintenance` through `renovate.json` ([issue #131](https://github.com/JFusco/cms-field-vocabulary/issues/131)). Pin Courier covers npm and GitHub Actions on Mondays in America/New_York, grouping minor/patch updates separately for each manager while keeping majors separate and Renovate automerge disabled. The full-day window accommodates the central runner's six-hour cadence. Scheduled Dependabot configuration is removed in the same cutover.
+- Repository dependency maintenance opts into `JFusco/renovate-config:maintenance` through `renovate.json` ([issue #131](https://github.com/JFusco/cms-field-vocabulary/issues/131)). Pin Courier covers npm and GitHub Actions on Mondays in America/New_York, grouping minor/patch updates separately for each manager while keeping majors separate and Renovate automerge disabled. The full-day window accommodates the central runner's six-hour cadence. Dependabot YAML now exists to stamp `[skip release]` security-maintenance metadata, with weekly schedules and a zero routine-version PR limit. Hosted security-update settings are controlled separately.
 - Pin Courier's PR-body and commit-metadata exemption requires the installed App login and numeric ID, Bot type, a same-repository `renovate/` branch, and the `main` target. Quality, package and wiki checks still run. The Office separately verifies bot commits and requires the configured pickup lane before adopting an update PR.
 - At migration preflight, GitHub vulnerability alerts and Dependabot security-update PRs were already disabled. The migration preserves those settings; Renovate security-update PRs require vulnerability alerts to be enabled separately. The preset never automerges a security update.
 - Packed ESM and CommonJS fixtures exercise the actual tarball and the closed consumer CLI contract before publication.
 
 ## Decisions
+
+- 2026-11-08 — Suppress marked commits in the analyzer and notes, retain substantive release controls, and report notification delivery separately from publication ([journal](../journal/2026-11-08-release-maintenance-policy.md)).
 
 - 2026-09-28 — Exclude standard Git merge subjects before release-note classification and bind PR-body regression coverage to the checked-in canonical template ([issue #84](https://github.com/JFusco/cms-field-vocabulary/issues/84)).
 - 2026-09-28 — Standardized issue-first delivery, standalone Commitlint, deterministic PR-body validation, and the `BOT_TOKEN` secret name while stopping agent delivery before merge ([issue #75](https://github.com/JFusco/cms-field-vocabulary/issues/75)).
@@ -35,3 +37,21 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Catalog freshness remains independent and read-only as described in [official-source freshness](./official-source-freshness.md).
 - Draft and wiki-only changes keep stable checks through lightweight validation; ready code changes and `main` code updates retain the complete verifier.
 - The Pin Courier metadata exemption refuses draft pull requests, re-evaluates on `ready_for_review`, and its test pins each lint step's exact condition and the guard ordering ([issue #135](https://github.com/JFusco/cms-field-vocabulary/issues/135), [journal](../journal/2026-11-05-refuse-draft-pin-courier.md)).
+
+## Notification recovery
+
+After confirmed publication, the workflow reports package/version, published
+revision, registry readiness (`ready`, `timeout`, or `error`), and notification
+accepted/failed. Best-effort notification continues after registry delay or error.
+Optional JSON metadata records publisher, package, version, revision and
+release_url. Token/dispatch failure is partial delivery; publication is preserved.
+Reconcile npm, the release revision, tag and GitHub Release before any publisher
+rerun. With authorized dispatch credentials, replay notification only:
+
+```sh
+gh api --method POST repos/JFusco/renovate-config/dispatches -f event_type=package-released
+```
+
+That command invokes only the runner, never semantic-release. Scheduled scans
+remain fallback. Maintenance markers filter analyzer/notes input; they do not
+exempt commits from the existing breaking-body preflight policy.

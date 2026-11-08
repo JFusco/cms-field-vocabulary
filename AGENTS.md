@@ -85,3 +85,12 @@ Use `wiki/` as this repository's durable record of executed plans, decisions, an
 
 This managed block was installed for Codex, Cursor, and Claude (via `@AGENTS.md` in `CLAUDE.md`).
 <!-- wiki-skill:end -->
+
+## Dependency merge ownership
+
+The Office is the sole dependency-merge owner for Pin Courier and retained
+Dependabot PRs. Joe or a maintainer places a Dependabot PR card in Ready for the
+existing board pickup path; do not add Dependabot to automatic adoption. Office
+retains verified bot-commit qualification, current-head review/checks, holds,
+expected-SHA merging, durable effects and read-back. Use Office holds during
+recovery; never add another automatic merge path. Branch protection is deferred.
