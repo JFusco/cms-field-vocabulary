@@ -16,10 +16,12 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - After a published release, `release.yml` sends a `package-released` dispatch to the shared Renovate runner as the Pin Courier GitHub App, using the `RENOVATE_APP_CLIENT_ID` and `RENOVATE_APP_PRIVATE_KEY` secrets ([issue #126](https://github.com/JFusco/cms-field-vocabulary/issues/126)). It first waits, for up to about ten minutes, until the npm registry serves the new version ([issue #128](https://github.com/JFusco/cms-field-vocabulary/issues/128)) and its tarball ([issue #130](https://github.com/JFusco/cms-field-vocabulary/issues/130)).
 - Repository dependency maintenance opts into `JFusco/renovate-config:maintenance` through `renovate.json` ([issue #131](https://github.com/JFusco/cms-field-vocabulary/issues/131)). Pin Courier covers npm and GitHub Actions on Mondays in America/New_York, grouping minor/patch updates separately for each manager while keeping majors separate and Renovate automerge disabled. The full-day window accommodates the central runner's six-hour cadence. Dependabot YAML now exists to stamp `[skip release]` security-maintenance metadata, with weekly schedules and a zero routine-version PR limit. Hosted security-update settings are controlled separately.
 - Pin Courier's PR-body and commit-metadata exemption requires the installed App login and numeric ID, Bot type, a same-repository `renovate/` branch, and the `main` target. Quality, package and wiki checks still run. The Office separately verifies bot commits and requires the configured pickup lane before adopting an update PR.
-- At migration preflight, GitHub vulnerability alerts and Dependabot security-update PRs were already disabled. The migration preserves those settings; Renovate security-update PRs require vulnerability alerts to be enabled separately. The preset never automerges a security update.
+- Dependabot is the alert-driven security producer, with detection and security updates enabled during the gated rollout. Renovate vulnerability and OSV production are disabled in the shared preset.
 - Packed ESM and CommonJS fixtures exercise the actual tarball and the closed consumer CLI contract before publication.
 
 ## Decisions
+
+- 2026-11-08 — Align current security-producer guidance with the activated Dependabot settings and disabled Renovate security production ([issue #151](https://github.com/JFusco/cms-field-vocabulary/issues/151), [journal](../journal/2026-11-08-align-security-producer-guidance.md)).
 
 - 2026-11-08 — Suppress marked commits in the analyzer and notes, retain substantive release controls, and report notification delivery separately from publication ([journal](../journal/2026-11-08-release-maintenance-policy.md)).
 
