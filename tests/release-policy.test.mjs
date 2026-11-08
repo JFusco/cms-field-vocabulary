@@ -70,7 +70,7 @@ test('release notes omit marked commits without changing legitimate release note
 
 test('real semantic-release Git fixtures suppress publish, tags and dispatch on reruns', async () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'release-policy-'));
-  const git = (cwd, ...args) => execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+  const git = (cwd, ...args) => execFileSync('git', args, { cwd, env: { PATH: process.env.PATH, HOME: temp, GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: os.devNull }, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
   try {
     for (const [name, messages, expected] of histories) {
       const cwd = path.join(temp, name.replaceAll(' ', '-'));
@@ -85,9 +85,23 @@ test('real semantic-release Git fixtures suppress publish, tags and dispatch on 
       git(cwd, 'tag', 'v1.0.0');
       git(cwd, 'remote', 'add', 'origin', pathToFileURL(remote).href);
       git(cwd, 'push', '--tags', '-u', 'origin', 'main');
-      for (const message of messages) git(cwd, 'commit', '--allow-empty', '-m', message);
+      if (name === 'merge maintenance' || name === 'squash maintenance') {
+        git(cwd, 'switch', '-c', 'maintenance');
+        git(cwd, 'commit', '--allow-empty', '-m', 'chore(deps): bump tool [skip release]');
+        git(cwd, 'commit', '--allow-empty', '-m', 'chore(deps): patch tool [SECURITY] [skip release]');
+        git(cwd, 'switch', 'main');
+        if (name === 'merge maintenance') {
+          git(cwd, 'commit', '--allow-empty', '-m', 'chore(repo): advance main [skip release]');
+          git(cwd, 'merge', '--no-ff', 'maintenance', '-m', messages.at(-1));
+          assert.equal(git(cwd, 'rev-list', '--parents', '-n', '1', 'HEAD').split(' ').length, 3);
+        } else {
+          git(cwd, 'merge', '--squash', 'maintenance');
+          git(cwd, 'commit', '--allow-empty', '-m', messages.at(-1));
+          assert.equal(git(cwd, 'rev-list', '--count', 'v1.0.0..HEAD'), '1');
+        }
+      } else for (const message of messages) git(cwd, 'commit', '--allow-empty', '-m', message);
       const output = path.join(temp, 'result.json');
-      const env = { PATH: process.env.PATH, HOME: temp, GIT_AUTHOR_NAME: 'Fixture',
+      const env = { PATH: process.env.PATH, HOME: temp, GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: os.devNull, GIT_AUTHOR_NAME: 'Fixture',
         GIT_AUTHOR_EMAIL: 'fixture@example.invalid', GIT_COMMITTER_NAME: 'Fixture',
         GIT_COMMITTER_EMAIL: 'fixture@example.invalid' };
       execFileSync(process.execPath, [path.join(ROOT, 'scripts/tests/fixtures/release-run.cjs'),
@@ -142,4 +156,35 @@ test("release markers do not weaken the existing breaking-body preflight guard",
     assert.ok(validateReleaseCommits([{ hash: "a".repeat(40), subject: "feat(api): replace API", body }]).length > 0);
   }
   assert.deepEqual(validateReleaseCommits([{ hash: "a".repeat(40), subject: "feat(api)!: replace API [skip release]", body: "" }]), []);
+});
+
+
+test('notification CLI failure and notification-only replay never invoke publication', () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'release-dispatch-'));
+  try {
+    const cli = path.join(temp, 'gh');
+    fs.writeFileSync(cli, `#!/usr/bin/env node
+const fs = require('node:fs');
+fs.appendFileSync(process.env.FAKE_RECEIPT, JSON.stringify({args:process.argv.slice(2),body:JSON.parse(fs.readFileSync(0,'utf8'))}) + '\\n');
+process.exit(Number(process.env.FAKE_GH_EXIT));
+`, { mode: 0o700 });
+    const sentinel = path.join(temp, 'publication-attempt');
+    for (const tool of ['npm', 'pnpm']) fs.writeFileSync(path.join(temp, tool), `#!/usr/bin/env node\nrequire('node:fs').writeFileSync(process.env.FAKE_PUBLICATION, 'attempted');\nprocess.exit(97);\n`, { mode: 0o700 });
+    for (const status of [1, 0]) {
+      const receipt = path.join(temp, `receipt-${status}.jsonl`);
+      const result = require('node:child_process').spawnSync(process.execPath, ['scripts/notify-pin-courier.cjs'], {
+        cwd: ROOT, encoding: 'utf8', env: { PATH: `${temp}${path.delimiter}${process.env.PATH}`, HOME: temp,
+          GH_TOKEN: 'fixture-only', GITHUB_REPOSITORY: 'JFusco/example', FAKE_GH_EXIT: String(status), FAKE_RECEIPT: receipt, FAKE_PUBLICATION: sentinel },
+      });
+      assert.equal(result.status === 0, status === 0);
+      const calls = fs.readFileSync(receipt, 'utf8').trim().split('\n').map(line => JSON.parse(line));
+      assert.equal(calls.length, 1);
+      const [observed] = calls;
+      assert.deepEqual(observed.args, ['api', '--method', 'POST', 'repos/JFusco/renovate-config/dispatches', '--input', '-']);
+      assert.equal(observed.body.event_type, 'package-released');
+      assert.match(observed.body.client_payload.revision, /^[a-f0-9]{40}$/);
+      assert.equal(observed.body.client_payload.version, require(path.join(ROOT, 'package.json')).version);
+      assert.equal(fs.existsSync(sentinel), false);
+    }
+  } finally { fs.rmSync(temp, { recursive: true, force: true }); }
 });
