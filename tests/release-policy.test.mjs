@@ -76,7 +76,8 @@ test('real semantic-release Git fixtures suppress publish, tags and dispatch on 
       const cwd = path.join(temp, name.replaceAll(' ', '-'));
       const remote = `${cwd}.git`;
       fs.mkdirSync(cwd);
-      git(temp, 'init', '--bare', remote);
+      git(temp, 'init', '--bare', '--initial-branch=main', remote);
+      assert.equal(git(remote, 'symbolic-ref', 'HEAD'), 'refs/heads/main');
       git(cwd, 'init', '-b', 'main');
       git(cwd, 'config', 'user.name', 'Release fixture');
       git(cwd, 'config', 'user.email', 'fixture@example.invalid');
