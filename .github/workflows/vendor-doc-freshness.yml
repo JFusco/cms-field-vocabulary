@@ -30,13 +30,13 @@ jobs:
     timeout-minutes: 45
     steps:
       - name: Checkout read-only source
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 1
           persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "24.14.0"
 
@@ -48,7 +48,7 @@ jobs:
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
 
       - name: Cache pnpm store
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -125,7 +125,7 @@ jobs:
 
       - name: Upload scan evidence
         if: always()
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: vendor-doc-freshness-${{ github.run_id }}
           path: ${{ runner.temp }}/vendor-doc-freshness
@@ -134,7 +134,7 @@ jobs:
 
       - name: Open or update scanner failure issue
         if: always() && steps.scans.outputs.outcome == 'attention'
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           INDEX_STATUS: ${{ steps.scans.outputs.index_status }}
           FULL_STATUS: ${{ steps.scans.outputs.full_status }}
