@@ -7,6 +7,8 @@ import { tmpdir } from 'node:os';
 const PACKAGE_NAME = 'cms-field-vocabulary';
 const PROFILES = ['ai-orchestration', 'cos', 'generic'];
 const root = process.cwd();
+const { packageManager } = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
+assert.match(packageManager, /^pnpm@\d+\.\d+\.\d+$/, 'A pinned repository pnpm version is required');
 let isolatedNpmCache;
 
 function run(command, args, cwd, options = {}) {
@@ -15,6 +17,8 @@ function run(command, args, cwd, options = {}) {
     npm_config_audit: 'false',
     npm_config_fund: 'false',
   };
+  delete env.NPM_CONFIG_WORKSPACE_DIR;
+  delete env.npm_config_workspace_dir;
   if (isolatedNpmCache) env.npm_config_cache = isolatedNpmCache;
   if (options.offline) env.npm_config_offline = 'true';
   return execFileSync(command, args, {
@@ -126,7 +130,7 @@ try {
       `${JSON.stringify({
         name: `cms-field-vocabulary-packed-${profile}`,
         private: true,
-        packageManager: 'pnpm@11.1.1',
+        packageManager,
         dependencies: { [PACKAGE_NAME]: `file:${tarball}` },
       }, null, 2)}\n`,
     );
