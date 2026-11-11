@@ -39,6 +39,7 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 - Catalog freshness remains independent and read-only as described in [official-source freshness](./official-source-freshness.md).
 - Draft and wiki-only changes keep stable checks through lightweight validation; ready code changes and `main` code updates retain the complete verifier.
 - The Pin Courier metadata exemption refuses draft pull requests, re-evaluates on `ready_for_review`, and its test pins each lint step's exact condition and the guard ordering ([issue #135](https://github.com/JFusco/cms-field-vocabulary/issues/135), [journal](../journal/2026-11-05-refuse-draft-pin-courier.md)).
+- The published `engines.node` range stays `>=24.14.0`, matching the documented consumer floor; a test in the ordinary Quality gate fails any dependency or maintenance pull request that narrows it ([issue #165](https://github.com/JFusco/cms-field-vocabulary/issues/165), [journal](../journal/2026-11-11-pin-node-engine-consumer-range.md)).
 
 ## Notification recovery
 
