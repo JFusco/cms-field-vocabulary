@@ -1,3 +1,26 @@
+# Release 1.4.1
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **packaging:** align consumer pnpm (`208af72`)
+- **release:** pin engines.node to consumer floor (`b2281fc`)
+
 # Release 1.4.0
 
 ## Summary
