@@ -904,10 +904,14 @@
             {
               "locator": "Property types",
               "sourceId": "optimizely-saas.content-types"
+            },
+            {
+              "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text",
+              "sourceId": "optimizely-saas.release-notes-index"
             }
           ],
           "status": "documented",
-          "value": "Rich-text editor."
+          "value": "Rich-text editor; image and video buttons browse CMS media, pick an Optimizely DAM asset when DAM is configured, or upload an image to CMS. Only images and video are supported."
         },
         "nativeType": {
           "evidence": [
@@ -924,10 +928,18 @@
             {
               "locator": "Property types",
               "sourceId": "optimizely-saas.content-types"
+            },
+            {
+              "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > DAM assets in rich text",
+              "sourceId": "optimizely-saas.release-notes-index"
+            },
+            {
+              "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > Optimizely Graph and the Content Management API",
+              "sourceId": "optimizely-saas.release-notes-index"
             }
           ],
           "status": "documented",
-          "value": "Structured rich-text value."
+          "value": "Structured rich-text value; DAM assets are stored as permanent content links that redirect to the DAM URL. Content Management API media input uses a cms://content reference in an img src or a video source src."
         },
         "typicalUse": {
           "evidence": [

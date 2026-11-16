@@ -1,5 +1,5 @@
 {
-  "catalogDigest": "sha256:0c3edb37a67daa3823c32544b7943eaebcb092f7655bf40a6f00b57d7931917f",
+  "catalogDigest": "sha256:6e2254df061516729d197e675930cc25557cf759d12fa5136a46294ea5549041",
   "profiles": [
     {
       "digest": "sha256:6c50851d7d9551cfa03902e704a4966ff001b94899dfea6dca34a7140b59f6c3",
@@ -32,7 +32,7 @@
       "id": "optimizely-paas.cms13-model"
     },
     {
-      "digest": "sha256:cbd2d653f41d5709ef733b292a55dfd3727a2e40ce1162c6851ed25eaa8de4c7",
+      "digest": "sha256:d36ab7c608aa452916869128aa9ef1123d6b0fedccc9ef8f74efd383ddfb47a6",
       "fieldCount": 13,
       "id": "optimizely-saas.cms-api-v1"
     },
