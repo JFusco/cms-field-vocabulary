@@ -324,7 +324,8 @@
         { "locator": "CMS SaaS dated release-note entry headings" },
         { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text" },
         { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > DAM assets in rich text" },
-        { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > Optimizely Graph and the Content Management API" }
+        { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > Optimizely Graph and the Content Management API" },
+        { "locator": "November 18 > Create your own rich-text editor configurations" }
       ]
     },
     {

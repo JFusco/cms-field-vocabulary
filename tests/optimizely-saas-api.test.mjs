@@ -9,6 +9,7 @@ const VALIDATION_FIELDS = { sourceId: 'optimizely-saas.content-types', locator: 
 const PROPERTY_TYPES = { sourceId: 'optimizely-saas.content-types', locator: 'Property types' };
 const RELEASE_NOTES = 'optimizely-saas.release-notes-index';
 const RICH_TEXT_MEDIA = 'November 10 > Insert images and video from CMS or Optimizely DAM in rich text';
+const RICH_TEXT_CONFIGURATIONS = 'November 18 > Create your own rich-text editor configurations';
 
 async function profile(id = PROFILE_ID) {
   const compiled = await compileCatalog();
@@ -66,7 +67,7 @@ test('CMS SaaS API resolver selection reflects the corrected URL and Content con
   assert.deepEqual(byToken.get('url').operations.map(({ operation }) => operation), ['direct']);
 });
 
-test('CMS SaaS API rich text documents CMS and DAM media without a delivery shape', async () => {
+test('CMS SaaS API rich text documents media and editor configurations without a delivery shape', async () => {
   const apiProfile = await profile();
   assert.equal(apiProfile.fields.length, 13);
   const richText = field(apiProfile, 'richText');
@@ -76,9 +77,13 @@ test('CMS SaaS API rich text documents CMS and DAM media without a delivery shap
     evidence: [PROPERTY_TYPES],
   });
   assert.match(richText.claims.editorBehavior.value, /pick an Optimizely DAM asset when DAM is configured/);
+  assert.match(richText.claims.editorBehavior.value, /named TinyMCE configurations/);
+  assert.match(richText.claims.editorBehavior.value, /Minimal, Standard and Expanded configurations cannot be edited or deleted/);
+  assert.match(richText.claims.editorBehavior.value, /configuration in use cannot be deleted/);
   assert.deepEqual(richText.claims.editorBehavior.evidence, [
     PROPERTY_TYPES,
     { sourceId: RELEASE_NOTES, locator: RICH_TEXT_MEDIA },
+    { sourceId: RELEASE_NOTES, locator: RICH_TEXT_CONFIGURATIONS },
   ]);
   assert.match(richText.claims.storageShape.value, /cms:\/\/content reference in an img src or a video source src/);
   assert.deepEqual(richText.claims.storageShape.evidence, [
