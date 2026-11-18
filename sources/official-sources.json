@@ -166,7 +166,7 @@
       "locator": "Property types",
       "extract": {
         "kind": "heading",
-        "tokens": ["string", "richText", "boolean", "integer", "float", "dateTime", "url", "link", "json", "content", "contentReference", "array", "component"],
+        "tokens": ["string", "richText", "boolean", "integer", "float", "dateTime", "url", "link", "json", "content", "contentReference", "array", "component", "composition"],
         "tokenDiscovery": {
           "maximumTokens": 64,
           "regions": [

@@ -42,7 +42,7 @@ const EXPECTED_NATIVE_TOKENS = {
   ],
   'optimizely-saas.cms-api-v1': [
     'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
-    'json', 'content', 'contentReference', 'array', 'component',
+    'json', 'content', 'contentReference', 'array', 'component', 'composition',
   ],
   'optimizely-saas.sdk-2': [
     'string', 'richText', 'boolean', 'integer', 'float', 'dateTime', 'url', 'link',
