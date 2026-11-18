@@ -1,3 +1,25 @@
+# Release 1.4.2
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 1 fix, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- **wiki:** read session logs line by line in plan discovery (`287cfa4`)
+
+## Other changes
+
+- None.
+
 # Release 1.4.1
 
 ## Summary
