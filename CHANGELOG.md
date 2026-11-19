@@ -1,3 +1,25 @@
+# Release 1.5.0
+
+## Summary
+
+This release contains 0 breaking changes, 1 feature, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **optimizely:** add SaaS composition property type (`c7d9ca0`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **merge:** integrate main into composition PR (`3011a93`)
+
 # Release 1.4.2
 
 ## Summary
