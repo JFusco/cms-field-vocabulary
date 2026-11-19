@@ -6,11 +6,15 @@ import { loadRuntime } from './helpers.mjs';
 const PROFILE_ID = 'optimizely-saas.cms-api-v1';
 const DATA_TYPES = { sourceId: 'optimizely-saas.content-types', locator: 'Properties > Data types' };
 const VALIDATION_FIELDS = { sourceId: 'optimizely-saas.content-types', locator: 'Properties > Validation fields' };
+const PROPERTY_TYPES = { sourceId: 'optimizely-saas.content-types', locator: 'Property types' };
+const RELEASE_NOTES = 'optimizely-saas.release-notes-index';
+const RICH_TEXT_MEDIA = 'November 10 > Insert images and video from CMS or Optimizely DAM in rich text';
+const RICH_TEXT_CONFIGURATIONS = 'November 18 > Create your own rich-text editor configurations';
 const FORMAT = { sourceId: 'optimizely-saas.content-types', locator: 'Properties > format' };
 
-async function profile() {
+async function profile(id = PROFILE_ID) {
   const compiled = await compileCatalog();
-  const result = compiled.profiles.find((candidate) => candidate.id === PROFILE_ID);
+  const result = compiled.profiles.find((candidate) => candidate.id === id);
   assert.ok(result);
   return result;
 }
@@ -62,6 +66,39 @@ test('CMS SaaS API resolver selection reflects the corrected URL and Content con
   assert.deepEqual(byToken.get('content').operations, []);
   assert.deepEqual(byToken.get('url').valueShape, { kind: 'string', nullable: true });
   assert.deepEqual(byToken.get('url').operations.map(({ operation }) => operation), ['direct']);
+});
+
+test('CMS SaaS API rich text documents media and editor configurations without a delivery shape', async () => {
+  const apiProfile = await profile();
+  assert.equal(apiProfile.fields.length, 14);
+  const richText = field(apiProfile, 'richText');
+  assert.deepEqual(richText.claims.valueShape, {
+    status: 'documented',
+    value: { kind: 'rich-text', nullable: true },
+    evidence: [PROPERTY_TYPES],
+  });
+  assert.match(richText.claims.editorBehavior.value, /pick an Optimizely DAM asset when DAM is configured/);
+  assert.match(richText.claims.editorBehavior.value, /named TinyMCE configurations/);
+  assert.match(richText.claims.editorBehavior.value, /Minimal, Standard and Expanded configurations cannot be edited or deleted/);
+  assert.match(richText.claims.editorBehavior.value, /configuration in use cannot be deleted/);
+  assert.deepEqual(richText.claims.editorBehavior.evidence, [
+    PROPERTY_TYPES,
+    { sourceId: RELEASE_NOTES, locator: RICH_TEXT_MEDIA },
+    { sourceId: RELEASE_NOTES, locator: RICH_TEXT_CONFIGURATIONS },
+  ]);
+  assert.match(richText.claims.storageShape.value, /cms:\/\/content reference in an img src or a video source src/);
+  assert.deepEqual(richText.claims.storageShape.evidence, [
+    PROPERTY_TYPES,
+    { sourceId: RELEASE_NOTES, locator: `${RICH_TEXT_MEDIA} > DAM assets in rich text` },
+    { sourceId: RELEASE_NOTES, locator: `${RICH_TEXT_MEDIA} > Optimizely Graph and the Content Management API` },
+  ]);
+  assert.deepEqual(richText.claims.deliveryShape, { status: 'undocumented', value: null, evidence: [] });
+
+  for (const sdkProfileId of ['optimizely-saas.sdk-2', 'optimizely-saas.sdk-3', 'optimizely-saas.sdk-3-1']) {
+    const sdkRichText = field(await profile(sdkProfileId), 'richText');
+    const citedSources = Object.values(sdkRichText.claims).flatMap((claim) => claim.evidence.map(({ sourceId }) => sourceId));
+    assert.ok(!citedSources.includes(RELEASE_NOTES), sdkProfileId);
+  }
 });
 
 test('CMS SaaS API composition documents a Visual Builder layout without asserting a wire shape', async () => {

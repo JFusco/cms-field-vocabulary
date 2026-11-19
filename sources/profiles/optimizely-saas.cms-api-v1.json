@@ -67,8 +67,8 @@
         "nullable": true
       },
       "typicalUse": "Structured rich text.",
-      "editorBehavior": "Rich-text editor.",
-      "storageShape": "Structured rich-text value.",
+      "editorBehavior": "Rich-text editor; image and video buttons browse CMS media, pick an Optimizely DAM asset when DAM is configured, or upload an image to CMS. Only images and video are supported. Administrators create named TinyMCE configurations that set toolbar buttons, named styles, block formats and content stylesheets, and assign one to a property in its editor settings; the Minimal, Standard and Expanded configurations cannot be edited or deleted, and a configuration in use cannot be deleted.",
+      "storageShape": "Structured rich-text value; DAM assets are stored as permanent content links that redirect to the DAM URL. Content Management API media input uses a cms://content reference in an img src or a video source src.",
       "deliveryShape": null,
       "renderingOperations": [],
       "claimEvidence": {
@@ -88,12 +88,28 @@
           {
             "sourceId": "optimizely-saas.content-types",
             "locator": "Property types"
+          },
+          {
+            "sourceId": "optimizely-saas.release-notes-index",
+            "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text"
+          },
+          {
+            "sourceId": "optimizely-saas.release-notes-index",
+            "locator": "November 18 > Create your own rich-text editor configurations"
           }
         ],
         "storageShape": [
           {
             "sourceId": "optimizely-saas.content-types",
             "locator": "Property types"
+          },
+          {
+            "sourceId": "optimizely-saas.release-notes-index",
+            "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > DAM assets in rich text"
+          },
+          {
+            "sourceId": "optimizely-saas.release-notes-index",
+            "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > Optimizely Graph and the Content Management API"
           }
         ]
       }
