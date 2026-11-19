@@ -37,16 +37,26 @@ For repository changes that include delivery, complete this sequence:
    include `Closes #<issue-number>`, record verification and risk/rollback,
    and complete every required checkbox. Run `pnpm run lint:pr` before opening
    the PR and read the saved PR back afterward.
-7. Stop after the pull request is open and verified. Never merge it, enable
-   auto-merge, delete the delivery branch, or close the issue as part of this
-   flow. Leave review and merging to the user.
+7. The Office harness merges every board-delivered PR once its applicable
+   checks pass, its readiness review passes and the saved PR and head are
+   verified (Joe, 2026-11-18). Outside the Office, delivery stops at the
+   verified PR unless the user authorizes merging; never enable auto-merge.
+   Never merge failed content or bypass branch protections. A merged
+   qualifying PR starts the release described below.
+8. Once a PR merges, by the Office, an agent or Joe, clean up what the
+   delivery created: delete the remote branch if GitHub kept it, the local
+   branch and any worktree used for it, and remove scratch or temporary files
+   the delivery left outside the repository. Delete only when the PR merged
+   and the branch tip is the merged head; ask before removing a worktree with
+   uncommitted changes. Never delete an unmerged branch.
 
 
 ## Release cycle
 
 This repository publishes the public `cms-field-vocabulary` npm package. A
-release begins only after the user merges a qualifying PR to `main`; the agent
-delivery flow above never merges, tags, versions, or publishes.
+release begins when a qualifying PR merges to `main`, by the Office under the
+delivery flow above or by the user. Nothing in that flow tags, versions, or
+publishes by hand.
 
 - `scripts/semantic-release-notes.cjs` generates release notes from conventional
   commits with `Summary`, `Breaking changes`, `Features`, `Fixes`, and
@@ -57,7 +67,7 @@ delivery flow above never merges, tags, versions, or publishes.
 - Before opening the PR, run `pnpm run release:preflight`,
   `pnpm run verify:ci`, `pnpm run test:packed`, and
   `npm pack --dry-run --ignore-scripts`.
-- After a user-authorized merge, the `Release` workflow is the only publisher.
+- After a merge, the `Release` workflow is the only publisher.
   It uses GitHub permissions and npm trusted publishing through OIDC; do not add
   release-note AI credentials or a long-lived npm token.
 - When asked to monitor a release, verify the workflow revision, Git tag, GitHub
