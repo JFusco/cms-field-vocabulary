@@ -284,6 +284,78 @@
           "mode": "pinned"
         }
       },
+      "canonicalId": "optimizely-saas.cms-api-v1.composition",
+      "claims": {
+        "deliveryShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "editorBehavior": {
+          "evidence": [
+            {
+              "locator": "Properties > format",
+              "sourceId": "optimizely-saas.content-types"
+            },
+            {
+              "locator": "Properties > Validation fields",
+              "sourceId": "optimizely-saas.content-types"
+            },
+            {
+              "locator": "Properties > Data types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "format names the layout type to use. allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes."
+        },
+        "nativeType": {
+          "evidence": [
+            {
+              "locator": "Property types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "composition"
+        },
+        "storageShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        },
+        "typicalUse": {
+          "evidence": [
+            {
+              "locator": "Properties > Data types",
+              "sourceId": "optimizely-saas.content-types"
+            }
+          ],
+          "status": "documented",
+          "value": "Visual Builder layout with the content it contains, supported only on content types with the _experience base type and not as an array item."
+        },
+        "valueShape": {
+          "evidence": [],
+          "status": "undocumented",
+          "value": null
+        }
+      },
+      "formats": [],
+      "nativeToken": "composition",
+      "origin": "native",
+      "renderingOperations": []
+    },
+    {
+      "applicability": {
+        "product": "Optimizely CMS SaaS",
+        "profileId": "optimizely-saas.cms-api-v1",
+        "surface": "management",
+        "transport": "CMS API content-type property schema",
+        "version": {
+          "label": "CMS SaaS API v1",
+          "mode": "pinned"
+        }
+      },
       "canonicalId": "optimizely-saas.cms-api-v1.content",
       "claims": {
         "deliveryShape": {

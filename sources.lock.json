@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-11-07T01:51:57.882Z",
+  "reviewedAt": "2026-11-18T20:28:22.217Z",
   "schemaVersion": 2,
   "sources": [
     {
@@ -511,18 +511,20 @@
           "content",
           "contentReference",
           "array",
-          "component"
+          "component",
+          "composition"
         ]
       },
-      "fragmentSha256": "af0bbf3380b0da68cfa9434f3d99636c51fa9ac525882aa392f6df6f8e11956a",
+      "fragmentSha256": "53233f57da97689579e6bce58190cdc98b885cdc4cf97645c8e16b8a12c5adca",
       "identities": [],
       "locator": "Property types",
-      "normalizedSha256": "e54ab03cb85de84b73cee4258e893c5d6aaa2bf07ee8d7df28017b7990905c8c",
-      "observedAt": "2026-10-30T02:34:59.488Z",
+      "normalizedSha256": "a9b854926648644ecd145cd63561d0a96c888f6e68ec2ed377ca27ac59029a8f",
+      "observedAt": "2026-11-18T20:28:21.046Z",
       "observedTokens": [
         "array",
         "boolean",
         "component",
+        "composition",
         "content",
         "contentReference",
         "dateTime",
@@ -534,13 +536,14 @@
         "string",
         "url"
       ],
-      "observedTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
-      "rawSha256": "97af0f7385d435f82d4300397f765e980c0be872f0449907ad9e9a575152f4cd",
+      "observedTokenSetSha256": "0d4b949343a0f2ccbd243b328f1d702769199c17857fe84a8bd13cf9cef42423",
+      "rawSha256": "025e1bf88bb62f20e5efd04701d0f8550c5251a9c4ff2aa0b018150e18b029ed",
       "replacementHistory": [],
       "requiredTokens": [
         "array",
         "boolean",
         "component",
+        "composition",
         "content",
         "contentReference",
         "dateTime",
@@ -552,9 +555,9 @@
         "string",
         "url"
       ],
-      "requiredTokenSetSha256": "b0694033bb4674d9a9526d466267d112ed78d4a7f12204b105f9b9d9a3ff9757",
+      "requiredTokenSetSha256": "0d4b949343a0f2ccbd243b328f1d702769199c17857fe84a8bd13cf9cef42423",
       "resolvedRevision": "CMS SaaS API v1",
-      "reviewedAt": "2026-10-30T02:34:59.488Z",
+      "reviewedAt": "2026-11-18T20:28:21.046Z",
       "reviewer": "optimizely-saas",
       "reviewStatus": "reviewed",
       "sourceId": "optimizely-saas.content-types",
