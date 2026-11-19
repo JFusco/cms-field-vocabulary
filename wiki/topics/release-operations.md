@@ -21,6 +21,8 @@ The repository publishes the public unscoped `cms-field-vocabulary` package thro
 
 ## Decisions
 
+- 2026-11-18 — A release begins when a qualifying pull request merges, by the Office under the delivery flow or by the user; agent delivery through the Office no longer stops before merge ([issue #177](https://github.com/JFusco/cms-field-vocabulary/issues/177), [journal](../journal/2026-11-18-office-merges-board-delivered-prs.md)).
+
 - 2026-11-08 — Align current security-producer guidance with the activated Dependabot settings and disabled Renovate security production ([issue #151](https://github.com/JFusco/cms-field-vocabulary/issues/151), [journal](../journal/2026-11-08-align-security-producer-guidance.md)).
 
 - 2026-11-08 — Suppress marked commits in the analyzer and notes, retain substantive release controls, and report notification delivery separately from publication ([journal](../journal/2026-11-08-release-maintenance-policy.md)).

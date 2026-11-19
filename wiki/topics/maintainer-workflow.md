@@ -16,6 +16,16 @@ commit-message lint steps, because Dependabot writes those itself and grouped
 update subjects exceed the limit. See
 [Exempt Dependabot pull requests from commitlint](../journal/2026-11-02-exempt-dependabot-prs-from-commitlint.md).
 
+## Delivery and merging
+
+The Office harness merges every board-delivered pull request once its applicable
+checks pass, its readiness review passes and the saved pull request and head are
+verified. Delivery outside the Office stops at the verified pull request unless
+the user authorizes merging. After a merge the delivery cleans up its remote
+branch, local branch, worktree and any scratch files it left outside the
+repository. See
+[State the Office's merge authority and cleanup](../journal/2026-11-18-office-merges-board-delivered-prs.md).
+
 ## Code map
 
 Graphify 0.9.36 maps src/ and maintained scripts. The code map was introduced from local AST extraction without model calls. A repository-local
