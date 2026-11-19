@@ -1,3 +1,27 @@
+# Release 1.6.0
+
+## Summary
+
+This release contains 0 breaking changes, 2 features, 0 fixes, and 2 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **optimizely:** document SaaS rich-text configs (`8fc002f`)
+- **optimizely:** document SaaS rich-text media (`7b8328c`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **merge:** integrate main into rich-text PR (`f5b3d92`)
+- **wiki:** merge main into rich-text media (`41870dd`)
+
 # Release 1.5.0
 
 ## Summary
