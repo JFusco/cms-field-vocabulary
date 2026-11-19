@@ -2,6 +2,7 @@
 topics: [official-source-freshness]
 plans: [2026-11-18-brief-plan-173-richtext-editor-configurations-nov-18-on-optimizely-saas--548a1b850f.md]
 issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/173'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/173']
 ---
 # Document SaaS rich-text editor configurations
 

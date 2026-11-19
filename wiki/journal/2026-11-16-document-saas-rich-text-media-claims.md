@@ -2,6 +2,7 @@
 topics: [official-source-freshness]
 plans: [2026-11-16-brief-plan-optimizely-saas-api-v1-rich-text-media-claims-f819cb770c.md]
 issue: 'https://github.com/jfusco/cms-field-vocabulary/issues/173'
+issues: ['https://github.com/jfusco/cms-field-vocabulary/issues/173']
 ---
 # Document SaaS rich-text media claims
 
