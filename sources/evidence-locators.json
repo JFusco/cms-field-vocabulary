@@ -136,6 +136,7 @@
       "locators": [
         { "locator": "Property types" },
         { "locator": "Properties > Data types" },
+        { "locator": "Properties > format" },
         { "locator": "Properties > Validation fields" }
       ]
     },

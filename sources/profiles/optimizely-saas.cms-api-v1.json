@@ -521,6 +521,37 @@
           }
         ]
       }
+    },
+    {
+      "nativeToken": "composition",
+      "valueShape": null,
+      "typicalUse": "Visual Builder layout with the content it contains, supported only on content types with the _experience base type and not as an array item.",
+      "editorBehavior": "format names the layout type to use. allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes.",
+      "storageShape": null,
+      "deliveryShape": null,
+      "renderingOperations": [],
+      "claimEvidence": {
+        "typicalUse": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Properties > Data types"
+          }
+        ],
+        "editorBehavior": [
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Properties > format"
+          },
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Properties > Validation fields"
+          },
+          {
+            "sourceId": "optimizely-saas.content-types",
+            "locator": "Properties > Data types"
+          }
+        ]
+      }
     }
   ]
 }

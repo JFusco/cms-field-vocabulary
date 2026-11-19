@@ -10,6 +10,7 @@ const PROPERTY_TYPES = { sourceId: 'optimizely-saas.content-types', locator: 'Pr
 const RELEASE_NOTES = 'optimizely-saas.release-notes-index';
 const RICH_TEXT_MEDIA = 'November 10 > Insert images and video from CMS or Optimizely DAM in rich text';
 const RICH_TEXT_CONFIGURATIONS = 'November 18 > Create your own rich-text editor configurations';
+const FORMAT = { sourceId: 'optimizely-saas.content-types', locator: 'Properties > format' };
 
 async function profile(id = PROFILE_ID) {
   const compiled = await compileCatalog();
@@ -69,7 +70,7 @@ test('CMS SaaS API resolver selection reflects the corrected URL and Content con
 
 test('CMS SaaS API rich text documents media and editor configurations without a delivery shape', async () => {
   const apiProfile = await profile();
-  assert.equal(apiProfile.fields.length, 13);
+  assert.equal(apiProfile.fields.length, 14);
   const richText = field(apiProfile, 'richText');
   assert.deepEqual(richText.claims.valueShape, {
     status: 'documented',
@@ -98,4 +99,38 @@ test('CMS SaaS API rich text documents media and editor configurations without a
     const citedSources = Object.values(sdkRichText.claims).flatMap((claim) => claim.evidence.map(({ sourceId }) => sourceId));
     assert.ok(!citedSources.includes(RELEASE_NOTES), sdkProfileId);
   }
+});
+
+test('CMS SaaS API composition documents a Visual Builder layout without asserting a wire shape', async () => {
+  const candidateProfile = await profile();
+  const composition = field(candidateProfile, 'composition');
+  assert.equal(composition.canonicalId, `${PROFILE_ID}.composition`);
+  for (const claim of ['valueShape', 'storageShape', 'deliveryShape']) {
+    assert.deepEqual(composition.claims[claim], { status: 'undocumented', value: null, evidence: [] }, claim);
+  }
+  assert.deepEqual(composition.renderingOperations, []);
+  assert.deepEqual(composition.claims.typicalUse, {
+    status: 'documented',
+    value: 'Visual Builder layout with the content it contains, supported only on content types with the _experience base type and not as an array item.',
+    evidence: [DATA_TYPES],
+  });
+  assert.match(composition.claims.editorBehavior.value, /^format names the layout type to use\./);
+  assert.match(composition.claims.editorBehavior.value, /restrictedTypes takes priority over allowedTypes/);
+  assert.deepEqual(composition.claims.editorBehavior.evidence, [FORMAT, VALIDATION_FIELDS, DATA_TYPES]);
+  // The built-in content-type composition setting also covers section types; the property does not.
+  assert.doesNotMatch(JSON.stringify(composition.claims), /section/i);
+  assert.notDeepEqual(composition.claims, field(candidateProfile, 'content').claims);
+  assert.notDeepEqual(composition.claims, field(candidateProfile, 'component').claims);
+});
+
+test('CMS SaaS API resolver selects composition with no value shape or operations', async () => {
+  const { resolveFieldContracts } = await loadRuntime();
+  const selected = resolveFieldContracts({
+    profileId: PROFILE_ID,
+    fieldIds: [`${PROFILE_ID}.composition`],
+    agentProfile: 'react-nextjs',
+  });
+  assert.deepEqual(selected.contracts.map(({ nativeToken }) => nativeToken), ['composition']);
+  assert.equal(selected.contracts[0].valueShape, null);
+  assert.deepEqual(selected.contracts[0].operations, []);
 });
