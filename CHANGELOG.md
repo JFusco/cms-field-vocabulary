@@ -1,3 +1,25 @@
+# Release 1.6.1
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **deps:** override minimatch to 11.0.1 (`30a156c`)
+
 # Release 1.6.0
 
 ## Summary
