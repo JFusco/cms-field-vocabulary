@@ -26,6 +26,13 @@ branch, local branch, worktree and any scratch files it left outside the
 repository. See
 [State the Office's merge authority and cleanup](../journal/2026-11-18-office-merges-board-delivered-prs.md).
 
+## Dependency overrides
+
+pnpm 11 reads overrides from `pnpm-workspace.yaml`. `minimatch` is overridden to
+`>=11.0.1` because eslint 10.14.0 still requires the vulnerable version 10.
+Remove the override once eslint depends on a fixed `minimatch`. See
+[Override minimatch for the eslint advisory](../journal/2026-11-19-override-minimatch-for-eslint-advisory.md).
+
 ## Code map
 
 Graphify 0.9.36 maps src/ and maintained scripts. The code map was introduced from local AST extraction without model calls. A repository-local
