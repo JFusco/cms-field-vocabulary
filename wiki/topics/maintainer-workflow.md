@@ -26,6 +26,13 @@ branch, local branch, worktree and any scratch files it left outside the
 repository. See
 [State the Office's merge authority and cleanup](../journal/2026-11-18-office-merges-board-delivered-prs.md).
 
+## Generated wiki conflicts
+
+A base-update conflict limited to the generated wiki graph and connection
+summary is repaired by regenerating both from the merged Markdown, checking
+wiki integrity, and comparing the result with the pre-repair candidate. See
+[Regenerate conflicted wiki outputs](../journal/2026-11-23-regenerate-conflicted-wiki-outputs.md).
+
 ## Dependency overrides
 
 pnpm 11 reads overrides from `pnpm-workspace.yaml`. `minimatch` is overridden to
