@@ -1286,10 +1286,14 @@
             {
               "locator": "Common property types",
               "sourceId": "optimizely-paas.cms13-builtins"
+            },
+            {
+              "locator": "CMS Core > November 18—13.7.0 > Enhancements",
+              "sourceId": "optimizely-paas.cms13-release-notes-index"
             }
           ],
           "status": "documented",
-          "value": "TinyMCE HTML editor."
+          "value": "TinyMCE HTML editor. From EPiServer.CMS.Core 13.7.0, image and video buttons insert media from CMS or Optimizely DAM, and dragged or pasted images upload to CMS before insertion instead of being stored as embedded data."
         },
         "nativeType": {
           "evidence": [

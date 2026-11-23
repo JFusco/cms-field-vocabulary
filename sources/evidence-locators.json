@@ -341,7 +341,10 @@
     },
     {
       "sourceId": "optimizely-paas.cms13-release-notes-index",
-      "locators": [{ "locator": "CMS 13 dated release-note entry headings" }]
+      "locators": [
+        { "locator": "CMS 13 dated release-note entry headings" },
+        { "locator": "CMS Core > November 18—13.7.0 > Enhancements" }
+      ]
     },
     {
       "sourceId": "sitecore-ai.changelog-index",

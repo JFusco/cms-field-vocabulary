@@ -1,3 +1,25 @@
+# Release 1.7.0
+
+## Summary
+
+This release contains 0 breaking changes, 1 feature, 0 fixes, and 0 other changes.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **optimizely:** qualify CMS 13 XhtmlString media (`82414b6`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- None.
+
 # Release 1.6.2
 
 ## Summary
