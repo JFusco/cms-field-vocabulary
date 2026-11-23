@@ -1,3 +1,25 @@
+# Release 1.6.2
+
+## Summary
+
+This release contains 0 breaking changes, 0 features, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- None.
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **wiki:** regenerate conflicted graph outputs (`150d1da`)
+
 # Release 1.6.1
 
 ## Summary
