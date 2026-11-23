@@ -686,7 +686,7 @@
         "nullable": true
       },
       "typicalUse": "Long formatted text.",
-      "editorBehavior": "XHTML rich-text editor.",
+      "editorBehavior": "XHTML rich-text (TinyMCE) editor. From EPiServer.CMS.Core 13.7.0, image and video buttons insert media from CMS or Optimizely DAM, and dragged or pasted images upload to CMS before insertion instead of being stored as embedded data.",
       "storageShape": null,
       "deliveryShape": null,
       "renderingOperations": [],
@@ -707,6 +707,10 @@
           {
             "sourceId": "optimizely-paas.cms13-text-property",
             "locator": "Text Type > XHTML string (>255)"
+          },
+          {
+            "sourceId": "optimizely-paas.cms13-release-notes-index",
+            "locator": "CMS Core > November 18—13.7.0 > Enhancements"
           }
         ]
       }

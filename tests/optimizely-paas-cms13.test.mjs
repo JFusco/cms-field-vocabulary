@@ -64,3 +64,27 @@ test('CMS 13 model claims do not absorb storage or delivery surfaces', async () 
     assert.equal(candidateField.claims.deliveryShape.status, 'undocumented');
   }
 });
+
+test('CMS 13 admin XHTML editor claim is qualified to CMS Core 13.7.0', async () => {
+  const compiled = await compileCatalog();
+  const admin = compiled.profiles.find((candidate) => candidate.id === 'optimizely-paas.cms13-admin');
+  assert.ok(admin);
+  const xhtml = field(admin, 'XHTML string (>255)');
+  const editor = xhtml.claims.editorBehavior;
+  assert.equal(editor.status, 'documented');
+  assert.match(editor.value, /From EPiServer\.CMS\.Core 13\.7\.0, image and video buttons insert media from CMS or Optimizely DAM/);
+  assert.match(editor.value, /dragged or pasted images upload to CMS before insertion/);
+  assert.deepEqual(editor.evidence, [
+    { sourceId: 'optimizely-paas.cms13-text-property', locator: 'Text Type > XHTML string (>255)' },
+    {
+      sourceId: 'optimizely-paas.cms13-release-notes-index',
+      locator: 'CMS Core > November 18—13.7.0 > Enhancements',
+    },
+  ]);
+  assert.deepEqual(xhtml.claims.valueShape.value, { kind: 'rich-text', nullable: true });
+  assert.equal(xhtml.claims.storageShape.status, 'undocumented');
+  assert.equal(xhtml.claims.deliveryShape.status, 'undocumented');
+
+  const model = field(await profile(), 'XhtmlString');
+  assert.doesNotMatch(model.claims.editorBehavior.value, /13\.7\.0/);
+});
