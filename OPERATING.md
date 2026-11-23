@@ -53,7 +53,7 @@ The workflow:
 4. uploads logs, JSON observations, and a readable source-by-source summary for 30 days;
 5. opens an issue only if the scanner or summary fails unexpectedly or the checkout changes.
 
-It does not edit source, update `sources.lock.json`, open a vocabulary pull request, or publish. The Codex task examines official evidence and proposes a focused draft pull request when a supported vocabulary change is clear. New major versions receive separate versioned profiles. It records a concrete finding and issue link with the draft. A reviewer accepts source observations and approves any merge; the task does not merge or publish.
+It does not edit source, update `sources.lock.json`, open a vocabulary pull request, or publish. The Codex task examines official evidence and proposes a focused draft pull request when a supported vocabulary change is clear. New major versions receive separate versioned profiles. It records a concrete finding and issue link with the draft. Source observations are accepted as described in [Accept a source-lock observation](#accept-a-source-lock-observation); the task does not merge or publish.
 
 ### Triage a scan finding
 
@@ -92,6 +92,16 @@ pnpm run test:packed
 `pnpm sources:review -- --all` is reserved for an intentional complete-lock refresh. `--allow-manual` is an exception for an independently reviewed official source that automation cannot retrieve; the pull request must explain the failure and review method, and the reviewer must manually verify every required token. It cannot override a fetched observation that reports missing tokens or establish a new independent enumeration baseline.
 
 Close a drift issue with a recorded no-impact finding, or after its reviewed pull request merges. The task must compare observation fingerprints with prior closed findings so a previously reviewed observation does not recreate the same issue. Link a change issue to its draft pull request. Leave a finding open when official evidence is missing, and state exactly what remains to verify.
+
+### Accept a source-lock observation
+
+A pull request that proposes a `sources.lock.json` refresh merges only after each proposed observation is explicitly accepted. Joe delegated that acceptance to the Office's independent readiness review on 2026-11-19. For each refreshed source, the review must:
+
+1. identify the source ID and the proposed observation fingerprint;
+2. record that the official source was inspected at the locator registered in `sources/official-sources.json`;
+3. explicitly accept that observation.
+
+Passing checks, a ready pull request, or a passed readiness review that does not record those three items is not acceptance. A maintainer hold on the proposal stays in effect until the maintainer releases it, whatever the review concludes.
 
 ## Review and release impact
 
