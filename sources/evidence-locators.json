@@ -137,7 +137,8 @@
         { "locator": "Property types" },
         { "locator": "Properties > Data types" },
         { "locator": "Properties > format" },
-        { "locator": "Properties > Validation fields" }
+        { "locator": "Properties > Validation fields" },
+        { "locator": "Nesting limits" }
       ]
     },
     {
@@ -326,7 +327,8 @@
         { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text" },
         { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > DAM assets in rich text" },
         { "locator": "November 10 > Insert images and video from CMS or Optimizely DAM in rich text > Optimizely Graph and the Content Management API" },
-        { "locator": "November 18 > Create your own rich-text editor configurations" }
+        { "locator": "November 18 > Create your own rich-text editor configurations" },
+        { "locator": "November 18 > Bug fixes" }
       ]
     },
     {
@@ -339,7 +341,10 @@
     },
     {
       "sourceId": "optimizely-paas.cms13-release-notes-index",
-      "locators": [{ "locator": "CMS 13 dated release-note entry headings" }]
+      "locators": [
+        { "locator": "CMS 13 dated release-note entry headings" },
+        { "locator": "CMS Core > November 18—13.7.0 > Enhancements" }
+      ]
     },
     {
       "sourceId": "sitecore-ai.changelog-index",
