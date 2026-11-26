@@ -8176,10 +8176,14 @@
                 {
                   "locator": "Property types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Nesting limits",
+                  "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "List editor respecting item and count constraints."
+              "value": "List editor respecting item and count constraints. Arrays of components count toward the eight-level limit on nested blocks, in which a shared block counts as one level. The whole item is checked on every save, so content nested past a limit cannot be saved, even after an unrelated edit, until its nesting is reduced; a REST request that exceeds a limit returns 400 Bad Request with the path of the field."
             },
             "nativeType": {
               "evidence": [
@@ -8357,10 +8361,14 @@
                 {
                   "locator": "Property types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Nesting limits",
+                  "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Component selection requiring contentType."
+              "value": "Component selection requiring contentType. Nested blocks are limited to eight levels, counted across inline blocks in content areas, component and content properties, arrays of components and Visual Builder sections; a shared block or shared section counts as one level, and its own contents are checked when it is saved. The whole item is checked on every save, so content nested past a limit cannot be saved, even after an unrelated edit, until its nesting is reduced; a REST request that exceeds a limit returns 400 Bad Request with the path of the field."
             },
             "nativeType": {
               "evidence": [
@@ -8456,10 +8464,14 @@
                 {
                   "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Nesting limits",
+                  "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "format names the layout type to use. allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes."
+              "value": "format names the layout type to use. allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes. Layout nodes, counted from the outermost node through rows, columns and elements, can be nested at most four levels deep. The whole item is checked on every save, so content nested past a limit cannot be saved, even after an unrelated edit, until its nesting is reduced; a REST request that exceeds a limit returns 400 Bad Request with the path of the field."
             },
             "nativeType": {
               "evidence": [
@@ -8524,10 +8536,14 @@
                 {
                   "locator": "Properties > Data types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Nesting limits",
+                  "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "Accepts any content type unless limited: allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes."
+              "value": "Accepts any content type unless limited: allowedTypes lists permitted content types, restrictedTypes lists excluded content types, and restrictedTypes takes priority over allowedTypes. Nested blocks are limited to eight levels, counted across inline blocks in content areas, component and content properties, arrays of components and Visual Builder sections; a shared block or shared section counts as one level, and its own contents are checked when it is saved. The whole item is checked on every save, so content nested past a limit cannot be saved, even after an unrelated edit, until its nesting is reduced; a REST request that exceeds a limit returns 400 Bad Request with the path of the field."
             },
             "nativeType": {
               "evidence": [
@@ -8946,10 +8962,18 @@
                 {
                   "locator": "Property types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Properties > Data types",
+                  "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Nesting limits",
+                  "sourceId": "optimizely-saas.content-types"
                 }
               ],
               "status": "documented",
-              "value": "JSON editor."
+              "value": "JSON editor. Values can be nested at most eight levels deep. The whole item is checked on every save, so content nested past a limit cannot be saved, even after an unrelated edit, until its nesting is reduced; a REST request that exceeds a limit returns 400 Bad Request with the path of the field."
             },
             "nativeType": {
               "evidence": [
@@ -9235,10 +9259,18 @@
                 {
                   "locator": "Property types",
                   "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "Properties > Validation fields",
+                  "sourceId": "optimizely-saas.content-types"
+                },
+                {
+                  "locator": "November 18 > Bug fixes",
+                  "sourceId": "optimizely-saas.release-notes-index"
                 }
               ],
               "status": "documented",
-              "value": "Text editor refined by format and constraints."
+              "value": "Text editor refined by format and constraints: minLength and maxLength bound the character length, and pattern requires a regular-expression match. Since the November 18 release, a string with a minimum but no maximum length accepts text of any length instead of being capped at 255 characters in the editor, property settings include a Min Length field, and saving the property in the admin UI keeps a minimum length set through the REST API."
             },
             "nativeType": {
               "evidence": [

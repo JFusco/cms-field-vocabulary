@@ -1,3 +1,25 @@
+# Release 1.8.0
+
+## Summary
+
+This release contains 0 breaking changes, 1 feature, 0 fixes, and 1 other change.
+
+## Breaking changes
+
+- None.
+
+## Features
+
+- **optimizely:** document SaaS field limits (`8cab916`)
+
+## Fixes
+
+- None.
+
+## Other changes
+
+- **merge:** integrate main into nesting PR (`074eedf`)
+
 # Release 1.7.0
 
 ## Summary
